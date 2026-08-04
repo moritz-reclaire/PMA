@@ -17,9 +17,9 @@
       "q": "DIN 69901 defines a project as an undertaking that is delimited in content, planning and time. Which further element does the definition explicitly require?",
       "options": [
         "A separate, temporary organization created for it",
-        "A minimum contract value set by the client",
-        "A permanent line department that owns the work",
-        "At least two participating legal entities"
+        "A minimum contract value agreed with the client",
+        "A permanent line department that owns and staffs it",
+        "At least two legally independent contract parties"
       ],
       "correct": 0,
       "why": "DIN 69901 names three delimitations (content, planning, time) <em>and</em> a separate, temporary organization. The temporary organization is what distinguishes a project from routine line work — no value threshold, no permanent department and no minimum number of parties appears in the definition."
@@ -32,10 +32,10 @@
       "q": "Which characteristics does the lecture list for a project?",
       "options": [
         "Unique, because the task is novel and complex",
-        "Limited in time by a start and an end",
+        "Limited in time by a defined start and end",
         "Limited human, material and financial resources",
-        "Repeats at fixed intervals with a stable output",
-        "Project-specific organization (team)"
+        "Repeats at fixed intervals and yields a stable output",
+        "A project-specific organization (the team)"
       ],
       "correct": [0, 1, 2, 4],
       "why": "Uniqueness, time limitation, limited resources and a project-specific team are the four bullets on the definition slide. Repetition at fixed intervals is the opposite — that describes a <em>process</em>, which consists of partly repetitive operations."
@@ -78,10 +78,10 @@
       "src": "Lecture 1 · Process",
       "q": "What distinguishes a <em>process</em> from a <em>project</em> in the lecture's definition?",
       "options": [
-        "A process has a defined start event (input) and result (output) and consists of partly repetitive operations",
-        "A process is always longer than a project",
-        "A process needs no task owners, only material resources",
-        "A process creates value only for the company itself, never for customers"
+        "A process has a defined input and output and partly repetitive steps",
+        "A process always runs longer than a project and costs more to run",
+        "A process needs no task owners, only material and financial input",
+        "A process creates value for the company only, never for customers"
       ],
       "correct": 0,
       "why": "The process definition centres on input → output and on repetition; a project is by definition unique and non-repetitive. Duration is irrelevant, processes explicitly do have task owners, and the definition says a process \"serves to create value for customers\"."
@@ -93,10 +93,10 @@
       "src": "Lecture 1 · Market overview",
       "q": "What does the UK output-per-hour data (1970–2020) shown in the lecture say about the construction industry?",
       "options": [
-        "There has been nearly no increase in productivity over the last 50 years",
-        "Productivity roughly doubled every decade",
+        "Almost no increase in productivity over the last 50 years",
+        "Productivity roughly doubled in each decade since 1970",
         "Productivity fell sharply until 1990 and then recovered fully",
-        "Construction outperformed the rest of the market sector throughout"
+        "Construction outpaced the wider market sector throughout"
       ],
       "correct": 0,
       "why": "The slide's punchline is that construction productivity has stagnated for five decades while the wider market sector grew — this stagnation is the motivation for the digitalisation and industrialisation push discussed in Lecture 5."
@@ -108,11 +108,11 @@
       "src": "Lecture 1 · ICoM",
       "q": "Which challenges does the lecture name as the construction industry's biggest?",
       "options": [
-        "Lack of sustainability — 38 % of global carbon emissions (cradle to grave)",
-        "Lack of efficiency — low productivity, no disruptive innovation",
-        "Lack of commitments — exploding costs and delays",
-        "Lack of qualified personnel",
-        "Lack of demand — order books shrinking worldwide"
+        "Lack of sustainability — 38 % of global carbon emissions",
+        "Lack of efficiency — low productivity and no innovation",
+        "Lack of commitments — exploding costs and long delays",
+        "Lack of qualified personnel and skilled site staff",
+        "Lack of demand — order books are shrinking worldwide"
       ],
       "correct": [0, 1, 2, 3],
       "why": "Sustainability, efficiency, commitment and resources (personnel) are the four challenges on the ICoM slide, with 33.5 % of German companies reporting problems finding qualified staff. Demand is not the problem — the sector's issue is delivering, not selling."
@@ -124,10 +124,10 @@
       "src": "Lecture 1 · A2 Poland",
       "q": "The Chinese contractor COVEC won the A2 Express Highway in Poland at roughly €420 m while the government had estimated about €1 bn, and the contract later collapsed. Which lesson does the case illustrate best?",
       "options": [
-        "A price far below the client's own estimate is a warning sign, not a competitive advantage",
+        "A price far below the client's estimate is a warning, not a bargain",
         "Foreign contractors are legally barred from EU infrastructure markets",
-        "Fixed-price contracts always protect the client from cost increases",
-        "Football tournaments are unsuitable as project deadlines"
+        "Fixed-price contracts always protect the client from any cost increase",
+        "Public clients should always award to the lowest bidder on price"
       ],
       "correct": 0,
       "why": "COVEC underbid by roughly 60 %, then discovered that Polish wages, materials and standards made the price unachievable. The client did not benefit — the works stopped, both sides claimed compensation, and the dispute only settled in 2017. The other options are not what the case shows."
@@ -140,11 +140,11 @@
       "q": "Which reasons for the COVEC project failure does the lecture list?",
       "options": [
         "The contractor was not used to European standards",
-        "Failure to provide financial records",
-        "Poorly organized leadership",
+        "Failure to provide the required financial records",
+        "Poorly organized leadership and management",
         "Underestimated cost of Polish wages and materials",
         "Polish subcontractors refused cooperation and materials",
-        "The route had to be rebuilt after a design error by the Polish road agency"
+        "A design error by the Polish road agency's designers"
       ],
       "correct": [0, 1, 2, 3, 4],
       "why": "The slide lists unfamiliar standards, missing financial records, poor leadership, underestimated local costs, refusing subcontractors, the belief that the Chinese state would cover losses, and a communication gap due to cultural differences. A design error by the client is not among them."
@@ -156,10 +156,10 @@
       "src": "Lecture 1 · Mtentu Bridge",
       "q": "Why did the STRABAG–Aveng joint venture terminate the Mtentu Bridge contract in South Africa in 2019?",
       "options": [
-        "Risk to the safety and wellbeing of its personnel after protests and threats",
-        "The client became insolvent",
+        "Risk to the safety and wellbeing of its personnel",
+        "The client ran out of funds and stopped paying",
         "The design was found to be structurally impossible",
-        "Currency restrictions blocked all payments"
+        "Currency controls blocked payments out of the country"
       ],
       "correct": 0,
       "why": "Villagers protested over broken promises of employment and workers and management were threatened, including with assault rifles — a social/political risk, not a technical or financial one. The replacement contract went to a Chinese–South African JV at roughly twice the original price."
@@ -171,11 +171,11 @@
       "src": "Lecture 1 · Genova Model",
       "q": "The new San Giorgio Bridge in Genoa was completed in 15 months. Which principles make up the \"Genova Model\"?",
       "options": [
-        "Collaboration — working together towards the same objective",
-        "Transparency — opened to the public",
-        "Teamwork throughout the whole supply chain",
-        "Strict separation of designer and contractor to avoid liability",
-        "Penalty-driven contracting with maximum risk transfer"
+        "Collaboration — working towards the same objective",
+        "Transparency — the site was opened to the public",
+        "Teamwork across the whole of the supply chain",
+        "Strict separation of designer and contractor",
+        "Penalty-driven contracting with full risk transfer"
       ],
       "correct": [0, 1, 2],
       "why": "Collaboration, transparency and supply-chain-wide teamwork are the three pillars of the Genova Model. It is the deliberate counter-example to adversarial, penalty-driven set-ups — separation and maximum risk transfer are exactly what it avoids."
@@ -258,10 +258,10 @@
       "src": "Lecture 1 · Ethnocentric",
       "q": "Which is a disadvantage of the ethnocentric approach?",
       "options": [
-        "Potential for conflict due to culturally different views and attitudes",
-        "Communication problems between foreign branch and head office",
-        "Often low know-how transfer",
-        "Very complex communication structures"
+        "Conflict potential due to culturally different views",
+        "Communication problems with the parent company",
+        "Low transfer of know-how between the group's units",
+        "Very complex communication structures in the group"
       ],
       "correct": 0,
       "why": "Ethnocentric staffing risks cultural conflict, preferential treatment of parent-company staff and high posting costs. The other three are the drawbacks of the <em>other</em> approaches: communication problems and low know-how transfer belong to polycentric, complex communication structures to geocentric."
@@ -273,10 +273,10 @@
       "src": "Lecture 1 · Polycentric",
       "q": "A contractor wants to enter a large but unfamiliar market permanently, wants low personnel costs and needs staff who understand the local language and business customs. Which staffing approach fits?",
       "options": [
-        "Polycentric",
-        "Ethnocentric",
-        "Geocentric",
-        "None — this always requires posting expatriates"
+        "Polycentric — staff the branch with local nationals",
+        "Ethnocentric — post home-country managers abroad",
+        "Geocentric — staff by ability regardless of origin",
+        "Export-only — serve the market without local staff"
       ],
       "correct": 0,
       "why": "Low personnel costs plus language, market and cultural experience of employees are exactly the listed advantages of the polycentric approach. Ethnocentric would import home-country staff at high posting cost; geocentric aims at a global market position rather than one market."
@@ -288,10 +288,10 @@
       "src": "Lecture 1 · Geocentric",
       "q": "Which pair of advantages does the lecture give for the geocentric approach?",
       "options": [
-        "Utilization of worldwide employee potential and high know-how transfer",
-        "Low personnel costs and easy communication",
-        "Uniform company policy and familiar instruments",
-        "Complete independence of the foreign organization"
+        "Worldwide employee potential and high know-how transfer",
+        "Low personnel costs and simple communication lines",
+        "Uniform company policy and familiar management instruments",
+        "Full independence of the foreign branch from head office"
       ],
       "correct": 0,
       "why": "Geocentric staffing draws on the global talent pool and moves know-how across borders — at the price of high posting costs and very complex communication structures. Low personnel costs belong to polycentric, uniform policy and familiar instruments to ethnocentric."
@@ -318,8 +318,8 @@
       "options": [
         "Autonomous organization",
         "Influence organization",
-        "Matrix organization",
-        "Line organization without a project manager"
+        "Matrix project organization",
+        "Pure line organization"
       ],
       "correct": 0,
       "why": "Autonomous organization gives the PM exclusive responsibility and full flexibility — indispensable when the site is thousands of kilometres from head office. The influence form is described as rather for small projects, the matrix form as frequent when all organizational areas of the company are affected."
@@ -351,10 +351,10 @@
       "src": "Lecture 1 · Fields of activity",
       "q": "Besides traditional foreign construction and area business, the lecture names a third field of activity. Which one?",
       "options": [
-        "Engineering services — consulting and planning in developing, emerging and industrialized countries (services export)",
-        "Property speculation in host countries",
-        "Operation of national building authorities",
-        "Sale of construction machinery"
+        "Engineering services — exported consulting and planning",
+        "Property speculation in emerging host countries",
+        "Operation of national building authorities as a concession",
+        "Sale of construction machinery to local firms"
       ],
       "correct": 0,
       "why": "Engineering services cover consulting and planning across all country groups and are exported as a service, without the contractor building anything itself."
@@ -379,11 +379,11 @@
       "src": "Lecture 1 · Stakeholders",
       "q": "According to the lecture's definition, a stakeholder is a person, group or organization that …",
       "options": [
-        "is actively involved in the project",
+        "is actively involved in the project work",
         "is influenced by the course or outcome of the project",
-        "can influence the course of the project or the project result",
-        "holds a share of the contract sum",
-        "has signed a contract with the employer"
+        "can influence the course or the result of the project",
+        "holds a financial share in the contract sum",
+        "has signed a contract directly with the employer"
       ],
       "correct": [0, 1, 2],
       "why": "Involvement, being influenced, or being able to influence — any one of the three is enough. A financial share or a contract is <em>not</em> required, which is why protesting villagers (Mtentu) or the general public count as stakeholders. PRINCE2 goes further still and includes those who merely <em>feel</em> influenced."
@@ -395,10 +395,10 @@
       "src": "Lecture 1 · FIDIC structure",
       "q": "In the international project structure according to FIDIC, what is the special position of the \"Engineer\"?",
       "options": [
-        "Competent representative of the employer who organizes and controls technical, legal and economic issues",
-        "The design office of the contractor",
-        "An independent state authority that grants building permits",
-        "The financing institution's local agent"
+        "An appointee of the employer who administers the contract",
+        "The contractor's in-house design and engineering office",
+        "An independent state authority issuing building permits",
+        "The financier's local agent supervising the drawdowns"
       ],
       "correct": 0,
       "why": "The Engineer reflects the Anglo-Saxon view: an appointee of the employer who administers the contract technically, legally and economically. It is not a state body, not the contractor's designer and not the financier's agent — those are the separate roles of public authorities, the designer and the financier in the same diagram."
@@ -410,10 +410,10 @@
       "src": "Lecture 1 · FIDIC structure",
       "q": "What is a <em>nominated subcontractor</em> in the FIDIC structure?",
       "options": [
-        "A subcontractor selected by the employer and/or engineer rather than by the contractor",
-        "A subcontractor that has been pre-qualified by the local chamber of commerce",
-        "The largest subcontractor by contract value",
-        "A subcontractor working without a written contract"
+        "A subcontractor chosen by the employer or engineer, not the contractor",
+        "A subcontractor pre-qualified by the local chamber of commerce",
+        "The subcontractor holding the largest share of the contract value",
+        "A subcontractor working on the site without a written contract"
       ],
       "correct": 0,
       "why": "The word \"nominated\" refers to <em>who chooses</em>: the employer or engineer picks the firm, while an ordinary subcontractor is selected by the contractor and renders its own services. That distinction matters because it shifts responsibility for the choice away from the contractor."
@@ -425,10 +425,10 @@
       "src": "Lecture 1 · FIDIC structure",
       "q": "What is the role of the Resident Engineer?",
       "options": [
-        "The Engineer's representative on site, monitoring the works as the builder's construction manager",
-        "The contractor's site manager",
-        "A specialist engineer commissioned by the employer for geotechnics",
-        "The employer's legal counsel on site"
+        "The Engineer's representative permanently on the site",
+        "The contractor's site manager running the works",
+        "A specialist geotechnical engineer hired by the employer",
+        "The employer's legal counsel stationed on the site"
       ],
       "correct": 0,
       "why": "\"Resident\" means permanently on the site — the Engineer's representative there. Specialist engineers such as geotechnical engineers or quantity surveyors are the separate <em>consultants</em> box in the same diagram, commissioned by the Engineer."
@@ -456,7 +456,7 @@
         "Cash flow to the employer, who pays the contractor",
         "A construction contract directly with the contractor",
         "Supervision and instruction authority over the engineer",
-        "A guarantee issued to the subcontractors"
+        "A guarantee issued in favour of the subcontractors"
       ],
       "correct": 0,
       "why": "Financing institutions such as the World Bank or KfW provide the cash flow but stay outside the contractual chain — the construction contract runs between employer and contractor only. Their influence is exercised through funding conditions, not through instructions."
@@ -468,10 +468,10 @@
       "src": "Lecture 1 · National structure",
       "q": "In the classic German project structure, what is the \"planner contract\" (Architekten-/Ingenieurvertrag) between client and designer supposed to settle?",
       "options": [
-        "The powers of the owner's construction manager and which powers of instruction the owner's representatives have towards the contractor",
-        "The contractor's warranty periods",
-        "The subcontractor payment schedule",
-        "The insurance premiums for the works"
+        "The powers of the owner's construction manager",
+        "The contractor's warranty and defects periods",
+        "The payment schedule for the subcontractors",
+        "Who pays the insurance premiums for the works"
       ],
       "correct": 0,
       "why": "The footnote on the slide is explicit: the planner contract must be adapted per project so that it regulates the owner's construction manager's powers and the instruction rights towards the contractor. The construction contract itself (per BGB and/or VOB) covers warranties and payment."
@@ -492,7 +492,7 @@
       "src": "Lecture 2 · Project development",
       "q": "A project development process can start from three constellations. Which set does the lecture name?",
       "options": [
-        "Location seeks capital and project idea · Project seeks location and capital · Capital seeks location and project idea",
+        "Location, project idea or capital — each seeks the missing two",
         "Client seeks contractor · Contractor seeks client · Bank seeks both",
         "Design seeks approval · Approval seeks design · Site seeks approval",
         "Tender seeks bidder · Bidder seeks tender · Engineer seeks tender"
@@ -507,11 +507,11 @@
       "src": "Lecture 2 · Feasibility analysis",
       "q": "Which analyses belong to the feasibility analysis in the project development process?",
       "options": [
-        "Market analysis",
-        "Location analysis",
-        "Analysis of the utilization concept",
-        "Competition analysis",
-        "Risk analysis",
+        "Analysis of the market",
+        "Analysis of the location",
+        "Utilization concept analysis",
+        "Analysis of the competition",
+        "Analysis of project risks",
         "Defects liability analysis"
       ],
       "correct": [0, 1, 2, 3, 4],
@@ -553,10 +553,10 @@
         "BOT — Build-Operate-Transfer",
         "BOO — Build-Own-Operate",
         "ROT — Renovate-Own-Transfer",
-        "EXW — Ex Works"
+        "ROO — Renovate-Own-Operate"
       ],
       "correct": 0,
-      "why": "Build, operate for the concession period, then transfer: BOT. BOO would leave the road permanently with the consortium, ROT applies to an existing asset that is refurbished rather than newly built, and EXW is an Incoterm, not a financing model."
+      "why": "Build, operate for the concession period, then transfer: BOT. BOO would leave the road permanently with the consortium, while ROT and ROO both start from an existing asset that is refurbished rather than newly built."
     },
     {
       "id": "l2-guarantee-nat-01",
@@ -594,10 +594,10 @@
       "src": "Lecture 2 · Hermes cover",
       "q": "What does the Hermes cover protect a German construction company against?",
       "options": [
-        "Losses from economic and political risks in export transactions",
-        "Site accidents and personal injury on the construction site",
-        "Defects in the contractor's own design work",
-        "Exchange-rate movements between order and delivery"
+        "Losses from economic and political risks in export business",
+        "Accidents and personal injury occurring on the construction site",
+        "Defects in the contractor's own design and engineering work",
+        "Exchange-rate movements between order and payment date"
       ],
       "correct": 0,
       "why": "Hermes cover is a federal export credit guarantee against economic and political risk — the Federal Republic of Germany stands behind it, with Euler Hermes AG acting as the government's mandatary. Site accidents and design defects are matters for ordinary liability insurance."
@@ -636,9 +636,9 @@
       "q": "Which of these is listed as a <em>commercial lender</em> (covered by export insurance) rather than a classic funder?",
       "options": [
         "China Export-Import Bank",
-        "World Bank",
+        "The World Bank Group",
         "African Development Bank",
-        "Islamic Development Bank"
+        "The Islamic Development Bank"
       ],
       "correct": 0,
       "why": "The classic funders are the multilateral and development banks (World Bank, KfW, AfDB, AFD, AIIB, IsDB). The commercial-lender column lists Euler Hermes, Delcredere Ducroire, the OPEC Fund and the China Export-Import Bank, all backed by export insurance from an export credit agency."
@@ -677,10 +677,10 @@
       "src": "Lecture 2 · ECA",
       "q": "What is an Export Credit Agency (ECA)?",
       "options": [
-        "A private or government-related institution acting between national governments and exporters, providing export insurance cover and financial guarantees",
-        "A commercial bank specialising in trade loans to importers",
-        "A UN body that grants development aid",
-        "An arbitration institution for cross-border trade disputes"
+        "An institution acting between governments and exporters, providing cover",
+        "A commercial bank specialising in trade finance loans to importers",
+        "A United Nations agency that channels development aid to states",
+        "A standing arbitration institution for cross-border trade disputes"
       ],
       "correct": 0,
       "why": "ECAs are state-backed instruments of export promotion — intermediaries, not lenders. Crucially they are commercial support tools and therefore apply <em>exclusively to commercial financings</em>, not to development aid."
@@ -692,11 +692,11 @@
       "src": "Lecture 2 · ECA",
       "q": "Which reasons for involving an ECA does the guest lecture give?",
       "options": [
-        "The borrower's creditworthiness is not sufficient for an unsecured loan",
-        "The requested loan tenor is commercially not feasible",
-        "There is a long lead time before the first repayment, which banks shy away from",
-        "An ECA-covered tranche is eligible as cover pool, enabling refinancing via the capital market",
-        "The ECA takes over project management from the exporter"
+        "The borrower's creditworthiness is not enough for an unsecured loan",
+        "The requested loan tenor is commercially not feasible for banks",
+        "A long lead time before the first repayment deters commercial banks",
+        "An ECA-covered tranche is eligible as cover pool for refinancing",
+        "The ECA takes over the project management duties of the exporter"
       ],
       "correct": [0, 1, 2, 3],
       "why": "All four commercial reasons concern bankability: credit standing, tenor, lead time and refinancing. An ECA never manages the project — it only insures the risk, and even then never fully (see the mandatory retainer)."
@@ -781,11 +781,11 @@
       "src": "Lecture 2 · OECD Consensus",
       "q": "Which basic conditions does the OECD Consensus set for export projects with a tenor over two years?",
       "options": [
-        "Loan amount max. 85 % of the contract value (15 % advance and interim payment)",
-        "Local costs up to 70 % of the contract value for projects in the green category",
+        "Loan amount max. 85 % of the contract value, 15 % paid in advance",
+        "Local costs up to 70 % of value for green-category projects",
         "At least one payment per year, in connection with interest payment",
         "Loan term max. 18 years, up to 22 years for green-category projects",
-        "A minimum interest rate of 5 % on all covered tranches"
+        "A minimum fixed interest rate of 5 % applies to all covered tranches"
       ],
       "correct": [0, 1, 2, 3],
       "why": "85 % / 15 %, local costs, annual payment and the 18- or 22-year tenor are the stated conditions. There is no fixed minimum interest rate — the interest side is instead handled by the separate CIRR fixed interest rate programme."
@@ -814,13 +814,13 @@
       "src": "Lecture 2 · Sustainable lending",
       "q": "Under the OECD sustainable lending principles, what happens when a lower-income country is under an ongoing IMF or World Bank programme?",
       "options": [
-        "Commercial borrowing is limited via a Commercial Lending Window, and pending ECA-covered financings must be reported to the IMF / World Bank",
+        "Commercial borrowing is capped by a Commercial Lending Window",
         "All ECA cover is automatically granted at reduced premiums",
-        "The country is excluded from any form of financing",
-        "Only grants are permitted, and repayment is waived"
+        "The country is excluded from every form of external financing",
+        "Only grants are permitted and all repayment obligations are waived"
       ],
       "correct": 0,
-      "why": "The aim is to prevent renewed over-indebtedness of HIPC and MDRI countries. Each country gets a Commercial Lending Window reviewed annually against budget consolidation progress; development loans should carry a grant element of up to 35 %, and without approval the cover may not legally be granted."
+      "why": "The aim is to prevent renewed over-indebtedness of HIPC and MDRI countries. Each country gets a Commercial Lending Window reviewed annually against budget consolidation progress, and pending ECA-covered financings must be reported to the IMF / World Bank; development loans should carry a grant element of up to 35 %, and without approval the cover may not legally be granted."
     },
     {
       "id": "l2-hipc-01",
@@ -866,11 +866,11 @@
         "Process improvement",
         "Customer relationship",
         "Global procurement",
-        "Market / price evaluations",
-        "Reduction of the number of building permits"
+        "Market / price analysis",
+        "Fewer building permits"
       ],
       "correct": [0, 1, 2, 3, 4, 5],
-      "why": "The six fields around strategic procurement are volume concentration, product improvement, process improvement, customer relationship, global procurement and market/price evaluations. Building permits are a matter of public law, not procurement strategy."
+      "why": "The six fields around strategic procurement are volume concentration, product improvement, process improvement, customer relationship, global procurement and market/price analysis. Building permits are a matter of public law, not procurement strategy."
     },
     {
       "id": "l2-proc-process-01",
@@ -897,9 +897,9 @@
       "src": "Lecture 2 · Procurement strategies",
       "q": "In the make-or-buy matrix, a service with <strong>high internal complexity</strong> (significant internal resources or specialised know-how) and <strong>low external complexity</strong> (easy market access, many suppliers, low risk) points to which strategy?",
       "options": [
-        "Make",
-        "Spontaneous procurement",
-        "Capital participations",
+        "Make — keep the service in house",
+        "Spontaneous market procurement",
+        "Capital participation in a supplier",
         "Long-term framework contract"
       ],
       "correct": 0,
@@ -912,8 +912,8 @@
       "src": "Lecture 2 · Procurement strategies",
       "q": "Which questions does the lecture list as <em>internal</em> influence factors in the make-or-buy decision?",
       "options": [
-        "Does the service have a high strategic importance (differentiation potential, performance on the critical path)?",
-        "Are the technical know-how and capital available?",
+        "Does the service have a high strategic importance for differentiation and the critical path?",
+        "Are the necessary technical know-how and the required capital available in house?",
         "Are these services available on the procurement market, and is there a suitable subcontractor?",
         "What are the advantages of outsourcing in terms of price, quality, flexibility and reliability?"
       ],
@@ -927,10 +927,10 @@
       "src": "Lecture 2 · Standardization",
       "q": "The lecture shows an increasing degree of standardization. Which sequence does it follow?",
       "options": [
-        "Repeated use of components/methods/processes → prefabrication on or off site → modularization of large units",
+        "Repeated use of components → prefabrication → modularization",
         "Modularization → prefabrication → repeated use of components",
         "Prefabrication → repeated use of components → single-piece production",
-        "Global sourcing → local sourcing → national sourcing"
+        "Global sourcing → national sourcing → single-piece production"
       ],
       "correct": 0,
       "why": "Standardization deepens from simply reusing the same components and processes, through prefabrication, to modularizing whole large units. The stated goals stay the same throughout: improved productivity and quality, reduced costs and construction time."
@@ -995,9 +995,9 @@
       "q": "The lecture splits construction-project logistics into two kinds of \"logistic goods\". Which?",
       "options": [
         "Personnel logistics and material/equipment logistics",
-        "Inbound logistics and outbound logistics",
-        "Local logistics and global logistics",
-        "Approved and unapproved material"
+        "Inbound logistics and outbound logistics of the whole site",
+        "Local site logistics and global supply logistics",
+        "Approved and unapproved material deliveries"
       ],
       "correct": 0,
       "why": "Employees (expatriates, TCNs, locals) and material/equipment (from Germany, from third countries, from the local market) are the two flows onto the site — the same three-source pattern applies to both, which is why the lecture draws them as mirror images."
@@ -1057,7 +1057,7 @@
         "Combine both — option 1 in the first phase, option 2 in the second",
         "Always option 1, because availability outweighs capital cost",
         "Always option 2, because capital commitment must be avoided",
-        "Neither — spare parts should be produced on site"
+        "Neither — spare parts should be produced on the site itself"
       ],
       "correct": 0,
       "why": "Option 1 guarantees availability but ties up a lot of capital for a long time; option 2 buys only what is needed but at high per-part purchase and transport cost. The optimum is a stocked start followed by demand-driven purchasing, optionally outsourced as consignment stock."
@@ -1079,10 +1079,10 @@
       "src": "Lecture 2 · Incoterms",
       "q": "Which statements about Incoterms are correct?",
       "options": [
-        "They are trade clauses for contracting in international trade in goods",
-        "They define the responsibilities of buyers and sellers and allocate costs and risks",
-        "They are voluntarily integrable into a contract",
-        "The rulebook distinguishes 11 trading conditions",
+        "They are trade clauses used in international trade in goods",
+        "They define buyer and seller responsibilities and allocate cost and risk",
+        "They are voluntarily integrable into an individual contract",
+        "The rulebook distinguishes 11 different trading conditions",
         "They automatically apply to every cross-border contract by law"
       ],
       "correct": [0, 1, 2, 3],
@@ -1131,8 +1131,8 @@
       "options": [
         "DDP — delivered carriage paid, duty paid",
         "DDU — delivered carriage paid, duty unpaid",
-        "CIF — costs, insurance and freight paid to the port of destination",
-        "EXW — ex works"
+        "CIF — cost, insurance and freight to the port",
+        "EXW — ex works at the supplier's factory gate"
       ],
       "correct": 0,
       "why": "DDP is the maximum-obligation clause for the seller: everything up to and including import duty at the named place. DDU stops just short of the duty, CIF stops at the port of destination, and EXW is the opposite extreme — the buyer collects at the factory gate."
@@ -1197,10 +1197,10 @@
       "src": "Lecture 3 · Osgood",
       "q": "In Osgood's model of cultural levels, what is the difference between <em>percepta</em> and <em>concepta</em>?",
       "options": [
-        "Percepta are the descriptive concept — results of behaviour and behaviour itself; concepta are the explicative concept — the cause of behaviour",
+        "Percepta describe behaviour, concepta explain its cause",
         "Percepta are individual, concepta are collective",
-        "Percepta are modern, concepta are traditional",
-        "Percepta are verbal, concepta are non-verbal"
+        "Percepta are modern culture, concepta traditional culture",
+        "Percepta are verbal culture, concepta non-verbal culture"
       ],
       "correct": 0,
       "why": "Percepta (descriptive) split into material culture — fashion, architecture, art — and social culture — customs, mores, rituals. Concepta (explicative) is mental culture: values, norms and attitudes, i.e. the cause of the behaviour you observe."
@@ -1258,10 +1258,10 @@
       "src": "Lecture 3 · Lewis",
       "q": "In a meeting your counterpart listens without interrupting, gives no direct answer, avoids any open contradiction and says \"we will study this carefully\". Which Lewis type does this behaviour suggest, and what follows for you?",
       "options": [
-        "Reactive — expect indirect signals, do not force a confrontation, and read the absence of a yes as a possible no",
+        "Reactive — read the indirect signals and do not force a confrontation",
         "Multi-active — push harder emotionally to get a decision in the room",
         "Linear-active — insist on the agenda and demand a logical justification",
-        "None of these — the behaviour is purely individual and carries no cultural information"
+        "None of these — the behaviour is individual and carries no cultural signal"
       ],
       "correct": 0,
       "why": "Not interrupting, avoiding confrontation and never losing face are the reactive markers. Pushing harder would risk exactly the embarrassment the reactive type avoids; the productive move is to give time and to read the indirect signals."
@@ -1291,8 +1291,8 @@
       "options": [
         "Low uncertainty avoidance",
         "High uncertainty avoidance",
-        "Low individualism",
-        "High power distance"
+        "Low individualism score",
+        "High power distance score"
       ],
       "correct": 0,
       "why": "High uncertainty avoidance is the effort to control the future through institutions; accepting unplannability is the low end. This dimension is directly relevant in project work — it predicts how much detailed scheduling and contractual hedging a partner will expect."
@@ -1335,10 +1335,10 @@
       "src": "Lecture 3 · Intercultural communication",
       "q": "Which two obstacles does the lecture name as the biggest for successful collaboration?",
       "options": [
-        "Misunderstandings due to different cultural traditions, and various standards in the workplace",
+        "Cultural misunderstandings and differing workplace standards",
         "Insufficient technical training and outdated software",
-        "Currency risk and customs delays",
-        "Weak contract drafting and missing insurance"
+        "Currency fluctuation risk and delays at customs clearance",
+        "Weak contract drafting and inadequate insurance cover"
       ],
       "correct": 0,
       "why": "The slide names cultural misunderstandings and differing workplace standards. The other options are real project risks but belong to Lectures 2, 4 and 6 — the point here is that the biggest obstacles are human, not technical."
@@ -1376,10 +1376,10 @@
       "src": "Lecture 3 · Bennett",
       "q": "A site manager says: \"People are people everywhere — the cultural differences are really not that important, we all just want to build.\" Which Bennett stage is this?",
       "options": [
-        "Downplay — still ethnocentric",
-        "Accept — the first ethnorelative stage",
-        "Adapt",
-        "Integrate"
+        "Downplay — still ethnocentric in outlook",
+        "Acceptance — the first ethnorelative stage",
+        "Adapt — shifting frame of reference",
+        "Integrate — a multicultural identity"
       ],
       "correct": 0,
       "why": "Minimising the differences is stage 3, the last ethnocentric one: the speaker's own frame is silently taken as the universal one. Acceptance would mean recognising that other ways of doing and seeing genuinely exist."
@@ -1392,7 +1392,7 @@
       "q": "How does the lecture frame conflicts in projects?",
       "options": [
         "Conflicts are normal — what matters is how they are resolved",
-        "Conflicts must be prevented at all costs, since they always damage the project",
+        "Conflicts must be prevented, because they always damage the project",
         "Conflicts should be escalated to arbitration immediately",
         "Conflicts only arise in teams without a clear hierarchy"
       ],
@@ -1406,12 +1406,12 @@
       "src": "Lecture 3 · Personnel management",
       "q": "Which general requirements does the lecture set for personnel in international projects?",
       "options": [
-        "Great regional and mental flexibility",
+        "Great regional and mental flexibility abroad",
         "Language skills — very good to contract-proof",
-        "Tolerance towards other cultures and intercultural skills",
-        "Loyalty and the ability to balance conflicting interests",
-        "Head office knowledge and contacts",
-        "A doctorate in civil engineering"
+        "Tolerance of other cultures and intercultural skills",
+        "Loyalty and the ability to balance opposing interests",
+        "Knowledge of the head office and contacts there",
+        "A doctoral degree in civil engineering or law"
       ],
       "correct": [0, 1, 2, 3, 4],
       "why": "Flexibility, contract-proof language, tolerance, loyalty, assertiveness, decision-making competence, contract reliability and head-office contacts make the list. Formal academic titles do not — the lecturer's own quote is \"I did not graduate from any university, except the university of life\"."
@@ -1469,13 +1469,13 @@
       "src": "Lecture 3 · PM in team building",
       "q": "Which actions can the project manager take in the intercultural team-building process?",
       "options": [
-        "Kick-off event",
-        "Information about the new culture",
+        "Organization of a joint kick-off event",
+        "Information about the new culture and country",
         "Organization of an intercultural training",
-        "Facilitating exchange",
+        "Facilitating exchange between team members",
         "Allocation of tasks according to strengths",
-        "Driving the solution-finding process and setting common goals",
-        "Assigning each nationality to a separate work package to avoid friction"
+        "Driving solution-finding and setting common goals",
+        "Assigning each nationality its own work package"
       ],
       "correct": [0, 1, 2, 3, 4, 5],
       "why": "The first four measures belong to the early phase (exchange of information, avoidance of stereotyping), the last two to the later phase (awareness of culture-specific strengths, commonly negotiated norms). Segregating nationalities is the opposite of the model, which aims at synergy effects and identification with the team."
@@ -1516,12 +1516,12 @@
       "src": "Lecture 3 · Success factors",
       "q": "Which success factors for intercultural cooperation does the lecture list?",
       "options": [
-        "Good project organisation — clear tasks, responsibilities and processes",
+        "Good project organisation and clear responsibilities",
         "Willingness to accept constructive criticism",
-        "Positive basic attitude",
-        "Cultural awareness",
-        "Solid language skills",
-        "Identical professional background of all team members"
+        "A positive basic attitude towards others",
+        "Awareness of other cultures and customs",
+        "Solid language skills across the team",
+        "An identical professional background in the team"
       ],
       "correct": [0, 1, 2, 3, 4],
       "why": "Five factors, and the summarising line is that all team members need a mixture of hard and soft skills. Uniform backgrounds are not a success factor — the whole point of the intercultural team is the synergy from diversity."
@@ -1549,10 +1549,10 @@
       "src": "Lecture 3 · Leadership",
       "q": "The lecture splits leadership into task-based and employee-related management. Which statement does it make about virtual teams?",
       "options": [
-        "The importance of employee-related leadership tasks increases in virtual teams",
+        "Employee-related leadership grows more important in virtual teams",
         "Task-based management fully replaces employee-related management",
-        "Leadership tasks can never be distributed within the team",
-        "Virtual teams need no leadership at all if the tools are good"
+        "Leadership tasks can never be distributed within the project team",
+        "Virtual teams need no leadership at all if the tools are good enough"
       ],
       "correct": 0,
       "why": "Distance removes the informal contact that normally sustains the social system, so the employee-related side has to be worked at deliberately. The lecture also notes that individual management tasks <em>can</em> be distributed within the team."
@@ -1620,10 +1620,10 @@
       "src": "Lecture 3 · Guest lecture, Midstad",
       "q": "The Midstad guest lecture argues for mixed-use development. What does the Berlin transaction data on the fragmentation index show?",
       "options": [
-        "The higher the fragmentation index, the higher the purchase price — a 0.1-point rise increases the price by about 3.47 %",
+        "A higher index means a higher price — about +3.47 % per 0.1 point",
         "Mixed use lowers the purchase price because it complicates management",
-        "The index has no measurable effect on price",
-        "Only office buildings benefit from a high index"
+        "The index shows no measurable effect on the purchase price",
+        "Only office buildings show a price benefit from a high index"
       ],
       "correct": 0,
       "why": "An index of 1.0 means maximum balance and diversity of uses within the building. The lecture's commercial argument is that a diverse range of uses raises both the selling price and the resilience of the asset — mixed use as a value driver, not just a planning ideal."
@@ -1635,10 +1635,10 @@
       "src": "Lecture 3 · Guest lecture, Midstad",
       "q": "What does the guest lecture mean by the \"S\" in ESG when it comes to urban redevelopment?",
       "options": [
-        "Social factors — schools, health centres and multi-purpose spaces enhance quality of life and acceptance",
-        "Sustainability certificates for the building envelope",
-        "Structural safety of the existing substance",
-        "Speed of the approval procedure"
+        "Social factors — schools, health centres and shared spaces",
+        "Sustainability certification of the building envelope",
+        "Structural safety of the existing building substance on site",
+        "Speed of the municipal planning approval procedure"
       ],
       "correct": 0,
       "why": "The social component is presented as a hard value driver: acceptance and quality of life produce long-term added value and sustainable value stability for stakeholders — which is why urban concept advisory works at the interface of politics, business and society."
@@ -1692,9 +1692,9 @@
         "Consistency across borders — a well-established framework the parties can agree on",
         "Balanced risk allocation that is perceived as neutral, building trust between parties",
         "Neutral governing law and dispute resolution, e.g. arbitration in a third country",
-        "Investor and lender confidence — the World Bank and development banks use FIDIC as a standard form",
+        "Investor and lender confidence — the World Bank and development banks use FIDIC",
         "Dispute resolution mechanisms such as early warnings and risk registers",
-        "Because FIDIC overrides the mandatory law of the host country"
+        "Because FIDIC overrides the mandatory law and public policy of the host state"
       ],
       "correct": [0, 1, 2, 3, 4],
       "why": "Five good reasons plus modularity. But FIDIC never overrides mandatory law — the guest lecture is emphatic that mandatory law, permits, safety rules and public policy can override the contract."
@@ -1706,8 +1706,8 @@
       "src": "Lecture 4 · Guest lecture, Murgatroyd",
       "q": "Which of these are listed as <em>common misunderstandings</em> about FIDIC?",
       "options": [
-        "\"FIDIC is a law\" — in fact the books are standard forms operating under a legal system, neither a legal system nor laws themselves",
-        "\"FIDIC is the same as the VOB, just in English\" — in fact FIDIC is not embedded in a specific legal jurisdiction",
+        "\"FIDIC is a law\" — in fact the books are standard forms operating under a legal system",
+        "\"FIDIC is the same as the VOB, just in English\" — in fact it is tied to no jurisdiction",
         "\"The FIDIC books are the whole contract\" — in fact they are only the General Conditions",
         "\"FIDIC contracts bind the parties\" — in fact they are merely a non-binding recommendation"
       ],
@@ -1721,7 +1721,7 @@
       "src": "Lecture 4 · Guest lecture, Murgatroyd",
       "q": "A clause in the Particular Conditions conflicts with a mandatory safety regulation of the host country. What applies?",
       "options": [
-        "The mandatory law — it can override the contract, which is why you must ask both \"what does the contract say?\" and \"what does the governing law require?\"",
+        "The mandatory law, which overrides the agreed clause",
         "The contract, because the parties freely agreed on it",
         "Whichever the Engineer determines to be more economical",
         "FIDIC's Golden Principles, which rank above national law"
@@ -1736,8 +1736,8 @@
       "src": "Lecture 4 · General conditions",
       "q": "Under FIDIC, which law governs the contract?",
       "options": [
-        "The law of the country specified in the Special / Particular Conditions",
-        "Always the law of the contractor's home country",
+        "The law of the country named in the Particular Conditions",
+        "Always the law of the country where the contractor is based",
         "Always Swiss law, because FIDIC is headquartered in Geneva",
         "Always the law of the country where the works are executed"
       ],
@@ -1833,7 +1833,7 @@
         "Silver Book",
         "Red Book",
         "Green Book",
-        "Blue Book"
+        "Emerald Book"
       ],
       "correct": 0,
       "why": "\"At the turn of a key\" is the Silver Book's own wording for EPC/turnkey. The contractor performs all engineering, procurement and construction; administration is by the employer unless it appoints a representative; there is no Engineer."
@@ -1860,7 +1860,7 @@
       "src": "Lecture 4 · Which contract",
       "q": "A small, repetitive job of short duration and low capital value needs a contract without specialist sub-contracts and without an \"Engineer\". Which book?",
       "options": [
-        "Green Book — short form of contract",
+        "Green Book",
         "Red Book",
         "Blue Book",
         "Emerald Book"
@@ -1875,10 +1875,10 @@
       "src": "Lecture 4 · Which contract",
       "q": "A World Bank–funded road project needs a construction contract with anti-corruption provisions, social safeguards and dispute boards built in. Which book?",
       "options": [
-        "Pink Book — MDB Harmonised Edition of the Red Book",
+        "Pink Book — MDB edition",
         "Red Book, 1999 edition",
-        "Silver Book",
-        "Green Book"
+        "Silver Book, turnkey",
+        "Green Book, short form"
       ],
       "correct": 0,
       "why": "The Pink Book is the Red Book harmonised with Multilateral Development Bank requirements — same underlying structure, plus the additional provisions the banks insist on. That is also why the guest lecture cites lender confidence as a reason for using FIDIC at all."
@@ -1891,11 +1891,11 @@
       "q": "Which features does the lecture give for the Blue Book (dredging and reclamation works)?",
       "options": [
         "Applicable to any size and complexity of dredging and reclamation work",
-        "The works are designed by the employer or its Engineer, but contractor-designed works can also be included",
-        "A 'fitness for purpose' obligation",
-        "No remedying of dredging defects after completion",
+        "Design by the employer or its Engineer, with contractor design possible",
+        "A strict 'fitness for purpose' obligation on the contractor",
+        "No remedying of dredging defects after completion of the works",
         "Dispute resolution by a Dispute Adjudication Board and ICC arbitration",
-        "No provision for advance payment"
+        "There is no provision for an advance payment to the contractor"
       ],
       "correct": [0, 1, 2, 3, 4],
       "why": "The Blue Book <em>does</em> provide for advance payment — it is the Green Book that has none. The distinctive dredging features are the fitness-for-purpose obligation, the release of the dredging retention in full on completion, and the absence of defect remedying after completion (you cannot go back and fix a seabed)."
@@ -1907,10 +1907,10 @@
       "src": "Lecture 4 · Red Book",
       "q": "How does a Red Book contract come into effect?",
       "options": [
-        "When the Employer accepts the Tender by issuing the Letter of Acceptance; the parties may then sign a Contract Agreement",
+        "When the Employer issues the Letter of Acceptance",
         "Only when both parties sign the Contract Agreement",
         "When the Engineer issues the first payment certificate",
-        "On the Commencement Date fixed in the programme"
+        "On the Commencement Date fixed in the Engineer's notice"
       ],
       "correct": 0,
       "why": "Red and Yellow Books come into effect with the Letter of Acceptance, with the Contract Agreement following as a formality. The Silver Book is the contrast: it comes into effect typically on signing the Contract Agreement, because there is no Engineer-administered tender acceptance in the same sense."
@@ -1953,10 +1953,10 @@
       "src": "Lecture 4 · Guest lecture · The Engineer",
       "q": "Which statements about the Engineer are correct?",
       "options": [
-        "The Engineer is determined by the Employer — sometimes the Contractor does not even know who it is when entering into the Contract",
-        "The Engineer has the obligation to act fairly when making determinations or certifying payments",
-        "The Engineer is paid by the Employer and is therefore not completely impartial in reality",
-        "There is no direct contractual relationship between the Engineer and the Contractor",
+        "The Engineer is determined by the Employer — the Contractor may not know who it is",
+        "The Engineer must act fairly when making determinations or certifying payments",
+        "The Engineer is paid by the Employer and is therefore not completely impartial",
+        "There is no direct contractual relationship between the Engineer and Contractor",
         "The Engineer is a party to the construction contract alongside Employer and Contractor"
       ],
       "correct": [0, 1, 2, 3],
@@ -1969,12 +1969,12 @@
       "src": "Lecture 4 · Guest lecture · The Engineer",
       "q": "Which are main tasks of the Engineer?",
       "options": [
-        "Certify — e.g. monthly invoices",
-        "Inspect — e.g. quality of the works",
-        "Review and approve — e.g. design, drawings, programme, Contractor's proposals",
-        "Instruct and determine — e.g. variations, suspensions, claims and extensions of time",
-        "Issue Taking-Over Certificates",
-        "Amend the Contract where it proves impractical"
+        "Certify — e.g. the monthly invoices and payments",
+        "Inspect — e.g. the quality of the works on site",
+        "Review and approve — e.g. design, drawings, programme",
+        "Instruct and determine — e.g. variations, suspensions, claims",
+        "Issue the Taking-Over Certificates for the works",
+        "Amend the Contract where it proves impractical in use"
       ],
       "correct": [0, 1, 2, 3, 4],
       "why": "Certify, inspect, give opinion, review, approve, valuate, instruct, determine and issue certificates. The one thing the Engineer explicitly <em>cannot</em> do is amend the Contract — nor relieve either party of any duty, obligation or responsibility under it."
@@ -1986,11 +1986,11 @@
       "src": "Lecture 4 · Guest lecture · Engineer's authority",
       "q": "For which actions does the Engineer need the specific approval of the Employer?",
       "options": [
-        "Agreeing an Extension of Time and/or additional Cost",
-        "Instructing a Variation — except in emergencies and where it increases the Accepted Contract Amount by less than 1 %",
-        "Approving a proposal for a Variation by the Contractor",
-        "Specifying the amount payable in each of the applicable currencies",
-        "Inspecting the quality of the works on site"
+        "Agreeing an Extension of Time and/or any additional Cost",
+        "Instructing a Variation, except in an emergency or below 1 %",
+        "Approving a proposal for a Variation made by the Contractor",
+        "Specifying the amount payable in each applicable currency",
+        "Inspecting the quality of the works as they proceed on the site"
       ],
       "correct": [0, 1, 2, 3],
       "why": "The four approval-bound acts are the ones that cost the Employer time or money. Routine inspection needs no approval. Note the two carve-outs on variations: emergencies, and anything below the 1 % threshold of the Accepted Contract Amount."
@@ -2002,9 +2002,9 @@
       "src": "Lecture 4 · Guest lecture · Determinations",
       "q": "How must the Engineer proceed when making a Determination under sub-clause 3.7?",
       "options": [
-        "Consult with each Party in an endeavour to reach agreement; only if no agreement is achieved, make a fair determination in accordance with the Contract, taking due regard of all relevant circumstances",
-        "Decide immediately and without consultation, to save time",
-        "Refer the matter directly to the Dispute Board",
+        "Consult both Parties first; failing agreement, determine fairly",
+        "Decide at once without consulting the Parties, in order to save time",
+        "Refer the matter directly to the Dispute Adjudication Board",
         "Adopt the Employer's position, since the Employer pays its fee"
       ],
       "correct": 0,
@@ -2017,9 +2017,9 @@
       "src": "Lecture 4 · Guest lecture · Clause 3.5",
       "q": "Under sub-clause 3.5 (Instructions of the Engineer), from whom shall the Contractor take instructions?",
       "options": [
-        "Only from the Engineer, or from a person to whom the appropriate authority has been delegated",
+        "Only from the Engineer or a properly authorised delegate",
         "From anyone on the Employer's side who is present on site",
-        "From the Engineer's Resident Engineer only",
+        "From the Engineer's Resident Engineer and no one else",
         "From the financier, where the project is externally funded"
       ],
       "correct": 0,
@@ -2067,10 +2067,10 @@
       "src": "Lecture 4 · Guest lecture · Particular Conditions",
       "q": "Why does the guest lecture single out Particular Conditions Part B as the document to read most carefully?",
       "options": [
-        "Because it contains all additions, deletions and changes to the General Conditions and may alter the initial contract significantly",
+        "Because it carries every change to the General Conditions",
         "Because it is the only document signed by both parties",
         "Because it is drafted by FIDIC itself and cannot be negotiated",
-        "Because it sets the contract price"
+        "Because it fixes the contract price and payment terms"
       ],
       "correct": 0,
       "why": "Part B is where the standard form gets edited. The worked example shows an amendment on the replacement of the Engineer that hands the Employer unilateral power — the sort of change that looks like a formality and destroys the balance of the model."
@@ -2082,12 +2082,12 @@
       "src": "Lecture 4 · Golden Principles",
       "q": "Which are the five FIDIC Golden Principles, introduced in 2019?",
       "options": [
-        "Keep duties, rights, roles and responsibilities consistent with the chosen book",
-        "Draft the Particular Conditions clearly and unambiguously",
-        "Do not change the risk allocation so far that the form becomes misleading",
+        "Keep duties, rights, roles and responsibilities as in the book",
+        "Draft the Particular Conditions clearly and without ambiguity",
+        "Do not shift the risk allocation so far that the form misleads",
         "Preserve reasonable time periods for notices and procedures",
-        "Keep dispute avoidance and resolution mechanisms workable",
-        "Always choose the law of a European country as governing law"
+        "Keep the dispute avoidance and resolution mechanisms workable",
+        "Always choose the law of a European country as the governing law"
       ],
       "correct": [0, 1, 2, 3, 4],
       "why": "Choice of governing law is free and is recorded in the Particular Conditions — it is not a Golden Principle. FIDIC introduced the principles in 2019 because of widespread misuse of its brand: heavily amended documents were still being called \"FIDIC\"."
@@ -2099,10 +2099,10 @@
       "src": "Lecture 4 · Golden Principles",
       "q": "What is the purpose of the Golden Principles, as the guest lecture frames it?",
       "options": [
-        "To preserve the logic of the standard form — Particular Conditions may tailor the deal, but excessive changes undermine the model",
-        "To make the FIDIC books legally binding without incorporation into a contract",
+        "To protect the logic of the standard form from excessive changes",
+        "To make the FIDIC books binding without incorporation in a contract",
         "To replace the General Conditions in projects above a certain value",
-        "To standardise the fees of consulting engineers"
+        "To standardise the fee scales of consulting engineers worldwide"
       ],
       "correct": 0,
       "why": "The forms are built around an intended allocation of roles, risks and procedures. The principles are a warning against changing clauses without understanding the system — \"do not judge a book by its cover\" is the slide's own summary."
@@ -2114,10 +2114,10 @@
       "src": "Lecture 4 · Structure of the contract",
       "q": "The FIDIC sample contract framework is divided into three parts. Which?",
       "options": [
-        "General contract conditions; instructions for agreeing the special contract conditions; forms for tenders, the contract document and the dispute settlement agreement",
-        "Technical specification; bill of quantities; drawings",
-        "Employer's obligations; contractor's obligations; engineer's obligations",
-        "Pre-contract; execution; defects liability"
+        "General conditions; guidance on particular conditions; forms",
+        "Technical specifications; bill of quantities; drawings",
+        "Employer's duties; contractor's duties; engineer's duties",
+        "Pre-contract stage; execution stage; defects liability"
       ],
       "correct": 0,
       "why": "General conditions, guidance for drafting the particular conditions, and the forms. The middle part is what makes the suite adaptable without rewriting it from scratch — and what the Golden Principles then discipline."
@@ -2168,9 +2168,9 @@
       "q": "The contract states durations in days. Under sub-clause 1.1.3.9, what does \"day\" mean?",
       "options": [
         "A calendar day — and a year means 365 days",
-        "A working day, excluding weekends and public holidays",
-        "Whatever the local labour law defines",
-        "A shift of eight working hours"
+        "A working day, excluding weekends and holidays",
+        "Whatever the local labour law defines as a day",
+        "A shift of eight hours actually worked on site"
       ],
       "correct": 0,
       "why": "Defined terms exist precisely so that everyday assumptions do not creep in. The PM habit the lecture recommends: read the definitions before arguing about obligations, and quote the defined term exactly in notices and records."
@@ -2182,13 +2182,13 @@
       "src": "Lecture 4 · Clause 1.3",
       "q": "You receive an email and are unsure whether it counts as a valid contractual communication. What decides?",
       "options": [
-        "Whether the agreed system of electronic transmission is stated in the Appendix to Tender — communications must be in writing and delivered by hand against receipt, by mail or courier, or via an agreed electronic system",
-        "Whether the sender is a senior manager",
-        "Whether the email has a read receipt",
+        "Whether the Appendix to Tender agrees an electronic system",
+        "Whether the sender holds a senior management position",
+        "Whether the email carries a confirmed read receipt",
         "Nothing — email is never a valid contractual communication"
       ],
       "correct": 0,
-      "why": "The channel is contractually defined, so the answer is always \"it depends on the Appendix to Tender\". The related trap is treating an informal letter, email or site chat as a formal notice; the useful habit is setting up the communication matrix before work starts and keeping a decision log."
+      "why": "Communications must be in writing and delivered by hand against receipt, by mail or courier, or through the electronic system agreed in the Appendix to Tender — so the answer is always \"it depends on the Appendix to Tender\". The related trap is treating an informal letter, email or site chat as a formal notice; the useful habit is setting up the communication matrix before work starts and keeping a decision log."
     },
     {
       "id": "l4-design-books-01",
@@ -2211,9 +2211,9 @@
       "src": "Lecture 4 · Clause 8",
       "q": "Which sub-clause gives the overview of causes that may lead to an Extension of Time for Completion, and what is the catch?",
       "options": [
-        "Sub-clause 8.4 gives the overview, but the specific details for the different causes are found in different clauses",
-        "Sub-clause 8.4 is exhaustive and self-contained",
-        "Sub-clause 20.1 is the only source of extension entitlements",
+        "Sub-clause 8.4 lists them; the details sit in other clauses",
+        "Sub-clause 8.4 is exhaustive and entirely self-contained",
+        "Sub-clause 20.1 is the only source of extensions of time",
         "Extensions of time are always granted by the Dispute Board"
       ],
       "correct": 0,
@@ -2240,10 +2240,10 @@
       "src": "Lecture 4 · Clause 13",
       "q": "Which statement best captures the guest lecture's point about variations?",
       "options": [
-        "A change needs a time, cost and risk assessment — not just a technical instruction",
-        "Any change instructed on site is automatically a variation",
-        "Variations may only ever add work, never omit it",
-        "Variations do not require documentation if both parties agree verbally"
+        "A change needs a time, cost and risk assessment, not just an instruction",
+        "Any change instructed on site automatically counts as a variation",
+        "A variation may only add work, never omit or reduce any of it",
+        "Variations do not require any documentation if both parties agree verbally"
       ],
       "correct": 0,
       "why": "Quantities, quality, sequence, timing, omissions <em>and</em> additions may all change, but only the contractually authorised route should change the works, and the consequence must be assessed in all three dimensions. Verbal agreement leaves no record — the opposite of what the clause is for."
@@ -2255,10 +2255,10 @@
       "src": "Lecture 4 · Clause 13",
       "q": "What is the key idea behind the \"change of law\" provisions?",
       "options": [
-        "Fairness against the tender baseline — the parties priced the project under one legal environment, and the contract may adjust if that environment changes",
+        "Fairness against the tender baseline if the legal environment changes",
         "The contractor must absorb all legal changes as part of its business risk",
-        "Any change of law automatically terminates the contract",
-        "Only changes in tax law are relevant"
+        "A change of law automatically terminates the contract at once",
+        "Only changes in tax and customs law count as a change of law"
       ],
       "correct": 0,
       "why": "Three questions follow from that idea: what law and conditions were assumed at tender (baseline), what cost/time/method change the new requirement caused (impact), and can the team show the link (record). Without the record the entitlement fails, however fair it may be in principle."
@@ -2335,10 +2335,10 @@
       "src": "Lecture 4 · Clause 20",
       "q": "What does \"use it or lose it\" mean for FIDIC claims?",
       "options": [
-        "A notice is mandatory, not optional — if it is not given in the required form and time, the party loses its entitlement (time bar)",
-        "A claim may be raised at any time until the final account is closed",
-        "Entitlement survives as long as the cost can be proved, regardless of timing",
-        "Only the Employer is subject to time bars"
+        "Notice is mandatory; miss the deadline and the entitlement is lost",
+        "A claim may be raised at any time until the final account closes",
+        "Entitlement survives whenever notified, as long as cost is proved",
+        "Only the Employer, not the Contractor, is subject to time bars"
       ],
       "correct": 0,
       "why": "Three rules: act early (notices are mandatory), act continuously (claims are managed throughout the project), act within time (late equals no entitlement). The rugby analogy on the slide: possession is only useful while the clock and the rules still allow the play."
@@ -2352,8 +2352,8 @@
       "options": [
         "Entitlement, notice and substantiation",
         "Delay, disruption and acceleration",
-        "Scope, schedule and budget",
-        "Notice, negotiation and litigation"
+        "Scope, schedule and project budget",
+        "Notice, negotiation and formal litigation"
       ],
       "correct": 0,
       "why": "Entitlement asks which contract event gives time or money relief; notice asks whether the other party was informed in the required form and time; substantiation asks whether cause, effect and amount can be shown with records. All three must hold — a well-founded claim notified late is worth nothing."
@@ -2365,11 +2365,11 @@
       "src": "Lecture 4 · Guest lecture · The hidden half",
       "q": "Which statements match the guest lecture's \"hidden half of project management\"?",
       "options": [
-        "Contracts do not solve problems — people do; a perfect contract does not prevent a poorly managed project",
-        "Most problems are behavioural, not technical, and issues escalate when communication breaks down",
-        "Complexity comes from stakeholders; alignment can be much harder than understanding the contract",
+        "Contracts do not solve problems, people do — a perfect contract cannot save a bad project",
+        "Most problems are behavioural, not technical, and escalate when communication fails",
+        "Complexity comes from stakeholders — alignment is harder than understanding the contract",
         "Effective problem-solving is proactive — the best claims are the ones that never arise",
-        "As a PM you manage the contract, not the people"
+        "As a PM you manage the contract and its clauses, rather than people and expectations"
       ],
       "correct": [0, 1, 2, 3],
       "why": "The lecture's framing is the reverse of the last option: \"as a PM you are not managing a contract — you are managing people, expectations and risk <em>through</em> it\". The PM is described as a translator who manages expectations, not just tasks."
@@ -2390,10 +2390,10 @@
       "src": "Lecture 4 · General conditions",
       "q": "FIDIC basically distinguishes between two types of risk. Which?",
       "options": [
-        "Risks of physical loss or damage, and risks of financial or time loss",
-        "Insurable and uninsurable risks",
-        "Employer's risks and third-party risks",
-        "Foreseeable and unforeseeable risks"
+        "Physical loss or damage, and financial or time loss",
+        "Insurable risks and non-insurable project risks",
+        "Employer's risks and third-party liability risks",
+        "Foreseeable risks and wholly unforeseeable risks"
       ],
       "correct": 0,
       "why": "Both types are then allocated to the parties in the risk, insurance and exceptional-events clauses. The allocation rule is asymmetric: the Employer's risks are the ones <em>specified</em> in the contract, and the Contractor carries <em>all other</em> risks."
@@ -2473,10 +2473,10 @@
       "src": "Lecture 4 · Standard contracts",
       "q": "Which standard form does the overview table rate as having \"very high\" international relevance?",
       "options": [
-        "FIDIC — the global standard, especially with international financing institutions",
-        "VOB/B — the German procurement and contract regulations",
-        "JCT — Joint Contracts Tribunal",
-        "ConsensusDocs"
+        "FIDIC — the international standard form",
+        "VOB/B — German construction contract regulations",
+        "JCT — the UK Joint Contracts Tribunal forms",
+        "ConsensusDocs — US standard contract forms"
       ],
       "correct": 0,
       "why": "FIDIC is the only form rated \"very high\", explicitly because of its use with IFIs such as the World Bank. VOB/B and JCT are rated moderate (DACH region and UK/Commonwealth respectively) and ConsensusDocs low, being mostly US-based."
@@ -2488,12 +2488,12 @@
       "src": "Lecture 4 · Principles",
       "q": "Which qualities does the lecture claim for FIDIC contracts?",
       "options": [
-        "Clear and understandable — necessary clauses, detailed definitions, consistent structure",
-        "Fair and equal — risk distributed to the party that can bear, control and manage it",
-        "Designed and set up by independent consulting engineers",
-        "Complete and adaptable — the scope meets normal needs and adapts easily to specific requirements",
-        "Acknowledged — convincing reputation, worldwide acceptance, tested and proven",
-        "Legally binding worldwide without incorporation"
+        "Clear and understandable — detailed definitions and consistent structure",
+        "Fair and equal — risk goes to the party that can bear, control and manage it",
+        "Independent — designed and set up by independent consulting engineers",
+        "Complete and adaptable — the scope meets normal needs and adapts easily",
+        "Acknowledged — convincing reputation, worldwide acceptance, proven",
+        "Legally binding worldwide, even where not incorporated into the contract"
       ],
       "correct": [0, 1, 2, 3, 4],
       "why": "The five qualities are clarity, fairness, third-party drafting, adaptability and recognition. The risk principle is worth memorising in its exact form: risk goes to the party that <em>can bear it, can control it and can manage it</em> — not simply to the weaker party."
@@ -2505,10 +2505,10 @@
       "src": "Lecture 4 · Contracts Guide",
       "q": "What is the FIDIC Contracts Guide?",
       "options": [
-        "An official explanatory handbook published by FIDIC — a commentary and interpretation tool, not a contract itself",
-        "A binding annex that forms part of every FIDIC contract",
-        "The set of Particular Conditions for MDB-financed projects",
-        "A register of accredited FIDIC arbitrators"
+        "FIDIC's own explanatory handbook, not a contract",
+        "A binding annex forming part of every FIDIC contract",
+        "The Particular Conditions for MDB-financed projects",
+        "A register of accredited FIDIC arbitrators and adjudicators"
       ],
       "correct": 0,
       "why": "Published in 2001, the Guide explains how the Red, Yellow and Silver Books work in practice. It is explicitly <em>not</em> a contract — quoting it will not win an argument that the contract wording does not support."
@@ -2520,7 +2520,7 @@
       "src": "Lecture 4 · Agreements",
       "q": "The lecture distinguishes FIDIC <em>Conditions of Contract</em> from FIDIC <em>Agreements</em>. What is the difference?",
       "options": [
-        "Conditions of Contract govern the relationship between client and contractor; Agreements govern the relationship between client and consultants or subconsultants",
+        "Conditions of Contract: client–contractor; Agreements: client–consultant",
         "Conditions of Contract are binding, Agreements are recommendations",
         "Conditions of Contract apply abroad, Agreements only domestically",
         "Agreements are for public projects, Conditions of Contract for private ones"
@@ -2590,10 +2590,10 @@
       "src": "Lecture 5 · Innovation",
       "q": "The lecture points out that around 1900 about 38 % of cars in the USA were electric and 40 % steam-powered, with only 22 % running on gasoline — and that the first 3D-concrete-printed building was made in 1939. What is the point of these examples?",
       "options": [
-        "It is not enough to have a brilliant idea — it must also be implemented and scaled",
-        "Electric cars and 3D printing are technological dead ends",
+        "A brilliant idea is not enough — it must be implemented and scaled",
+        "Electric cars and 3D concrete printing are technological dead ends",
         "Innovation in construction is always faster than in the car industry",
-        "Old technologies are usually superior to new ones"
+        "Older technologies are usually superior to the newer ones"
       ],
       "correct": 0,
       "why": "Both technologies existed long before they mattered commercially. The lecture uses them against the assumption that novelty equals progress: an invention only becomes an innovation once it is implemented, scaled and commercialized."
@@ -2618,11 +2618,11 @@
       "src": "Lecture 5 · AutoCAD",
       "q": "AutoCAD is used as the counter-example of an innovation that <em>did</em> scale. Which reasons does the lecture give?",
       "options": [
-        "Released in 1982, it ran on ordinary PCs (MS-DOS) rather than on expensive workstations",
-        "In the 1980s it made CAD software affordable for smaller offices and engineers",
-        "By the 1990s it had become the industry standard (DWG standard)",
+        "Released in 1982, it ran on ordinary PCs rather than costly workstations",
+        "In the 1980s it made CAD affordable for smaller offices and engineers",
+        "By the 1990s it had become the industry standard via the DWG format",
         "The system is relatively inexpensive, modular, expandable and compatible",
-        "It was mandated by law for all public building projects"
+        "It was mandated by law for all public building projects in Europe"
       ],
       "correct": [0, 1, 2, 3],
       "why": "Affordability, the ordinary hardware base, modularity and compatibility drove adoption — by 1994 there were 750 AutoCAD training centres. No legal mandate was involved, which is exactly why it is a persuasive example of market-driven scaling."
@@ -2648,11 +2648,11 @@
       "q": "What characterises SID — STRABAG Innovation & Digitalisation?",
       "options": [
         "A centralized division reporting directly to the CEO",
-        "Drives the digital transformation — BIM, 5D, GIS, robotics",
-        "Innovates within construction",
-        "Serves as internal consultant and enabler",
-        "Fosters digital culture and sustainability",
-        "Operates as an external consultancy selling services to competitors"
+        "Drives digital transformation — BIM, 5D, GIS, robotics",
+        "Drives innovation within the construction business",
+        "Serves as an internal consultant and enabler to units",
+        "Fosters a digital culture and sustainable working",
+        "Operates as an external consultancy for competitors"
       ],
       "correct": [0, 1, 2, 3, 4],
       "why": "The reporting line to the CEO is the structural point: digitalisation is positioned as a governance matter, not a technical support function. SID acts internally as consultant and enabler rather than as an external service provider."
@@ -2664,11 +2664,11 @@
       "src": "Lecture 5 · Schils pilot",
       "q": "At the Schils power plant in Switzerland (2019–2020), which four processes were carried out model-based?",
       "options": [
-        "Excavation, using 3D excavator control",
-        "Survey and setting-out",
-        "Formwork and reinforcement work",
-        "Digital acceptance",
-        "Payroll accounting for the site staff"
+        "Excavation with 3D excavator control",
+        "Surveying and setting-out on site",
+        "Formwork and reinforcement works",
+        "Digital acceptance of the works",
+        "Payroll accounting for site staff"
       ],
       "correct": [0, 1, 2, 3],
       "why": "The pilot was the first paperless construction site using only 3D execution models: planned and executed collaboratively with the OpenBIM method, with reinforcement and formwork erected from an IFC model on a tablet. Payroll is not a model-based construction process."
@@ -2690,10 +2690,10 @@
       "src": "Lecture 5 · Circular principles",
       "q": "The lecture says construction projects are increasingly designed and built according to circular principles. What does it name as the decisive influence on whether circular-economy methods are actually applied?",
       "options": [
-        "It is project-dependent and significantly influenced by the clients' requirements",
-        "It depends solely on the contractor's internal sustainability targets",
-        "It is fully prescribed by EU regulation",
-        "It depends on the availability of recycled steel"
+        "It is project-dependent and driven by the clients' requirements",
+        "It depends only on the contractor's sustainability targets",
+        "It is prescribed in full by EU regulation and standards",
+        "It depends on the availability of recycled steel and concrete"
       ],
       "correct": 0,
       "why": "The demand side drives it — which is why an extract from a 2025 prequalification is shown as evidence. Clients are already asking for circularity and CO₂e information in tenders, so it becomes an award criterion rather than a voluntary extra."
@@ -2729,10 +2729,10 @@
       "src": "Lecture 5 · Life cycle cost",
       "q": "Why does the lecture put life cycle cost on the \"You should know\" list?",
       "options": [
-        "Because the initial construction cost is only a fraction of the cost a building causes over its life, so decisions must be judged over the whole cycle",
-        "Because life cycle cost is identical to the tender sum",
+        "Because construction cost is only a fraction of lifetime cost",
+        "Because the life cycle cost is identical to the tender sum",
         "Because operating cost is irrelevant once the building is handed over",
-        "Because it only applies to infrastructure, not to buildings"
+        "Because it applies only to infrastructure, never to buildings"
       ],
       "correct": 0,
       "why": "First cost versus follow-up cost is the whole point of the slide: the follow-up costs dominate. This is also what makes the Gold Book (design, build <em>and operate</em>) and circular design economically rational rather than merely virtuous."
@@ -2744,13 +2744,13 @@
       "src": "Lecture 5 · Sustainability report",
       "q": "How does the UN Framework Convention on Climate Change define climate neutrality, as quoted in the lecture?",
       "options": [
-        "Endeavour to minimize greenhouse gas emissions as much as possible and to offset unavoidable emissions through systematic offsetting measures",
-        "Emitting no greenhouse gases whatsoever at any point in the value chain",
-        "Buying enough carbon certificates to cover all emissions, without reducing them",
-        "Reducing emissions by at least 50 % against a 1990 baseline"
+        "Minimize emissions as far as possible, then offset what is unavoidable",
+        "Emitting no greenhouse gases at any point in the value chain",
+        "Buying carbon certificates for all emissions without reducing them",
+        "Cutting emissions by at least 50 % against a 1990 baseline year"
       ],
       "correct": 0,
-      "why": "The definition has two halves in a fixed order: minimize first, offset only what remains unavoidable. Offsetting alone (option 3) is not climate neutrality, and the definition does not require literal zero emissions."
+      "why": "The definition has two halves in a fixed order: minimize first, offset only what remains unavoidable. Buying certificates without reducing anything is not climate neutrality, and the definition does not require literal zero emissions."
     },
     {
       "id": "l5-milestones-01",
@@ -2787,13 +2787,13 @@
       "src": "Lecture 5 · Action areas",
       "q": "Which of these are among the eight action areas for energy consumption in the construction industry?",
       "options": [
-        "Buildings — climate-neutral operation of administration buildings used by the group",
-        "Passenger cars and commercial vehicles — conversion of the fleet to renewable energy sources",
-        "Construction site power and other construction-related energy — electrification of small equipment, office containers and cranes",
-        "Construction machinery and heavy goods vehicles — conversion to renewable energy sources",
-        "Asphalt mixing plants, stone and gravel plants, concrete plants and other production — conversion to renewable energy sources",
-        "Efficiency increase through conversion to new technologies such as electrification",
-        "Relocation of production to countries with lower energy prices"
+        "Buildings — climate-neutral operation of the group's administration buildings",
+        "Passenger cars and commercial vehicles — conversion of the fleet to renewables",
+        "Construction site power — electrification of small equipment, containers and cranes",
+        "Construction machinery and heavy goods vehicles — conversion to renewables",
+        "Asphalt mixing, gravel and concrete plants — conversion to renewable energy",
+        "Efficiency gains through conversion to new technologies like electrification",
+        "Relocation of production plants to countries with cheaper energy and lower taxes"
       ],
       "correct": [0, 1, 2, 3, 4, 5],
       "why": "The eight areas cover buildings, vehicles, site power, machinery, the three plant types and efficiency. Relocating emissions abroad is not a reduction at all — it contradicts the commitment to climate neutrality along the <em>entire value chain</em>."
@@ -2805,11 +2805,11 @@
       "src": "Lecture 5 · Reduction pathway",
       "q": "What accompanies the greenhouse-gas reduction pathway to make it verifiable?",
       "options": [
-        "Key actions linked to targets for 2030 and 2040 defined for each action area",
-        "Definition of specific metrics to monitor implementation and effectiveness",
-        "Monitoring and reporting",
-        "An annual target/actual comparison of the metric",
-        "A one-off audit at the end of the pathway in 2040"
+        "Key actions with 2030 and 2040 targets for each action area",
+        "Specific metrics to monitor implementation and effectiveness",
+        "Continuous monitoring and regular reporting of progress",
+        "An annual target/actual comparison of the metrics",
+        "A single one-off audit at the end of the pathway in 2040"
       ],
       "correct": [0, 1, 2, 3],
       "why": "Targets per action area, metrics, monitoring and an <em>annual</em> target/actual comparison. A single audit at the end would make deviations undetectable until it is too late — the same early-warning logic that Lecture 6 applies to project risk."
@@ -2821,11 +2821,11 @@
       "src": "Lecture 5 · Circular economy",
       "q": "Which goals does the lecture set for a circular economy in construction?",
       "options": [
-        "Consider buildings over their entire life cycle — saving raw materials, increasing efficiency, using secondary or renewable raw materials, avoiding waste",
-        "Develop end-to-end material and waste concepts and introduce a waste management system that also covers hazardous waste",
-        "Continuously increase the percentage of recycled materials and investigate alternative, renewable building materials",
-        "During design and build, consider not only the origin of materials but also their possible uses at the end of their service life — materials and components should be removable, separable and reusable or recyclable",
-        "Extend the linear model of extraction, use and disposal to make it more efficient"
+        "Consider buildings over their whole life cycle — saving raw materials and avoiding waste",
+        "Develop end-to-end material and waste concepts and a system covering hazardous waste",
+        "Continuously increase the share of recycled materials and investigate renewable ones",
+        "Design for the end of service life — components should be removable and reusable",
+        "Retain the linear model of extraction, use and disposal, making each stage more efficient"
       ],
       "correct": [0, 1, 2, 3],
       "why": "The whole premise is that the linear system of extraction, use and disposal is reaching its limits, so making it \"more efficient\" is not a circular goal. The design-stage requirement — removable, separable, reusable — is the one that determines whether circularity is possible at all decades later."
@@ -2837,10 +2837,10 @@
       "src": "Lecture 5 · Circular economy",
       "q": "Besides the environmental argument, which business opportunity does the lecture see in reuse and recycling of raw materials?",
       "options": [
-        "It reduces procurement and disposal costs and opens new business areas, e.g. sustainable building materials and refurbishment of existing buildings",
-        "It removes the need for a waste management system",
-        "It eliminates the need for structural design",
-        "It makes demolition unnecessary"
+        "It cuts procurement and disposal costs and opens new markets",
+        "It removes the need for a waste management system on site",
+        "It removes the need for structural design of the building",
+        "It makes demolition and dismantling entirely unnecessary"
       ],
       "correct": 0,
       "why": "Circularity is presented as commercially self-interested, not merely regulatory: lower cost at both ends of the material flow, plus new revenue in sustainable materials and in building within existing buildings."
@@ -2862,10 +2862,10 @@
       "src": "Lecture 5 · CO₂e in the tender",
       "q": "Why is CO₂e estimation entering the tender process?",
       "options": [
-        "Strategic orientation towards sustainability — the company is striving for climate neutrality in 2040",
-        "Increasing customer requirements — public and private clients already demand CO₂e information",
-        "Lack of standards and tools in the construction industry, since different methodologies and emission factors are still used",
-        "Because CO₂e reporting replaces the bill of quantities"
+        "Strategic orientation to sustainability — the company targets climate neutrality in 2040",
+        "Increasing customer requirements — public and private clients demand CO₂e data",
+        "Lack of standards and tools — different methodologies and emission factors are in use",
+        "Because CO₂e reporting replaces the bill of quantities as the basis of the tender"
       ],
       "correct": [0, 1, 2],
       "why": "Two pulls (own strategy, client demand) and one problem (no common methodology). The missing standard is what makes the CCF/PCF distinction and consistent life-cycle modules necessary — otherwise two bidders' CO₂e figures are not comparable."
@@ -2908,7 +2908,7 @@
       "src": "Lecture 5 · PCF worked example",
       "q": "In the 100 m³ C30/37 example the modules sum to 27,894 kg CO₂e. Which conclusion follows for a project manager?",
       "options": [
-        "The product stage A1–A3 dominates, so the biggest lever is the choice and specification of the material itself",
+        "Product stage A1–A3 dominates, so material specification is the biggest lever",
         "Transport to site (A4) is the biggest lever, so local sourcing solves the problem",
         "Module D outweighs the others, so recycling alone makes the concrete climate neutral",
         "End-of-life (C1–C3) dominates, so demolition planning is the main lever"
@@ -2923,10 +2923,10 @@
       "src": "Lecture 5 · Part of the solution",
       "q": "Which example does the lecture use to argue that the construction industry is \"not only part of the problem, but also part of the solution\"?",
       "options": [
-        "Microtunneling for carbon capture storage projects — shore crossings for pipelines",
-        "Replacing concrete with timber in all structures",
-        "Closing asphalt mixing plants",
-        "Reducing the number of construction projects"
+        "Microtunneling shore crossings for CCS pipelines",
+        "Replacing concrete with timber in all new structures",
+        "Closing down the industry's asphalt mixing plants",
+        "Reducing the total number of construction projects"
       ],
       "correct": 0,
       "why": "The decarbonisation infrastructure itself — CCS pipelines, pumped storage, grid connections — has to be built by someone. The Hatta pumped storage plant in Dubai is shown on the following slide as the second example of the same argument."
@@ -2938,11 +2938,11 @@
       "src": "Lecture 5 · Guest lecture, Perez-Suescun",
       "q": "Which key facts about dams and hydropower does the guest lecture give for the 2050 best case?",
       "options": [
-        "Carbon neutrality can only be guaranteed if the installed hydropower capacity doubles",
-        "There are approximately 9,000 dams worldwide, of which only about 25 % are used for electricity generation",
-        "Construction surged in the 1950s and peaked in the 1970s, so the timeframe available now is 25 years rather than 75",
-        "The best locations are already taken, so alternative locations imply severe hazards such as environmental impact and climate change",
-        "Sedimentation and the decommissioning of ageing dams are already fully accounted for in these figures"
+        "Carbon neutrality can only be guaranteed if hydropower capacity doubles",
+        "There are about 9,000 dams worldwide, of which only some 25 % generate electricity",
+        "Construction peaked in the 1970s, so the timeframe now is 25 years, not 75",
+        "The best locations are taken, so alternatives imply severe environmental hazards",
+        "Sedimentation and decommissioning of ageing dams are already in these figures"
       ],
       "correct": [0, 1, 2, 3],
       "why": "The figures explicitly do <em>not</em> consider sedimentation or the decommissioning of ageing dams — so the real challenge is larger than doubling. The 25-versus-75-year point is the sharpest: the same expansion that historically took three quarters of a century must now happen in a quarter of one."
@@ -3050,11 +3050,11 @@
       "src": "Lecture 5 · Guest lecture, Perez-Suescun",
       "q": "Which statements about pumped storage hydro (PSH) are correct?",
       "options": [
-        "A scheme can be open-loop or closed-loop, operating in pump mode or turbine mode",
-        "It is ideal in combination with solar and wind",
-        "Storage of renewable energy is key to the 2050 carbon-neutrality scenario",
-        "Coire Glas in Scotland is planned for 1,500 MW",
-        "It generates more energy than it consumes over a full pump-turbine cycle"
+        "A scheme can be open-loop or closed-loop, in pump or turbine mode",
+        "It works ideally in combination with solar and wind power",
+        "Storing renewables is key to the 2050 carbon-neutral scenario",
+        "Coire Glas in Scotland is planned for 1,500 MW of capacity",
+        "It generates more energy than it consumes over a pump-turbine cycle"
       ],
       "correct": [0, 1, 2, 3],
       "why": "PSH is a <em>store</em>, not a source: pumping consumes more energy than turbining returns. Its value lies in shifting renewable generation in time — which is why Scotland has a pipeline of schemes (Earba 1,800 MW, Coire Glas 1,500 MW, Loch Kemp 600 MW, Loch na Cathrach 450 MW) starting in 2027/28."
@@ -3066,13 +3066,13 @@
       "src": "Lecture 5 · Guest lecture, Perez-Suescun",
       "q": "Why is the Kidston project in Australia presented as an approach to sustainability?",
       "options": [
-        "A former gold mine, closed in 2001, was reused for a 250 MW pumped storage scheme plus a 50 MW solar farm, commissioned in 2025",
+        "A disused gold mine was reused for pumped storage and solar",
         "It was the first dam built entirely from recycled concrete",
-        "It replaced a coal-fired power station on the same site",
-        "It is the world's largest run-of-river scheme"
+        "It replaced a coal-fired power station standing on the same site",
+        "It is the world's largest run-of-river hydropower scheme"
       ],
       "correct": 0,
-      "why": "Reusing the pits of a mine discovered in 1907 and closed in 2001 avoids new excavation and new land take entirely — circular thinking applied at the scale of infrastructure, and a neat pairing of storage with the co-located solar farm."
+      "why": "The 250 MW pumped storage scheme and its co-located 50 MW solar farm, commissioned in 2025, reuse the pits of a mine discovered in 1907 and closed in 2001 — no new excavation and no new land take. Circular thinking applied at the scale of infrastructure."
     },
     {
       "id": "l5-guest-scotland-01",
@@ -3081,13 +3081,13 @@
       "src": "Lecture 5 · Guest lecture, Perez-Suescun",
       "q": "The guest lecture calls pumped storage a \"proven technology\" over 40 years old. Which examples support this?",
       "options": [
-        "Cruachan Power Station (440 MW, 1965) and Dinorwig \"Electric Mountain\" (1,700 MW, 1984)",
-        "Goldisthal (2003) and Kidston (2025)",
-        "Hatta, Dubai (2025) and Thiba, Kenya (2022)",
-        "Coire Glas and Earba, both planned for 2027/28"
+        "Cruachan (1965) and Dinorwig \"Electric Mountain\" (1984)",
+        "Goldisthal (2003) and Kidston, Australia (2025)",
+        "Hatta in Dubai (2025) and Thiba in Kenya (2022)",
+        "Coire Glas and Earba, both still only planned for 2027/28"
       ],
       "correct": 0,
-      "why": "Cruachan and Dinorwig have been running since 1965 and 1984 — the point being that nothing new has to be invented, only built. The other options are either recent, planned, or not pumped storage at all (Thiba is an irrigation dam)."
+      "why": "Cruachan (440 MW) has run since 1965 and Dinorwig (1,700 MW) since 1984 — the point being that nothing new has to be invented, only built. The other options are either recent, planned, or not pumped storage at all (Thiba is an irrigation dam)."
     },
     {
       "id": "l5-energy-mix-01",
@@ -3097,9 +3097,9 @@
       "q": "For the European power generation mix in 2022/23 the guest lecture gives >24 % fossil fuels and 24 % nuclear. What share does it give hydro?",
       "options": [
         "17 %, alongside 13 % solar and 17 % wind",
-        "40 %, the largest single source",
-        "5 %, a negligible contribution",
-        "24 %, equal to nuclear"
+        "40 %, the largest single source of all",
+        "5 %, a negligible share of generation",
+        "24 %, the same share as nuclear power"
       ],
       "correct": 0,
       "why": "Hydro at 17 % already matches wind and exceeds solar — it is not a marginal source. That existing base is why doubling installed hydropower capacity is presented as achievable, if difficult, by 2050."
@@ -3157,10 +3157,10 @@
       "src": "Lecture 6 · ISO 31000",
       "q": "ISO 31000 defines risk as the \"effect of uncertainty on objectives\". What is the notable consequence the lecture draws from this wording?",
       "options": [
-        "The deviation from the expected can be positive, negative or both — many other definitions consider only the negative deviation",
-        "Risk exists only where a loss has already occurred",
-        "Risk and uncertainty are synonyms",
-        "Only measurable financial effects count as risk"
+        "Deviation from the expected can be positive as well as negative",
+        "Risk exists only where a measurable loss has already been suffered",
+        "Risk and uncertainty are simply two words for the same thing",
+        "Only effects that can be measured in money count as a risk"
       ],
       "correct": 0,
       "why": "The ISO definition is deliberately two-sided, which is why the practical tool is a <em>Risk and Opportunities</em> register with both a negative and a positive risk value column. Risk is usually expressed in terms of risk sources, potential events, consequences and likelihood."
@@ -3218,12 +3218,12 @@
       "q": "Why are construction projects associated with particularly high risks?",
       "options": [
         "High complexity and many stakeholders",
-        "Uniqueness of the project",
-        "Long project duration",
+        "Uniqueness of each individual project",
+        "Long project duration and lead times",
         "External influences and high investment",
-        "Technical uncertainties",
-        "Legal and contractual risks",
-        "Because construction work is performed by a single trade"
+        "Technical uncertainties in execution",
+        "Legal and contractual risk exposure",
+        "Work is performed by only a single trade"
       ],
       "correct": [0, 1, 2, 3, 4, 5],
       "why": "Eight reasons: complexity, stakeholders, uniqueness, duration, external influences, high investment, technical uncertainty and legal/contractual risk. The opposite of the last option is true — the many interacting trades and interfaces are a source of risk, not a mitigation."
@@ -3247,9 +3247,9 @@
       "src": "Lecture 6 · Stuttgart 21",
       "q": "Stuttgart 21 was estimated at about €2.5 bn in the 1995 feasibility study with commissioning in 2008. What do the 2026 figures show?",
       "options": [
-        "€14.5 bn and commissioning in December 2031 — roughly +480 % on cost and +23 years on schedule",
-        "€6.5 bn and commissioning in 2022 — roughly +160 % and +14 years",
-        "€9.15 bn and commissioning in December 2025 — roughly +266 % and +17 years",
+        "€14.5 bn and December 2031 — about +480 % on cost, +23 years late",
+        "€6.5 bn and commissioning in 2022 — about +160 % and +14 years",
+        "€9.15 bn and commissioning in 2025 — about +266 % and +17 years",
         "Cost and schedule were both held within 20 % of the original estimate"
       ],
       "correct": 0,
@@ -3262,13 +3262,13 @@
       "src": "Lecture 6 · Stuttgart 21",
       "q": "Which are among the main reasons the lecture gives for the Stuttgart 21 cost and schedule overruns?",
       "options": [
-        "Initial cost estimate too low",
-        "Tunnelling and geology",
-        "Design changes and technical enhancements",
-        "Increases in construction costs and inflation",
+        "The initial cost estimate was too low",
+        "Tunnelling and difficult geology",
+        "Design changes and technical upgrades",
+        "Construction cost increases and inflation",
         "Digitalization and control systems",
-        "Pandemic and supply chain impacts",
-        "Lawsuits and approval processes",
+        "Pandemic and supply-chain impacts",
+        "Lawsuits and approval procedures",
         "Insolvency of the main contractor"
       ],
       "correct": [0, 1, 2, 3, 4, 5, 6],
@@ -3282,10 +3282,10 @@
       "q": "With professional risk management these risks could have been avoided or mitigated. Which measures does the lecture name?",
       "options": [
         "Realistic cost estimates free from political influence",
-        "Early and detailed assessment of geological risks",
-        "Provision for adequate risk reserves, cost contingencies and time buffers",
+        "Early and detailed assessment of the geological risks",
+        "Adequate risk reserves, cost contingencies and time buffers",
         "Continuous risk monitoring throughout the project lifecycle",
-        "Transparent communication among all stakeholders",
+        "Transparent communication among all project stakeholders",
         "Awarding the contract to the lowest bidder in every package"
       ],
       "correct": [0, 1, 2, 3, 4],
@@ -3338,10 +3338,10 @@
       "src": "Lecture 6 · ISO 31000",
       "q": "In the ISO 31000 diagram, what is the role of \"communication & consultation\" and \"monitoring & review\"?",
       "options": [
-        "They run alongside the entire process rather than being single steps at the end",
-        "They are the first and last steps respectively",
+        "They run alongside the whole process, not as single steps",
+        "They are the first and last steps of the sequence",
         "They apply only at corporate level, not at project level",
-        "They replace risk documentation"
+        "They replace the risk register and documentation"
       ],
       "correct": 0,
       "why": "Both flank the whole risk-assessment sequence in the diagram. That layout carries the lecture's message: risk management is a continuous loop, and risks that were once assessed as harmless can suddenly become a threat to success."
@@ -3376,9 +3376,9 @@
       "src": "Lecture 6 · Organizational structure",
       "q": "How is risk management integrated into the organizational structure of a <em>large</em> construction company?",
       "options": [
-        "A staff position for risk management coordination at company management level, plus staff positions for risk management at each division",
-        "A single risk manager inside each project team, with no company-level function",
-        "It is outsourced entirely to the insurer",
+        "A coordinating staff position at company level plus one per division",
+        "A single risk manager inside each project team, with no company function",
+        "It is outsourced entirely to the company's insurers and brokers",
         "It is handled by the site managers alongside their other duties"
       ],
       "correct": 0,
@@ -3391,10 +3391,10 @@
       "src": "Lecture 6 · Degree of influenceability",
       "q": "The influenceability curve shows roughly 35 %, 38 % and 22 % of cost-influencing potential across the project. What is the management conclusion?",
       "options": [
-        "Risks must be identified as early as possible, because the ability to influence cost collapses as the project progresses while the investment cost accumulates",
+        "Identify risks early — the ability to influence cost falls steeply",
         "Cost can be influenced equally at any stage, so early planning is optional",
         "The greatest influence lies in the construction supervision phase",
-        "Influenceability rises towards the end of the project"
+        "Influenceability rises steadily towards the end of the project"
       ],
       "correct": 0,
       "why": "The curve of cost potential influence falls steeply while the development of investment costs rises — the scissors that define construction economics. By the time you are on site, most of the money is already committed by decisions taken in the optimization phases."
@@ -3438,7 +3438,7 @@
       "src": "Lecture 6 · Risk map",
       "q": "In the risk map (risk classification), how are the axes defined and where does the acceptance boundary run?",
       "options": [
-        "Probability of occurrence against damage — risks in the low/low corner are acceptable, risks towards high/high are too high",
+        "Probability of occurrence against damage, with low/low acceptable",
         "Cost against schedule — anything above the diagonal is acceptable",
         "Probability against controllability — only uncontrollable risks are plotted",
         "Damage against insurance premium — everything insurable is acceptable"
@@ -3474,9 +3474,9 @@
       "q": "According to the methods table, which methods are rated strongest for <em>assessment</em> (rather than identification)?",
       "options": [
         "Standard deviation and Monte Carlo simulation",
-        "Checklist and list of damages",
+        "Checklists and lists of previous damages",
         "Damage analysis and retrospective analyses",
-        "Brainstorming alone"
+        "Brainstorming and moderated expert group workshops"
       ],
       "correct": 0,
       "why": "The two statistical methods score highest on assessment and weakest on identification — they can quantify a risk but cannot find one. Checklists and damage lists are the mirror image: strong at identification, weak at assessment. That is exactly why the groups are complementary."
@@ -3529,9 +3529,9 @@
       "q": "The specification says: \"Any necessary dewatering measures shall be provided by the Contractor without separate remuneration.\" The cover letter replies: \"We have calculated open dewatering with a flow rate of up to 10 m³/h in our service. Any additional dewatering services required are to be paid for separately.\" Which strategy is this?",
       "options": [
         "Decreasing — concretization in the cover letter",
-        "Avoiding — exclusion in the cover letter",
-        "Shifting — transfer to an insurer",
-        "Accepting — full inclusion in the price"
+        "Avoiding — complete exclusion in the cover letter",
+        "Shifting — transfer of the risk to the insurer",
+        "Accepting — full inclusion in the bid price"
       ],
       "correct": 0,
       "why": "The bidder does not exclude dewatering, it <em>quantifies</em> it — capping the accepted exposure at 10 m³/h. Full <em>avoidance</em> would be the other wording on the slide: \"we have not taken into account any dewatering measures … these would have to be paid for separately if required\"."
@@ -3543,8 +3543,8 @@
       "src": "Lecture 6 · Consideration in the estimate",
       "q": "Where do identified and unidentified risks appear in the bid build-up?",
       "options": [
-        "Identified risks are covered as an element of <em>costing</em> — in direct costs and site overheads; unidentified risks are covered as an element of <em>pricing</em> — in the venture and profit surcharge",
-        "Both are covered in the value added tax",
+        "Identified risks in the <em>costing</em>, unidentified risks in the <em>pricing</em>",
+        "Both are covered in the value added tax on the tender sum",
         "Identified risks go into profit, unidentified risks into direct costs",
         "Neither is included; risks are handled outside the estimate"
       ],
@@ -3575,12 +3575,12 @@
       "src": "Lecture 6 · Risk controlling",
       "q": "What does risk controlling at project level involve?",
       "options": [
-        "Monitoring how risks change in the different phases of a project",
-        "Recognising that project decisions create new risk situations whose individual risks must be identified, analyzed and managed",
-        "Accepting that risks not assessed as serious can suddenly become a threat to success",
+        "Monitoring how risks change in the different phases of the project",
+        "Recognising that project decisions create new risk situations to be managed",
+        "Accepting that risks not assessed as serious can suddenly threaten success",
         "Periodic monitoring of the effectiveness of the treatment measures",
-        "Adaptation of coping measures when risk potentials change",
-        "Freezing the risk register after contract award to keep the baseline stable"
+        "Adaptation of the coping measures when risk potentials change",
+        "Freezing the risk register after award to keep the baseline stable"
       ],
       "correct": [0, 1, 2, 3, 4],
       "why": "Risk controlling has two objects — monitoring the <em>risks</em> and monitoring the <em>measures</em>. Freezing the register is the opposite of the concept: the example given is checking whether adjusting the construction sequencing actually mitigated the schedule risk as intended."
@@ -3592,12 +3592,12 @@
       "src": "Lecture 6 · Principles of risk-conscious action",
       "q": "Which are among the ten principles of risk-conscious action?",
       "options": [
-        "We only accept controllable risks",
+        "We only accept risks that we can control",
         "We do not deviate from established processes",
         "We only work within the scope of our competence",
         "We only accept orders of appropriate size",
         "We only work with efficient and reliable partners",
-        "We only work under contract",
+        "We only work on the basis of a contract",
         "We do not allow ourselves to be blackmailed",
         "We report risk-relevant events without delay",
         "We accept any order that shows a positive margin"
@@ -3612,10 +3612,10 @@
       "src": "Lecture 6 · Risk map",
       "q": "The lecture ends the risk-map section with lottery odds — a 1 in 139,838,160 chance of the jackpot, over 98 % probability of winning nothing, and a payout rate of only about 50 %. What is the point?",
       "options": [
-        "Never forget the human factor — people systematically misjudge probabilities, which is why risk assessment must be structured rather than intuitive",
-        "Lotteries are a viable project financing instrument",
-        "Low-probability risks can safely be ignored",
-        "Probability theory does not apply to construction"
+        "Never forget the human factor — people misjudge probabilities",
+        "Lotteries are a viable instrument for financing projects",
+        "Low-probability risks can safely be left out of the risk register",
+        "Probability theory does not apply to construction projects"
       ],
       "correct": 0,
       "why": "The comparison with the ~1 in 3 million chance of being struck by lightning makes the bias visible: people overrate spectacular, tiny probabilities and underrate mundane ones. That is exactly why registers, maps and simulations exist instead of gut feeling."
@@ -3627,13 +3627,13 @@
       "src": "Lecture 6 · Guest lecture, Çam",
       "q": "How does the guest lecture define Technical Controlling?",
       "options": [
-        "The systematic planning, monitoring and control of technical project parameters — scope, quantities, construction processes — to ensure economic efficiency and the achievement of project objectives",
+        "Planning, monitoring and control of technical project parameters",
         "The technical inspection of works for compliance with building codes",
-        "The accounting function that produces the monthly financial statements",
-        "The quality assurance department's audit of the site"
+        "The accounting function producing the monthly financial statements",
+        "The quality assurance department's periodic audit of the site"
       ],
       "correct": 0,
-      "why": "The essence is expressing all project-relevant <em>technical</em> processes in <em>monetary</em> terms. As the slide insists, it is not about reporting numbers but about understanding what is happening, identifying deviations early and actively steering the outcome."
+      "why": "The essence is expressing all project-relevant <em>technical</em> processes — scope, quantities, construction processes — in <em>monetary</em> terms, so as to secure economic efficiency and the project objectives. As the slide insists, it is not about reporting numbers but about understanding what is happening, identifying deviations early and actively steering the outcome."
     },
     {
       "id": "l6-guest-tc-areas-01",
@@ -3642,12 +3642,12 @@
       "src": "Lecture 6 · Guest lecture, Çam",
       "q": "Which are core areas of responsibility of Technical Controlling?",
       "options": [
-        "Performance and quantity controlling",
+        "Controlling of performance and quantities",
         "Construction process and schedule controlling",
         "Cost control from the technical perspective",
-        "Risk monitoring",
-        "Change order management — claims, variations, compensation events",
-        "Payroll and personnel administration"
+        "Risk monitoring and early warning signals",
+        "Change order management — claims and variations",
+        "Payroll accounting and personnel administration"
       ],
       "correct": [0, 1, 2, 3, 4],
       "why": "Five areas, with four stated objectives: early identification of deviations, transparency within the project, ensuring economic efficiency, and supporting site management in decision-making. Payroll belongs to administration, not controlling."
@@ -3678,10 +3678,10 @@
       "src": "Lecture 6 · Guest lecture, Çam",
       "q": "Internationally, the tasks of a German \"Technical Controller\" are usually spread across several roles. Which?",
       "options": [
-        "Cost engineer, quantity surveyor, project controls manager and claims consultant",
-        "Site manager, foreman and safety officer",
-        "Design manager, BIM coordinator and surveyor",
-        "Procurement manager and logistics manager"
+        "Cost engineer, quantity surveyor, project controls and claims",
+        "Site manager, foreman, safety officer and works supervisor",
+        "Design manager, BIM coordinator, land surveyor and planner",
+        "Procurement manager, buyer, expediter and logistics manager"
       ],
       "correct": 0,
       "why": "Together these four cover what is often a single function in the German construction industry. The role is described as interdisciplinary, a communication bridge, and a support for holistic decision-making — which is why splitting it across four people creates coordination risk."
@@ -3693,11 +3693,11 @@
       "src": "Lecture 6 · Guest lecture, Çam",
       "q": "Why is estimation called \"the backbone of the project\"?",
       "options": [
-        "It defines the cost structure, quantities, productivity and risk assessment — the reference system for the whole project",
-        "It links tendering, contracting and execution through consistent estimating principles",
+        "It defines cost structure, quantities, productivity and risk — the reference system",
+        "It links tendering, contracting and execution through consistent principles",
         "The tender phase carries the highest uncertainty but the maximum leverage",
         "Around 80 % of flopped or failed projects originate in the tender phase",
-        "Once submitted, the estimate is never revisited"
+        "Once submitted, the estimate is fixed and is never revisited during execution"
       ],
       "correct": [0, 1, 2, 3],
       "why": "The last option is the opposite of the message: estimation is not a one-time activity, it evolves across project phases. The tender phase is described as the point in time with maximum error risk — limited information, time pressure, assumptions instead of facts."
@@ -3724,8 +3724,8 @@
       "options": [
         "Estimation = reference system; Technical Controlling = steering mechanism",
         "Estimation = steering mechanism; Technical Controlling = reference system",
-        "Both are reference systems used at different times",
-        "Both are reporting duties with no steering function"
+        "Both are reference systems that apply at different project stages",
+        "Both are pure reporting duties with no steering function at all"
       ],
       "correct": 0,
       "why": "You cannot steer without a reference point. That is why the steering loop starts by setting the reference point with the estimate, then checks reality, analyses deviations, steers the project, and checks and balances the estimate again."
@@ -3738,9 +3738,9 @@
       "q": "Profit and entrepreneurial venture (5 %) plus company overhead charges (10 %) equal 15 % of the contract value. What is the corresponding surcharge as a percentage of the total job cost?",
       "options": [
         "17.65 %, because (1 × 15 %) / (1 − 15 %) = 17.65 %",
-        "15 %, since the reference base does not matter",
-        "13.04 %, because 15 % / (1 + 15 %)",
-        "30 %, since the two surcharges compound"
+        "15 %, since the reference base makes no difference here",
+        "13.04 %, because 15 % / (1 + 15 %) = 13.04 %",
+        "30 %, because the two surcharges are added twice"
       ],
       "correct": 0,
       "why": "The two percentages have different reference bases: 15 % <em>of the contract value</em> is 17.65 % <em>of the total job cost</em>, because the surcharge is contained in the value it is measured against. In the worked example, a job cost of 650,000 plus 76,471 overhead and 38,235 profit gives a tender sum of 764,706."
@@ -3803,13 +3803,13 @@
       "src": "Lecture 6 · Guest lecture, Çam",
       "q": "A claim is technically valid, formally submitted and acknowledged by the client, but the negotiation power is unclear and contractual interpretations differ. What is the typical practical mistake at this level?",
       "options": [
-        "Treating it as \"almost secured revenue\" and assigning overly high probabilities, which systematically overestimates margin and distorts forecasts",
-        "Withdrawing the claim to preserve the relationship",
-        "Recording it at zero value until it is paid in full",
-        "Escalating immediately to arbitration"
+        "Treating it as almost secured revenue with too high a probability",
+        "Withdrawing the claim in order to preserve the relationship",
+        "Recording it at zero value until the money has been received",
+        "Escalating it immediately to formal arbitration proceedings"
       ],
       "correct": 0,
-      "why": "Acknowledgement is not approval. Outcomes are often reduced amounts, delays and partial approvals, so this level becomes critical when many claims are stuck in it, conversion to the next level is slow, and negotiations drag on."
+      "why": "Acknowledgement is not approval — assigning an overly high probability systematically overestimates the margin and distorts the forecast. Outcomes are often reduced amounts, delays and partial approvals, so this level becomes critical when many claims are stuck in it, conversion to the next level is slow, and negotiations drag on."
     },
     {
       "id": "l6-guest-claims-l4-01",
@@ -3818,13 +3818,13 @@
       "src": "Lecture 6 · Guest lecture, Çam",
       "q": "A claim has been formally rejected by the client, the contractor does not accept the rejection, and escalation to dispute or arbitration is possible. How should it be treated?",
       "options": [
-        "As a high-risk expectation, not as reliable revenue — it is no secured revenue, though not definitely lost either",
-        "As probable revenue, kept \"in the pipeline\"",
+        "As a high-risk expectation rather than reliable revenue",
+        "As probable revenue, kept in the reporting pipeline",
         "As secured revenue, since the contractor is legally right",
-        "As a cost, since the claim has failed"
+        "As a loss, since the claim has already been rejected"
       ],
       "correct": 0,
-      "why": "The lecture's line is that disputed claims are not neutral. Treating them internally as \"probable revenue\" causes a significant distortion of the true project picture, because resolution typically takes a long time, high effort and has an uncertain probability of success."
+      "why": "The lecture's line is that disputed claims are not neutral: no secured revenue, but not definitely lost either. Treating them internally as \"probable revenue\" causes a significant distortion of the true project picture, because resolution typically takes a long time, high effort and has an uncertain probability of success."
     },
     {
       "id": "l6-guest-riskcriteria-01",
@@ -3849,10 +3849,10 @@
       "src": "Lecture 6 · Guest lecture, Çam",
       "q": "Risk exposure is probability (%) × amount (€), continuously updated. Which early warning signals does the guest lecture name?",
       "options": [
-        "Risks increasing over time",
-        "Risks becoming issues",
-        "Provisions (contingencies) being consumed early",
-        "The number of entries in the risk register falling"
+        "Risks steadily increasing over time",
+        "Risks that have turned into issues",
+        "Contingency provisions being consumed early",
+        "A shrinking number of register entries"
       ],
       "correct": [0, 1, 2],
       "why": "The three signals are about <em>movement</em>, not level: a growing exposure, a risk that has materialised into an issue, and contingency burned faster than progress earned it. A shrinking register is not a warning signal in itself — it might simply mean risks were closed out."
@@ -3888,14 +3888,14 @@
       "src": "Lecture 6 · Guest lecture, Çam",
       "q": "Which factors distort a clear project picture, according to the guest lecture?",
       "options": [
-        "Optimism bias / wishful thinking — overconfidence in productivity, \"we will catch up later\", ignoring early negative trends",
-        "Misclassifying facts as risks — known issues reported as \"risks\" although the cost impact is already incurred",
-        "Overstating revenue — unapproved change orders recognised as secured revenue",
-        "Underreporting costs — delayed recognition of overruns, \"smoothing\" cost curves, deferring bad news",
-        "Snapshot thinking instead of trends — focusing on a single reporting date",
-        "Incomplete scope visibility — missing quantities, hidden scope growth, interfaces not fully captured",
-        "Lack of integration (silos) — cost, schedule and risk not aligned, different \"versions of truth\"",
-        "Using a single integrated data source for cost, schedule and risk"
+        "Optimism bias / wishful thinking — overconfidence in productivity, ignoring negative trends",
+        "Misclassifying facts as risks — known issues reported as \"risks\" though already incurred",
+        "Overstating revenue — unapproved change orders recognised as fully secured revenue",
+        "Underreporting costs — delayed recognition of overruns and \"smoothing\" of cost curves",
+        "Snapshot thinking instead of trends — focusing on a single reporting date only",
+        "Incomplete scope visibility — missing quantities, hidden scope growth, interfaces",
+        "Lack of integration (silos) — cost, schedule and risk not aligned across teams",
+        "Using a single integrated data source for cost, schedule and risk across teams"
       ],
       "correct": [0, 1, 2, 3, 4, 5, 6],
       "why": "Seven distortions, each with its own consequence: problems recognised too late, delayed recognition of real impact, artificially inflated margin, a margin that appears stable then suddenly collapses, missed early warning signals, systematic underestimation of total cost, and wrong conclusions despite correct data. A single integrated data source is the <em>cure</em> for the seventh, not a distortion."
@@ -3908,9 +3908,9 @@
       "q": "In a plan-versus-actual comparison of cost, productivity and progress, which question does the guest lecture insist you ask about every deviation?",
       "options": [
         "Single event or trend?",
-        "Who is to blame?",
-        "Can it be hidden until the next reporting date?",
-        "Does it exceed the contingency?"
+        "Who is to blame for it?",
+        "Can it wait until next month?",
+        "Is it inside the contingency?"
       ],
       "correct": 0,
       "why": "A one-off deviation and the first point of a trend look identical in a single reporting period — which is exactly what snapshot thinking gets wrong. Distinguishing them decides whether you note it or act on it, since project failures are not sudden but develop over time."
@@ -3922,10 +3922,10 @@
       "src": "Lecture 6 · Guest lecture, Çam",
       "q": "What principle governs structured change order management in the guest lecture?",
       "options": [
-        "Not all revenue is equal — the level of certainty must be transparent, and activation of revenue must follow clear regulations and principles",
-        "All submitted change orders should be recognised immediately to keep the forecast optimistic",
-        "Change orders should only be recorded once cash has been received",
-        "Change orders are a legal matter and do not belong in controlling"
+        "Not all revenue is equal — the level of certainty must be transparent",
+        "Every submitted change order should be recognised in the forecast at once",
+        "Change orders should be recorded only once the cash has been received",
+        "Change orders are a legal matter and have no place in controlling"
       ],
       "correct": 0,
       "why": "The levels of a claim — submitted, acknowledged, rejected, approved — carry very different certainties, and the register must show which. Recognising everything early inflates the margin; recognising nothing until payment destroys the steering value of the forecast."
@@ -3955,12 +3955,12 @@
       "src": "Lecture 7 · Guest lecture, Bui",
       "q": "Which practical tips and mindset qualities does the career guest lecture give to career starters?",
       "options": [
-        "Networking",
-        "Learning from feedback",
-        "Self-reflection",
-        "Time management",
-        "Patience, initiative, resilience and curiosity",
-        "Avoiding assignments abroad until you are senior"
+        "Building a professional network",
+        "Learning from constructive feedback",
+        "Regular and honest self-reflection",
+        "Disciplined personal time management",
+        "Patience, initiative, resilience, curiosity",
+        "Avoiding any assignment abroad early on"
       ],
       "correct": [0, 1, 2, 3, 4],
       "why": "Four practical tips and four mindset qualities. The lecture argues the opposite of the last option — early international experience is exactly what develops the flexibility, diplomacy and cross-cultural leadership that senior roles require."
@@ -3972,12 +3972,12 @@
       "src": "Lecture 7 · Guest lecture, Bui",
       "q": "Which consequences of the language barrier does the career guest lecture report from practice in the UAE?",
       "options": [
-        "Incorrect execution of instructions due to misunderstanding of technical terms",
+        "Incorrect execution of instructions after misunderstood technical terms",
         "Delays because messages must be repeated or clarified several times",
         "Difficulty expressing complex ideas or feedback, especially under pressure",
         "Frustration or tension among colleagues after repeated misunderstandings",
-        "Hesitation to speak up in meetings for fear of making mistakes",
-        "A reduction in the number of nationalities on site"
+        "Hesitation to speak up in meetings for fear of making a mistake",
+        "A gradual reduction in the number of nationalities working on site"
       ],
       "correct": [0, 1, 2, 3, 4],
       "why": "Five concrete effects, and note that the first two are cost and schedule impacts, not soft issues. This is the practical evidence for Lecture 3's figures on decision-making taking over 50 % longer in international teams."
@@ -3989,13 +3989,13 @@
       "src": "Lecture 7 · Guest lecture, Bui",
       "q": "Which differences in working styles and communication does the career guest lecture name?",
       "options": [
-        "Different approaches to time — punctuality versus flexibility, planning versus improvising",
-        "Decision-making styles — top-down versus consensus-oriented, speed versus caution",
-        "Attitude toward conflict — confrontation versus avoidance",
+        "Approaches to time — punctuality versus flexibility, plans versus improvisation",
+        "Decision-making styles — top-down versus consensus, speed versus caution",
+        "Attitude toward conflict — direct confrontation versus avoidance",
         "Work-life balance — \"always on\" culture versus strict work boundaries",
         "Direct versus indirect communication, and verbal versus nonverbal cues",
-        "Initiative versus obedience, and flat versus formal structures",
-        "Uniform technical vocabulary shared by all nationalities on site"
+        "Initiative versus obedience, and flat versus formal hierarchies",
+        "A uniform technical vocabulary shared by all nationalities on site"
       ],
       "correct": [0, 1, 2, 3, 4, 5],
       "why": "These axes are the practitioner's version of Lecture 3's theory — Hofstede's power distance shows up as initiative versus obedience, Lewis's types as direct versus indirect communication. The reported benefits are cultural awareness, stronger team collaboration, diverse perspectives and personal development."
@@ -4022,11 +4022,11 @@
       "src": "Lecture 7 · Recapitulation",
       "q": "The Thiba Dam in Kenya (€73 m, completed 09.2022, financed by a JICA loan) is used to answer the question of how host-country populations react to a foreign-led project. What did the project deliver locally?",
       "options": [
-        "Allowing for two annual rice harvests",
-        "A stable supply of irrigation water",
-        "Recruitment and training of a workforce of about 600 workers from surrounding local communities",
-        "Internships for local engineers",
-        "Support of the local population and local aid organizations",
+        "Allowing two annual rice harvests instead of one",
+        "A stable, year-round supply of irrigation water",
+        "Recruitment and training of about 600 local workers",
+        "Internships provided for local engineers",
+        "Support of the local population and aid organizations",
         "Full transfer of dam ownership to the contractor"
       ],
       "correct": [0, 1, 2, 3, 4],
@@ -4039,10 +4039,10 @@
       "src": "Lecture 7 · Recapitulation",
       "q": "The lecture claims that financing major projects can influence world politics and history. Which example does it use?",
       "options": [
-        "St. Peter's Basilica — the sale of indulgences to finance construction was one of the main triggers of the Reformation",
-        "The Suez Canal and the Franco-British rivalry",
-        "The Berlin Brandenburg Airport and German federal politics",
-        "The Channel Tunnel and British EU membership"
+        "St. Peter's Basilica — indulgences triggered the Reformation",
+        "The Suez Canal and the Franco-British rivalry it created",
+        "Berlin Brandenburg Airport and German federal coalition politics",
+        "The Channel Tunnel and the debate on British EU membership"
       ],
       "correct": 0,
       "why": "Construction began in 1506 and finished in 1626; the enormous costs were funded partly through indulgences, and Luther's 95 Theses of 1517 attacked exactly that practice. The lesson for the course: how you finance a project is never a purely technical decision."
@@ -4054,13 +4054,13 @@
       "src": "Lecture 7 · Recapitulation",
       "q": "Why is working on international construction sites interesting, according to the closing recapitulation?",
       "options": [
-        "Cultural aspects — insight into different cultures, languages and traditions, and how culture influences design, materials and methods",
-        "Variety of projects — large-scale, high-profile works with unique environmental, regulatory and logistical challenges",
-        "Technical challenges — different engineering standards, climates, seismic zones and local materials",
-        "Professional growth — an enhanced CV, multi-national teamwork, soft skills such as flexibility and diplomacy",
-        "Adventure and travel",
-        "Higher earning potential — tax exemptions, relocation bonuses, housing and car, especially in remote or high-demand regions",
-        "Shorter working hours and lighter workload than on domestic sites"
+        "Cultural aspects — insight into other cultures and languages, and how culture shapes design",
+        "Variety of projects — large-scale works with unique regulatory and logistical challenges",
+        "Technical challenges — different engineering standards, climates, seismic zones and materials",
+        "Professional growth — an enhanced CV, multi-national teamwork, flexibility and diplomacy",
+        "Adventure and travel — new countries, unfamiliar places and new working environments",
+        "Higher earning potential — tax exemptions, relocation bonuses, housing and a car",
+        "Shorter working hours and a lighter workload than on domestic sites of the same size"
       ],
       "correct": [0, 1, 2, 3, 4, 5],
       "why": "Six reasons are listed — an easier workload is emphatically not one of them. They form the mirror image of the course's risk catalogue: nearly every factor that makes international work risky — cultural distance, unfamiliar standards, remote locations — is also what makes it professionally valuable."
