@@ -1,0 +1,132 @@
+# Course Browser
+
+A small, dependency-free web app for browsing course notes ("Studienheft").
+Each **tab** is a course; each course is a **scroll view** of modular HTML
+content files, with a table of contents on the left to jump around.
+
+## Chrome
+
+- **Search** — `/` focuses the box; two characters open a result list over the
+  content with a snippet per hit, covering every section of the open course
+  plus the questions of the loaded practice deck. `Enter` opens the first hit,
+  `Esc` closes.
+- **Themes** — three visual directions (`academic`, `swiss`, `terminal`), each
+  with a light and a dark mode, cycled from the header and remembered per
+  browser. The tokens live at the top of `css/styles.css`.
+- **Linkable state** — `#/read/<course>/<section>` and `#/practice/<deck>`.
+  Navigating updates the hash, and opening such a link lands where it says.
+- **Small screens** — below 900 px the sidebar becomes a drawer behind the
+  `≡` button.
+
+## Run it
+
+The app fetches content files, so it must be served over HTTP (opening
+`index.html` directly via `file://` will be blocked by the browser).
+
+```bash
+cd course-browser
+python3 -m http.server 8000
+# then open http://localhost:8000
+```
+
+Or use the helper:
+
+```bash
+./serve.sh
+```
+
+## Adding content
+
+1. Drop an HTML file into `content/<course-id>/`, e.g.
+   `content/cs101/03-sorting.html`.
+2. Register it in `courses.json` under that course's `files` list (order in the
+   list = order on the page).
+
+To add a whole new course/tab, add an entry to `courses.json`:
+
+```json
+{
+  "id": "phys150",
+  "title": "Physics 150 — Mechanics",
+  "files": ["01-kinematics.html"]
+}
+```
+
+and create the matching `content/phys150/` folder.
+
+## Practice mode (adaptive tests)
+
+The **Practice** tab is a separate section: it shows **one question at a time**,
+checks it immediately, and remembers per question how often you got it right.
+Questions you miss come back much sooner (Leitner-style boxes — a miss drops a
+question to the hottest box, a hit promotes it), so the pool automatically
+concentrates on your weak spots. **Mastered after** in the sidebar sets how many
+clean answers in a row count as mastered (2–6, default 2) — from there a question
+all but disappears (~120× rarer than an unseen one, thousands of times rarer at
+the top box). Only a few percent of a session lands on mastered material, just
+enough to catch mastery that has decayed. "Focus on trouble spots" narrows the
+pool to the low boxes and anything missed more often than hit. Progress lives in
+`localStorage`, per deck.
+
+The card header carries the topic, the source reference, the question type and
+the Leitner box as pips; **retire** takes a question out of rotation for good
+(each retired question can be restored individually from the sidebar). The
+status bar above it tracks pool / mastered / seen, session accuracy, streak and
+the last fourteen verdicts.
+
+A deck is a JSON file in `tests/`, registered in `courses.json` (a picker
+appears in the sidebar as soon as there is more than one):
+
+```json
+"tests": [
+  { "id": "cthci", "title": "…", "file": "tests/cthci.json" }
+]
+```
+
+Each deck has `topics` (used for the sidebar filters and the mastery meters) and
+`questions`, plus an optional `lang` (`"en"` — default — or `"de"`) that
+switches the wording inside the question card. Every question needs `id`,
+`topic`, `type`, `q` and `why` (the explanation shown after answering), and may
+carry `src`, a short source reference shown as a badge on the card (e.g.
+`"Übungsfrage 116"`). The supported types:
+
+| type | extra fields | interaction |
+|------|--------------|-------------|
+| `mc` | `options`, `correct` (index) | single choice |
+| `multi` | `options`, `correct` (array) | select all that apply |
+| `text` | `accept` (array), `hint` | type the answer (normalized: case, umlauts and punctuation are ignored) |
+| `cloze` | `text` with `{{}}` markers, `gaps[{accept, show, size}]` | fill the gaps in a sentence |
+| `order` | `items` (in correct order) | arrange the sequence |
+| `match` | `pairs[[left, right]]` | assign each left to its right |
+| `bucket` | `buckets`, `items[[label, bucketIndex]]` | sort items into categories |
+| `flash` | `answer` (HTML) | free recall, self-graded (had it / partly / missed) |
+
+`q`, options and answers may contain HTML. Keyboard: `1`–`9` pick an option (or
+grade a revealed flashcard), `space` reveals a flashcard, `Enter` checks and then
+moves on. **Check** with nothing filled in acts as "I don't know": it grades the
+question wrong and reveals the solution. **Skip** draws another question without
+recording anything.
+
+## What a content file can contain
+
+Each file is a plain **HTML fragment** (no `<html>`/`<body>` wrapper needed).
+It can include:
+
+- text, headings, lists, tables, code blocks
+- images (`<img src="...">` — relative to the site root)
+- inline **SVG** graphics
+- `<canvas>` + `<script>` for interactive demos (content scripts are executed)
+- its own `<style>` block for local styling
+
+These classes are styled by the app itself:
+
+| class | effect |
+|-------|--------|
+| `.key-point` | a boxed key fact |
+| `.exam-ref` | a small inline reference badge, e.g. for official question numbers |
+| `details.source` | a collapsed source-slide reference; thumbnails open in the lightbox |
+
+The file name is shown above each fragment, so a section on screen is easy to
+trace back to its source file.
+
+See the files in `content/` for working examples.

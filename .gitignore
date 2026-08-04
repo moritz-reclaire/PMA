@@ -1,0 +1,5 @@
+# macOS
+.DS_Store
+
+# Raw source materials (processed into content/ files, not tracked)
+unprocessed content/

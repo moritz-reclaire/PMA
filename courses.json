@@ -1,0 +1,21 @@
+{
+  "courses": [
+    {
+      "id": "pma",
+      "title": "Projectmanagement Advanced",
+      "files": [
+        "00-overview.html",
+        "01-basics-organization.html",
+        "02-financing-procurement-logistics.html",
+        "03-culture-communication-leadership.html",
+        "04-international-contract-law.html",
+        "05-innovation-digitalisation-sustainability.html",
+        "06-risk-conflict-management.html",
+        "07-recap-career.html"
+      ]
+    }
+  ],
+  "tests": [
+    { "id": "pma", "title": "Projectmanagement Advanced", "file": "tests/pma.json" }
+  ]
+}

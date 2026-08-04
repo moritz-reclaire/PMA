@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="academic" data-mode="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studienheft</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Archivo:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <div class="brand">
+        <button class="icon-btn drawer-btn" id="drawerBtn" aria-label="Contents">≡</button>
+        <div class="brand-title">Studienheft</div>
+      </div>
+
+      <nav class="tabs" id="tabs" role="tablist" aria-label="Courses"></nav>
+
+      <div class="header-tools">
+        <div class="search-wrap">
+          <input class="search-input" id="search" type="search" autocomplete="off"
+                 placeholder="Search course  /" aria-label="Search" />
+        </div>
+        <button class="theme-btn" id="themeBtn" title="Visual direction">academic</button>
+        <button class="icon-btn" id="modeBtn" title="Light / dark">☀</button>
+      </div>
+
+      <!-- Outside the scrolling strip so it stays visible when tabs overflow. -->
+      <div class="tabs-pinned" id="tabsPinned"></div>
+    </header>
+
+    <div class="workspace">
+      <div class="scrim" id="scrim" hidden></div>
+
+      <!-- Table of contents in reading mode, filters in practice mode -->
+      <aside class="sidebar" id="sidebar" data-open="0">
+        <div class="sidebar-inner">
+          <p class="side-label">Contents</p>
+          <nav class="toc" id="toc" aria-label="Sections"></nav>
+        </div>
+      </aside>
+
+      <main class="main">
+        <div class="search-panel" id="searchPanel" hidden>
+          <div class="search-head">
+            <span id="searchCount"></span>
+            <button id="searchClose" type="button">esc</button>
+          </div>
+          <div id="searchResults"></div>
+        </div>
+
+        <section class="scroll-area" id="scrollArea" aria-live="polite">
+          <div class="page-list" id="pageList"></div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <!-- Lightbox for source slides -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <img id="lightboxImg" alt="" />
+    <div class="lightbox-cap" id="lightboxCap"></div>
+  </div>
+
+  <script src="js/app.js" type="module"></script>
+</body>
+</html>
