@@ -205,6 +205,13 @@ function wireLightbox() {
     if (e.target !== els.lightboxImg) closeLightbox();
   });
   els.lightboxClose.addEventListener('click', closeLightbox);
+
+  // Expanding a source block changes the page height, which moves every heading
+  // below it — the scroll-spy has to be recomputed. `toggle` does not bubble,
+  // so this listens in the capture phase.
+  els.pageList.addEventListener('toggle', (e) => {
+    if (e.target instanceof HTMLDetailsElement) requestAnimationFrame(updateActiveToc);
+  }, true);
 }
 
 function closeLightbox() {
