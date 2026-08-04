@@ -2,12 +2,12 @@
 //  Course Browser — app logic
 //  - Loads course/tab definitions from courses.json
 //  - Each tab loads a set of modular HTML content files
-//  - Search over the loaded course (and the loaded practice deck)
+//  - Search over course content only — never the practice questions
 //  - #/read/<course>/<section> and #/practice/<deck> are linkable
 //  - One extra tab ("Practice") switches to the adaptive test mode
 // ============================================================
 
-import { mountPractice, unmountPractice, searchDeck, currentDeckId } from './practice.js';
+import { mountPractice, unmountPractice, currentDeckId } from './practice.js';
 
 const els = {
   root: document.documentElement,
@@ -270,7 +270,8 @@ async function selectCourse(courseId, deckId) {
     els.scrollArea.scrollTop = 0;
     els.scrollArea.classList.add('practice-area');
     tocEntries = [];
-    searchIndex = [];
+    // The search index is deliberately kept: searching from practice mode
+    // still finds course sections and switches back to them.
     await mountPractice({
       scrollArea: els.scrollArea,
       pageList: els.pageList,
@@ -328,7 +329,7 @@ async function loadCourse(course, token) {
   });
 
   buildToc();
-  buildSearchIndex();
+  buildSearchIndex(course.id);
 }
 
 function makeCard(result, i, courseId, file) {
@@ -349,7 +350,7 @@ function makeCard(result, i, courseId, file) {
       const again = await fetchContent(courseId, file);
       card.replaceWith(makeCard(again, i, courseId, file));
       buildToc();
-      buildSearchIndex();
+      buildSearchIndex(courseId);
     });
     return card;
   }
@@ -469,18 +470,27 @@ function updateActiveToc() {
 }
 
 // ------------------------------------------------------------
-//  Search — sections of the open course + the loaded practice deck
+//  Search — course content only, never the practice questions
 // ------------------------------------------------------------
-function buildSearchIndex() {
+function buildSearchIndex(courseId) {
   searchIndex = [...els.pageList.querySelectorAll('[data-section]')].map(section => {
     const h = section.querySelector('h1, h2');
     return {
       id: h ? h.id : section.id,
       title: h ? h.textContent.trim() : 'Fragment',
       file: section.dataset.file || '',
-      text: section.textContent.replace(/\s+/g, ' ').trim(),
+      course: courseId,
+      text: sectionText(section),
     };
   });
+}
+
+// Source-slide citations are metadata, not prose: indexing them would make
+// every section match "slide" and fill snippets with deck labels.
+function sectionText(section) {
+  const copy = section.cloneNode(true);
+  copy.querySelectorAll('details.source').forEach(d => d.remove());
+  return copy.textContent.replace(/\s+/g, ' ').trim();
 }
 
 function runSearch() {
@@ -497,21 +507,21 @@ function runSearch() {
       title: entry.title,
       where: entry.file,
       snippet: snippetAround(entry.text, at, query.length),
-      go: () => jumpTo(entry.id),
-    });
-  }
-
-  // Questions from whichever deck practice mode has open.
-  for (const q of searchDeck(needle)) {
-    hits.push({
-      title: q.title,
-      where: 'practice · ' + q.id,
-      snippet: escapeHtml(q.snippet),
-      go: () => selectCourse(PRACTICE_TAB),
+      go: () => goToSection(entry),
     });
   }
 
   renderResults(hits.slice(0, 14), query);
+}
+
+// A hit can be clicked while practice mode is open, where the course DOM is
+// gone — load its course back first, then scroll to the section.
+async function goToSection(entry) {
+  if (entry.course && entry.course !== activeCourseId) {
+    closeSearch();
+    await selectCourse(entry.course);
+  }
+  jumpTo(entry.id);
 }
 
 function snippetAround(text, at, len) {

@@ -111,19 +111,6 @@ export function currentDeckId() {
   return deck ? deck.id : null;
 }
 
-// Section search in app.js also offers questions from the open deck.
-export function searchDeck(needle) {
-  if (!deck || !needle) return [];
-  const out = [];
-  for (const q of deck.questions) {
-    const text = stripTags(q.q);
-    if (text.toLowerCase().includes(needle)) {
-      out.push({ id: q.id, title: text.slice(0, 70), snippet: stripTags(q.why || '').slice(0, 120) + ' …' });
-    }
-  }
-  return out.slice(0, 6);
-}
-
 async function openDeck(deckId) {
   const meta = decks.find(d => d.id === deckId);
   const token = ++deckToken;
