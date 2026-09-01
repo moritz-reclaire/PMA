@@ -29,7 +29,8 @@ python3 -m http.server 8000
 # then open http://localhost:8000
 ```
 
-Or use the helper:
+Or use the helper, which also sends `Cache-Control: no-store` so edits to the
+ES modules in `js/` show up on a plain reload instead of needing a hard refresh:
 
 ```bash
 ./serve.sh
@@ -100,6 +101,43 @@ carry `src`, a short source reference shown as a badge on the card (e.g.
 | `match` | `pairs[[left, right]]` | assign each left to its right |
 | `bucket` | `buckets`, `items[[label, bucketIndex]]` | sort items into categories |
 | `flash` | `answer` (HTML) | free recall, self-graded (had it / partly / missed) |
+| `list` | `answers[{accept, show}]`, `hint` | name N things — one box per wanted answer, order-independent, partial credit |
+
+### Source pages
+
+A deck can point every question at the page of a source PDF the answer comes
+from. Give the deck a `source` block and each question a `pages` array:
+
+```json
+"source": {
+  "label": "Fitnesstrainer(in)-B-Lizenz · Lehrskript",
+  "base": "content/fitness-b/pages/",
+  "ext": ".jpg",
+  "pad": 3
+},
+"questions": [
+  { "id": "m4-25", "…": "…", "pages": [62],
+    "hl": { "page": 62, "x": 27.97, "y": 71.67, "w": 63.14, "h": 7.81 } }
+]
+```
+
+An optional `hl` marks the passage the answer comes from. Its `x`/`y`/`w`/`h` are
+percentages of the page, so the same numbers position the overlay on the
+thumbnail and on the full-size image in the lightbox; `page` says which of the
+question's pages carries it. The card notes that the marking is automatic and not
+always exact.
+
+The card then carries a collapsed **Skript-Seite 62 anzeigen** block at the
+bottom with a thumbnail per page, resolved as `base` + zero-padded number +
+`ext` (so `62` → `content/fitness-b/pages/062.jpg`). Clicking a thumbnail opens
+it in the same lightbox the reading view uses. Decks without a `source` block are
+unaffected.
+
+Render the page images straight out of the PDF with poppler:
+
+```bash
+pdftoppm -f 62 -l 62 -jpeg -jpegopt quality=72 -r 110 -singlefile skript.pdf 062
+```
 
 `q`, options and answers may contain HTML. Keyboard: `1`–`9` pick an option (or
 grade a revealed flashcard), `space` reveals a flashcard, `Enter` checks and then

@@ -567,6 +567,10 @@ a:hover { text-decoration: underline; }
   text-align: center;
   margin-top: 4px;
 }
+/* The caption rule above would otherwise also hit the wrapper and the highlight,
+   whose 4px top margin would push the marked area out of place. */
+.slide-grid .slide span.slide-shot,
+.slide-grid .slide span.slide-hl { margin: 0; }
 
 /* ---------- States ---------- */
 .state-msg {
@@ -666,8 +670,22 @@ a:hover { text-decoration: underline; }
   cursor: zoom-out;
 }
 .lightbox[hidden] { display: none; }
+.lightbox-shot { position: relative; line-height: 0; }
+/* The highlight is positioned in percent of the page, so it tracks the image at
+   any scale. `multiply` keeps the text underneath readable. */
+.lightbox-hl,
+.slide-hl {
+  position: absolute;
+  background: rgba(255, 205, 0, .32);
+  outline: 2px solid rgba(210, 130, 40, .9);
+  border-radius: 3px;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+.lightbox-hl[hidden] { display: none; }
+.slide-shot { position: relative; display: block; line-height: 0; }
 .lightbox img {
-  max-width: 100%;
+  max-width: 90vw;
   max-height: 82vh;
   border: 1px solid var(--rule);
   border-radius: var(--r);
@@ -883,6 +901,17 @@ a:hover { text-decoration: underline; }
 .pr-input.inline.mark-ok { border-bottom-color: var(--ok); }
 .pr-input.inline.mark-bad { border-bottom-color: var(--exam); color: var(--exam); }
 
+/* list — one numbered box per wanted answer */
+.pr-list { display: flex; flex-direction: column; gap: 7px; max-width: 460px; }
+.pr-list-row { display: flex; align-items: center; gap: 10px; }
+.pr-list-row .pr-n {
+  font-family: var(--fm);
+  font-size: 11px;
+  color: var(--muted);
+  width: 18px;
+  flex: none;
+}
+
 /* rows shared by order / match / bucket */
 .pr-rows { display: flex; flex-direction: column; gap: 6px; }
 .pr-row {
@@ -913,15 +942,112 @@ a:hover { text-decoration: underline; }
 .pr-move[disabled] { opacity: .35; cursor: default; }
 
 .pr-row .pr-left { width: 190px; flex: none; font-weight: 600; }
-.pr-row select {
-  flex: 1;
-  min-width: 0;
-  padding: 7px 9px;
-  background: var(--panel);
+
+/* match — the answers are chips you drag onto the line they belong to */
+.pr-pool {
+  border: 1px dashed var(--rule);
+  border-radius: var(--r);
+  padding: 9px 10px;
+  margin-bottom: 12px;
+  background: color-mix(in oklab, var(--panel) 55%, var(--bg));
+}
+.pr-pool[data-over="1"] {
+  border-style: solid;
+  border-color: var(--accent);
+  background: color-mix(in oklab, var(--accent) 7%, var(--bg));
+}
+.pr-pool-label {
+  display: block;
+  font-family: var(--fm);
+  font-size: 10.5px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 7px;
+}
+/* Keeps a floor under the bay so it stays a drop target once it is empty. */
+.pr-bay { display: flex; flex-wrap: wrap; gap: 6px; min-height: 34px; }
+
+.pr-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 100%;
+  padding: 7px 11px;
   border: 1px solid var(--rule);
   border-radius: var(--r);
+  background: var(--panel);
+  color: var(--fg);
   font-size: 13px;
+  line-height: 1.45;
+  text-align: left;
+  cursor: grab;
+  /* The drag is driven by pointer events, so the browser must not claim the
+     gesture for scrolling first. */
+  touch-action: none;
 }
+.pr-chip:hover:not([disabled]) { border-color: var(--accent); }
+.pr-chip[data-picked="1"] {
+  border-color: var(--accent);
+  background: color-mix(in oklab, var(--accent) 14%, var(--bg));
+}
+.pr-chip[data-dragging="1"] { opacity: .3; }
+.pr-chip[disabled] { opacity: 1; cursor: default; }
+.pr-chip .pr-key {
+  font-family: var(--fm);
+  font-size: 10.5px;
+  width: 17px;
+  height: 17px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--rule);
+  border-radius: 99px;
+  color: var(--muted);
+}
+.pr-chip-label { min-width: 0; }
+.pr-chip.mark-ok {
+  border-color: var(--ok);
+  background: color-mix(in oklab, var(--ok) 16%, var(--bg));
+}
+.pr-chip.mark-bad {
+  border-color: var(--exam);
+  background: color-mix(in oklab, var(--exam) 12%, var(--bg));
+}
+.pr-ghost {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  pointer-events: none;
+  cursor: grabbing;
+  opacity: .95;
+  box-shadow: 0 8px 20px rgb(0 0 0 / .25);
+}
+
+.pr-row.match { align-items: flex-start; flex-wrap: wrap; }
+.pr-row.match .pr-n { padding-top: 9px; }
+.pr-row.match .pr-left { width: auto; flex: 1 1 170px; padding-top: 6px; }
+.pr-row.match .pr-mark { padding-top: 9px; }
+.pr-slot {
+  flex: 1 1 200px;
+  min-height: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+  padding: 3px;
+  border: 1px dashed var(--rule);
+  border-radius: var(--r);
+}
+.pr-slot[data-over="1"] {
+  border-style: solid;
+  border-color: var(--accent);
+  background: color-mix(in oklab, var(--accent) 8%, var(--bg));
+}
+/* While an answer is in hand, every line reads as a landing place. */
+.pr-rows[data-picking="1"] .pr-slot { border-color: var(--accent); }
 
 .pr-bucket-btns { display: flex; gap: 5px; flex: none; flex-wrap: wrap; }
 .pr-bucket-btn {
@@ -993,6 +1119,20 @@ a:hover { text-decoration: underline; }
 .pr-why { font-size: 14px; line-height: 1.6; max-width: 70ch; color: var(--fg); }
 .pr-why > :first-child { margin-top: 0; }
 .pr-why > :last-child { margin-bottom: 0; }
+
+/* The source-page block on a practice card reuses the reading view's
+   `details.source` markup, but has to sit inside the card's padding instead of
+   spanning the page. */
+.pr-source {
+  margin: 0;
+  padding: 12px 20px 16px;
+  border-top: 1px solid var(--rule);
+}
+.pr-source > summary { padding: 2px 0; }
+.pr-source .source-body { margin-top: 10px; }
+.pr-source .source-body .deck { margin: 0 0 8px; }
+.pr-source .slide-grid { margin: 0; }
+.pr-source .slide-grid img { width: 150px; }
 
 .pr-actions {
   display: flex;

@@ -16,6 +16,15 @@
     }
   ],
   "tests": [
-    { "id": "pma", "title": "Projectmanagement Advanced", "file": "tests/pma.json" }
+    {
+      "id": "pma",
+      "title": "Projectmanagement Advanced",
+      "file": "tests/pma.json"
+    },
+    {
+      "id": "fitness-b",
+      "title": "Fitnesstrainer(in) B-Lizenz",
+      "file": "tests/fitness-b.json"
+    }
   ]
 }

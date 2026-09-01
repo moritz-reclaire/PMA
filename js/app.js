@@ -20,6 +20,7 @@ const els = {
   lightbox: document.getElementById('lightbox'),
   lightboxImg: document.getElementById('lightboxImg'),
   lightboxCap: document.getElementById('lightboxCap'),
+  lightboxHl: document.getElementById('lightboxHl'),
   lightboxClose: document.getElementById('lightboxClose'),
   search: document.getElementById('search'),
   searchPanel: document.getElementById('searchPanel'),
@@ -197,6 +198,7 @@ function wireLightbox() {
     const cap = a.querySelector('span');
     els.lightboxImg.src = a.getAttribute('href');
     els.lightboxCap.textContent = cap ? cap.textContent : '';
+    setLightboxHighlight(a.dataset.hl);
     els.lightbox.hidden = false;
   });
 
@@ -214,10 +216,27 @@ function wireLightbox() {
   }, true);
 }
 
+// `hl` is "x,y,w,h" in percent of the page — see the deck's `hl` field.
+function setLightboxHighlight(hl) {
+  const box = els.lightboxHl;
+  if (!box) return;
+  const n = (hl || '').split(',').map(Number);
+  if (n.length !== 4 || n.some(v => !isFinite(v))) {
+    box.hidden = true;
+    return;
+  }
+  box.style.left = n[0] + '%';
+  box.style.top = n[1] + '%';
+  box.style.width = n[2] + '%';
+  box.style.height = n[3] + '%';
+  box.hidden = false;
+}
+
 function closeLightbox() {
   if (els.lightbox.hidden) return;
   els.lightbox.hidden = true;
   els.lightboxImg.removeAttribute('src');
+  setLightboxHighlight(null);
 }
 
 // ------------------------------------------------------------

@@ -31,19 +31,25 @@ const STR = {
     grade: 'Grade yourself',
     hadIt: '1 · I knew it', partly: '2 · Almost', missed: '3 · No',
     selectAll: 'Select all that apply.', typeAnswer: 'Type your answer…',
+    listHint: 'One entry per box — the order does not matter.', missing: 'Still missing:',
     bucketHint: 'Put every item into the bucket it belongs to.',
     flashHint: 'Say it out loud or write it down, then reveal.',
-    assign: '— choose —', correct: 'Correct', partial: 'Partly correct', wrong: 'Not quite',
+    correct: 'Correct', partial: 'Partly correct', wrong: 'Not quite',
+    answers: 'Answers',
+    matchHint: 'Drag each answer onto the line it belongs to — or tap one, then tap its line.',
     accepted: 'Accepted:',
     correctPairs: 'Correct pairing:',
     correctOrder: 'Correct order:',
     boxTo: (b, t) => `Leitner box → ${b}/${t}`,
     boxReset: 'back to box 0',
     kbdCheck: 'digits pick · enter checks', kbdNext: 'enter · next',
+    srcPages: (n) => n.length > 1 ? `Show source pages ${n.join(', ')}` : `Show source page ${n[0]}`,
+    srcPage: (n) => `Page ${n}`,
+    srcNote: 'The highlight is placed automatically and is not always exact.',
     types: {
       mc: 'single choice', multi: 'multiple choice', text: 'free text',
       cloze: 'fill in the gaps', order: 'ordering', match: 'matching',
-      bucket: 'sort into buckets', flash: 'flashcard',
+      bucket: 'sort into buckets', flash: 'flashcard', list: 'name them all',
     },
   },
   de: {
@@ -51,19 +57,25 @@ const STR = {
     grade: 'Selbst bewerten',
     hadIt: '1 · Gewusst', partly: '2 · Fast', missed: '3 · Nicht gewusst',
     selectAll: 'Mehrfachauswahl — alles Zutreffende anklicken.', typeAnswer: 'Antwort eingeben…',
+    listHint: 'Ein Eintrag pro Feld — die Reihenfolge ist egal.', missing: 'Gefehlt haben:',
     bucketHint: 'Jeden Eintrag der Gruppe zuordnen, in die er gehört.',
     flashHint: 'Erst laut sagen oder aufschreiben, dann aufdecken.',
-    assign: '— zuordnen —', correct: 'Richtig', partial: 'Teilweise richtig', wrong: 'Leider nicht',
+    correct: 'Richtig', partial: 'Teilweise richtig', wrong: 'Leider nicht',
+    answers: 'Antworten',
+    matchHint: 'Zieh jede Antwort auf die Zeile, in die sie gehört — oder erst antippen, dann die Zeile antippen.',
     accepted: 'Akzeptiert:',
     correctPairs: 'Richtige Zuordnung:',
     correctOrder: 'Richtige Reihenfolge:',
     boxTo: (b, t) => `Leitner-Box → ${b}/${t}`,
     boxReset: 'zurück auf Box 0',
     kbdCheck: 'Ziffern wählen · Enter prüft', kbdNext: 'Enter · weiter',
+    srcPages: (n) => n.length > 1 ? `Skript-Seiten ${n.join(', ')} anzeigen` : `Skript-Seite ${n[0]} anzeigen`,
+    srcPage: (n) => `Seite ${n}`,
+    srcNote: 'Die Markierung wird automatisch gesetzt und trifft nicht immer exakt.',
     types: {
       mc: 'Einfachauswahl', multi: 'Mehrfachauswahl', text: 'Freitext',
       cloze: 'Lückentext', order: 'Reihenfolge', match: 'Zuordnung',
-      bucket: 'Gruppieren', flash: 'Karteikarte',
+      bucket: 'Gruppieren', flash: 'Karteikarte', list: 'Aufzählung',
     },
   },
 };
@@ -513,6 +525,9 @@ function renderCard(q) {
   verdict.hidden = true;
   card.appendChild(verdict);
 
+  const src = renderSourcePages(q);
+  if (src) card.appendChild(src);
+
   const ctx = { q, card, body, verdict, actions };
   // For free text the hint is the input's placeholder instead.
   if (q.hint && q.type !== 'text') body.appendChild(el('p', 'pr-hint', escapeHtml(q.hint)));
@@ -520,6 +535,7 @@ function renderCard(q) {
   const renderers = {
     mc: renderChoice, multi: renderChoice, text: renderText, order: renderOrder,
     match: renderMatch, cloze: renderCloze, bucket: renderBucket, flash: renderFlash,
+    list: renderList,
   };
   view = (renderers[q.type] || renderUnknown)(ctx) || {};
   view.ctx = ctx;
@@ -528,6 +544,61 @@ function renderCard(q) {
   stage.innerHTML = '';
   stage.appendChild(card);
   if (view.focus) view.focus();
+}
+
+// A collapsed link to the exact skript page(s) a question comes from. The markup
+// matches the `details.source` blocks in the reading view, so the app-wide
+// lightbox opens the page image without any extra wiring.
+function renderSourcePages(q) {
+  const cfg = deck && deck.source;
+  if (!cfg || !cfg.base || !Array.isArray(q.pages) || !q.pages.length) return null;
+
+  const pages = q.pages.filter(n => Number.isInteger(n) && n > 0);
+  if (!pages.length) return null;
+
+  const box = el('details', 'source pr-source');
+  box.appendChild(el('summary', '', t('srcPages')(pages)));
+
+  const bodyEl = el('div', 'source-body');
+  if (cfg.label) bodyEl.appendChild(el('p', 'deck', escapeHtml(cfg.label)));
+
+  // `hl` marks the passage the answer comes from, in percent of the page, so the
+  // same numbers work on the thumbnail and on the full-size image.
+  const hl = q.hl && Number.isFinite(q.hl.x) ? q.hl : null;
+  const rect = hl ? [hl.x, hl.y, hl.w, hl.h].join(',') : '';
+
+  const grid = el('div', 'slide-grid');
+  pages.forEach(n => {
+    const file = String(n).padStart(cfg.pad || 3, '0') + (cfg.ext || '.jpg');
+    const href = cfg.base + file;
+    const a = el('a', 'slide');
+    a.href = href;
+    a.target = '_blank';
+    a.rel = 'noopener';
+
+    const shot = el('span', 'slide-shot');
+    const img = el('img');
+    img.loading = 'lazy';
+    img.src = href;
+    img.alt = t('srcPage')(n);
+    shot.appendChild(img);
+    if (hl && hl.page === n) {
+      a.dataset.hl = rect;
+      const mark = el('span', 'slide-hl');
+      mark.style.left = hl.x + '%';
+      mark.style.top = hl.y + '%';
+      mark.style.width = hl.w + '%';
+      mark.style.height = hl.h + '%';
+      shot.appendChild(mark);
+    }
+    a.appendChild(shot);
+    a.appendChild(el('span', '', t('srcPage')(n)));
+    grid.appendChild(a);
+  });
+  bodyEl.appendChild(grid);
+  if (hl) bodyEl.appendChild(el('p', 'src-note', t('srcNote')));
+  box.appendChild(bodyEl);
+  return box;
 }
 
 function paintActions(ctx) {
@@ -698,6 +769,45 @@ function renderCloze(ctx) {
   };
 }
 
+// ---------- list (name N things, order does not matter) ----------
+function renderList(ctx) {
+  const { q, body } = ctx;
+  const wrap = el('div', 'pr-list');
+  q.answers.forEach((_, i) => {
+    const row = el('div', 'pr-list-row');
+    row.appendChild(el('span', 'pr-n', String(i + 1)));
+    const inp = el('input', 'pr-input');
+    inp.type = 'text';
+    inp.setAttribute('autocomplete', 'off');
+    wrap.appendChild(row);
+    row.appendChild(inp);
+  });
+  body.appendChild(wrap);
+  body.appendChild(el('p', 'pr-hint', t('listHint')));
+
+  return {
+    focus: () => { const first = wrap.querySelector('input'); if (first) first.focus(); },
+    check: () => {
+      // Every box is matched against the *set* of wanted answers, and each
+      // answer can only be claimed once — so naming the same thing twice
+      // scores once, and the order the boxes were filled in is irrelevant.
+      const open = q.answers.map((_, k) => k);
+      let hits = 0;
+      wrap.querySelectorAll('input').forEach(inp => {
+        const v = norm(inp.value);
+        const at = v ? open.findIndex(k => q.answers[k].accept.some(a => norm(a) === v)) : -1;
+        if (at === -1) { inp.classList.add('mark-bad'); return; }
+        open.splice(at, 1);
+        inp.classList.add('mark-ok');
+        hits++;
+      });
+      const missed = open.map(k => q.answers[k].show || q.answers[k].accept[0]);
+      const extra = missed.length ? `${t('missing')} ${escapeHtml(missed.join(' · '))}.` : '';
+      conclude(ctx, hits === q.answers.length ? 'right' : hits ? 'partial' : 'wrong', extra);
+    },
+  };
+}
+
 // ---------- order ----------
 function renderOrder(ctx) {
   const { q, body } = ctx;
@@ -752,37 +862,179 @@ function renderOrder(ctx) {
 }
 
 // ---------- match ----------
+// The answers are chips you drag onto the line they belong to. The drag runs on
+// pointer events rather than HTML5 drag-and-drop, so one code path serves mouse,
+// pen and touch alike; a tap that never moves picks a chip up instead, which is
+// also the route the digit keys take.
 function renderMatch(ctx) {
   const { q, body } = ctx;
+  const n = q.pairs.length;
+  let picked = null;   // chip waiting for a slot (tap-to-place)
+  let drag = null;
+  let over = null;
+  let locked = false;
+
+  body.appendChild(el('p', 'pr-hint', escapeHtml(t('matchHint'))));
+
+  // Loose chips live in the bay; it keeps a minimum height so it stays a drop
+  // target once every answer has been placed.
+  const pool = el('div', 'pr-pool');
+  pool.appendChild(el('span', 'pr-pool-label', escapeHtml(t('answers'))));
+  const bay = el('div', 'pr-bay');
+  pool.appendChild(bay);
+  body.appendChild(pool);
+
   const wrap = el('div', 'pr-rows');
-  const rights = shuffle(q.pairs.map(p => p[1]));
-  q.pairs.forEach((p, k) => {
-    const row = el('div', 'pr-row');
+  const slots = q.pairs.map((p, k) => {
+    const row = el('div', 'pr-row match');
+    row.appendChild(el('span', 'pr-n', String(k + 1)));
     row.appendChild(el('span', 'pr-left', p[0]));
-    const sel = document.createElement('select');
-    sel.dataset.k = k;
-    sel.appendChild(new Option(t('assign'), ''));
-    rights.forEach(r => sel.appendChild(new Option(stripTags(r), r)));
-    row.appendChild(sel);
+    const slot = el('div', 'pr-slot');
+    row.appendChild(slot);
     row.appendChild(el('span', 'pr-mark'));
     wrap.appendChild(row);
+    return slot;
   });
   body.appendChild(wrap);
 
+  // A chip remembers the pair it came from, so grading stays exact even when
+  // two pairs happen to share the same right-hand text.
+  const chips = shuffle(q.pairs.map((_, j) => j)).map((j, pos) => {
+    const chip = el('button', 'pr-chip');
+    chip.type = 'button';
+    chip.dataset.j = j;
+    chip.innerHTML =
+      `<span class="pr-key">${pos + 1}</span>` +
+      `<span class="pr-chip-label">${q.pairs[j][1]}</span>`;
+    chip.addEventListener('pointerdown', onDown);
+    chip.addEventListener('pointermove', onMove);
+    chip.addEventListener('pointerup', onUp);
+    chip.addEventListener('pointercancel', abort);
+    bay.appendChild(chip);
+    return chip;
+  });
+
+  function setPicked(chip) {
+    picked = chip || null;
+    chips.forEach(c => { c.dataset.picked = c === picked ? '1' : '0'; });
+    wrap.dataset.picking = picked ? '1' : '0';
+  }
+
+  function place(chip, target) {
+    if (target !== bay) {
+      const sitting = target.querySelector('.pr-chip');
+      if (sitting && sitting !== chip) bay.appendChild(sitting);
+    }
+    target.appendChild(chip);
+    setPicked(null);
+  }
+
+  // The whole row counts as a drop zone — the slot alone is a small target on
+  // a phone. The ghost is pointer-events:none, so it never occludes the hit test.
+  function targetAt(x, y) {
+    const at = document.elementFromPoint(x, y);
+    if (!at) return null;
+    const row = at.closest('.pr-row.match');
+    if (row && wrap.contains(row)) return row.querySelector('.pr-slot');
+    return at.closest('.pr-pool') ? bay : null;
+  }
+
+  function markOver(target) {
+    if (over === target) return;
+    if (over) over.dataset.over = '0';
+    over = target;
+    if (over) over.dataset.over = '1';
+  }
+
+  function onDown(e) {
+    if (locked || (e.button !== undefined && e.button > 0)) return;
+    const chip = e.currentTarget;
+    const box = chip.getBoundingClientRect();
+    drag = {
+      chip, id: e.pointerId, moved: false,
+      dx: e.clientX - box.left, dy: e.clientY - box.top,
+      x0: e.clientX, y0: e.clientY, w: box.width, ghost: null,
+    };
+    chip.setPointerCapture(e.pointerId);
+  }
+
+  function onMove(e) {
+    if (!drag || e.pointerId !== drag.id) return;
+    if (!drag.moved) {
+      if (Math.hypot(e.clientX - drag.x0, e.clientY - drag.y0) < 5) return;
+      drag.moved = true;
+      setPicked(null);
+      drag.ghost = drag.chip.cloneNode(true);
+      drag.ghost.className = 'pr-chip pr-ghost';
+      drag.ghost.style.width = drag.w + 'px';
+      document.body.appendChild(drag.ghost);
+      drag.chip.dataset.dragging = '1';
+    }
+    e.preventDefault();
+    drag.ghost.style.transform =
+      `translate(${e.clientX - drag.dx}px, ${e.clientY - drag.dy}px)`;
+    markOver(targetAt(e.clientX, e.clientY));
+  }
+
+  function onUp(e) {
+    if (!drag || e.pointerId !== drag.id) return;
+    const { chip, moved } = drag;
+    abort();
+    if (!moved) return setPicked(picked === chip ? null : chip);
+    const target = targetAt(e.clientX, e.clientY);
+    if (target) place(chip, target);
+  }
+
+  function abort() {
+    if (!drag) return;
+    if (drag.ghost) drag.ghost.remove();
+    drag.chip.dataset.dragging = '0';
+    drag = null;
+    markOver(null);
+  }
+
+  // Clicks that land beside a chip: drop what is in hand, or send a chip back.
+  slots.forEach(slot => {
+    slot.addEventListener('click', e => {
+      if (locked || e.target.closest('.pr-chip')) return;
+      if (picked) place(picked, slot);
+    });
+  });
+  pool.addEventListener('click', e => {
+    if (locked || e.target.closest('.pr-chip')) return;
+    if (picked) place(picked, bay);
+  });
+
   return {
+    // First digit picks an answer up, the second drops it on that line.
+    keys: (i) => {
+      if (locked) return;
+      if (picked) { if (slots[i - 1]) place(picked, slots[i - 1]); return; }
+      if (chips[i - 1]) setPicked(chips[i - 1]);
+    },
+    cancel: () => { abort(); setPicked(null); },
     check: () => {
+      locked = true;
+      abort();
+      setPicked(null);
       let hits = 0;
-      wrap.querySelectorAll('.pr-row').forEach(row => {
-        const sel = row.querySelector('select');
-        const right = q.pairs[+sel.dataset.k][1];
-        const good = sel.value === right;
-        row.classList.add(good ? 'mark-ok' : 'mark-bad');
-        row.querySelector('.pr-mark').textContent = good ? '✓' : '✕';
-        if (good) hits++; else sel.value = right;
+      slots.forEach((slot, k) => {
+        const chip = slot.querySelector('.pr-chip');
+        const j = chip ? +chip.dataset.j : -1;
+        const ok = !!chip && (j === k || q.pairs[j][1] === q.pairs[k][1]);
+        const row = slot.closest('.pr-row');
+        row.classList.add(ok ? 'mark-ok' : 'mark-bad');
+        row.querySelector('.pr-mark').textContent = ok ? '✓' : '✕';
+        if (ok) { chip.classList.add('mark-ok'); hits++; return; }
+        if (chip) chip.classList.add('mark-bad');
+        // Show what belonged here right next to what was put there.
+        slot.appendChild(el('span', 'pr-chip mark-ok',
+          `<span class="pr-chip-label">${q.pairs[k][1]}</span>`));
       });
-      const extra = hits === q.pairs.length ? '' :
+      bay.querySelectorAll('.pr-chip').forEach(c => c.classList.add('mark-bad'));
+      const extra = hits === n ? '' :
         `${t('correctPairs')} ${q.pairs.map(p => `${stripTags(p[0])} → ${stripTags(p[1])}`).join(' · ')}.`;
-      conclude(ctx, hits === q.pairs.length ? 'right' : hits > 0 ? 'partial' : 'wrong', extra);
+      conclude(ctx, hits === n ? 'right' : hits > 0 ? 'partial' : 'wrong', extra);
     },
   };
 }
@@ -848,7 +1100,7 @@ function renderFlash(ctx) {
   const answer = el('div', 'pr-answer veiled', q.answer);
   slot.appendChild(answer);
 
-  const reveal = el('button', 'pr-reveal', 'Show answer  ·  space');
+  const reveal = el('button', 'pr-reveal', `${t('reveal')}  ·  space`);
   reveal.type = 'button';
   slot.appendChild(reveal);
   body.appendChild(slot);
@@ -902,6 +1154,10 @@ function onKey(e) {
   }
   if (typing) return;
 
+  if (e.key === 'Escape' && view && view.cancel) {
+    view.cancel();
+    return;
+  }
   if (e.key === ' ' && current.type === 'flash' && view && !view.revealed) {
     e.preventDefault();
     view.reveal();
