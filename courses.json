@@ -13,6 +13,13 @@
         "06-risk-conflict-management.html",
         "07-recap-career.html"
       ]
+    },
+    {
+      "id": "fitness-b",
+      "title": "Fitnesstrainer(in) B-Lizenz",
+      "files": [
+        "00-zusammenfassung.html"
+      ]
     }
   ],
   "tests": [
