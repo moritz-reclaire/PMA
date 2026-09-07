@@ -1,0 +1,4603 @@
+{
+ "lang": "de",
+ "source": {
+  "label": "Fitnesstrainer(in)-B-Lizenz · Lehrskript, Modul 6",
+  "base": "content/fitness-b/pages/",
+  "ext": ".jpg",
+  "pad": 3
+ },
+ "topics": [
+  {
+   "id": "schulter",
+   "label": "M6.2 · Schultergelenk"
+  },
+  {
+   "id": "scapula",
+   "label": "M6.3 · Schulterblatt"
+  },
+  {
+   "id": "ellenbogen",
+   "label": "M6.4 · Ellenbogengelenk"
+  },
+  {
+   "id": "hand",
+   "label": "M6.5 · Handgelenk"
+  },
+  {
+   "id": "ws",
+   "label": "M6.6 · Wirbelsäule & Rumpf"
+  },
+  {
+   "id": "huefte",
+   "label": "M6.7 · Hüftgelenk"
+  },
+  {
+   "id": "knie",
+   "label": "M6.8 · Kniegelenk"
+  },
+  {
+   "id": "sprung",
+   "label": "M6.9 · Sprunggelenk"
+  },
+  {
+   "id": "mix",
+   "label": "Quer · Gelenke, Gruppen & Merkmale"
+  }
+ ],
+ "questions": [
+  {
+   "id": "pectmaj-gelenk",
+   "topic": "schulter",
+   "type": "mc",
+   "src": "Modul 6.2.1",
+   "q": "Auf welches Gelenk wirkt der M. pectoralis major laut Lehrskript primär?",
+   "options": [
+    "Wirbelsäule",
+    "Schulterblatt",
+    "Ellenbogengelenk",
+    "Schultergelenk"
+   ],
+   "correct": 3,
+   "why": "Das Lehrskript führt den M. pectoralis major in Modul 6.2.1 unter den „Muskeln mit primärer Wirkung auf das Schultergelenk“. Funktion: Anteversion des Oberarms, Adduktion des Oberarms, Innenrotation des Oberarms. Bei Druckübungen wie Brustpresse, Butterfly oder Bankdrücken beansprucht; Schrägbankdrücken betont den Pars clavicularis, Dips den Pars abdominalis.",
+   "pages": [
+    105
+   ]
+  },
+  {
+   "id": "pectmaj-funk",
+   "topic": "schulter",
+   "type": "multi",
+   "src": "Modul 6.2.1",
+   "q": "Welche Funktionen hat der M. pectoralis major? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Innenrotation des Oberarms",
+    "Adduktion des Oberarms",
+    "Retroversion des Oberarms",
+    "Außenrotation des Oberarms",
+    "Abduktion des Oberarms",
+    "Anteversion des Oberarms"
+   ],
+   "correct": [
+    0,
+    1,
+    5
+   ],
+   "why": "Funktionen laut Modul 6.2.1:<ul><li>Anteversion des Oberarms</li><li>Adduktion des Oberarms</li><li>Innenrotation des Oberarms</li></ul>Nicht zutreffend sind: Retroversion des Oberarms · Außenrotation des Oberarms · Abduktion des Oberarms.",
+   "pages": [
+    105
+   ]
+  },
+  {
+   "id": "pectmaj-funk-nicht",
+   "topic": "schulter",
+   "type": "mc",
+   "src": "Modul 6.2.1",
+   "q": "Welche Funktion hat der M. pectoralis major <em>nicht</em>?",
+   "options": [
+    "Innenrotation des Oberarms",
+    "Anteversion des Oberarms",
+    "Retroversion des Oberarms",
+    "Adduktion des Oberarms"
+   ],
+   "correct": 2,
+   "why": "Die drei anderen Antworten nennt das Lehrskript in Modul 6.2.1. Funktionen laut Skript: Anteversion des Oberarms, Adduktion des Oberarms, Innenrotation des Oberarms. Retroversion des Oberarms steht nicht darunter.",
+   "pages": [
+    105
+   ]
+  },
+  {
+   "id": "pectmaj-urs",
+   "topic": "schulter",
+   "type": "multi",
+   "src": "Modul 6.2.1",
+   "q": "Welche Ursprünge hat der M. pectoralis major? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Thorakolumbale Faszie (Fascia thoracolumbalis)",
+    "9. bis 12. Rippe (Costae IX–XII)",
+    "Brustbein (Sternum)",
+    "2. bis 6. Rippenknorpel (Cartilagines costales II–VI)",
+    "Schlüsselbein (Clavicula)",
+    "Scheide des geraden Bauchmuskels (Aponeurose des M. rectus abdominis)",
+    "Schulterblattgräte (Spina scapulae)"
+   ],
+   "correct": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "why": "Ursprung des M. pectoralis major (Modul 6.2.1):<ul><li>Oberer Anteil (Pars clavicularis): Schlüsselbein (Clavicula)</li><li>Mittlerer Anteil (Pars sternocostalis): Brustbein (Sternum) und 2. bis 6. Rippenknorpel (Cartilagines costales II–VI)</li><li>Unterer Anteil (Pars abdominalis): Scheide des geraden Bauchmuskels (Aponeurose des M. rectus abdominis)</li></ul>Die anderen Optionen gehören zu: Thorakolumbale Faszie → M. latissimus dorsi · Schulterblattgräte → M. deltoideus · 9. bis 12. Rippe → M. latissimus dorsi.",
+   "pages": [
+    105
+   ]
+  },
+  {
+   "id": "pectmaj-ans",
+   "topic": "schulter",
+   "type": "multi",
+   "src": "Modul 6.2.1",
+   "q": "Welche Ansätze hat der M. pectoralis major? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Oberarmknochen, Deltamuskel-Rauigkeit (Tuberositas deltoidea humeri)",
+    "Leiste des kleinen Oberarmhöckers (Crista tuberculi minoris humeri)",
+    "Leiste des großen Oberarmhöckers (Crista tuberculi majoris humeri)",
+    "Zwischenhöckerrinne des Humeruskopfes (Sulcus intertubercularis humeri)"
+   ],
+   "correct": [
+    2
+   ],
+   "why": "Ansatz des M. pectoralis major (Modul 6.2.1):<ul><li>Leiste des großen Oberarmhöckers (Crista tuberculi majoris humeri)</li></ul>Die anderen Optionen gehören zu: Leiste des kleinen Oberarmhöckers → M. teres major · Oberarmknochen, Deltamuskel-Rauigkeit → M. deltoideus · Zwischenhöckerrinne des Humeruskopfes → M. latissimus dorsi.",
+   "pages": [
+    105
+   ]
+  },
+  {
+   "id": "delt-gelenk",
+   "topic": "schulter",
+   "type": "mc",
+   "src": "Modul 6.2.2",
+   "q": "Auf welches Gelenk wirkt der M. deltoideus laut Lehrskript primär?",
+   "options": [
+    "Schulterblatt",
+    "Wirbelsäule",
+    "Ellenbogengelenk",
+    "Schultergelenk"
+   ],
+   "correct": 3,
+   "why": "Das Lehrskript führt den M. deltoideus in Modul 6.2.2 unter den „Muskeln mit primärer Wirkung auf das Schultergelenk“. Funktion: Abduktion des Oberarms (10 bis 60 Grad durch den Pars acromialis), Adduktion des Oberarms (Pars clavicularis und Pars spinalis), Anteversion des Oberarms (Pars clavicularis), Retroversion des Oberarms (Pars spinalis), Innenrotation des Oberarms (Pars clavicularis), Außenrotation des Oberarms (Pars spinalis). Die drei Anteile arbeiten bei drückenden wie ziehenden Bewegungen mit und sollten in verschiedenen Ebenen trainiert werden.",
+   "pages": [
+    106
+   ]
+  },
+  {
+   "id": "delt-funk",
+   "topic": "schulter",
+   "type": "multi",
+   "src": "Modul 6.2.2",
+   "q": "Welche Funktionen hat der M. deltoideus? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Flexion im Ellenbogengelenk",
+    "Retroversion des Oberarms",
+    "Adduktion des Oberarms",
+    "Außenrotation des Oberarms",
+    "Anteversion des Oberarms",
+    "Abduktion des Oberarms",
+    "Depression des Schulterblatts",
+    "Elevation der Schulterblätter",
+    "Innenrotation des Oberarms"
+   ],
+   "correct": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8
+   ],
+   "why": "Funktionen laut Modul 6.2.2:<ul><li>Abduktion des Oberarms (10 bis 60 Grad durch den Pars acromialis)</li><li>Adduktion des Oberarms (Pars clavicularis und Pars spinalis)</li><li>Anteversion des Oberarms (Pars clavicularis)</li><li>Retroversion des Oberarms (Pars spinalis)</li><li>Innenrotation des Oberarms (Pars clavicularis)</li><li>Außenrotation des Oberarms (Pars spinalis)</li></ul>Nicht zutreffend sind: Flexion im Ellenbogengelenk · Elevation der Schulterblätter · Depression des Schulterblatts.",
+   "pages": [
+    106
+   ]
+  },
+  {
+   "id": "delt-funk-nicht",
+   "topic": "schulter",
+   "type": "mc",
+   "src": "Modul 6.2.2",
+   "q": "Welche Funktion hat der M. deltoideus <em>nicht</em>?",
+   "options": [
+    "Abduktion des Oberarms",
+    "Flexion im Ellenbogengelenk",
+    "Adduktion des Oberarms",
+    "Anteversion des Oberarms"
+   ],
+   "correct": 1,
+   "why": "Die drei anderen Antworten nennt das Lehrskript in Modul 6.2.2. Funktionen laut Skript: Abduktion des Oberarms (10 bis 60 Grad durch den Pars acromialis), Adduktion des Oberarms (Pars clavicularis und Pars spinalis), Anteversion des Oberarms (Pars clavicularis), Retroversion des Oberarms (Pars spinalis), Innenrotation des Oberarms (Pars clavicularis), Außenrotation des Oberarms (Pars spinalis). Flexion im Ellenbogengelenk steht nicht darunter.",
+   "pages": [
+    106
+   ]
+  },
+  {
+   "id": "delt-urs",
+   "topic": "schulter",
+   "type": "multi",
+   "src": "Modul 6.2.2",
+   "q": "Welche Ursprünge hat der M. deltoideus? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "9. bis 12. Rippe (Costae IX–XII)",
+    "Schulterdach (Akromion)",
+    "Schulterblattgräte (Spina scapulae)",
+    "Darmbeinkamm (Crista iliaca)",
+    "Kreuzbein (Os sacrum)",
+    "Schlüsselbein (Clavicula)"
+   ],
+   "correct": [
+    1,
+    2,
+    5
+   ],
+   "why": "Ursprung des M. deltoideus (Modul 6.2.2):<ul><li>Vorderer Anteil (Pars clavicularis): Schlüsselbein (Clavicula)</li><li>Mittlerer Anteil (Pars acromialis): Schulterdach (Akromion)</li><li>Hinterer Anteil (Pars spinalis): Schulterblattgräte (Spina scapulae)</li></ul>Die anderen Optionen gehören zu: Darmbeinkamm → M. latissimus dorsi · 9. bis 12. Rippe → M. latissimus dorsi · Kreuzbein → M. latissimus dorsi.",
+   "pages": [
+    106
+   ]
+  },
+  {
+   "id": "delt-ans",
+   "topic": "schulter",
+   "type": "multi",
+   "src": "Modul 6.2.2",
+   "q": "Welche Ansätze hat der M. deltoideus? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Leiste des kleinen Oberarmhöckers (Crista tuberculi minoris humeri)",
+    "Leiste des großen Oberarmhöckers (Crista tuberculi majoris humeri)",
+    "Zwischenhöckerrinne des Humeruskopfes (Sulcus intertubercularis humeri)",
+    "Oberarmknochen, Deltamuskel-Rauigkeit (Tuberositas deltoidea humeri)"
+   ],
+   "correct": [
+    3
+   ],
+   "why": "Ansatz des M. deltoideus (Modul 6.2.2):<ul><li>Oberarmknochen, Deltamuskel-Rauigkeit (Tuberositas deltoidea humeri)</li></ul>Die anderen Optionen gehören zu: Leiste des kleinen Oberarmhöckers → M. teres major · Leiste des großen Oberarmhöckers → M. pectoralis major · Zwischenhöckerrinne des Humeruskopfes → M. latissimus dorsi.",
+   "pages": [
+    106
+   ]
+  },
+  {
+   "id": "latis-gelenk",
+   "topic": "schulter",
+   "type": "mc",
+   "src": "Modul 6.2.3",
+   "q": "Auf welches Gelenk wirkt der M. latissimus dorsi laut Lehrskript primär?",
+   "options": [
+    "Schultergelenk",
+    "Wirbelsäule",
+    "Schulterblatt",
+    "Ellenbogengelenk"
+   ],
+   "correct": 0,
+   "why": "Das Lehrskript führt den M. latissimus dorsi in Modul 6.2.3 unter den „Muskeln mit primärer Wirkung auf das Schultergelenk“. Funktion: Retroversion des Oberarms, Adduktion des Oberarms, Innenrotation des Oberarms, Anheben und Vorwärtsbewegung des Rumpfes bei fixiertem Arm (Klimmzug, Klettern). Größter Rückenmuskel, bei fast allen ziehenden Bewegungen beteiligt; er sorgt für den breiten V-Rücken, der M. trapezius eher für die Rückentiefe.",
+   "pages": [
+    107
+   ]
+  },
+  {
+   "id": "latis-funk",
+   "topic": "schulter",
+   "type": "multi",
+   "src": "Modul 6.2.3",
+   "q": "Welche Funktionen hat der M. latissimus dorsi? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Anheben und Vorwärtsbewegung des Rumpfes bei fixiertem Arm",
+    "Abduktion des Oberarms",
+    "Außenrotation des Oberarms",
+    "Retroversion des Oberarms",
+    "Adduktion des Oberarms",
+    "Innenrotation des Oberarms",
+    "Anteversion des Oberarms"
+   ],
+   "correct": [
+    0,
+    3,
+    4,
+    5
+   ],
+   "why": "Funktionen laut Modul 6.2.3:<ul><li>Retroversion des Oberarms</li><li>Adduktion des Oberarms</li><li>Innenrotation des Oberarms</li><li>Anheben und Vorwärtsbewegung des Rumpfes bei fixiertem Arm (Klimmzug, Klettern)</li></ul>Nicht zutreffend sind: Anteversion des Oberarms · Außenrotation des Oberarms · Abduktion des Oberarms.",
+   "pages": [
+    107
+   ]
+  },
+  {
+   "id": "latis-funk-nicht",
+   "topic": "schulter",
+   "type": "mc",
+   "src": "Modul 6.2.3",
+   "q": "Welche Funktion hat der M. latissimus dorsi <em>nicht</em>?",
+   "options": [
+    "Adduktion des Oberarms",
+    "Innenrotation des Oberarms",
+    "Retroversion des Oberarms",
+    "Anteversion des Oberarms"
+   ],
+   "correct": 3,
+   "why": "Die drei anderen Antworten nennt das Lehrskript in Modul 6.2.3. Funktionen laut Skript: Retroversion des Oberarms, Adduktion des Oberarms, Innenrotation des Oberarms, Anheben und Vorwärtsbewegung des Rumpfes bei fixiertem Arm (Klimmzug, Klettern). Anteversion des Oberarms steht nicht darunter.",
+   "pages": [
+    107
+   ]
+  },
+  {
+   "id": "latis-urs",
+   "topic": "schulter",
+   "type": "multi",
+   "src": "Modul 6.2.3",
+   "q": "Welche Ursprünge hat der M. latissimus dorsi? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Unterer Schulterblattwinkel (Angulus inferior scapulae)",
+    "Darmbeinkamm (Crista iliaca)",
+    "2. bis 6. Rippenknorpel (Cartilagines costales II–VI)",
+    "Schulterblattgräte (Spina scapulae)",
+    "Dornfortsätze des 7. bis 12. Brustwirbels (Processus spinosi Th7–Th12)",
+    "Rippenseite des Schulterblatts (Fossa subscapularis)",
+    "9. bis 12. Rippe (Costae IX–XII)",
+    "Thorakolumbale Faszie (Fascia thoracolumbalis)",
+    "Kreuzbein (Os sacrum)"
+   ],
+   "correct": [
+    0,
+    1,
+    4,
+    6,
+    7,
+    8
+   ],
+   "why": "Ursprung des M. latissimus dorsi (Modul 6.2.3):<ul><li>Dornfortsätze des 7. bis 12. Brustwirbels (Processus spinosi Th7–Th12)</li><li>Unterer Schulterblattwinkel (Angulus inferior scapulae)</li><li>9. bis 12. Rippe (Costae IX–XII)</li><li>Darmbeinkamm (Crista iliaca)</li><li>Kreuzbein (Os sacrum)</li><li>Thorakolumbale Faszie (Fascia thoracolumbalis)</li></ul>Die anderen Optionen gehören zu: Schulterblattgräte → M. deltoideus · Rippenseite des Schulterblatts → M. subscapularis · 2. bis 6. Rippenknorpel → M. pectoralis major.",
+   "pages": [
+    107
+   ]
+  },
+  {
+   "id": "latis-ans",
+   "topic": "schulter",
+   "type": "multi",
+   "src": "Modul 6.2.3",
+   "q": "Welche Ansätze hat der M. latissimus dorsi? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Leiste des kleinen Oberarmhöckers (Crista tuberculi minoris humeri)",
+    "Zwischenhöckerrinne des Humeruskopfes (Sulcus intertubercularis humeri)",
+    "Leiste des großen Oberarmhöckers (Crista tuberculi majoris humeri)",
+    "Oberarmknochen, Deltamuskel-Rauigkeit (Tuberositas deltoidea humeri)"
+   ],
+   "correct": [
+    1
+   ],
+   "why": "Ansatz des M. latissimus dorsi (Modul 6.2.3):<ul><li>Zwischenhöckerrinne des Humeruskopfes (Sulcus intertubercularis humeri)</li></ul>Die anderen Optionen gehören zu: Oberarmknochen, Deltamuskel-Rauigkeit → M. deltoideus · Leiste des kleinen Oberarmhöckers → M. teres major · Leiste des großen Oberarmhöckers → M. pectoralis major.",
+   "pages": [
+    107
+   ]
+  },
+  {
+   "id": "teresmaj-gelenk",
+   "topic": "schulter",
+   "type": "mc",
+   "src": "Modul 6.2.4",
+   "q": "Auf welches Gelenk wirkt der M. teres major laut Lehrskript primär?",
+   "options": [
+    "Schultergelenk",
+    "Wirbelsäule",
+    "Ellenbogengelenk",
+    "Schulterblatt"
+   ],
+   "correct": 0,
+   "why": "Das Lehrskript führt den M. teres major in Modul 6.2.4 unter den „Muskeln mit primärer Wirkung auf das Schultergelenk“. Funktion: Adduktion des Oberarms, Retroversion des Oberarms, Innenrotation des Oberarms. Funktionell ein kleiner „Latissimus-Partner“: gleiche drei Funktionen, aber Ursprung nur am unteren Schulterblattwinkel.",
+   "pages": [
+    107
+   ]
+  },
+  {
+   "id": "teresmaj-funk",
+   "topic": "schulter",
+   "type": "multi",
+   "src": "Modul 6.2.4",
+   "q": "Welche Funktionen hat der M. teres major? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Außenrotation des Oberarms",
+    "Innenrotation des Oberarms",
+    "Adduktion des Oberarms",
+    "Abduktion des Oberarms",
+    "Anteversion des Oberarms",
+    "Retroversion des Oberarms"
+   ],
+   "correct": [
+    1,
+    2,
+    5
+   ],
+   "why": "Funktionen laut Modul 6.2.4:<ul><li>Adduktion des Oberarms</li><li>Retroversion des Oberarms</li><li>Innenrotation des Oberarms</li></ul>Nicht zutreffend sind: Außenrotation des Oberarms · Abduktion des Oberarms · Anteversion des Oberarms.",
+   "pages": [
+    107
+   ]
+  },
+  {
+   "id": "teresmaj-funk-nicht",
+   "topic": "schulter",
+   "type": "mc",
+   "src": "Modul 6.2.4",
+   "q": "Welche Funktion hat der M. teres major <em>nicht</em>?",
+   "options": [
+    "Außenrotation des Oberarms",
+    "Retroversion des Oberarms",
+    "Innenrotation des Oberarms",
+    "Adduktion des Oberarms"
+   ],
+   "correct": 0,
+   "why": "Die drei anderen Antworten nennt das Lehrskript in Modul 6.2.4. Funktionen laut Skript: Adduktion des Oberarms, Retroversion des Oberarms, Innenrotation des Oberarms. Außenrotation des Oberarms steht nicht darunter.",
+   "pages": [
+    107
+   ]
+  },
+  {
+   "id": "teresmaj-urs",
+   "topic": "schulter",
+   "type": "multi",
+   "src": "Modul 6.2.4",
+   "q": "Welche Ursprünge hat der M. teres major? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Außenrand des Schulterblatts (Margo lateralis scapulae)",
+    "Unterer Schulterblattwinkel (Angulus inferior scapulae)",
+    "Untergrätengrube des Schulterblatts (Fossa infraspinata)",
+    "Obergrätengrube des Schulterblatts (Fossa supraspinata)"
+   ],
+   "correct": [
+    1
+   ],
+   "why": "Ursprung des M. teres major (Modul 6.2.4):<ul><li>Unterer Schulterblattwinkel (Angulus inferior scapulae)</li></ul>Die anderen Optionen gehören zu: Obergrätengrube des Schulterblatts → M. supraspinatus · Außenrand des Schulterblatts → M. teres minor · Untergrätengrube des Schulterblatts → M. infraspinatus.",
+   "pages": [
+    107
+   ]
+  },
+  {
+   "id": "teresmaj-ans",
+   "topic": "schulter",
+   "type": "multi",
+   "src": "Modul 6.2.4",
+   "q": "Welche Ansätze hat der M. teres major? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Oberarmknochen, Deltamuskel-Rauigkeit (Tuberositas deltoidea humeri)",
+    "Zwischenhöckerrinne des Humeruskopfes (Sulcus intertubercularis humeri)",
+    "Leiste des großen Oberarmhöckers (Crista tuberculi majoris humeri)",
+    "Leiste des kleinen Oberarmhöckers (Crista tuberculi minoris humeri)"
+   ],
+   "correct": [
+    3
+   ],
+   "why": "Ansatz des M. teres major (Modul 6.2.4):<ul><li>Leiste des kleinen Oberarmhöckers (Crista tuberculi minoris humeri)</li></ul>Die anderen Optionen gehören zu: Oberarmknochen, Deltamuskel-Rauigkeit → M. deltoideus · Leiste des großen Oberarmhöckers → M. pectoralis major · Zwischenhöckerrinne des Humeruskopfes → M. latissimus dorsi.",
+   "pages": [
+    107
+   ]
+  },
+  {
+   "id": "supra-gelenk",
+   "topic": "schulter",
+   "type": "mc",
+   "src": "Modul 6.2.5",
+   "q": "Auf welches Gelenk wirkt der M. supraspinatus laut Lehrskript primär?",
+   "options": [
+    "Schultergelenk",
+    "Ellenbogengelenk",
+    "Schulterblatt",
+    "Wirbelsäule"
+   ],
+   "correct": 0,
+   "why": "Das Lehrskript führt den M. supraspinatus in Modul 6.2.5 unter den „Muskeln mit primärer Wirkung auf das Schultergelenk“. Funktion: Außenrotation des Oberarms, Stabilisierung des Schultergelenks, Abduktion des Oberarms (die ersten 5 bis 10 Grad als einziger Muskel). Teil der Rotatorenmanschette. Beim Impingement-Syndrom ist häufig dieser Muskel bzw. seine Sehne entzündet.",
+   "pages": [
+    108
+   ]
+  },
+  {
+   "id": "supra-funk",
+   "topic": "schulter",
+   "type": "multi",
+   "src": "Modul 6.2.5",
+   "q": "Welche Funktionen hat der M. supraspinatus? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Adduktion des Oberarms",
+    "Abduktion des Oberarms",
+    "Anteversion des Oberarms",
+    "Innenrotation des Oberarms",
+    "Stabilisierung des Schultergelenks",
+    "Außenrotation des Oberarms"
+   ],
+   "correct": [
+    1,
+    4,
+    5
+   ],
+   "why": "Funktionen laut Modul 6.2.5:<ul><li>Außenrotation des Oberarms</li><li>Stabilisierung des Schultergelenks</li><li>Abduktion des Oberarms (die ersten 5 bis 10 Grad als einziger Muskel)</li></ul>Nicht zutreffend sind: Innenrotation des Oberarms · Anteversion des Oberarms · Adduktion des Oberarms.",
+   "pages": [
+    108
+   ]
+  },
+  {
+   "id": "supra-funk-nicht",
+   "topic": "schulter",
+   "type": "mc",
+   "src": "Modul 6.2.5",
+   "q": "Welche Funktion hat der M. supraspinatus <em>nicht</em>?",
+   "options": [
+    "Innenrotation des Oberarms",
+    "Stabilisierung des Schultergelenks",
+    "Außenrotation des Oberarms",
+    "Abduktion des Oberarms"
+   ],
+   "correct": 0,
+   "why": "Die drei anderen Antworten nennt das Lehrskript in Modul 6.2.5. Funktionen laut Skript: Außenrotation des Oberarms, Stabilisierung des Schultergelenks, Abduktion des Oberarms (die ersten 5 bis 10 Grad als einziger Muskel). Innenrotation des Oberarms steht nicht darunter.",
+   "pages": [
+    108
+   ]
+  },
+  {
+   "id": "supra-urs",
+   "topic": "schulter",
+   "type": "multi",
+   "src": "Modul 6.2.5",
+   "q": "Welche Ursprünge hat der M. supraspinatus? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Unterer Schulterblattwinkel (Angulus inferior scapulae)",
+    "Untergrätengrube des Schulterblatts (Fossa infraspinata)",
+    "Außenrand des Schulterblatts (Margo lateralis scapulae)",
+    "Obergrätengrube des Schulterblatts (Fossa supraspinata)"
+   ],
+   "correct": [
+    3
+   ],
+   "why": "Ursprung des M. supraspinatus (Modul 6.2.5):<ul><li>Obergrätengrube des Schulterblatts (Fossa supraspinata)</li></ul>Die anderen Optionen gehören zu: Unterer Schulterblattwinkel → M. latissimus dorsi · Außenrand des Schulterblatts → M. teres minor · Untergrätengrube des Schulterblatts → M. infraspinatus.",
+   "pages": [
+    108
+   ]
+  },
+  {
+   "id": "supra-ans",
+   "topic": "schulter",
+   "type": "multi",
+   "src": "Modul 6.2.5",
+   "q": "Welche Ansätze hat der M. supraspinatus? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Kleiner Oberarmhöcker (Tuberculum minus humeri)",
+    "Leiste des kleinen Oberarmhöckers (Crista tuberculi minoris humeri)",
+    "Leiste des großen Oberarmhöckers (Crista tuberculi majoris humeri)",
+    "Großer Oberarmhöcker (Tuberculum majus humeri)"
+   ],
+   "correct": [
+    3
+   ],
+   "why": "Ansatz des M. supraspinatus (Modul 6.2.5):<ul><li>Großer Oberarmhöcker (Tuberculum majus humeri)</li></ul>Die anderen Optionen gehören zu: Kleiner Oberarmhöcker → M. subscapularis · Leiste des großen Oberarmhöckers → M. pectoralis major · Leiste des kleinen Oberarmhöckers → M. teres major.",
+   "pages": [
+    108
+   ]
+  },
+  {
+   "id": "infra-gelenk",
+   "topic": "schulter",
+   "type": "mc",
+   "src": "Modul 6.2.6",
+   "q": "Auf welches Gelenk wirkt der M. infraspinatus laut Lehrskript primär?",
+   "options": [
+    "Ellenbogengelenk",
+    "Schulterblatt",
+    "Wirbelsäule",
+    "Schultergelenk"
+   ],
+   "correct": 3,
+   "why": "Das Lehrskript führt den M. infraspinatus in Modul 6.2.6 unter den „Muskeln mit primärer Wirkung auf das Schultergelenk“. Funktion: Außenrotation des Oberarms, Stabilisierung des Schultergelenks. Teil der Rotatorenmanschette und Synergist des M. supraspinatus.",
+   "pages": [
+    108
+   ]
+  },
+  {
+   "id": "infra-funk",
+   "topic": "schulter",
+   "type": "multi",
+   "src": "Modul 6.2.6",
+   "q": "Welche Funktionen hat der M. infraspinatus? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Innenrotation des Oberarms",
+    "Adduktion des Oberarms",
+    "Abduktion des Oberarms",
+    "Stabilisierung des Schultergelenks",
+    "Außenrotation des Oberarms"
+   ],
+   "correct": [
+    3,
+    4
+   ],
+   "why": "Funktionen laut Modul 6.2.6:<ul><li>Außenrotation des Oberarms</li><li>Stabilisierung des Schultergelenks</li></ul>Nicht zutreffend sind: Innenrotation des Oberarms · Abduktion des Oberarms · Adduktion des Oberarms.",
+   "pages": [
+    108
+   ]
+  },
+  {
+   "id": "infra-urs",
+   "topic": "schulter",
+   "type": "multi",
+   "src": "Modul 6.2.6",
+   "q": "Welche Ursprünge hat der M. infraspinatus? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Obergrätengrube des Schulterblatts (Fossa supraspinata)",
+    "Außenrand des Schulterblatts (Margo lateralis scapulae)",
+    "Unterer Schulterblattwinkel (Angulus inferior scapulae)",
+    "Untergrätengrube des Schulterblatts (Fossa infraspinata)"
+   ],
+   "correct": [
+    3
+   ],
+   "why": "Ursprung des M. infraspinatus (Modul 6.2.6):<ul><li>Untergrätengrube des Schulterblatts (Fossa infraspinata)</li></ul>Die anderen Optionen gehören zu: Unterer Schulterblattwinkel → M. latissimus dorsi · Obergrätengrube des Schulterblatts → M. supraspinatus · Außenrand des Schulterblatts → M. teres minor.",
+   "pages": [
+    108
+   ]
+  },
+  {
+   "id": "infra-ans",
+   "topic": "schulter",
+   "type": "multi",
+   "src": "Modul 6.2.6",
+   "q": "Welche Ansätze hat der M. infraspinatus? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Kleiner Oberarmhöcker (Tuberculum minus humeri)",
+    "Leiste des großen Oberarmhöckers (Crista tuberculi majoris humeri)",
+    "Großer Oberarmhöcker (Tuberculum majus humeri)",
+    "Leiste des kleinen Oberarmhöckers (Crista tuberculi minoris humeri)"
+   ],
+   "correct": [
+    2
+   ],
+   "why": "Ansatz des M. infraspinatus (Modul 6.2.6):<ul><li>Großer Oberarmhöcker (Tuberculum majus humeri)</li></ul>Die anderen Optionen gehören zu: Kleiner Oberarmhöcker → M. subscapularis · Leiste des großen Oberarmhöckers → M. pectoralis major · Leiste des kleinen Oberarmhöckers → M. teres major.",
+   "pages": [
+    108
+   ]
+  },
+  {
+   "id": "teresmin-gelenk",
+   "topic": "schulter",
+   "type": "mc",
+   "src": "Modul 6.2.7",
+   "q": "Auf welches Gelenk wirkt der M. teres minor laut Lehrskript primär?",
+   "options": [
+    "Ellenbogengelenk",
+    "Schulterblatt",
+    "Schultergelenk",
+    "Wirbelsäule"
+   ],
+   "correct": 2,
+   "why": "Das Lehrskript führt den M. teres minor in Modul 6.2.7 unter den „Muskeln mit primärer Wirkung auf das Schultergelenk“. Funktion: Schwache Adduktion des Oberarms, Außenrotation des Oberarms, Retroversion des Oberarms, Stabilisierung des Schultergelenks. Vierter Muskel der Rotatorenmanschette – im Gegensatz zum großen Rundmuskel rotiert er nach außen.",
+   "pages": [
+    109
+   ]
+  },
+  {
+   "id": "teresmin-funk",
+   "topic": "schulter",
+   "type": "multi",
+   "src": "Modul 6.2.7",
+   "q": "Welche Funktionen hat der M. teres minor? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Anteversion des Oberarms",
+    "Stabilisierung des Schultergelenks",
+    "Innenrotation des Oberarms",
+    "Adduktion des Oberarms",
+    "Außenrotation des Oberarms",
+    "Retroversion des Oberarms",
+    "Abduktion des Oberarms"
+   ],
+   "correct": [
+    1,
+    3,
+    4,
+    5
+   ],
+   "why": "Funktionen laut Modul 6.2.7:<ul><li>Schwache Adduktion des Oberarms</li><li>Außenrotation des Oberarms</li><li>Retroversion des Oberarms</li><li>Stabilisierung des Schultergelenks</li></ul>Nicht zutreffend sind: Innenrotation des Oberarms · Anteversion des Oberarms · Abduktion des Oberarms.",
+   "pages": [
+    109
+   ]
+  },
+  {
+   "id": "teresmin-funk-nicht",
+   "topic": "schulter",
+   "type": "mc",
+   "src": "Modul 6.2.7",
+   "q": "Welche Funktion hat der M. teres minor <em>nicht</em>?",
+   "options": [
+    "Innenrotation des Oberarms",
+    "Außenrotation des Oberarms",
+    "Retroversion des Oberarms",
+    "Adduktion des Oberarms"
+   ],
+   "correct": 0,
+   "why": "Die drei anderen Antworten nennt das Lehrskript in Modul 6.2.7. Funktionen laut Skript: Schwache Adduktion des Oberarms, Außenrotation des Oberarms, Retroversion des Oberarms, Stabilisierung des Schultergelenks. Innenrotation des Oberarms steht nicht darunter.",
+   "pages": [
+    109
+   ]
+  },
+  {
+   "id": "teresmin-urs",
+   "topic": "schulter",
+   "type": "multi",
+   "src": "Modul 6.2.7",
+   "q": "Welche Ursprünge hat der M. teres minor? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Außenrand des Schulterblatts (Margo lateralis scapulae)",
+    "Unterer Schulterblattwinkel (Angulus inferior scapulae)",
+    "Untergrätengrube des Schulterblatts (Fossa infraspinata)",
+    "Obergrätengrube des Schulterblatts (Fossa supraspinata)"
+   ],
+   "correct": [
+    0
+   ],
+   "why": "Ursprung des M. teres minor (Modul 6.2.7):<ul><li>Außenrand des Schulterblatts (Margo lateralis scapulae)</li></ul>Die anderen Optionen gehören zu: Unterer Schulterblattwinkel → M. latissimus dorsi · Obergrätengrube des Schulterblatts → M. supraspinatus · Untergrätengrube des Schulterblatts → M. infraspinatus.",
+   "pages": [
+    109
+   ]
+  },
+  {
+   "id": "teresmin-ans",
+   "topic": "schulter",
+   "type": "multi",
+   "src": "Modul 6.2.7",
+   "q": "Welche Ansätze hat der M. teres minor? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Leiste des kleinen Oberarmhöckers (Crista tuberculi minoris humeri)",
+    "Kleiner Oberarmhöcker (Tuberculum minus humeri)",
+    "Großer Oberarmhöcker (Tuberculum majus humeri)",
+    "Leiste des großen Oberarmhöckers (Crista tuberculi majoris humeri)"
+   ],
+   "correct": [
+    2
+   ],
+   "why": "Ansatz des M. teres minor (Modul 6.2.7):<ul><li>Großer Oberarmhöcker (Tuberculum majus humeri)</li></ul>Die anderen Optionen gehören zu: Kleiner Oberarmhöcker → M. subscapularis · Leiste des großen Oberarmhöckers → M. pectoralis major · Leiste des kleinen Oberarmhöckers → M. teres major.",
+   "pages": [
+    109
+   ]
+  },
+  {
+   "id": "subscap-gelenk",
+   "topic": "schulter",
+   "type": "mc",
+   "src": "Modul 6.2.8",
+   "q": "Auf welches Gelenk wirkt der M. subscapularis laut Lehrskript primär?",
+   "options": [
+    "Ellenbogengelenk",
+    "Schulterblatt",
+    "Wirbelsäule",
+    "Schultergelenk"
+   ],
+   "correct": 3,
+   "why": "Das Lehrskript führt den M. subscapularis in Modul 6.2.8 unter den „Muskeln mit primärer Wirkung auf das Schultergelenk“. Funktion: Innenrotation des Oberarms im Schultergelenk, Stabilisierung des Schultergelenks. Einziger Innenrotator der Rotatorenmanschette und der einzige der vier, der am kleinen Oberarmhöcker ansetzt.",
+   "pages": [
+    109
+   ]
+  },
+  {
+   "id": "subscap-funk",
+   "topic": "schulter",
+   "type": "multi",
+   "src": "Modul 6.2.8",
+   "q": "Welche Funktionen hat der M. subscapularis? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Abduktion des Oberarms",
+    "Retroversion des Oberarms",
+    "Außenrotation des Oberarms",
+    "Innenrotation des Oberarms im Schultergelenk",
+    "Stabilisierung des Schultergelenks"
+   ],
+   "correct": [
+    3,
+    4
+   ],
+   "why": "Funktionen laut Modul 6.2.8:<ul><li>Innenrotation des Oberarms im Schultergelenk</li><li>Stabilisierung des Schultergelenks</li></ul>Nicht zutreffend sind: Außenrotation des Oberarms · Abduktion des Oberarms · Retroversion des Oberarms.",
+   "pages": [
+    109
+   ]
+  },
+  {
+   "id": "subscap-urs",
+   "topic": "schulter",
+   "type": "multi",
+   "src": "Modul 6.2.8",
+   "q": "Welche Ursprünge hat der M. subscapularis? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "2. bis 6. Rippenknorpel (Cartilagines costales II–VI)",
+    "Unterer Schulterblattwinkel (Angulus inferior scapulae)",
+    "Obergrätengrube des Schulterblatts (Fossa supraspinata)",
+    "Rippenseite des Schulterblatts (Fossa subscapularis)"
+   ],
+   "correct": [
+    3
+   ],
+   "why": "Ursprung des M. subscapularis (Modul 6.2.8):<ul><li>Rippenseite des Schulterblatts (Fossa subscapularis)</li></ul>Die anderen Optionen gehören zu: 2. bis 6. Rippenknorpel → M. pectoralis major · Unterer Schulterblattwinkel → M. latissimus dorsi · Obergrätengrube des Schulterblatts → M. supraspinatus.",
+   "pages": [
+    109
+   ]
+  },
+  {
+   "id": "subscap-ans",
+   "topic": "schulter",
+   "type": "multi",
+   "src": "Modul 6.2.8",
+   "q": "Welche Ansätze hat der M. subscapularis? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Leiste des großen Oberarmhöckers (Crista tuberculi majoris humeri)",
+    "Kleiner Oberarmhöcker (Tuberculum minus humeri)",
+    "Großer Oberarmhöcker (Tuberculum majus humeri)",
+    "Leiste des kleinen Oberarmhöckers (Crista tuberculi minoris humeri)"
+   ],
+   "correct": [
+    1
+   ],
+   "why": "Ansatz des M. subscapularis (Modul 6.2.8):<ul><li>Kleiner Oberarmhöcker (Tuberculum minus humeri)</li></ul>Die anderen Optionen gehören zu: Großer Oberarmhöcker → M. supraspinatus · Leiste des großen Oberarmhöckers → M. pectoralis major · Leiste des kleinen Oberarmhöckers → M. teres major.",
+   "pages": [
+    109
+   ]
+  },
+  {
+   "id": "trap-gelenk",
+   "topic": "scapula",
+   "type": "mc",
+   "src": "Modul 6.3.1",
+   "q": "Auf welches Gelenk wirkt der M. trapezius laut Lehrskript primär?",
+   "options": [
+    "Schultergelenk",
+    "Ellenbogengelenk",
+    "Wirbelsäule",
+    "Schulterblatt"
+   ],
+   "correct": 3,
+   "why": "Das Lehrskript führt den M. trapezius in Modul 6.3.1 unter den „Muskeln mit primärer Wirkung auf das Schulterblatt“. Funktion: Oberer Anteil: Elevation der Schulterblätter bei beidseitiger Kontraktion, Oberer Anteil: Rotation des Kopfes bei einseitiger Kontraktion, Mittlerer Anteil: Retraktion der Schulterblätter, Unterer Anteil: Depression der Schulterblätter. Optisch primär für die Rückendichte verantwortlich. „Der Nackenmuskel“ ist genau genommen nur sein oberer Anteil.",
+   "pages": [
+    111
+   ]
+  },
+  {
+   "id": "trap-funk",
+   "topic": "scapula",
+   "type": "multi",
+   "src": "Modul 6.3.1",
+   "q": "Welche Funktionen hat der M. trapezius? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Retraktion der Schulterblätter",
+    "Elevation der Schulterblätter bei beidseitiger Kontraktion",
+    "Abduktion des Oberarms",
+    "Protraktion der Schulterblätter",
+    "Innenrotation des Oberarms",
+    "Rotation des Kopfes bei einseitiger Kontraktion",
+    "Depression der Schulterblätter"
+   ],
+   "correct": [
+    0,
+    1,
+    5,
+    6
+   ],
+   "why": "Funktionen laut Modul 6.3.1:<ul><li>Oberer Anteil: Elevation der Schulterblätter bei beidseitiger Kontraktion</li><li>Oberer Anteil: Rotation des Kopfes bei einseitiger Kontraktion</li><li>Mittlerer Anteil: Retraktion der Schulterblätter</li><li>Unterer Anteil: Depression der Schulterblätter</li></ul>Nicht zutreffend sind: Protraktion der Schulterblätter · Innenrotation des Oberarms · Abduktion des Oberarms.",
+   "pages": [
+    111
+   ]
+  },
+  {
+   "id": "trap-funk-nicht",
+   "topic": "scapula",
+   "type": "mc",
+   "src": "Modul 6.3.1",
+   "q": "Welche Funktion hat der M. trapezius <em>nicht</em>?",
+   "options": [
+    "Retraktion der Schulterblätter",
+    "Protraktion der Schulterblätter",
+    "Elevation der Schulterblätter bei beidseitiger Kontraktion",
+    "Rotation des Kopfes bei einseitiger Kontraktion"
+   ],
+   "correct": 1,
+   "why": "Die drei anderen Antworten nennt das Lehrskript in Modul 6.3.1. Funktionen laut Skript: Oberer Anteil: Elevation der Schulterblätter bei beidseitiger Kontraktion, Oberer Anteil: Rotation des Kopfes bei einseitiger Kontraktion, Mittlerer Anteil: Retraktion der Schulterblätter, Unterer Anteil: Depression der Schulterblätter. Protraktion der Schulterblätter steht nicht darunter.",
+   "pages": [
+    111
+   ]
+  },
+  {
+   "id": "trap-urs",
+   "topic": "scapula",
+   "type": "multi",
+   "src": "Modul 6.3.1",
+   "q": "Welche Ursprünge hat der M. trapezius? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Äußerer Hinterhauptkamm (Protuberantia occipitalis externa)",
+    "Dornfortsätze des 4. bis 12. Brustwirbels (Processus spinosi Th4–Th12)",
+    "Dornfortsätze des 7. Hals- bis 3. Brustwirbels (Processus spinosi C7–Th3)",
+    "Dornfortsätze des 6. bis 7. Halswirbels (Processus spinosi C6–C7)",
+    "Nackenband (Ligamentum nuchae)",
+    "Dornfortsätze C1–C7",
+    "3. bis 5. Rippe (Costae III–V)",
+    "Dornfortsätze des 1. bis 4. Brustwirbels (Processus spinosi Th1–Th4)"
+   ],
+   "correct": [
+    0,
+    1,
+    2,
+    4,
+    5
+   ],
+   "why": "Ursprung des M. trapezius (Modul 6.3.1):<ul><li>Oberer Anteil (Pars descendens): Äußerer Hinterhauptkamm (Protuberantia occipitalis externa), Nackenband (Ligamentum nuchae), Dornfortsätze C1–C7</li><li>Mittlerer Anteil (Pars transversa): Dornfortsätze des 7. Hals- bis 3. Brustwirbels (Processus spinosi C7–Th3)</li><li>Unterer Anteil (Pars ascendens): Dornfortsätze des 4. bis 12. Brustwirbels (Processus spinosi Th4–Th12)</li></ul>Die anderen Optionen gehören zu: Dornfortsätze des 6. bis 7. Halswirbels → Mm. rhomboidei · Dornfortsätze des 1. bis 4. Brustwirbels → Mm. rhomboidei · 3. bis 5. Rippe → M. pectoralis minor.",
+   "pages": [
+    111
+   ]
+  },
+  {
+   "id": "trap-ans",
+   "topic": "scapula",
+   "type": "multi",
+   "src": "Modul 6.3.1",
+   "q": "Welche Ansätze hat der M. trapezius? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Rabenschnabelfortsatz (Processus coracoideus)",
+    "Oberer und unterer Schulterblattwinkel (Angulus inferior et superior scapulae)",
+    "Medialer Rand des Schulterblatts (Margo medialis scapulae)",
+    "Schulterdach (Akromion)",
+    "Schlüsselbein (Clavicula)",
+    "Schulterblattgräte (Spina scapulae)"
+   ],
+   "correct": [
+    3,
+    4,
+    5
+   ],
+   "why": "Ansatz des M. trapezius (Modul 6.3.1):<ul><li>Oberer Anteil: Schlüsselbein (Clavicula)</li><li>Mittlerer Anteil: Schulterdach (Akromion)</li><li>Unterer Anteil: Schulterblattgräte (Spina scapulae)</li></ul>Die anderen Optionen gehören zu: Rabenschnabelfortsatz → M. pectoralis minor · Medialer Rand des Schulterblatts → Mm. rhomboidei · Oberer und unterer Schulterblattwinkel → M. serratus anterior.",
+   "pages": [
+    111
+   ]
+  },
+  {
+   "id": "rhomb-gelenk",
+   "topic": "scapula",
+   "type": "mc",
+   "src": "Modul 6.3.2",
+   "q": "Auf welches Gelenk wirken die Mm. rhomboidei laut Lehrskript primär?",
+   "options": [
+    "Wirbelsäule",
+    "Schulterblatt",
+    "Ellenbogengelenk",
+    "Schultergelenk"
+   ],
+   "correct": 1,
+   "why": "Das Lehrskript führt die Mm. rhomboidei in Modul 6.3.2 unter den „Muskeln mit primärer Wirkung auf das Schulterblatt“. Funktion: Elevation der Schulterblätter, Retraktion der Schulterblätter, Rotation der Scapula in Richtung Wirbelsäule, Fixierung und Stabilisierung der Schulterblätter. Kleine, von außen nicht sichtbare Muskelplatte unter dem M. trapezius – wichtig für die Stabilisierung der Schulterblätter.",
+   "pages": [
+    112
+   ]
+  },
+  {
+   "id": "rhomb-funk",
+   "topic": "scapula",
+   "type": "multi",
+   "src": "Modul 6.3.2",
+   "q": "Welche Funktionen haben die Mm. rhomboidei? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Rotation der Scapula in Richtung Wirbelsäule",
+    "Depression der Schulterblätter",
+    "Anteversion des Oberarms",
+    "Protraktion der Schulterblätter",
+    "Elevation der Schulterblätter",
+    "Fixierung und Stabilisierung der Schulterblätter",
+    "Retraktion der Schulterblätter"
+   ],
+   "correct": [
+    0,
+    4,
+    5,
+    6
+   ],
+   "why": "Funktionen laut Modul 6.3.2:<ul><li>Elevation der Schulterblätter</li><li>Retraktion der Schulterblätter</li><li>Rotation der Scapula in Richtung Wirbelsäule</li><li>Fixierung und Stabilisierung der Schulterblätter</li></ul>Nicht zutreffend sind: Protraktion der Schulterblätter · Depression der Schulterblätter · Anteversion des Oberarms.",
+   "pages": [
+    112
+   ]
+  },
+  {
+   "id": "rhomb-funk-nicht",
+   "topic": "scapula",
+   "type": "mc",
+   "src": "Modul 6.3.2",
+   "q": "Welche Funktion haben die Mm. rhomboidei <em>nicht</em>?",
+   "options": [
+    "Retraktion der Schulterblätter",
+    "Protraktion der Schulterblätter",
+    "Elevation der Schulterblätter",
+    "Rotation der Scapula in Richtung Wirbelsäule"
+   ],
+   "correct": 1,
+   "why": "Die drei anderen Antworten nennt das Lehrskript in Modul 6.3.2. Funktionen laut Skript: Elevation der Schulterblätter, Retraktion der Schulterblätter, Rotation der Scapula in Richtung Wirbelsäule, Fixierung und Stabilisierung der Schulterblätter. Protraktion der Schulterblätter steht nicht darunter.",
+   "pages": [
+    112
+   ]
+  },
+  {
+   "id": "rhomb-urs",
+   "topic": "scapula",
+   "type": "multi",
+   "src": "Modul 6.3.2",
+   "q": "Welche Ursprünge haben die Mm. rhomboidei? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Dornfortsätze des 4. bis 12. Brustwirbels (Processus spinosi Th4–Th12)",
+    "Nackenband (Ligamentum nuchae)",
+    "Dornfortsätze des 6. bis 7. Halswirbels (Processus spinosi C6–C7)",
+    "Dornfortsätze des 1. bis 4. Brustwirbels (Processus spinosi Th1–Th4)",
+    "Äußerer Hinterhauptkamm (Protuberantia occipitalis externa)",
+    "Dornfortsätze des 7. Hals- bis 3. Brustwirbels (Processus spinosi C7–Th3)"
+   ],
+   "correct": [
+    1,
+    2,
+    3
+   ],
+   "why": "Ursprung der Mm. rhomboidei (Modul 6.3.2):<ul><li>Großer Rautenmuskel (M. rhomboideus major): Dornfortsätze des 1. bis 4. Brustwirbels (Processus spinosi Th1–Th4)</li><li>Kleiner Rautenmuskel (M. rhomboideus minor): Dornfortsätze des 6. bis 7. Halswirbels (Processus spinosi C6–C7) und Nackenband (Ligamentum nuchae)</li></ul>Die anderen Optionen gehören zu: Äußerer Hinterhauptkamm → M. trapezius · Dornfortsätze des 4. bis 12. Brustwirbels → M. trapezius · Dornfortsätze des 7. Hals- bis 3. Brustwirbels → M. trapezius.",
+   "pages": [
+    112
+   ]
+  },
+  {
+   "id": "rhomb-ans",
+   "topic": "scapula",
+   "type": "multi",
+   "src": "Modul 6.3.2",
+   "q": "Welche Ansätze haben die Mm. rhomboidei? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Oberer und unterer Schulterblattwinkel (Angulus inferior et superior scapulae)",
+    "Schulterblattgräte (Spina scapulae)",
+    "Rabenschnabelfortsatz (Processus coracoideus)",
+    "Medialer Rand des Schulterblatts (Margo medialis scapulae)"
+   ],
+   "correct": [
+    3
+   ],
+   "why": "Ansatz der Mm. rhomboidei (Modul 6.3.2):<ul><li>Medialer Rand des Schulterblatts (Margo medialis scapulae)</li></ul>Die anderen Optionen gehören zu: Rabenschnabelfortsatz → M. pectoralis minor · Oberer und unterer Schulterblattwinkel → M. serratus anterior · Schulterblattgräte → M. trapezius.",
+   "pages": [
+    112
+   ]
+  },
+  {
+   "id": "pectmin-gelenk",
+   "topic": "scapula",
+   "type": "mc",
+   "src": "Modul 6.3.3",
+   "q": "Auf welches Gelenk wirkt der M. pectoralis minor laut Lehrskript primär?",
+   "options": [
+    "Schultergelenk",
+    "Wirbelsäule",
+    "Ellenbogengelenk",
+    "Schulterblatt"
+   ],
+   "correct": 3,
+   "why": "Das Lehrskript führt den M. pectoralis minor in Modul 6.3.3 unter den „Muskeln mit primärer Wirkung auf das Schulterblatt“. Funktion: Depression des Schulterblatts, Rotation des Schulterblatts, Heben der Rippen (Atemhilfsmuskulatur). Liegt unter dem großen Brustmuskel und zieht die Schulter nach schräg vorne unten bzw. unterstützt die Atmung.",
+   "pages": [
+    112
+   ]
+  },
+  {
+   "id": "pectmin-funk",
+   "topic": "scapula",
+   "type": "multi",
+   "src": "Modul 6.3.3",
+   "q": "Welche Funktionen hat der M. pectoralis minor? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Adduktion des Oberarms",
+    "Retraktion der Schulterblätter",
+    "Depression des Schulterblatts",
+    "Rotation des Schulterblatts",
+    "Heben der Rippen",
+    "Elevation der Schulterblätter"
+   ],
+   "correct": [
+    2,
+    3,
+    4
+   ],
+   "why": "Funktionen laut Modul 6.3.3:<ul><li>Depression des Schulterblatts</li><li>Rotation des Schulterblatts</li><li>Heben der Rippen (Atemhilfsmuskulatur)</li></ul>Nicht zutreffend sind: Elevation der Schulterblätter · Retraktion der Schulterblätter · Adduktion des Oberarms.",
+   "pages": [
+    112
+   ]
+  },
+  {
+   "id": "pectmin-funk-nicht",
+   "topic": "scapula",
+   "type": "mc",
+   "src": "Modul 6.3.3",
+   "q": "Welche Funktion hat der M. pectoralis minor <em>nicht</em>?",
+   "options": [
+    "Rotation des Schulterblatts",
+    "Heben der Rippen",
+    "Depression des Schulterblatts",
+    "Elevation der Schulterblätter"
+   ],
+   "correct": 3,
+   "why": "Die drei anderen Antworten nennt das Lehrskript in Modul 6.3.3. Funktionen laut Skript: Depression des Schulterblatts, Rotation des Schulterblatts, Heben der Rippen (Atemhilfsmuskulatur). Elevation der Schulterblätter steht nicht darunter.",
+   "pages": [
+    112
+   ]
+  },
+  {
+   "id": "pectmin-urs",
+   "topic": "scapula",
+   "type": "multi",
+   "src": "Modul 6.3.3",
+   "q": "Welche Ursprünge hat der M. pectoralis minor? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "1. bis 9. Rippe (Costae I–IX)",
+    "Nackenband (Ligamentum nuchae)",
+    "Dornfortsätze C1–C7",
+    "3. bis 5. Rippe (Costae III–V)"
+   ],
+   "correct": [
+    3
+   ],
+   "why": "Ursprung des M. pectoralis minor (Modul 6.3.3):<ul><li>3. bis 5. Rippe (Costae III–V)</li></ul>Die anderen Optionen gehören zu: Nackenband → M. trapezius · 1. bis 9. Rippe → M. serratus anterior · Dornfortsätze C1–C7 → M. trapezius.",
+   "pages": [
+    112
+   ]
+  },
+  {
+   "id": "pectmin-ans",
+   "topic": "scapula",
+   "type": "multi",
+   "src": "Modul 6.3.3",
+   "q": "Welche Ansätze hat der M. pectoralis minor? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Schlüsselbein (Clavicula)",
+    "Medialer Rand des Schulterblatts (Margo medialis scapulae)",
+    "Schulterblattgräte (Spina scapulae)",
+    "Rabenschnabelfortsatz (Processus coracoideus)"
+   ],
+   "correct": [
+    3
+   ],
+   "why": "Ansatz des M. pectoralis minor (Modul 6.3.3):<ul><li>Rabenschnabelfortsatz (Processus coracoideus)</li></ul>Die anderen Optionen gehören zu: Schulterblattgräte → M. trapezius · Medialer Rand des Schulterblatts → Mm. rhomboidei · Schlüsselbein → M. trapezius.",
+   "pages": [
+    112
+   ]
+  },
+  {
+   "id": "serr-gelenk",
+   "topic": "scapula",
+   "type": "mc",
+   "src": "Modul 6.3.4",
+   "q": "Auf welches Gelenk wirkt der M. serratus anterior laut Lehrskript primär?",
+   "options": [
+    "Schultergelenk",
+    "Schulterblatt",
+    "Ellenbogengelenk",
+    "Wirbelsäule"
+   ],
+   "correct": 1,
+   "why": "Das Lehrskript führt den M. serratus anterior in Modul 6.3.4 unter den „Muskeln mit primärer Wirkung auf das Schulterblatt“. Funktion: Fixiert das Schulterblatt am Rumpf, Unterstützt die Einatmung (Atemhilfsmuskulatur, Inspiration), Oberer Anteil (Pars superior): Elevation der Schulterblätter, Mittlerer Anteil (Pars intermedia): Protraktion der Schulterblätter, Unterer Anteil (Pars inferior): Rotation der Schulterblätter. Umgangssprachlich Sägezahnmuskel; als einziger Schulterblattmuskel zieht er die Scapula nach vorne (Boxen, Schwimmen).",
+   "pages": [
+    113
+   ]
+  },
+  {
+   "id": "serr-funk",
+   "topic": "scapula",
+   "type": "multi",
+   "src": "Modul 6.3.4",
+   "q": "Welche Funktionen hat der M. serratus anterior? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Elevation der Schulterblätter",
+    "Fixiert das Schulterblatt am Rumpf",
+    "Protraktion der Schulterblätter",
+    "Außenrotation des Oberarms",
+    "Unterstützt die Einatmung",
+    "Extension der Wirbelsäule",
+    "Rotation der Schulterblätter",
+    "Retraktion der Schulterblätter"
+   ],
+   "correct": [
+    0,
+    1,
+    2,
+    4,
+    6
+   ],
+   "why": "Funktionen laut Modul 6.3.4:<ul><li>Fixiert das Schulterblatt am Rumpf</li><li>Unterstützt die Einatmung (Atemhilfsmuskulatur, Inspiration)</li><li>Oberer Anteil (Pars superior): Elevation der Schulterblätter</li><li>Mittlerer Anteil (Pars intermedia): Protraktion der Schulterblätter</li><li>Unterer Anteil (Pars inferior): Rotation der Schulterblätter</li></ul>Nicht zutreffend sind: Retraktion der Schulterblätter · Außenrotation des Oberarms · Extension der Wirbelsäule.",
+   "pages": [
+    113
+   ]
+  },
+  {
+   "id": "serr-funk-nicht",
+   "topic": "scapula",
+   "type": "mc",
+   "src": "Modul 6.3.4",
+   "q": "Welche Funktion hat der M. serratus anterior <em>nicht</em>?",
+   "options": [
+    "Unterstützt die Einatmung",
+    "Fixiert das Schulterblatt am Rumpf",
+    "Retraktion der Schulterblätter",
+    "Elevation der Schulterblätter"
+   ],
+   "correct": 2,
+   "why": "Die drei anderen Antworten nennt das Lehrskript in Modul 6.3.4. Funktionen laut Skript: Fixiert das Schulterblatt am Rumpf, Unterstützt die Einatmung (Atemhilfsmuskulatur, Inspiration), Oberer Anteil (Pars superior): Elevation der Schulterblätter, Mittlerer Anteil (Pars intermedia): Protraktion der Schulterblätter, Unterer Anteil (Pars inferior): Rotation der Schulterblätter. Retraktion der Schulterblätter steht nicht darunter.",
+   "pages": [
+    113
+   ]
+  },
+  {
+   "id": "serr-urs",
+   "topic": "scapula",
+   "type": "multi",
+   "src": "Modul 6.3.4",
+   "q": "Welche Ursprünge hat der M. serratus anterior? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "3. bis 5. Rippe (Costae III–V)",
+    "1. bis 9. Rippe (Costae I–IX)",
+    "Dornfortsätze C1–C7",
+    "Nackenband (Ligamentum nuchae)"
+   ],
+   "correct": [
+    1
+   ],
+   "why": "Ursprung des M. serratus anterior (Modul 6.3.4):<ul><li>1. bis 9. Rippe (Costae I–IX)</li></ul>Die anderen Optionen gehören zu: 3. bis 5. Rippe → M. pectoralis minor · Nackenband → M. trapezius · Dornfortsätze C1–C7 → M. trapezius.",
+   "pages": [
+    113
+   ]
+  },
+  {
+   "id": "serr-ans",
+   "topic": "scapula",
+   "type": "multi",
+   "src": "Modul 6.3.4",
+   "q": "Welche Ansätze hat der M. serratus anterior? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Medialer Rand des Schulterblatts (Margo medialis scapulae)",
+    "Schulterblattgräte (Spina scapulae)",
+    "Rabenschnabelfortsatz (Processus coracoideus)",
+    "Oberer und unterer Schulterblattwinkel (Angulus inferior et superior scapulae)",
+    "Schlüsselbein (Clavicula)"
+   ],
+   "correct": [
+    0,
+    3
+   ],
+   "why": "Ansatz des M. serratus anterior (Modul 6.3.4):<ul><li>Medialer Rand des Schulterblatts (Margo medialis scapulae)</li><li>Oberer und unterer Schulterblattwinkel (Angulus inferior et superior scapulae)</li></ul>Die anderen Optionen gehören zu: Rabenschnabelfortsatz → M. pectoralis minor · Schulterblattgräte → M. trapezius · Schlüsselbein → M. trapezius.",
+   "pages": [
+    113
+   ]
+  },
+  {
+   "id": "biceps-gelenk",
+   "topic": "ellenbogen",
+   "type": "mc",
+   "src": "Modul 6.4.1",
+   "q": "Auf welches Gelenk wirkt der M. biceps brachii laut Lehrskript primär?",
+   "options": [
+    "Schultergelenk",
+    "Handgelenk",
+    "Ellenbogengelenk",
+    "Schulterblatt"
+   ],
+   "correct": 2,
+   "why": "Das Lehrskript führt den M. biceps brachii in Modul 6.4.1 unter den „Muskeln mit primärer Wirkung auf das Ellenbogengelenk“. Funktion: Flexion im Ellenbogengelenk, Supination des Unterarms, Anteversion, Adduktion, Abduktion und Innenrotation des Oberarms. Beide Köpfe entspringen am Schulterblatt, deshalb wirkt der Bizeps auch auf das Schultergelenk. Synergisten sind M. brachialis und M. brachioradialis.",
+   "pages": [
+    115
+   ]
+  },
+  {
+   "id": "biceps-funk",
+   "topic": "ellenbogen",
+   "type": "multi",
+   "src": "Modul 6.4.1",
+   "q": "Welche Funktionen hat der M. biceps brachii? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Anteversion, Adduktion, Abduktion und Innenrotation des Oberarms",
+    "Retroversion des Oberarms",
+    "Extension im Ellenbogengelenk",
+    "Supination des Unterarms",
+    "Pronation des Unterarms",
+    "Flexion im Ellenbogengelenk"
+   ],
+   "correct": [
+    0,
+    3,
+    5
+   ],
+   "why": "Funktionen laut Modul 6.4.1:<ul><li>Flexion im Ellenbogengelenk</li><li>Supination des Unterarms</li><li>Anteversion, Adduktion, Abduktion und Innenrotation des Oberarms</li></ul>Nicht zutreffend sind: Extension im Ellenbogengelenk · Pronation des Unterarms · Retroversion des Oberarms.",
+   "pages": [
+    115
+   ]
+  },
+  {
+   "id": "biceps-funk-nicht",
+   "topic": "ellenbogen",
+   "type": "mc",
+   "src": "Modul 6.4.1",
+   "q": "Welche Funktion hat der M. biceps brachii <em>nicht</em>?",
+   "options": [
+    "Supination des Unterarms",
+    "Flexion im Ellenbogengelenk",
+    "Anteversion, Adduktion, Abduktion und Innenrotation des Oberarms",
+    "Extension im Ellenbogengelenk"
+   ],
+   "correct": 3,
+   "why": "Die drei anderen Antworten nennt das Lehrskript in Modul 6.4.1. Funktionen laut Skript: Flexion im Ellenbogengelenk, Supination des Unterarms, Anteversion, Adduktion, Abduktion und Innenrotation des Oberarms. Extension im Ellenbogengelenk steht nicht darunter.",
+   "pages": [
+    115
+   ]
+  },
+  {
+   "id": "biceps-urs",
+   "topic": "ellenbogen",
+   "type": "multi",
+   "src": "Modul 6.4.1",
+   "q": "Welche Ursprünge hat der M. biceps brachii? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Knochenhöckerchen oberhalb der Gelenkpfanne der Scapula (Tuberculum supraglenoidale)",
+    "Innerer Gelenkknorren des Oberarms (Epicondylus medialis humeri)",
+    "Seitlicher Rand des Oberarmknochens (Crista supracondylaris lateralis)",
+    "Distale Vorderfläche des Oberarmschafts (Corpus humeri)",
+    "Rabenschnabelfortsatz (Processus coracoideus)"
+   ],
+   "correct": [
+    0,
+    4
+   ],
+   "why": "Ursprung des M. biceps brachii (Modul 6.4.1):<ul><li>Langer Kopf (Caput longum): Knochenhöckerchen oberhalb der Gelenkpfanne der Scapula (Tuberculum supraglenoidale)</li><li>Kurzer Kopf (Caput breve): Rabenschnabelfortsatz (Processus coracoideus)</li></ul>Die anderen Optionen gehören zu: Innerer Gelenkknorren des Oberarms → M. pronator teres · Seitlicher Rand des Oberarmknochens → M. brachioradialis · Distale Vorderfläche des Oberarmschafts → M. brachialis.",
+   "pages": [
+    115
+   ]
+  },
+  {
+   "id": "biceps-ans",
+   "topic": "ellenbogen",
+   "type": "multi",
+   "src": "Modul 6.4.1",
+   "q": "Welche Ansätze hat der M. biceps brachii? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Mittleres Drittel der Speiche (Facies lateralis radii)",
+    "Hakenfortsatz der Elle (Olecranon)",
+    "Aufrauung der Elle (Tuberositas ulnae)",
+    "Speichenbeinbeule (Tuberositas radii)"
+   ],
+   "correct": [
+    3
+   ],
+   "why": "Ansatz des M. biceps brachii (Modul 6.4.1):<ul><li>Speichenbeinbeule (Tuberositas radii)</li></ul>Die anderen Optionen gehören zu: Aufrauung der Elle → M. brachialis · Hakenfortsatz der Elle → M. triceps brachii · Mittleres Drittel der Speiche → M. pronator teres.",
+   "pages": [
+    115
+   ]
+  },
+  {
+   "id": "triceps-gelenk",
+   "topic": "ellenbogen",
+   "type": "mc",
+   "src": "Modul 6.4.2",
+   "q": "Auf welches Gelenk wirkt der M. triceps brachii laut Lehrskript primär?",
+   "options": [
+    "Schultergelenk",
+    "Ellenbogengelenk",
+    "Handgelenk",
+    "Schulterblatt"
+   ],
+   "correct": 1,
+   "why": "Das Lehrskript führt den M. triceps brachii in Modul 6.4.2 unter den „Muskeln mit primärer Wirkung auf das Ellenbogengelenk“. Funktion: Extension im Ellenbogengelenk, Adduktion des Oberarms, Retroversion des Oberarms. Nur der lange Kopf entspringt am Schulterblatt und ist deshalb auch an Retroversion und Adduktion des Oberarms beteiligt. Da er den Unterarm nicht dreht, ist die Griffart (Ober- oder Untergriff) beim Trizepsdrücken egal.",
+   "pages": [
+    115,
+    116
+   ]
+  },
+  {
+   "id": "triceps-funk",
+   "topic": "ellenbogen",
+   "type": "multi",
+   "src": "Modul 6.4.2",
+   "q": "Welche Funktionen hat der M. triceps brachii? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Flexion im Ellenbogengelenk",
+    "Supination des Unterarms",
+    "Retroversion des Oberarms",
+    "Pronation des Unterarms",
+    "Extension im Ellenbogengelenk",
+    "Adduktion des Oberarms"
+   ],
+   "correct": [
+    2,
+    4,
+    5
+   ],
+   "why": "Funktionen laut Modul 6.4.2:<ul><li>Extension im Ellenbogengelenk</li><li>Adduktion des Oberarms</li><li>Retroversion des Oberarms</li></ul>Nicht zutreffend sind: Flexion im Ellenbogengelenk · Supination des Unterarms · Pronation des Unterarms.",
+   "pages": [
+    115,
+    116
+   ]
+  },
+  {
+   "id": "triceps-funk-nicht",
+   "topic": "ellenbogen",
+   "type": "mc",
+   "src": "Modul 6.4.2",
+   "q": "Welche Funktion hat der M. triceps brachii <em>nicht</em>?",
+   "options": [
+    "Flexion im Ellenbogengelenk",
+    "Retroversion des Oberarms",
+    "Extension im Ellenbogengelenk",
+    "Adduktion des Oberarms"
+   ],
+   "correct": 0,
+   "why": "Die drei anderen Antworten nennt das Lehrskript in Modul 6.4.2. Funktionen laut Skript: Extension im Ellenbogengelenk, Adduktion des Oberarms, Retroversion des Oberarms. Flexion im Ellenbogengelenk steht nicht darunter.",
+   "pages": [
+    115,
+    116
+   ]
+  },
+  {
+   "id": "triceps-urs",
+   "topic": "ellenbogen",
+   "type": "multi",
+   "src": "Modul 6.4.2",
+   "q": "Welche Ursprünge hat der M. triceps brachii? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Seitlicher Rand des Oberarmknochens (Crista supracondylaris lateralis)",
+    "Knochenhöckerchen unterhalb der Gelenkpfanne der Scapula (Tuberculum infraglenoidale)",
+    "Knochenfortsatz der Elle (Processus coronoideus ulnae)",
+    "Innerer Gelenkknorren des Oberarms (Epicondylus medialis humeri)",
+    "Medial und lateral am Oberarmschaft (Corpus humeri)"
+   ],
+   "correct": [
+    1,
+    4
+   ],
+   "why": "Ursprung des M. triceps brachii (Modul 6.4.2):<ul><li>Langer Kopf (Caput longum): Knochenhöckerchen unterhalb der Gelenkpfanne der Scapula (Tuberculum infraglenoidale)</li><li>Innerer Kopf (Caput mediale): medial am Oberarmschaft (Corpus humeri)</li><li>Seitlicher Kopf (Caput laterale): lateral am Oberarmschaft (Corpus humeri)</li></ul>Die anderen Optionen gehören zu: Seitlicher Rand des Oberarmknochens → M. brachioradialis · Innerer Gelenkknorren des Oberarms → M. pronator teres · Knochenfortsatz der Elle → M. pronator teres.",
+   "pages": [
+    115,
+    116
+   ]
+  },
+  {
+   "id": "triceps-ans",
+   "topic": "ellenbogen",
+   "type": "multi",
+   "src": "Modul 6.4.2",
+   "q": "Welche Ansätze hat der M. triceps brachii? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Hakenfortsatz der Elle (Olecranon)",
+    "Mittleres Drittel der Speiche (Facies lateralis radii)",
+    "Speichenbeinbeule (Tuberositas radii)",
+    "Aufrauung der Elle (Tuberositas ulnae)"
+   ],
+   "correct": [
+    0
+   ],
+   "why": "Ansatz des M. triceps brachii (Modul 6.4.2):<ul><li>Hakenfortsatz der Elle (Olecranon)</li></ul>Die anderen Optionen gehören zu: Speichenbeinbeule → M. biceps brachii · Aufrauung der Elle → M. brachialis · Mittleres Drittel der Speiche → M. pronator teres.",
+   "pages": [
+    115,
+    116
+   ]
+  },
+  {
+   "id": "brachialis-gelenk",
+   "topic": "ellenbogen",
+   "type": "mc",
+   "src": "Modul 6.4.3",
+   "q": "Auf welches Gelenk wirkt der M. brachialis laut Lehrskript primär?",
+   "options": [
+    "Schulterblatt",
+    "Schultergelenk",
+    "Handgelenk",
+    "Ellenbogengelenk"
+   ],
+   "correct": 3,
+   "why": "Das Lehrskript führt den M. brachialis in Modul 6.4.3 unter den „Muskeln mit primärer Wirkung auf das Ellenbogengelenk“. Funktion: Flexion im Ellenbogengelenk. Der stärkste Beuger im Ellenbogengelenk; er liegt hinter dem M. biceps brachii.",
+   "pages": [
+    116
+   ]
+  },
+  {
+   "id": "brachialis-funk",
+   "topic": "ellenbogen",
+   "type": "multi",
+   "src": "Modul 6.4.3",
+   "q": "Welche Funktionen hat der M. brachialis? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Flexion im Ellenbogengelenk",
+    "Supination des Unterarms",
+    "Extension im Ellenbogengelenk",
+    "Pronation des Unterarms"
+   ],
+   "correct": [
+    0
+   ],
+   "why": "Funktionen laut Modul 6.4.3:<ul><li>Flexion im Ellenbogengelenk</li></ul>Nicht zutreffend sind: Supination des Unterarms · Pronation des Unterarms · Extension im Ellenbogengelenk.",
+   "pages": [
+    116
+   ]
+  },
+  {
+   "id": "brachialis-urs",
+   "topic": "ellenbogen",
+   "type": "multi",
+   "src": "Modul 6.4.3",
+   "q": "Welche Ursprünge hat der M. brachialis? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Knochenfortsatz der Elle (Processus coronoideus ulnae)",
+    "Distale Vorderfläche des Oberarmschafts (Corpus humeri)",
+    "Innerer Gelenkknorren des Oberarms (Epicondylus medialis humeri)",
+    "Rabenschnabelfortsatz (Processus coracoideus)"
+   ],
+   "correct": [
+    1
+   ],
+   "why": "Ursprung des M. brachialis (Modul 6.4.3):<ul><li>Distale Vorderfläche des Oberarmschafts (Corpus humeri)</li></ul>Die anderen Optionen gehören zu: Knochenfortsatz der Elle → M. pronator teres · Innerer Gelenkknorren des Oberarms → M. pronator teres · Rabenschnabelfortsatz → M. biceps brachii.",
+   "pages": [
+    116
+   ]
+  },
+  {
+   "id": "brachialis-ans",
+   "topic": "ellenbogen",
+   "type": "multi",
+   "src": "Modul 6.4.3",
+   "q": "Welche Ansätze hat der M. brachialis? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Aufrauung der Elle (Tuberositas ulnae)",
+    "Mittleres Drittel der Speiche (Facies lateralis radii)",
+    "Speichenbeinbeule (Tuberositas radii)",
+    "Hakenfortsatz der Elle (Olecranon)"
+   ],
+   "correct": [
+    0
+   ],
+   "why": "Ansatz des M. brachialis (Modul 6.4.3):<ul><li>Aufrauung der Elle (Tuberositas ulnae)</li></ul>Die anderen Optionen gehören zu: Speichenbeinbeule → M. biceps brachii · Hakenfortsatz der Elle → M. triceps brachii · Mittleres Drittel der Speiche → M. pronator teres.",
+   "pages": [
+    116
+   ]
+  },
+  {
+   "id": "brachiorad-gelenk",
+   "topic": "ellenbogen",
+   "type": "mc",
+   "src": "Modul 6.4.4",
+   "q": "Auf welches Gelenk wirkt der M. brachioradialis laut Lehrskript primär?",
+   "options": [
+    "Handgelenk",
+    "Ellenbogengelenk",
+    "Schulterblatt",
+    "Schultergelenk"
+   ],
+   "correct": 1,
+   "why": "Das Lehrskript führt den M. brachioradialis in Modul 6.4.4 unter den „Muskeln mit primärer Wirkung auf das Ellenbogengelenk“. Funktion: Flexion im Ellenbogengelenk, Unterstützung der Pronation und Supination des Unterarms. Als einziger Ellenbogenbeuger zieht er bis zum Handgelenk hinunter und unterstützt beide Drehrichtungen des Unterarms.",
+   "pages": [
+    116
+   ]
+  },
+  {
+   "id": "brachiorad-funk",
+   "topic": "ellenbogen",
+   "type": "multi",
+   "src": "Modul 6.4.4",
+   "q": "Welche Funktionen hat der M. brachioradialis? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Adduktion des Oberarms",
+    "Extension im Ellenbogengelenk",
+    "Ulnarabduktion im Handgelenk",
+    "Flexion im Ellenbogengelenk",
+    "Unterstützung der Pronation und Supination des Unterarms"
+   ],
+   "correct": [
+    3,
+    4
+   ],
+   "why": "Funktionen laut Modul 6.4.4:<ul><li>Flexion im Ellenbogengelenk</li><li>Unterstützung der Pronation und Supination des Unterarms</li></ul>Nicht zutreffend sind: Extension im Ellenbogengelenk · Adduktion des Oberarms · Ulnarabduktion im Handgelenk.",
+   "pages": [
+    116
+   ]
+  },
+  {
+   "id": "brachiorad-urs",
+   "topic": "ellenbogen",
+   "type": "multi",
+   "src": "Modul 6.4.4",
+   "q": "Welche Ursprünge hat der M. brachioradialis? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Distale Vorderfläche des Oberarmschafts (Corpus humeri)",
+    "Seitlicher Rand des Oberarmknochens (Crista supracondylaris lateralis)",
+    "Knochenhöckerchen oberhalb der Gelenkpfanne der Scapula (Tuberculum supraglenoidale)",
+    "Innerer Gelenkknorren des Oberarms (Epicondylus medialis humeri)"
+   ],
+   "correct": [
+    1
+   ],
+   "why": "Ursprung des M. brachioradialis (Modul 6.4.4):<ul><li>Seitlicher Rand des Oberarmknochens (Crista supracondylaris lateralis)</li></ul>Die anderen Optionen gehören zu: Innerer Gelenkknorren des Oberarms → M. pronator teres · Knochenhöckerchen oberhalb der Gelenkpfanne der Scapula → M. biceps brachii · Distale Vorderfläche des Oberarmschafts → M. brachialis.",
+   "pages": [
+    116
+   ]
+  },
+  {
+   "id": "brachiorad-ans",
+   "topic": "ellenbogen",
+   "type": "multi",
+   "src": "Modul 6.4.4",
+   "q": "Welche Ansätze hat der M. brachioradialis? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Griffelfortsatz der Speiche (Processus styloideus radii)",
+    "Speichenbeinbeule (Tuberositas radii)",
+    "Mittleres Drittel der Speiche (Facies lateralis radii)",
+    "Aufrauung der Elle (Tuberositas ulnae)"
+   ],
+   "correct": [
+    0
+   ],
+   "why": "Ansatz des M. brachioradialis (Modul 6.4.4):<ul><li>Griffelfortsatz der Speiche (Processus styloideus radii)</li></ul>Die anderen Optionen gehören zu: Mittleres Drittel der Speiche → M. pronator teres · Aufrauung der Elle → M. brachialis · Speichenbeinbeule → M. biceps brachii.",
+   "pages": [
+    116
+   ]
+  },
+  {
+   "id": "pronteres-gelenk",
+   "topic": "ellenbogen",
+   "type": "mc",
+   "src": "Modul 6.4.5",
+   "q": "Auf welches Gelenk wirkt der M. pronator teres laut Lehrskript primär?",
+   "options": [
+    "Handgelenk",
+    "Ellenbogengelenk",
+    "Schulterblatt",
+    "Schultergelenk"
+   ],
+   "correct": 1,
+   "why": "Das Lehrskript führt den M. pronator teres in Modul 6.4.5 unter den „Muskeln mit primärer Wirkung auf das Ellenbogengelenk“. Funktion: Pronation des Unterarms, Schwache Flexion im Ellenbogengelenk. Gegenspieler der Supination durch den M. biceps brachii.",
+   "pages": [
+    117
+   ]
+  },
+  {
+   "id": "pronteres-funk",
+   "topic": "ellenbogen",
+   "type": "multi",
+   "src": "Modul 6.4.5",
+   "q": "Welche Funktionen hat der M. pronator teres? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Pronation des Unterarms",
+    "Supination des Unterarms",
+    "Flexion im Ellenbogengelenk",
+    "Radialabduktion im Handgelenk",
+    "Extension im Ellenbogengelenk"
+   ],
+   "correct": [
+    0,
+    2
+   ],
+   "why": "Funktionen laut Modul 6.4.5:<ul><li>Pronation des Unterarms</li><li>Schwache Flexion im Ellenbogengelenk</li></ul>Nicht zutreffend sind: Supination des Unterarms · Extension im Ellenbogengelenk · Radialabduktion im Handgelenk.",
+   "pages": [
+    117
+   ]
+  },
+  {
+   "id": "pronteres-urs",
+   "topic": "ellenbogen",
+   "type": "multi",
+   "src": "Modul 6.4.5",
+   "q": "Welche Ursprünge hat der M. pronator teres? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Distale Vorderfläche des Oberarmschafts (Corpus humeri)",
+    "Seitlicher Rand des Oberarmknochens (Crista supracondylaris lateralis)",
+    "Innerer Gelenkknorren des Oberarms (Epicondylus medialis humeri)",
+    "Knochenfortsatz der Elle (Processus coronoideus ulnae)",
+    "Medial und lateral am Oberarmschaft (Corpus humeri)"
+   ],
+   "correct": [
+    2,
+    3
+   ],
+   "why": "Ursprung des M. pronator teres (Modul 6.4.5):<ul><li>Innerer Gelenkknorren des Oberarms (Epicondylus medialis humeri)</li><li>Knochenfortsatz der Elle (Processus coronoideus ulnae)</li></ul>Die anderen Optionen gehören zu: Distale Vorderfläche des Oberarmschafts → M. brachialis · Medial und lateral am Oberarmschaft → M. triceps brachii · Seitlicher Rand des Oberarmknochens → M. brachioradialis.",
+   "pages": [
+    117
+   ]
+  },
+  {
+   "id": "pronteres-ans",
+   "topic": "ellenbogen",
+   "type": "multi",
+   "src": "Modul 6.4.5",
+   "q": "Welche Ansätze hat der M. pronator teres? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Mittleres Drittel der Speiche (Facies lateralis radii)",
+    "Speichenbeinbeule (Tuberositas radii)",
+    "Aufrauung der Elle (Tuberositas ulnae)",
+    "Griffelfortsatz der Speiche (Processus styloideus radii)"
+   ],
+   "correct": [
+    0
+   ],
+   "why": "Ansatz des M. pronator teres (Modul 6.4.5):<ul><li>Mittleres Drittel der Speiche (Facies lateralis radii)</li></ul>Die anderen Optionen gehören zu: Griffelfortsatz der Speiche → M. brachioradialis · Aufrauung der Elle → M. brachialis · Speichenbeinbeule → M. biceps brachii.",
+   "pages": [
+    117
+   ]
+  },
+  {
+   "id": "fcu-gelenk",
+   "topic": "hand",
+   "type": "mc",
+   "src": "Modul 6.5.1",
+   "q": "Auf welches Gelenk wirkt der M. flexor carpi ulnaris laut Lehrskript primär?",
+   "options": [
+    "Schulterblatt",
+    "Schultergelenk",
+    "Handgelenk",
+    "Ellenbogengelenk"
+   ],
+   "correct": 2,
+   "why": "Das Lehrskript führt den M. flexor carpi ulnaris in Modul 6.5.1 unter den „Muskeln mit primärer Wirkung auf das Handgelenk“. Funktion: Flexion im Handgelenk, Ulnarabduktion im Handgelenk (Abduktion zur Elle hin). Die Beuger entspringen am inneren (medialen), die Strecker am äußeren (lateralen) Gelenkknorren des Oberarms.",
+   "pages": [
+    120
+   ]
+  },
+  {
+   "id": "fcu-funk",
+   "topic": "hand",
+   "type": "multi",
+   "src": "Modul 6.5.1",
+   "q": "Welche Funktionen hat der M. flexor carpi ulnaris? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Ulnarabduktion im Handgelenk",
+    "Radialabduktion im Handgelenk",
+    "Pronation des Unterarms",
+    "Extension im Handgelenk",
+    "Flexion im Handgelenk"
+   ],
+   "correct": [
+    0,
+    4
+   ],
+   "why": "Funktionen laut Modul 6.5.1:<ul><li>Flexion im Handgelenk</li><li>Ulnarabduktion im Handgelenk (Abduktion zur Elle hin)</li></ul>Nicht zutreffend sind: Extension im Handgelenk · Radialabduktion im Handgelenk · Pronation des Unterarms.",
+   "pages": [
+    120
+   ]
+  },
+  {
+   "id": "fcu-urs",
+   "topic": "hand",
+   "type": "multi",
+   "src": "Modul 6.5.1",
+   "q": "Welche Ursprünge hat der M. flexor carpi ulnaris? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Hakenfortsatz der Elle (Olecranon)",
+    "Äußerer Gelenkknorren des Oberarms (Epicondylus lateralis humeri)",
+    "Innerer Gelenkknorren des Oberarms (Epicondylus medialis humeri)",
+    "Medial und lateral am Oberarmschaft (Corpus humeri)",
+    "Hinterfläche der Elle (Facies posterior ulnae)"
+   ],
+   "correct": [
+    0,
+    2
+   ],
+   "why": "Ursprung des M. flexor carpi ulnaris (Modul 6.5.1):<ul><li>Innerer Gelenkknorren des Oberarms (Epicondylus medialis humeri)</li><li>Hakenfortsatz der Elle (Olecranon)</li></ul>Die anderen Optionen gehören zu: Hinterfläche der Elle → M. extensor carpi ulnaris · Äußerer Gelenkknorren des Oberarms → M. extensor carpi ulnaris · Medial und lateral am Oberarmschaft → M. triceps brachii.",
+   "pages": [
+    120
+   ]
+  },
+  {
+   "id": "fcu-ans",
+   "topic": "hand",
+   "type": "multi",
+   "src": "Modul 6.5.1",
+   "q": "Welche Ansätze hat der M. flexor carpi ulnaris? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Mittleres Drittel der Speiche (Facies lateralis radii)",
+    "Basis des 2. Mittelhandknochens (Basis ossis metacarpi II)",
+    "Basis des 5. Mittelhandknochens (Basis ossis metacarpi V)",
+    "Griffelfortsatz der Speiche (Processus styloideus radii)"
+   ],
+   "correct": [
+    2
+   ],
+   "why": "Ansatz des M. flexor carpi ulnaris (Modul 6.5.1):<ul><li>Basis des 5. Mittelhandknochens (Basis ossis metacarpi V)</li></ul>Die anderen Optionen gehören zu: Basis des 2. Mittelhandknochens → M. flexor carpi radialis · Griffelfortsatz der Speiche → M. brachioradialis · Mittleres Drittel der Speiche → M. pronator teres.",
+   "pages": [
+    120
+   ]
+  },
+  {
+   "id": "fcr-gelenk",
+   "topic": "hand",
+   "type": "mc",
+   "src": "Modul 6.5.2",
+   "q": "Auf welches Gelenk wirkt der M. flexor carpi radialis laut Lehrskript primär?",
+   "options": [
+    "Handgelenk",
+    "Schultergelenk",
+    "Schulterblatt",
+    "Ellenbogengelenk"
+   ],
+   "correct": 0,
+   "why": "Das Lehrskript führt den M. flexor carpi radialis in Modul 6.5.2 unter den „Muskeln mit primärer Wirkung auf das Handgelenk“. Funktion: Flexion im Handgelenk, Radialabduktion im Handgelenk (Abduktion zur Speiche hin). Gleiche Beugefunktion wie der ulnare Handgelenkbeuger, aber Abduktion zur Speichenseite – erkennbar am Ansatz am 2. statt am 5. Mittelhandknochen.",
+   "pages": [
+    120
+   ]
+  },
+  {
+   "id": "fcr-funk",
+   "topic": "hand",
+   "type": "multi",
+   "src": "Modul 6.5.2",
+   "q": "Welche Funktionen hat der M. flexor carpi radialis? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Ulnarabduktion im Handgelenk",
+    "Radialabduktion im Handgelenk",
+    "Flexion im Handgelenk",
+    "Dorsalextension im Handgelenk",
+    "Supination des Unterarms"
+   ],
+   "correct": [
+    1,
+    2
+   ],
+   "why": "Funktionen laut Modul 6.5.2:<ul><li>Flexion im Handgelenk</li><li>Radialabduktion im Handgelenk (Abduktion zur Speiche hin)</li></ul>Nicht zutreffend sind: Ulnarabduktion im Handgelenk · Dorsalextension im Handgelenk · Supination des Unterarms.",
+   "pages": [
+    120
+   ]
+  },
+  {
+   "id": "fcr-urs",
+   "topic": "hand",
+   "type": "multi",
+   "src": "Modul 6.5.2",
+   "q": "Welche Ursprünge hat der M. flexor carpi radialis? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Innerer Gelenkknorren des Oberarms (Epicondylus medialis humeri)",
+    "Äußerer Gelenkknorren des Oberarms (Epicondylus lateralis humeri)",
+    "Hakenfortsatz der Elle (Olecranon)",
+    "Hinterfläche der Elle (Facies posterior ulnae)"
+   ],
+   "correct": [
+    0
+   ],
+   "why": "Ursprung des M. flexor carpi radialis (Modul 6.5.2):<ul><li>Innerer Gelenkknorren des Oberarms (Epicondylus medialis humeri)</li></ul>Die anderen Optionen gehören zu: Äußerer Gelenkknorren des Oberarms → M. extensor carpi ulnaris · Hinterfläche der Elle → M. extensor carpi ulnaris · Hakenfortsatz der Elle → M. flexor carpi ulnaris.",
+   "pages": [
+    120
+   ]
+  },
+  {
+   "id": "fcr-ans",
+   "topic": "hand",
+   "type": "multi",
+   "src": "Modul 6.5.2",
+   "q": "Welche Ansätze hat der M. flexor carpi radialis? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Basis des 2. Mittelhandknochens (Basis ossis metacarpi II)",
+    "Griffelfortsatz der Speiche (Processus styloideus radii)",
+    "Basis des 5. Mittelhandknochens (Basis ossis metacarpi V)",
+    "Mittleres Drittel der Speiche (Facies lateralis radii)"
+   ],
+   "correct": [
+    0
+   ],
+   "why": "Ansatz des M. flexor carpi radialis (Modul 6.5.2):<ul><li>Basis des 2. Mittelhandknochens (Basis ossis metacarpi II)</li></ul>Die anderen Optionen gehören zu: Basis des 5. Mittelhandknochens → M. flexor carpi ulnaris · Griffelfortsatz der Speiche → M. brachioradialis · Mittleres Drittel der Speiche → M. pronator teres.",
+   "pages": [
+    120
+   ]
+  },
+  {
+   "id": "ecu-gelenk",
+   "topic": "hand",
+   "type": "mc",
+   "src": "Modul 6.5.3",
+   "q": "Auf welches Gelenk wirkt der M. extensor carpi ulnaris laut Lehrskript primär?",
+   "options": [
+    "Ellenbogengelenk",
+    "Schulterblatt",
+    "Schultergelenk",
+    "Handgelenk"
+   ],
+   "correct": 3,
+   "why": "Das Lehrskript führt den M. extensor carpi ulnaris in Modul 6.5.3 unter den „Muskeln mit primärer Wirkung auf das Handgelenk“. Funktion: Extension im Handgelenk, Ulnarabduktion im Handgelenk. Er teilt sich den Ansatz mit dem ulnaren Handgelenkbeuger – beide ziehen zum 5. Mittelhandknochen, nur von der Streck- bzw. Beugeseite.",
+   "pages": [
+    121
+   ]
+  },
+  {
+   "id": "ecu-funk",
+   "topic": "hand",
+   "type": "multi",
+   "src": "Modul 6.5.3",
+   "q": "Welche Funktionen hat der M. extensor carpi ulnaris? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Extension im Handgelenk",
+    "Radialabduktion im Handgelenk",
+    "Flexion im Handgelenk",
+    "Ulnarabduktion im Handgelenk",
+    "Pronation des Unterarms"
+   ],
+   "correct": [
+    0,
+    3
+   ],
+   "why": "Funktionen laut Modul 6.5.3:<ul><li>Extension im Handgelenk</li><li>Ulnarabduktion im Handgelenk</li></ul>Nicht zutreffend sind: Flexion im Handgelenk · Radialabduktion im Handgelenk · Pronation des Unterarms.",
+   "pages": [
+    121
+   ]
+  },
+  {
+   "id": "ecu-urs",
+   "topic": "hand",
+   "type": "multi",
+   "src": "Modul 6.5.3",
+   "q": "Welche Ursprünge hat der M. extensor carpi ulnaris? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Innerer Gelenkknorren des Oberarms (Epicondylus medialis humeri)",
+    "Äußerer Gelenkknorren des Oberarms (Epicondylus lateralis humeri)",
+    "Hakenfortsatz der Elle (Olecranon)",
+    "Hinterfläche der Elle (Facies posterior ulnae)",
+    "Distale Vorderfläche des Oberarmschafts (Corpus humeri)"
+   ],
+   "correct": [
+    1,
+    3
+   ],
+   "why": "Ursprung des M. extensor carpi ulnaris (Modul 6.5.3):<ul><li>Äußerer Gelenkknorren des Oberarms (Epicondylus lateralis humeri)</li><li>Hinterfläche der Elle (Facies posterior ulnae)</li></ul>Die anderen Optionen gehören zu: Innerer Gelenkknorren des Oberarms → M. flexor carpi ulnaris · Hakenfortsatz der Elle → M. flexor carpi ulnaris · Distale Vorderfläche des Oberarmschafts → M. brachialis.",
+   "pages": [
+    121
+   ]
+  },
+  {
+   "id": "ecu-ans",
+   "topic": "hand",
+   "type": "multi",
+   "src": "Modul 6.5.3",
+   "q": "Welche Ansätze hat der M. extensor carpi ulnaris? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Basis des 5. Mittelhandknochens (Basis ossis metacarpi V)",
+    "Mittleres Drittel der Speiche (Facies lateralis radii)",
+    "Basis des 2. Mittelhandknochens (Basis ossis metacarpi II)",
+    "Griffelfortsatz der Speiche (Processus styloideus radii)"
+   ],
+   "correct": [
+    0
+   ],
+   "why": "Ansatz des M. extensor carpi ulnaris (Modul 6.5.3):<ul><li>Basis des 5. Mittelhandknochens (Basis ossis metacarpi V)</li></ul>Die anderen Optionen gehören zu: Basis des 2. Mittelhandknochens → M. flexor carpi radialis · Griffelfortsatz der Speiche → M. brachioradialis · Mittleres Drittel der Speiche → M. pronator teres.",
+   "pages": [
+    121
+   ]
+  },
+  {
+   "id": "rectabd-gelenk",
+   "topic": "ws",
+   "type": "mc",
+   "src": "Modul 6.6.2",
+   "q": "Auf welches Gelenk wirkt der M. rectus abdominis laut Lehrskript primär?",
+   "options": [
+    "Wirbelsäule",
+    "Hüftgelenk",
+    "Schulterblatt",
+    "Schultergelenk"
+   ],
+   "correct": 0,
+   "why": "Das Lehrskript führt den M. rectus abdominis in Modul 6.6.2 unter den „Muskeln mit primärer Wirkung auf die Wirbelsäule“. Funktion: Flexion der Wirbelsäule, Stabilisierung des Beckens. Die Zwischensehnen sorgen für das Sixpack; wie viele es sind, ist genetisch festgelegt.",
+   "pages": [
+    126
+   ]
+  },
+  {
+   "id": "rectabd-funk",
+   "topic": "ws",
+   "type": "multi",
+   "src": "Modul 6.6.2",
+   "q": "Welche Funktionen hat der M. rectus abdominis? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Flexion der Wirbelsäule",
+    "Stabilisierung des Beckens",
+    "Rotation der Wirbelsäule",
+    "Extension der Wirbelsäule",
+    "Lateralflexion der Wirbelsäule"
+   ],
+   "correct": [
+    0,
+    1
+   ],
+   "why": "Funktionen laut Modul 6.6.2:<ul><li>Flexion der Wirbelsäule</li><li>Stabilisierung des Beckens</li></ul>Nicht zutreffend sind: Extension der Wirbelsäule · Rotation der Wirbelsäule · Lateralflexion der Wirbelsäule.",
+   "pages": [
+    126
+   ]
+  },
+  {
+   "id": "rectabd-urs",
+   "topic": "ws",
+   "type": "multi",
+   "src": "Modul 6.6.2",
+   "q": "Welche Ursprünge hat der M. rectus abdominis? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Leistenband (Ligamentum inguinale)",
+    "5. bis 12. Rippe (Costae V–XII)",
+    "Schwertfortsatz (Processus xiphoideus)",
+    "5. bis 7. Rippenknorpel (Cartilagines costales V–VII)",
+    "Thorakolumbale Faszie (Fascia thoracolumbalis)"
+   ],
+   "correct": [
+    2,
+    3
+   ],
+   "why": "Ursprung des M. rectus abdominis (Modul 6.6.2):<ul><li>5. bis 7. Rippenknorpel (Cartilagines costales V–VII)</li><li>Schwertfortsatz (Processus xiphoideus)</li></ul>Die anderen Optionen gehören zu: Thorakolumbale Faszie → M. obliquus internus abdominis · Leistenband → M. obliquus internus abdominis · 5. bis 12. Rippe → M. obliquus externus abdominis.",
+   "pages": [
+    126
+   ]
+  },
+  {
+   "id": "rectabd-ans",
+   "topic": "ws",
+   "type": "multi",
+   "src": "Modul 6.6.2",
+   "q": "Welche Ansätze hat der M. rectus abdominis? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Weiße Linie (Linea alba)",
+    "Schambein (Os pubis)",
+    "Darmbeinkamm (Crista iliaca)",
+    "9. bis 12. Rippe (Costae IX–XII)"
+   ],
+   "correct": [
+    1
+   ],
+   "why": "Ansatz des M. rectus abdominis (Modul 6.6.2):<ul><li>Schambein (Os pubis)</li></ul>Die anderen Optionen gehören zu: Weiße Linie → M. obliquus externus abdominis · Darmbeinkamm → M. obliquus externus abdominis · 9. bis 12. Rippe → M. obliquus internus abdominis.",
+   "pages": [
+    126
+   ]
+  },
+  {
+   "id": "obext-gelenk",
+   "topic": "ws",
+   "type": "mc",
+   "src": "Modul 6.6.3",
+   "q": "Auf welches Gelenk wirkt der M. obliquus externus abdominis laut Lehrskript primär?",
+   "options": [
+    "Hüftgelenk",
+    "Schultergelenk",
+    "Schulterblatt",
+    "Wirbelsäule"
+   ],
+   "correct": 3,
+   "why": "Das Lehrskript führt den M. obliquus externus abdominis in Modul 6.6.3 unter den „Muskeln mit primärer Wirkung auf die Wirbelsäule“. Funktion: Flexion der Wirbelsäule, Lateralflexion der Wirbelsäule, Rotation der Wirbelsäule, Stabilisierung des Beckens, Kompression des Abdomeninhalts (Bauchpresse). Er verläuft genau spiegelbildlich zum inneren schrägen Bauchmuskel: von den Rippen abwärts zum Becken.",
+   "pages": [
+    126
+   ]
+  },
+  {
+   "id": "obext-funk",
+   "topic": "ws",
+   "type": "multi",
+   "src": "Modul 6.6.3",
+   "q": "Welche Funktionen hat der M. obliquus externus abdominis? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Rotation der Wirbelsäule",
+    "Kompression des Abdomeninhalts",
+    "Lateralflexion der Wirbelsäule",
+    "Flexion im Hüftgelenk",
+    "Stabilisierung des Beckens",
+    "Elevation der Schulterblätter",
+    "Flexion der Wirbelsäule",
+    "Extension der Wirbelsäule"
+   ],
+   "correct": [
+    0,
+    1,
+    2,
+    4,
+    6
+   ],
+   "why": "Funktionen laut Modul 6.6.3:<ul><li>Flexion der Wirbelsäule</li><li>Lateralflexion der Wirbelsäule</li><li>Rotation der Wirbelsäule</li><li>Stabilisierung des Beckens</li><li>Kompression des Abdomeninhalts (Bauchpresse)</li></ul>Nicht zutreffend sind: Extension der Wirbelsäule · Elevation der Schulterblätter · Flexion im Hüftgelenk.",
+   "pages": [
+    126
+   ]
+  },
+  {
+   "id": "obext-funk-nicht",
+   "topic": "ws",
+   "type": "mc",
+   "src": "Modul 6.6.3",
+   "q": "Welche Funktion hat der M. obliquus externus abdominis <em>nicht</em>?",
+   "options": [
+    "Extension der Wirbelsäule",
+    "Flexion der Wirbelsäule",
+    "Rotation der Wirbelsäule",
+    "Lateralflexion der Wirbelsäule"
+   ],
+   "correct": 0,
+   "why": "Die drei anderen Antworten nennt das Lehrskript in Modul 6.6.3. Funktionen laut Skript: Flexion der Wirbelsäule, Lateralflexion der Wirbelsäule, Rotation der Wirbelsäule, Stabilisierung des Beckens, Kompression des Abdomeninhalts (Bauchpresse). Extension der Wirbelsäule steht nicht darunter.",
+   "pages": [
+    126
+   ]
+  },
+  {
+   "id": "obext-urs",
+   "topic": "ws",
+   "type": "multi",
+   "src": "Modul 6.6.3",
+   "q": "Welche Ursprünge hat der M. obliquus externus abdominis? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "5. bis 7. Rippenknorpel (Cartilagines costales V–VII)",
+    "Thorakolumbale Faszie (Fascia thoracolumbalis)",
+    "5. bis 12. Rippe (Costae V–XII)",
+    "Schwertfortsatz (Processus xiphoideus)"
+   ],
+   "correct": [
+    2
+   ],
+   "why": "Ursprung des M. obliquus externus abdominis (Modul 6.6.3):<ul><li>5. bis 12. Rippe (Costae V–XII)</li></ul>Die anderen Optionen gehören zu: Schwertfortsatz → M. rectus abdominis · Thorakolumbale Faszie → M. obliquus internus abdominis · 5. bis 7. Rippenknorpel → M. rectus abdominis.",
+   "pages": [
+    126
+   ]
+  },
+  {
+   "id": "obext-ans",
+   "topic": "ws",
+   "type": "multi",
+   "src": "Modul 6.6.3",
+   "q": "Welche Ansätze hat der M. obliquus externus abdominis? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Weiße Linie (Linea alba)",
+    "9. bis 12. Rippe (Costae IX–XII)",
+    "Darmbeinkamm (Crista iliaca)",
+    "Schambeinhöcker (Tuberculum pubicum)",
+    "Großer Rollhügel (Trochanter major)",
+    "Maissiat-Band (Tractus iliotibialis)",
+    "Leistenband (Ligamentum inguinale)"
+   ],
+   "correct": [
+    0,
+    2,
+    3,
+    6
+   ],
+   "why": "Ansatz des M. obliquus externus abdominis (Modul 6.6.3):<ul><li>Darmbeinkamm (Crista iliaca)</li><li>Leistenband (Ligamentum inguinale)</li><li>Weiße Linie (Linea alba)</li><li>Schambeinhöcker (Tuberculum pubicum)</li></ul>Die anderen Optionen gehören zu: 9. bis 12. Rippe → M. obliquus internus abdominis · Großer Rollhügel → M. gluteus medius · Maissiat-Band → M. tensor fasciae latae.",
+   "pages": [
+    126
+   ]
+  },
+  {
+   "id": "obint-gelenk",
+   "topic": "ws",
+   "type": "mc",
+   "src": "Modul 6.6.4",
+   "q": "Auf welches Gelenk wirkt der M. obliquus internus abdominis laut Lehrskript primär?",
+   "options": [
+    "Schultergelenk",
+    "Wirbelsäule",
+    "Schulterblatt",
+    "Hüftgelenk"
+   ],
+   "correct": 1,
+   "why": "Das Lehrskript führt den M. obliquus internus abdominis in Modul 6.6.4 unter den „Muskeln mit primärer Wirkung auf die Wirbelsäule“. Funktion: Flexion der Wirbelsäule, Lateralflexion der Wirbelsäule, Rotation der Wirbelsäule, Stabilisierung des Beckens, Kompression des Abdomeninhalts (Bauchpresse). Funktionen identisch mit dem äußeren schrägen Bauchmuskel – unterscheiden lässt er sich nur über Ursprung und Ansatz, die genau vertauscht sind.",
+   "pages": [
+    127
+   ]
+  },
+  {
+   "id": "obint-funk",
+   "topic": "ws",
+   "type": "multi",
+   "src": "Modul 6.6.4",
+   "q": "Welche Funktionen hat der M. obliquus internus abdominis? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Lateralflexion der Wirbelsäule",
+    "Rotation der Wirbelsäule",
+    "Kompression des Abdomeninhalts",
+    "Flexion der Wirbelsäule",
+    "Retraktion der Schulterblätter",
+    "Stabilisierung des Beckens",
+    "Extension der Wirbelsäule",
+    "Abduktion im Hüftgelenk"
+   ],
+   "correct": [
+    0,
+    1,
+    2,
+    3,
+    5
+   ],
+   "why": "Funktionen laut Modul 6.6.4:<ul><li>Flexion der Wirbelsäule</li><li>Lateralflexion der Wirbelsäule</li><li>Rotation der Wirbelsäule</li><li>Stabilisierung des Beckens</li><li>Kompression des Abdomeninhalts (Bauchpresse)</li></ul>Nicht zutreffend sind: Extension der Wirbelsäule · Retraktion der Schulterblätter · Abduktion im Hüftgelenk.",
+   "pages": [
+    127
+   ]
+  },
+  {
+   "id": "obint-funk-nicht",
+   "topic": "ws",
+   "type": "mc",
+   "src": "Modul 6.6.4",
+   "q": "Welche Funktion hat der M. obliquus internus abdominis <em>nicht</em>?",
+   "options": [
+    "Lateralflexion der Wirbelsäule",
+    "Flexion der Wirbelsäule",
+    "Rotation der Wirbelsäule",
+    "Extension der Wirbelsäule"
+   ],
+   "correct": 3,
+   "why": "Die drei anderen Antworten nennt das Lehrskript in Modul 6.6.4. Funktionen laut Skript: Flexion der Wirbelsäule, Lateralflexion der Wirbelsäule, Rotation der Wirbelsäule, Stabilisierung des Beckens, Kompression des Abdomeninhalts (Bauchpresse). Extension der Wirbelsäule steht nicht darunter.",
+   "pages": [
+    127
+   ]
+  },
+  {
+   "id": "obint-urs",
+   "topic": "ws",
+   "type": "multi",
+   "src": "Modul 6.6.4",
+   "q": "Welche Ursprünge hat der M. obliquus internus abdominis? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "5. bis 7. Rippenknorpel (Cartilagines costales V–VII)",
+    "Thorakolumbale Faszie (Fascia thoracolumbalis)",
+    "Darmbeinkamm (Crista iliaca)",
+    "5. bis 12. Rippe (Costae V–XII)",
+    "Leistenband (Ligamentum inguinale)",
+    "Schwertfortsatz (Processus xiphoideus)"
+   ],
+   "correct": [
+    1,
+    2,
+    4
+   ],
+   "why": "Ursprung des M. obliquus internus abdominis (Modul 6.6.4):<ul><li>Darmbeinkamm (Crista iliaca)</li><li>Leistenband (Ligamentum inguinale)</li><li>Thorakolumbale Faszie (Fascia thoracolumbalis)</li></ul>Die anderen Optionen gehören zu: Schwertfortsatz → M. rectus abdominis · 5. bis 12. Rippe → M. obliquus externus abdominis · 5. bis 7. Rippenknorpel → M. rectus abdominis.",
+   "pages": [
+    127
+   ]
+  },
+  {
+   "id": "obint-ans",
+   "topic": "ws",
+   "type": "multi",
+   "src": "Modul 6.6.4",
+   "q": "Welche Ansätze hat der M. obliquus internus abdominis? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Schambein (Os pubis)",
+    "9. bis 12. Rippe (Costae IX–XII)",
+    "Weiße Linie (Linea alba)",
+    "Großer Rollhügel (Trochanter major)",
+    "Schambeinhöcker (Tuberculum pubicum)"
+   ],
+   "correct": [
+    1,
+    2
+   ],
+   "why": "Ansatz des M. obliquus internus abdominis (Modul 6.6.4):<ul><li>9. bis 12. Rippe (Costae IX–XII)</li><li>Weiße Linie (Linea alba)</li></ul>Die anderen Optionen gehören zu: Schambeinhöcker → M. obliquus externus abdominis · Schambein → M. rectus abdominis · Großer Rollhügel → M. gluteus medius.",
+   "pages": [
+    127
+   ]
+  },
+  {
+   "id": "transabd-gelenk",
+   "topic": "ws",
+   "type": "mc",
+   "src": "Modul 6.6.5",
+   "q": "Auf welches Gelenk wirkt der M. transversus abdominis laut Lehrskript primär?",
+   "options": [
+    "Schultergelenk",
+    "Hüftgelenk",
+    "Schulterblatt",
+    "Wirbelsäule"
+   ],
+   "correct": 3,
+   "why": "Das Lehrskript führt den M. transversus abdominis in Modul 6.6.5 unter den „Muskeln mit primärer Wirkung auf die Wirbelsäule“. Funktion: Kompression des Abdomeninhalts (Bauchpresse), Rotation der Wirbelsäule. Der tiefste Bauchmuskel – er beugt die Wirbelsäule nicht, sondern schnürt den Bauchraum wie ein Korsett ein.",
+   "pages": [
+    127
+   ]
+  },
+  {
+   "id": "transabd-funk",
+   "topic": "ws",
+   "type": "multi",
+   "src": "Modul 6.6.5",
+   "q": "Welche Funktionen hat der M. transversus abdominis? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Lateralflexion der Wirbelsäule",
+    "Flexion der Wirbelsäule",
+    "Rotation der Wirbelsäule",
+    "Extension der Wirbelsäule",
+    "Kompression des Abdomeninhalts"
+   ],
+   "correct": [
+    2,
+    4
+   ],
+   "why": "Funktionen laut Modul 6.6.5:<ul><li>Kompression des Abdomeninhalts (Bauchpresse)</li><li>Rotation der Wirbelsäule</li></ul>Nicht zutreffend sind: Flexion der Wirbelsäule · Extension der Wirbelsäule · Lateralflexion der Wirbelsäule.",
+   "pages": [
+    127
+   ]
+  },
+  {
+   "id": "transabd-urs",
+   "topic": "ws",
+   "type": "multi",
+   "src": "Modul 6.6.5",
+   "q": "Welche Ursprünge hat der M. transversus abdominis? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Leistenband (Ligamentum inguinale)",
+    "Darmbeinkamm (Crista iliaca)",
+    "Knorpel der 7. bis 12. Rippe (Cartilagines costales VII–XII)",
+    "Thorakolumbale Faszie (Fascia thoracolumbalis)",
+    "5. bis 7. Rippenknorpel (Cartilagines costales V–VII)",
+    "Schwertfortsatz (Processus xiphoideus)"
+   ],
+   "correct": [
+    1,
+    2,
+    3
+   ],
+   "why": "Ursprung des M. transversus abdominis (Modul 6.6.5):<ul><li>Knorpel der 7. bis 12. Rippe (Cartilagines costales VII–XII)</li><li>Darmbeinkamm (Crista iliaca)</li><li>Thorakolumbale Faszie (Fascia thoracolumbalis)</li></ul>Die anderen Optionen gehören zu: Schwertfortsatz → M. rectus abdominis · 5. bis 7. Rippenknorpel → M. rectus abdominis · Leistenband → M. obliquus internus abdominis.",
+   "pages": [
+    127
+   ]
+  },
+  {
+   "id": "transabd-ans",
+   "topic": "ws",
+   "type": "multi",
+   "src": "Modul 6.6.5",
+   "q": "Welche Ansätze hat der M. transversus abdominis? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "9. bis 12. Rippe (Costae IX–XII)",
+    "Leistenband (Ligamentum inguinale)",
+    "Weiße Linie (Linea alba)",
+    "Schambein (Os pubis)"
+   ],
+   "correct": [
+    2
+   ],
+   "why": "Ansatz des M. transversus abdominis (Modul 6.6.5):<ul><li>Weiße Linie (Linea alba)</li></ul>Die anderen Optionen gehören zu: Schambein → M. rectus abdominis · 9. bis 12. Rippe → M. obliquus internus abdominis · Leistenband → M. obliquus externus abdominis.",
+   "pages": [
+    127
+   ]
+  },
+  {
+   "id": "glutmax-gelenk",
+   "topic": "huefte",
+   "type": "mc",
+   "src": "Modul 6.7.1",
+   "q": "Auf welches Gelenk wirkt der M. gluteus maximus laut Lehrskript primär?",
+   "options": [
+    "Sprunggelenk",
+    "Kniegelenk",
+    "Wirbelsäule",
+    "Hüftgelenk"
+   ],
+   "correct": 3,
+   "why": "Das Lehrskript führt den M. gluteus maximus in Modul 6.7.1 unter den „Muskeln mit primärer Wirkung auf das Hüftgelenk“. Funktion: Extension im Hüftgelenk, Außenrotation im Hüftgelenk, Stabilisation des Beckens, Oberflächlicher Teil: Abduktion im Hüftgelenk, Tiefer Teil: Adduktion im Hüftgelenk. Nach Volumen der größte und einer der kräftigsten Muskeln des Körpers; er arbeitet bei allen hüftstreckenden Übungen (Beinpresse, Kniebeuge, Kreuzheben). Gegenspieler ist der M. iliopsoas.",
+   "pages": [
+    129
+   ]
+  },
+  {
+   "id": "glutmax-funk",
+   "topic": "huefte",
+   "type": "multi",
+   "src": "Modul 6.7.1",
+   "q": "Welche Funktionen hat der M. gluteus maximus? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Extension im Hüftgelenk",
+    "Innenrotation im Hüftgelenk",
+    "Adduktion im Hüftgelenk",
+    "Flexion im Hüftgelenk",
+    "Extension im Kniegelenk",
+    "Stabilisation des Beckens",
+    "Außenrotation im Hüftgelenk",
+    "Abduktion im Hüftgelenk"
+   ],
+   "correct": [
+    0,
+    2,
+    5,
+    6,
+    7
+   ],
+   "why": "Funktionen laut Modul 6.7.1:<ul><li>Extension im Hüftgelenk</li><li>Außenrotation im Hüftgelenk</li><li>Stabilisation des Beckens</li><li>Oberflächlicher Teil: Abduktion im Hüftgelenk</li><li>Tiefer Teil: Adduktion im Hüftgelenk</li></ul>Nicht zutreffend sind: Flexion im Hüftgelenk · Innenrotation im Hüftgelenk · Extension im Kniegelenk.",
+   "pages": [
+    129
+   ]
+  },
+  {
+   "id": "glutmax-funk-nicht",
+   "topic": "huefte",
+   "type": "mc",
+   "src": "Modul 6.7.1",
+   "q": "Welche Funktion hat der M. gluteus maximus <em>nicht</em>?",
+   "options": [
+    "Flexion im Hüftgelenk",
+    "Stabilisation des Beckens",
+    "Außenrotation im Hüftgelenk",
+    "Extension im Hüftgelenk"
+   ],
+   "correct": 0,
+   "why": "Die drei anderen Antworten nennt das Lehrskript in Modul 6.7.1. Funktionen laut Skript: Extension im Hüftgelenk, Außenrotation im Hüftgelenk, Stabilisation des Beckens, Oberflächlicher Teil: Abduktion im Hüftgelenk, Tiefer Teil: Adduktion im Hüftgelenk. Flexion im Hüftgelenk steht nicht darunter.",
+   "pages": [
+    129
+   ]
+  },
+  {
+   "id": "glutmax-urs",
+   "topic": "huefte",
+   "type": "multi",
+   "src": "Modul 6.7.1",
+   "q": "Welche Ursprünge hat der M. gluteus maximus? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Kreuzbein (Os sacrum)",
+    "Oberer Schambeinast (Ramus superior ossis pubis)",
+    "Unterer Schambeinast (Ramus inferior ossis pubis)",
+    "Thorakolumbale Faszie (Fascia thoracolumbalis)",
+    "Kreuzbein-Sitzbeinhöcker-Band (Ligamentum sacrotuberale)",
+    "Innenseite der Darmbeinschaufel (Fossa iliaca)",
+    "Gesäßseite der Darmbeinschaufel (Facies glutea ala ossis ilium)"
+   ],
+   "correct": [
+    0,
+    3,
+    4,
+    6
+   ],
+   "why": "Ursprung des M. gluteus maximus (Modul 6.7.1):<ul><li>Kreuzbein (Os sacrum)</li><li>Thorakolumbale Faszie (Fascia thoracolumbalis)</li><li>Kreuzbein-Sitzbeinhöcker-Band (Ligamentum sacrotuberale)</li><li>Gesäßseite der Darmbeinschaufel (Facies glutea ala ossis ilium)</li></ul>Die anderen Optionen gehören zu: Innenseite der Darmbeinschaufel → M. iliopsoas · Oberer Schambeinast → M. adductor longus · Unterer Schambeinast → M. adductor magnus.",
+   "pages": [
+    129
+   ]
+  },
+  {
+   "id": "glutmax-ans",
+   "topic": "huefte",
+   "type": "multi",
+   "src": "Modul 6.7.1",
+   "q": "Welche Ansätze hat der M. gluteus maximus? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Kleiner Rollhügel des Oberschenkels (Trochanter minor femoris)",
+    "Gesäßmuskel-Aufrauung (Tuberositas glutea)",
+    "Proximales Drittel der rauen Linie (Linea aspera femoris)",
+    "Maissiat-Band bzw. Oberschenkel-Faszienstreifen (Tractus iliotibialis)",
+    "Mittleres Drittel der rauen Linie (Linea aspera femoris)"
+   ],
+   "correct": [
+    1,
+    3
+   ],
+   "why": "Ansatz des M. gluteus maximus (Modul 6.7.1):<ul><li>Maissiat-Band bzw. Oberschenkel-Faszienstreifen (Tractus iliotibialis)</li><li>Gesäßmuskel-Aufrauung (Tuberositas glutea)</li></ul>Die anderen Optionen gehören zu: Mittleres Drittel der rauen Linie → M. adductor longus · Proximales Drittel der rauen Linie → M. adductor brevis · Kleiner Rollhügel des Oberschenkels → M. iliopsoas.",
+   "pages": [
+    129
+   ]
+  },
+  {
+   "id": "glutmed-gelenk",
+   "topic": "huefte",
+   "type": "mc",
+   "src": "Modul 6.7.2",
+   "q": "Auf welches Gelenk wirkt der M. gluteus medius laut Lehrskript primär?",
+   "options": [
+    "Sprunggelenk",
+    "Wirbelsäule",
+    "Hüftgelenk",
+    "Kniegelenk"
+   ],
+   "correct": 2,
+   "why": "Das Lehrskript führt den M. gluteus medius in Modul 6.7.2 unter den „Muskeln mit primärer Wirkung auf das Hüftgelenk“. Funktion: Abduktion im Hüftgelenk, Vordere Fasern: Flexion und Innenrotation im Hüftgelenk, Hintere Fasern: Extension und Außenrotation im Hüftgelenk. Wichtigster Abduktor der Hüfte; je nach Faserverlauf beugt oder streckt er zusätzlich.",
+   "pages": [
+    129
+   ]
+  },
+  {
+   "id": "glutmed-funk",
+   "topic": "huefte",
+   "type": "multi",
+   "src": "Modul 6.7.2",
+   "q": "Welche Funktionen hat der M. gluteus medius? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Plantarflexion im Sprunggelenk",
+    "Flexion und Innenrotation im Hüftgelenk",
+    "Extension im Kniegelenk",
+    "Extension und Außenrotation im Hüftgelenk",
+    "Adduktion im Hüftgelenk",
+    "Abduktion im Hüftgelenk"
+   ],
+   "correct": [
+    1,
+    3,
+    5
+   ],
+   "why": "Funktionen laut Modul 6.7.2:<ul><li>Abduktion im Hüftgelenk</li><li>Vordere Fasern: Flexion und Innenrotation im Hüftgelenk</li><li>Hintere Fasern: Extension und Außenrotation im Hüftgelenk</li></ul>Nicht zutreffend sind: Adduktion im Hüftgelenk · Extension im Kniegelenk · Plantarflexion im Sprunggelenk.",
+   "pages": [
+    129
+   ]
+  },
+  {
+   "id": "glutmed-funk-nicht",
+   "topic": "huefte",
+   "type": "mc",
+   "src": "Modul 6.7.2",
+   "q": "Welche Funktion hat der M. gluteus medius <em>nicht</em>?",
+   "options": [
+    "Abduktion im Hüftgelenk",
+    "Adduktion im Hüftgelenk",
+    "Extension und Außenrotation im Hüftgelenk",
+    "Flexion und Innenrotation im Hüftgelenk"
+   ],
+   "correct": 1,
+   "why": "Die drei anderen Antworten nennt das Lehrskript in Modul 6.7.2. Funktionen laut Skript: Abduktion im Hüftgelenk, Vordere Fasern: Flexion und Innenrotation im Hüftgelenk, Hintere Fasern: Extension und Außenrotation im Hüftgelenk. Adduktion im Hüftgelenk steht nicht darunter.",
+   "pages": [
+    129
+   ]
+  },
+  {
+   "id": "glutmed-urs",
+   "topic": "huefte",
+   "type": "multi",
+   "src": "Modul 6.7.2",
+   "q": "Welche Ursprünge hat der M. gluteus medius? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Wirbelkörper des 12. Brust- und 1. Lendenwirbels (Corpus vertebrae Th12–L1)",
+    "Gesäßseite der Darmbeinschaufel (Facies glutea ala ossis ilium)",
+    "Vorderer oberer Darmbeinstachel (Spina iliaca anterior superior)",
+    "Kreuzbein-Sitzbeinhöcker-Band (Ligamentum sacrotuberale)"
+   ],
+   "correct": [
+    1
+   ],
+   "why": "Ursprung des M. gluteus medius (Modul 6.7.2):<ul><li>Gesäßseite der Darmbeinschaufel (Facies glutea ala ossis ilium)</li></ul>Die anderen Optionen gehören zu: Vorderer oberer Darmbeinstachel → M. tensor fasciae latae · Kreuzbein-Sitzbeinhöcker-Band → M. gluteus maximus · Wirbelkörper des 12. Brust- und 1. Lendenwirbels → M. iliopsoas.",
+   "pages": [
+    129
+   ]
+  },
+  {
+   "id": "glutmed-ans",
+   "topic": "huefte",
+   "type": "multi",
+   "src": "Modul 6.7.2",
+   "q": "Welche Ansätze hat der M. gluteus medius? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Mittleres Drittel der rauen Linie (Linea aspera femoris)",
+    "Großer Rollhügel (Trochanter major)",
+    "Maissiat-Band (Tractus iliotibialis)",
+    "Gesäßmuskel-Aufrauung (Tuberositas glutea)"
+   ],
+   "correct": [
+    1
+   ],
+   "why": "Ansatz des M. gluteus medius (Modul 6.7.2):<ul><li>Großer Rollhügel (Trochanter major)</li></ul>Die anderen Optionen gehören zu: Maissiat-Band → M. tensor fasciae latae · Gesäßmuskel-Aufrauung → M. gluteus maximus · Mittleres Drittel der rauen Linie → M. adductor longus.",
+   "pages": [
+    129
+   ]
+  },
+  {
+   "id": "glutmin-gelenk",
+   "topic": "huefte",
+   "type": "mc",
+   "src": "Modul 6.7.3",
+   "q": "Auf welches Gelenk wirkt der M. gluteus minimus laut Lehrskript primär?",
+   "options": [
+    "Sprunggelenk",
+    "Wirbelsäule",
+    "Hüftgelenk",
+    "Kniegelenk"
+   ],
+   "correct": 2,
+   "why": "Das Lehrskript führt den M. gluteus minimus in Modul 6.7.3 unter den „Muskeln mit primärer Wirkung auf das Hüftgelenk“. Funktion: Abduktion im Hüftgelenk, Fasern vor der Frontalachse: Flexion und Innenrotation im Hüftgelenk, Fasern hinter der Frontalachse: Extension und Außenrotation im Hüftgelenk. Ursprung, Ansatz und Funktion entsprechen dem M. gluteus medius – er liegt nur tiefer und ist kleiner.",
+   "pages": [
+    130
+   ]
+  },
+  {
+   "id": "glutmin-funk",
+   "topic": "huefte",
+   "type": "multi",
+   "src": "Modul 6.7.3",
+   "q": "Welche Funktionen hat der M. gluteus minimus? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Abduktion im Hüftgelenk",
+    "Flexion und Innenrotation im Hüftgelenk",
+    "Extension und Außenrotation im Hüftgelenk",
+    "Adduktion im Hüftgelenk",
+    "Dorsalextension im Sprunggelenk",
+    "Flexion im Kniegelenk"
+   ],
+   "correct": [
+    0,
+    1,
+    2
+   ],
+   "why": "Funktionen laut Modul 6.7.3:<ul><li>Abduktion im Hüftgelenk</li><li>Fasern vor der Frontalachse: Flexion und Innenrotation im Hüftgelenk</li><li>Fasern hinter der Frontalachse: Extension und Außenrotation im Hüftgelenk</li></ul>Nicht zutreffend sind: Adduktion im Hüftgelenk · Flexion im Kniegelenk · Dorsalextension im Sprunggelenk.",
+   "pages": [
+    130
+   ]
+  },
+  {
+   "id": "glutmin-funk-nicht",
+   "topic": "huefte",
+   "type": "mc",
+   "src": "Modul 6.7.3",
+   "q": "Welche Funktion hat der M. gluteus minimus <em>nicht</em>?",
+   "options": [
+    "Flexion und Innenrotation im Hüftgelenk",
+    "Abduktion im Hüftgelenk",
+    "Extension und Außenrotation im Hüftgelenk",
+    "Adduktion im Hüftgelenk"
+   ],
+   "correct": 3,
+   "why": "Die drei anderen Antworten nennt das Lehrskript in Modul 6.7.3. Funktionen laut Skript: Abduktion im Hüftgelenk, Fasern vor der Frontalachse: Flexion und Innenrotation im Hüftgelenk, Fasern hinter der Frontalachse: Extension und Außenrotation im Hüftgelenk. Adduktion im Hüftgelenk steht nicht darunter.",
+   "pages": [
+    130
+   ]
+  },
+  {
+   "id": "glutmin-urs",
+   "topic": "huefte",
+   "type": "multi",
+   "src": "Modul 6.7.3",
+   "q": "Welche Ursprünge hat der M. gluteus minimus? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Wirbelkörper des 12. Brust- und 1. Lendenwirbels (Corpus vertebrae Th12–L1)",
+    "Kreuzbein-Sitzbeinhöcker-Band (Ligamentum sacrotuberale)",
+    "Vorderer oberer Darmbeinstachel (Spina iliaca anterior superior)",
+    "Gesäßseite der Darmbeinschaufel (Facies glutea ala ossis ilium)"
+   ],
+   "correct": [
+    3
+   ],
+   "why": "Ursprung des M. gluteus minimus (Modul 6.7.3):<ul><li>Gesäßseite der Darmbeinschaufel (Facies glutea ala ossis ilium)</li></ul>Die anderen Optionen gehören zu: Vorderer oberer Darmbeinstachel → M. tensor fasciae latae · Kreuzbein-Sitzbeinhöcker-Band → M. gluteus maximus · Wirbelkörper des 12. Brust- und 1. Lendenwirbels → M. iliopsoas.",
+   "pages": [
+    130
+   ]
+  },
+  {
+   "id": "glutmin-ans",
+   "topic": "huefte",
+   "type": "multi",
+   "src": "Modul 6.7.3",
+   "q": "Welche Ansätze hat der M. gluteus minimus? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Großer Rollhügel (Trochanter major)",
+    "Gesäßmuskel-Aufrauung (Tuberositas glutea)",
+    "Mittleres Drittel der rauen Linie (Linea aspera femoris)",
+    "Maissiat-Band (Tractus iliotibialis)"
+   ],
+   "correct": [
+    0
+   ],
+   "why": "Ansatz des M. gluteus minimus (Modul 6.7.3):<ul><li>Großer Rollhügel (Trochanter major)</li></ul>Die anderen Optionen gehören zu: Maissiat-Band → M. tensor fasciae latae · Gesäßmuskel-Aufrauung → M. gluteus maximus · Mittleres Drittel der rauen Linie → M. adductor longus.",
+   "pages": [
+    130
+   ]
+  },
+  {
+   "id": "iliopsoas-gelenk",
+   "topic": "huefte",
+   "type": "mc",
+   "src": "Modul 6.7.4",
+   "q": "Auf welches Gelenk wirkt der M. iliopsoas laut Lehrskript primär?",
+   "options": [
+    "Kniegelenk",
+    "Wirbelsäule",
+    "Hüftgelenk",
+    "Sprunggelenk"
+   ],
+   "correct": 2,
+   "why": "Das Lehrskript führt den M. iliopsoas in Modul 6.7.4 unter den „Muskeln mit primärer Wirkung auf das Hüftgelenk“. Funktion: Flexion im Hüftgelenk, Außenrotation im Hüftgelenk, Lateralflexion der Wirbelsäule bei einseitiger Kontraktion. Der Hüftbeuger ist der Gegenspieler des M. gluteus maximus. Durch vieles Sitzen verkürzt er häufig; zusammen mit einem schwachen Gesäßmuskel entsteht eine Dysbalance, die oft Rückenschmerzen verursacht.",
+   "pages": [
+    130
+   ]
+  },
+  {
+   "id": "iliopsoas-funk",
+   "topic": "huefte",
+   "type": "multi",
+   "src": "Modul 6.7.4",
+   "q": "Welche Funktionen hat der M. iliopsoas? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Innenrotation im Hüftgelenk",
+    "Außenrotation im Hüftgelenk",
+    "Lateralflexion der Wirbelsäule bei einseitiger Kontraktion",
+    "Extension im Hüftgelenk",
+    "Abduktion im Hüftgelenk",
+    "Flexion im Hüftgelenk"
+   ],
+   "correct": [
+    1,
+    2,
+    5
+   ],
+   "why": "Funktionen laut Modul 6.7.4:<ul><li>Flexion im Hüftgelenk</li><li>Außenrotation im Hüftgelenk</li><li>Lateralflexion der Wirbelsäule bei einseitiger Kontraktion</li></ul>Nicht zutreffend sind: Extension im Hüftgelenk · Abduktion im Hüftgelenk · Innenrotation im Hüftgelenk.",
+   "pages": [
+    130
+   ]
+  },
+  {
+   "id": "iliopsoas-funk-nicht",
+   "topic": "huefte",
+   "type": "mc",
+   "src": "Modul 6.7.4",
+   "q": "Welche Funktion hat der M. iliopsoas <em>nicht</em>?",
+   "options": [
+    "Flexion im Hüftgelenk",
+    "Lateralflexion der Wirbelsäule bei einseitiger Kontraktion",
+    "Außenrotation im Hüftgelenk",
+    "Extension im Hüftgelenk"
+   ],
+   "correct": 3,
+   "why": "Die drei anderen Antworten nennt das Lehrskript in Modul 6.7.4. Funktionen laut Skript: Flexion im Hüftgelenk, Außenrotation im Hüftgelenk, Lateralflexion der Wirbelsäule bei einseitiger Kontraktion. Extension im Hüftgelenk steht nicht darunter.",
+   "pages": [
+    130
+   ]
+  },
+  {
+   "id": "iliopsoas-urs",
+   "topic": "huefte",
+   "type": "multi",
+   "src": "Modul 6.7.4",
+   "q": "Welche Ursprünge hat der M. iliopsoas? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Seitenfläche des 12. Brust- und 1. bis 4. Lendenwirbels (Processus transversus Th12–L4)",
+    "Innenseite der Darmbeinschaufel (Fossa iliaca)",
+    "Kreuzbein-Sitzbeinhöcker-Band (Ligamentum sacrotuberale)",
+    "Gesäßseite der Darmbeinschaufel (Facies glutea ala ossis ilium)",
+    "Vorderer oberer Darmbeinstachel (Spina iliaca anterior superior)",
+    "Wirbelkörper des 12. Brust- und 1. Lendenwirbels (Corpus vertebrae Th12–L1)"
+   ],
+   "correct": [
+    0,
+    1,
+    5
+   ],
+   "why": "Ursprung des M. iliopsoas (Modul 6.7.4):<ul><li>Seitenfläche des 12. Brust- und 1. bis 4. Lendenwirbels (Processus transversus Th12–L4)</li><li>Wirbelkörper des 12. Brust- und 1. Lendenwirbels (Corpus vertebrae Th12–L1)</li><li>Innenseite der Darmbeinschaufel (Fossa iliaca)</li></ul>Die anderen Optionen gehören zu: Vorderer oberer Darmbeinstachel → M. tensor fasciae latae · Gesäßseite der Darmbeinschaufel → M. gluteus maximus · Kreuzbein-Sitzbeinhöcker-Band → M. gluteus maximus.",
+   "pages": [
+    130
+   ]
+  },
+  {
+   "id": "iliopsoas-ans",
+   "topic": "huefte",
+   "type": "multi",
+   "src": "Modul 6.7.4",
+   "q": "Welche Ansätze hat der M. iliopsoas? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Proximales Drittel der rauen Linie (Linea aspera femoris)",
+    "Mittleres Drittel der rauen Linie (Linea aspera femoris)",
+    "Maissiat-Band bzw. Oberschenkel-Faszienstreifen (Tractus iliotibialis)",
+    "Kleiner Rollhügel des Oberschenkels (Trochanter minor femoris)"
+   ],
+   "correct": [
+    3
+   ],
+   "why": "Ansatz des M. iliopsoas (Modul 6.7.4):<ul><li>Kleiner Rollhügel des Oberschenkels (Trochanter minor femoris)</li><li>Kammlinie des Schambeins (Linea pectinea ossis pubis) und Knochenerhebung des Hüftknochens (Eminentia iliopubica) – Ansätze des M. psoas minor</li></ul>Die anderen Optionen gehören zu: Proximales Drittel der rauen Linie → M. adductor brevis · Mittleres Drittel der rauen Linie → M. adductor longus · Maissiat-Band bzw. Oberschenkel-Faszienstreifen → M. gluteus maximus.",
+   "pages": [
+    130
+   ]
+  },
+  {
+   "id": "addmag-gelenk",
+   "topic": "huefte",
+   "type": "mc",
+   "src": "Modul 6.7.5",
+   "q": "Auf welches Gelenk wirkt der M. adductor magnus laut Lehrskript primär?",
+   "options": [
+    "Kniegelenk",
+    "Hüftgelenk",
+    "Sprunggelenk",
+    "Wirbelsäule"
+   ],
+   "correct": 1,
+   "why": "Das Lehrskript führt den M. adductor magnus in Modul 6.7.5 unter den „Muskeln mit primärer Wirkung auf das Hüftgelenk“. Funktion: Starke Adduktion im Hüftgelenk, Extension im Hüftgelenk (Fasern, die vom Sitzbeinhöcker entspringen), Innenrotation des Oberschenkels. Der einzige Adduktor, der die Hüfte auch strecken kann – über die Fasern vom Sitzbeinhöcker.",
+   "pages": [
+    131
+   ]
+  },
+  {
+   "id": "addmag-funk",
+   "topic": "huefte",
+   "type": "multi",
+   "src": "Modul 6.7.5",
+   "q": "Welche Funktionen hat der M. adductor magnus? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Abduktion im Hüftgelenk",
+    "Extension im Hüftgelenk",
+    "Innenrotation des Oberschenkels",
+    "Dorsalextension im Sprunggelenk",
+    "Adduktion im Hüftgelenk",
+    "Extension im Kniegelenk"
+   ],
+   "correct": [
+    1,
+    2,
+    4
+   ],
+   "why": "Funktionen laut Modul 6.7.5:<ul><li>Starke Adduktion im Hüftgelenk</li><li>Extension im Hüftgelenk (Fasern, die vom Sitzbeinhöcker entspringen)</li><li>Innenrotation des Oberschenkels</li></ul>Nicht zutreffend sind: Abduktion im Hüftgelenk · Extension im Kniegelenk · Dorsalextension im Sprunggelenk.",
+   "pages": [
+    131
+   ]
+  },
+  {
+   "id": "addmag-funk-nicht",
+   "topic": "huefte",
+   "type": "mc",
+   "src": "Modul 6.7.5",
+   "q": "Welche Funktion hat der M. adductor magnus <em>nicht</em>?",
+   "options": [
+    "Innenrotation des Oberschenkels",
+    "Abduktion im Hüftgelenk",
+    "Extension im Hüftgelenk",
+    "Adduktion im Hüftgelenk"
+   ],
+   "correct": 1,
+   "why": "Die drei anderen Antworten nennt das Lehrskript in Modul 6.7.5. Funktionen laut Skript: Starke Adduktion im Hüftgelenk, Extension im Hüftgelenk (Fasern, die vom Sitzbeinhöcker entspringen), Innenrotation des Oberschenkels. Abduktion im Hüftgelenk steht nicht darunter.",
+   "pages": [
+    131
+   ]
+  },
+  {
+   "id": "addmag-urs",
+   "topic": "huefte",
+   "type": "multi",
+   "src": "Modul 6.7.5",
+   "q": "Welche Ursprünge hat der M. adductor magnus? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Innenseite der Darmbeinschaufel (Fossa iliaca)",
+    "Sitzbeinast (Ramus ossis ischii)",
+    "Thorakolumbale Faszie (Fascia thoracolumbalis)",
+    "Schambeinfuge (Symphysis pubica)",
+    "Sitzbeinhöcker (Tuber ischiadicum)",
+    "Unterer Schambeinast (Ramus inferior ossis pubis)"
+   ],
+   "correct": [
+    1,
+    4,
+    5
+   ],
+   "why": "Ursprung des M. adductor magnus (Modul 6.7.5):<ul><li>Unterer Schambeinast (Ramus inferior ossis pubis)</li><li>Sitzbeinhöcker (Tuber ischiadicum)</li><li>Sitzbeinast (Ramus ossis ischii)</li></ul>Die anderen Optionen gehören zu: Schambeinfuge → M. adductor longus · Thorakolumbale Faszie → M. gluteus maximus · Innenseite der Darmbeinschaufel → M. iliopsoas.",
+   "pages": [
+    131
+   ]
+  },
+  {
+   "id": "addmag-ans",
+   "topic": "huefte",
+   "type": "multi",
+   "src": "Modul 6.7.5",
+   "q": "Welche Ansätze hat der M. adductor magnus? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Gesäßmuskel-Aufrauung (Tuberositas glutea)",
+    "Raue Linie an der Innenseite des Oberschenkelknochens (Linea aspera femoris)",
+    "Innerer Gelenkfortsatz des Oberschenkelknochens (Tuberculum adductorium)",
+    "Kleiner Rollhügel des Oberschenkels (Trochanter minor femoris)",
+    "Maissiat-Band bzw. Oberschenkel-Faszienstreifen (Tractus iliotibialis)"
+   ],
+   "correct": [
+    1,
+    2
+   ],
+   "why": "Ansatz des M. adductor magnus (Modul 6.7.5):<ul><li>Raue Linie an der Innenseite des Oberschenkelknochens (Linea aspera femoris)</li><li>Innerer Gelenkfortsatz des Oberschenkelknochens (Tuberculum adductorium)</li></ul>Die anderen Optionen gehören zu: Maissiat-Band bzw. Oberschenkel-Faszienstreifen → M. gluteus maximus · Kleiner Rollhügel des Oberschenkels → M. iliopsoas · Gesäßmuskel-Aufrauung → M. gluteus maximus.",
+   "pages": [
+    131
+   ]
+  },
+  {
+   "id": "addbrev-gelenk",
+   "topic": "huefte",
+   "type": "mc",
+   "src": "Modul 6.7.6",
+   "q": "Auf welches Gelenk wirkt der M. adductor brevis laut Lehrskript primär?",
+   "options": [
+    "Hüftgelenk",
+    "Wirbelsäule",
+    "Sprunggelenk",
+    "Kniegelenk"
+   ],
+   "correct": 0,
+   "why": "Das Lehrskript führt den M. adductor brevis in Modul 6.7.6 unter den „Muskeln mit primärer Wirkung auf das Hüftgelenk“. Funktion: Adduktion im Hüftgelenk, Außenrotation im Hüftgelenk, Unterstützung der Flexion im Hüftgelenk bis 40 Grad. Unterstützt die Hüftbeugung nur bis 40 Grad – darüber hinaus wirkt er bremsend."
+  },
+  {
+   "id": "addbrev-funk",
+   "topic": "huefte",
+   "type": "multi",
+   "src": "Modul 6.7.6",
+   "q": "Welche Funktionen hat der M. adductor brevis? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Außenrotation im Hüftgelenk",
+    "Abduktion im Hüftgelenk",
+    "Adduktion im Hüftgelenk",
+    "Extension im Hüftgelenk",
+    "Unterstützung der Flexion im Hüftgelenk bis 40 Grad",
+    "Flexion im Kniegelenk"
+   ],
+   "correct": [
+    0,
+    2,
+    4
+   ],
+   "why": "Funktionen laut Modul 6.7.6:<ul><li>Adduktion im Hüftgelenk</li><li>Außenrotation im Hüftgelenk</li><li>Unterstützung der Flexion im Hüftgelenk bis 40 Grad</li></ul>Nicht zutreffend sind: Abduktion im Hüftgelenk · Extension im Hüftgelenk · Flexion im Kniegelenk."
+  },
+  {
+   "id": "addbrev-funk-nicht",
+   "topic": "huefte",
+   "type": "mc",
+   "src": "Modul 6.7.6",
+   "q": "Welche Funktion hat der M. adductor brevis <em>nicht</em>?",
+   "options": [
+    "Abduktion im Hüftgelenk",
+    "Außenrotation im Hüftgelenk",
+    "Unterstützung der Flexion im Hüftgelenk bis 40 Grad",
+    "Adduktion im Hüftgelenk"
+   ],
+   "correct": 0,
+   "why": "Die drei anderen Antworten nennt das Lehrskript in Modul 6.7.6. Funktionen laut Skript: Adduktion im Hüftgelenk, Außenrotation im Hüftgelenk, Unterstützung der Flexion im Hüftgelenk bis 40 Grad. Abduktion im Hüftgelenk steht nicht darunter."
+  },
+  {
+   "id": "addbrev-urs",
+   "topic": "huefte",
+   "type": "multi",
+   "src": "Modul 6.7.6",
+   "q": "Welche Ursprünge hat der M. adductor brevis? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Oberer Schambeinast (Ramus superior ossis pubis)",
+    "Innenseite der Darmbeinschaufel (Fossa iliaca)",
+    "Unterer Schambeinast (Ramus inferior ossis pubis)",
+    "Thorakolumbale Faszie (Fascia thoracolumbalis)"
+   ],
+   "correct": [
+    2
+   ],
+   "why": "Ursprung des M. adductor brevis (Modul 6.7.6):<ul><li>Unterer Schambeinast (Ramus inferior ossis pubis)</li></ul>Die anderen Optionen gehören zu: Oberer Schambeinast → M. adductor longus · Thorakolumbale Faszie → M. gluteus maximus · Innenseite der Darmbeinschaufel → M. iliopsoas."
+  },
+  {
+   "id": "addbrev-ans",
+   "topic": "huefte",
+   "type": "multi",
+   "src": "Modul 6.7.6",
+   "q": "Welche Ansätze hat der M. adductor brevis? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Proximales Drittel der rauen Linie (Linea aspera femoris)",
+    "Maissiat-Band bzw. Oberschenkel-Faszienstreifen (Tractus iliotibialis)",
+    "Kleiner Rollhügel des Oberschenkels (Trochanter minor femoris)",
+    "Innerer Gelenkfortsatz des Oberschenkelknochens (Tuberculum adductorium)"
+   ],
+   "correct": [
+    0
+   ],
+   "why": "Ansatz des M. adductor brevis (Modul 6.7.6):<ul><li>Proximales Drittel der rauen Linie (Linea aspera femoris)</li></ul>Die anderen Optionen gehören zu: Kleiner Rollhügel des Oberschenkels → M. iliopsoas · Maissiat-Band bzw. Oberschenkel-Faszienstreifen → M. gluteus maximus · Innerer Gelenkfortsatz des Oberschenkelknochens → M. adductor magnus."
+  },
+  {
+   "id": "addlong-gelenk",
+   "topic": "huefte",
+   "type": "mc",
+   "src": "Modul 6.7.8",
+   "q": "Auf welches Gelenk wirkt der M. adductor longus laut Lehrskript primär?",
+   "options": [
+    "Sprunggelenk",
+    "Hüftgelenk",
+    "Wirbelsäule",
+    "Kniegelenk"
+   ],
+   "correct": 1,
+   "why": "Das Lehrskript führt den M. adductor longus in Modul 6.7.8 unter den „Muskeln mit primärer Wirkung auf das Hüftgelenk“. Funktion: Adduktion im Hüftgelenk, Unterstützung der Flexion im Hüftgelenk bis 40 Grad, Schwache Innen- und Außenrotation im Hüftgelenk. Die drei Schenkelanzieher unterscheidet man am besten über den Ansatz an der rauen Linie: brevis proximal, longus mittig, magnus bis zum Tuberculum adductorium.",
+   "pages": [
+    133
+   ]
+  },
+  {
+   "id": "addlong-funk",
+   "topic": "huefte",
+   "type": "multi",
+   "src": "Modul 6.7.8",
+   "q": "Welche Funktionen hat der M. adductor longus? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Adduktion im Hüftgelenk",
+    "Abduktion im Hüftgelenk",
+    "Innen- und Außenrotation im Hüftgelenk",
+    "Unterstützung der Flexion im Hüftgelenk bis 40 Grad",
+    "Extension im Hüftgelenk",
+    "Extension im Kniegelenk"
+   ],
+   "correct": [
+    0,
+    2,
+    3
+   ],
+   "why": "Funktionen laut Modul 6.7.8:<ul><li>Adduktion im Hüftgelenk</li><li>Unterstützung der Flexion im Hüftgelenk bis 40 Grad</li><li>Schwache Innen- und Außenrotation im Hüftgelenk</li></ul>Nicht zutreffend sind: Abduktion im Hüftgelenk · Extension im Hüftgelenk · Extension im Kniegelenk.",
+   "pages": [
+    133
+   ]
+  },
+  {
+   "id": "addlong-funk-nicht",
+   "topic": "huefte",
+   "type": "mc",
+   "src": "Modul 6.7.8",
+   "q": "Welche Funktion hat der M. adductor longus <em>nicht</em>?",
+   "options": [
+    "Abduktion im Hüftgelenk",
+    "Unterstützung der Flexion im Hüftgelenk bis 40 Grad",
+    "Innen- und Außenrotation im Hüftgelenk",
+    "Adduktion im Hüftgelenk"
+   ],
+   "correct": 0,
+   "why": "Die drei anderen Antworten nennt das Lehrskript in Modul 6.7.8. Funktionen laut Skript: Adduktion im Hüftgelenk, Unterstützung der Flexion im Hüftgelenk bis 40 Grad, Schwache Innen- und Außenrotation im Hüftgelenk. Abduktion im Hüftgelenk steht nicht darunter.",
+   "pages": [
+    133
+   ]
+  },
+  {
+   "id": "addlong-urs",
+   "topic": "huefte",
+   "type": "multi",
+   "src": "Modul 6.7.8",
+   "q": "Welche Ursprünge hat der M. adductor longus? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Thorakolumbale Faszie (Fascia thoracolumbalis)",
+    "Oberer Schambeinast (Ramus superior ossis pubis)",
+    "Schambeinfuge (Symphysis pubica)",
+    "Sitzbeinhöcker (Tuber ischiadicum)",
+    "Innenseite der Darmbeinschaufel (Fossa iliaca)"
+   ],
+   "correct": [
+    1,
+    2
+   ],
+   "why": "Ursprung des M. adductor longus (Modul 6.7.8):<ul><li>Oberer Schambeinast (Ramus superior ossis pubis)</li><li>Schambeinfuge (Symphysis pubica)</li></ul>Die anderen Optionen gehören zu: Sitzbeinhöcker → M. adductor magnus · Thorakolumbale Faszie → M. gluteus maximus · Innenseite der Darmbeinschaufel → M. iliopsoas.",
+   "pages": [
+    133
+   ]
+  },
+  {
+   "id": "addlong-ans",
+   "topic": "huefte",
+   "type": "multi",
+   "src": "Modul 6.7.8",
+   "q": "Welche Ansätze hat der M. adductor longus? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Gesäßmuskel-Aufrauung (Tuberositas glutea)",
+    "Mittleres Drittel der rauen Linie (Linea aspera femoris)",
+    "Maissiat-Band bzw. Oberschenkel-Faszienstreifen (Tractus iliotibialis)",
+    "Kleiner Rollhügel des Oberschenkels (Trochanter minor femoris)"
+   ],
+   "correct": [
+    1
+   ],
+   "why": "Ansatz des M. adductor longus (Modul 6.7.8):<ul><li>Mittleres Drittel der rauen Linie (Linea aspera femoris)</li></ul>Die anderen Optionen gehören zu: Kleiner Rollhügel des Oberschenkels → M. iliopsoas · Gesäßmuskel-Aufrauung → M. gluteus maximus · Maissiat-Band bzw. Oberschenkel-Faszienstreifen → M. gluteus maximus.",
+   "pages": [
+    133
+   ]
+  },
+  {
+   "id": "tfl-gelenk",
+   "topic": "huefte",
+   "type": "mc",
+   "src": "Modul 6.7.10",
+   "q": "Auf welches Gelenk wirkt der M. tensor fasciae latae laut Lehrskript primär?",
+   "options": [
+    "Kniegelenk",
+    "Hüftgelenk",
+    "Sprunggelenk",
+    "Wirbelsäule"
+   ],
+   "correct": 1,
+   "why": "Das Lehrskript führt den M. tensor fasciae latae in Modul 6.7.10 unter den „Muskeln mit primärer Wirkung auf das Hüftgelenk“. Funktion: Flexion im Hüftgelenk, Innenrotation im Hüftgelenk, Abduktion im Hüftgelenk. Er teilt sich den Ansatz am Maissiat-Band mit dem M. gluteus maximus, wirkt aber genau gegenläufig: beugt und rotiert nach innen.",
+   "pages": [
+    134
+   ]
+  },
+  {
+   "id": "tfl-funk",
+   "topic": "huefte",
+   "type": "multi",
+   "src": "Modul 6.7.10",
+   "q": "Welche Funktionen hat der M. tensor fasciae latae? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Flexion im Hüftgelenk",
+    "Innenrotation im Hüftgelenk",
+    "Außenrotation im Hüftgelenk",
+    "Extension im Hüftgelenk",
+    "Adduktion im Hüftgelenk",
+    "Abduktion im Hüftgelenk"
+   ],
+   "correct": [
+    0,
+    1,
+    5
+   ],
+   "why": "Funktionen laut Modul 6.7.10:<ul><li>Flexion im Hüftgelenk</li><li>Innenrotation im Hüftgelenk</li><li>Abduktion im Hüftgelenk</li></ul>Nicht zutreffend sind: Extension im Hüftgelenk · Adduktion im Hüftgelenk · Außenrotation im Hüftgelenk.",
+   "pages": [
+    134
+   ]
+  },
+  {
+   "id": "tfl-funk-nicht",
+   "topic": "huefte",
+   "type": "mc",
+   "src": "Modul 6.7.10",
+   "q": "Welche Funktion hat der M. tensor fasciae latae <em>nicht</em>?",
+   "options": [
+    "Innenrotation im Hüftgelenk",
+    "Abduktion im Hüftgelenk",
+    "Extension im Hüftgelenk",
+    "Flexion im Hüftgelenk"
+   ],
+   "correct": 2,
+   "why": "Die drei anderen Antworten nennt das Lehrskript in Modul 6.7.10. Funktionen laut Skript: Flexion im Hüftgelenk, Innenrotation im Hüftgelenk, Abduktion im Hüftgelenk. Extension im Hüftgelenk steht nicht darunter.",
+   "pages": [
+    134
+   ]
+  },
+  {
+   "id": "tfl-urs",
+   "topic": "huefte",
+   "type": "multi",
+   "src": "Modul 6.7.10",
+   "q": "Welche Ursprünge hat der M. tensor fasciae latae? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Gesäßseite der Darmbeinschaufel (Facies glutea ala ossis ilium)",
+    "Vorderer oberer Darmbeinstachel (Spina iliaca anterior superior)",
+    "Kreuzbein-Sitzbeinhöcker-Band (Ligamentum sacrotuberale)",
+    "Wirbelkörper des 12. Brust- und 1. Lendenwirbels (Corpus vertebrae Th12–L1)"
+   ],
+   "correct": [
+    1
+   ],
+   "why": "Ursprung des M. tensor fasciae latae (Modul 6.7.10):<ul><li>Vorderer oberer Darmbeinstachel (Spina iliaca anterior superior)</li></ul>Die anderen Optionen gehören zu: Gesäßseite der Darmbeinschaufel → M. gluteus maximus · Kreuzbein-Sitzbeinhöcker-Band → M. gluteus maximus · Wirbelkörper des 12. Brust- und 1. Lendenwirbels → M. iliopsoas.",
+   "pages": [
+    134
+   ]
+  },
+  {
+   "id": "tfl-ans",
+   "topic": "huefte",
+   "type": "multi",
+   "src": "Modul 6.7.10",
+   "q": "Welche Ansätze hat der M. tensor fasciae latae? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Gesäßmuskel-Aufrauung (Tuberositas glutea)",
+    "Großer Rollhügel (Trochanter major)",
+    "Mittleres Drittel der rauen Linie (Linea aspera femoris)",
+    "Maissiat-Band (Tractus iliotibialis)"
+   ],
+   "correct": [
+    3
+   ],
+   "why": "Ansatz des M. tensor fasciae latae (Modul 6.7.10):<ul><li>Maissiat-Band (Tractus iliotibialis)</li></ul>Die anderen Optionen gehören zu: Großer Rollhügel → M. gluteus medius · Gesäßmuskel-Aufrauung → M. gluteus maximus · Mittleres Drittel der rauen Linie → M. adductor longus.",
+   "pages": [
+    134
+   ]
+  },
+  {
+   "id": "quad-gelenk",
+   "topic": "knie",
+   "type": "mc",
+   "src": "Modul 6.8.1",
+   "q": "Auf welches Gelenk wirkt der M. quadriceps femoris laut Lehrskript primär?",
+   "options": [
+    "Wirbelsäule",
+    "Hüftgelenk",
+    "Sprunggelenk",
+    "Kniegelenk"
+   ],
+   "correct": 3,
+   "why": "Das Lehrskript führt den M. quadriceps femoris in Modul 6.8.1 unter den „Muskeln mit primärer Wirkung auf das Kniegelenk“. Funktion: Alle Köpfe: Extension im Kniegelenk, M. rectus femoris: zusätzliche Flexion im Hüftgelenk. Der einzige Strecker des Kniegelenks und einer der kräftigsten Muskeln des Körpers. Nur der M. rectus femoris überspannt zwei Gelenke und beugt deshalb zusätzlich die Hüfte.",
+   "pages": [
+    136
+   ]
+  },
+  {
+   "id": "quad-funk",
+   "topic": "knie",
+   "type": "multi",
+   "src": "Modul 6.8.1",
+   "q": "Welche Funktionen hat der M. quadriceps femoris? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Alle Köpfe: Innenrotation im Kniegelenk",
+    "M. rectus femoris: zusätzliche Flexion im Hüftgelenk",
+    "M. rectus femoris: zusätzliche Extension im Hüftgelenk",
+    "Alle Köpfe: Flexion im Kniegelenk",
+    "Alle Köpfe: Extension im Kniegelenk"
+   ],
+   "correct": [
+    1,
+    4
+   ],
+   "why": "Funktionen laut Modul 6.8.1:<ul><li>Alle Köpfe: Extension im Kniegelenk</li><li>M. rectus femoris: zusätzliche Flexion im Hüftgelenk</li></ul>Nicht zutreffend sind: Alle Köpfe: Flexion im Kniegelenk · Alle Köpfe: Innenrotation im Kniegelenk · M. rectus femoris: zusätzliche Extension im Hüftgelenk.",
+   "pages": [
+    136
+   ]
+  },
+  {
+   "id": "quad-urs",
+   "topic": "knie",
+   "type": "multi",
+   "src": "Modul 6.8.1",
+   "q": "Welche Ursprünge hat der M. quadriceps femoris? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Gesäßseite der Darmbeinschaufel (Facies glutea ala ossis ilium)",
+    "Sitzbeinhöcker (Tuber ischiadicum)",
+    "Laterale Fläche des großen Rollhügels (Trochanter major)",
+    "Oberer Rand der Hüftgelenkpfanne (Sulcus supraacetabularis)",
+    "Vorderer unterer Darmbeinstachel (Spina iliaca anterior inferior)",
+    "Kreuzbein-Sitzbeinhöcker-Band (Ligamentum sacrotuberale)",
+    "Zwischenrollhügellinie (Linea intertrochanterica)",
+    "Vordere und laterale Fläche des Schenkelbeins (Corpus femoris)",
+    "Laterale und mediale Lippe der rauen Linie (Linea aspera femoris)"
+   ],
+   "correct": [
+    2,
+    3,
+    4,
+    6,
+    7,
+    8
+   ],
+   "why": "Ursprung des M. quadriceps femoris (Modul 6.8.1):<ul><li>M. rectus femoris: Vorderer unterer Darmbeinstachel (Spina iliaca anterior inferior) und oberer Rand der Hüftgelenkpfanne (Sulcus supraacetabularis)</li><li>M. vastus lateralis: Laterale Lippe der rauen Linie (Linea aspera femoris) und laterale Fläche des großen Rollhügels (Trochanter major)</li><li>M. vastus medialis: Mediale Lippe der rauen Linie (Linea aspera femoris) und Zwischenrollhügellinie (Linea intertrochanterica)</li><li>M. vastus intermedius: Vordere und laterale Fläche des Schenkelbeins (Corpus femoris)</li></ul>Die anderen Optionen gehören zu: Sitzbeinhöcker → M. biceps femoris · Kreuzbein-Sitzbeinhöcker-Band → M. gluteus maximus · Gesäßseite der Darmbeinschaufel → M. gluteus maximus.",
+   "pages": [
+    136
+   ]
+  },
+  {
+   "id": "quad-ans",
+   "topic": "knie",
+   "type": "multi",
+   "src": "Modul 6.8.1",
+   "q": "Welche Ansätze hat der M. quadriceps femoris? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Kniescheibe (Patella)",
+    "Wadenbeinkopf (Caput fibulae)",
+    "Gesäßmuskel-Aufrauung (Tuberositas glutea)",
+    "Maissiat-Band (Tractus iliotibialis)",
+    "Schienbeinrauigkeit (Tuberositas tibiae)"
+   ],
+   "correct": [
+    0,
+    4
+   ],
+   "why": "Ansatz des M. quadriceps femoris (Modul 6.8.1):<ul><li>Schienbeinrauigkeit (Tuberositas tibiae)</li><li>Kniescheibe (Patella)</li></ul>Die anderen Optionen gehören zu: Wadenbeinkopf → M. biceps femoris · Maissiat-Band → M. tensor fasciae latae · Gesäßmuskel-Aufrauung → M. gluteus maximus.",
+   "pages": [
+    136
+   ]
+  },
+  {
+   "id": "bicfem-gelenk",
+   "topic": "knie",
+   "type": "mc",
+   "src": "Modul 6.8.2",
+   "q": "Auf welches Gelenk wirkt der M. biceps femoris laut Lehrskript primär?",
+   "options": [
+    "Kniegelenk",
+    "Wirbelsäule",
+    "Hüftgelenk",
+    "Sprunggelenk"
+   ],
+   "correct": 0,
+   "why": "Das Lehrskript führt den M. biceps femoris in Modul 6.8.2 unter den „Muskeln mit primärer Wirkung auf das Kniegelenk“. Funktion: Beide Köpfe: Flexion im Kniegelenk, Beide Köpfe: Außenrotation im Kniegelenk, Caput longum: zusätzlich Extension im Hüftgelenk. Gehört zur ischiocruralen Muskulatur (Hamstrings) und ist der Antagonist des vierköpfigen Beinstreckers. Als einziger Hamstring rotiert er nach außen.",
+   "pages": [
+    137
+   ]
+  },
+  {
+   "id": "bicfem-funk",
+   "topic": "knie",
+   "type": "multi",
+   "src": "Modul 6.8.2",
+   "q": "Welche Funktionen hat der M. biceps femoris? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Beide Köpfe: Extension im Kniegelenk",
+    "Caput longum: zusätzlich Extension im Hüftgelenk",
+    "Beide Köpfe: Innenrotation im Kniegelenk",
+    "Beide Köpfe: Außenrotation im Kniegelenk",
+    "Beide Köpfe: Flexion im Kniegelenk",
+    "Caput longum: zusätzlich Flexion im Hüftgelenk"
+   ],
+   "correct": [
+    1,
+    3,
+    4
+   ],
+   "why": "Funktionen laut Modul 6.8.2:<ul><li>Beide Köpfe: Flexion im Kniegelenk</li><li>Beide Köpfe: Außenrotation im Kniegelenk</li><li>Caput longum: zusätzlich Extension im Hüftgelenk</li></ul>Nicht zutreffend sind: Beide Köpfe: Extension im Kniegelenk · Beide Köpfe: Innenrotation im Kniegelenk · Caput longum: zusätzlich Flexion im Hüftgelenk.",
+   "pages": [
+    137
+   ]
+  },
+  {
+   "id": "bicfem-funk-nicht",
+   "topic": "knie",
+   "type": "mc",
+   "src": "Modul 6.8.2",
+   "q": "Welche Funktion hat der M. biceps femoris <em>nicht</em>?",
+   "options": [
+    "Beide Köpfe: Extension im Kniegelenk",
+    "Beide Köpfe: Flexion im Kniegelenk",
+    "Beide Köpfe: Außenrotation im Kniegelenk",
+    "Caput longum: zusätzlich Extension im Hüftgelenk"
+   ],
+   "correct": 0,
+   "why": "Die drei anderen Antworten nennt das Lehrskript in Modul 6.8.2. Funktionen laut Skript: Beide Köpfe: Flexion im Kniegelenk, Beide Köpfe: Außenrotation im Kniegelenk, Caput longum: zusätzlich Extension im Hüftgelenk. Beide Köpfe: Extension im Kniegelenk steht nicht darunter.",
+   "pages": [
+    137
+   ]
+  },
+  {
+   "id": "bicfem-urs",
+   "topic": "knie",
+   "type": "multi",
+   "src": "Modul 6.8.2",
+   "q": "Welche Ursprünge hat der M. biceps femoris? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Laterale Fläche des großen Rollhügels (Trochanter major)",
+    "Oberer Rand der Hüftgelenkpfanne (Sulcus supraacetabularis)",
+    "Laterale Lippe der rauen Linie (Linea aspera femoris)",
+    "Zwischenrollhügellinie (Linea intertrochanterica)",
+    "Sitzbeinhöcker (Tuber ischiadicum)"
+   ],
+   "correct": [
+    2,
+    4
+   ],
+   "why": "Ursprung des M. biceps femoris (Modul 6.8.2):<ul><li>Caput longum (langer Kopf): Sitzbeinhöcker (Tuber ischiadicum)</li><li>Caput breve (kurzer Kopf): laterale Lippe der rauen Linie (Linea aspera femoris)</li></ul>Die anderen Optionen gehören zu: Zwischenrollhügellinie → M. quadriceps femoris · Laterale Fläche des großen Rollhügels → M. quadriceps femoris · Oberer Rand der Hüftgelenkpfanne → M. quadriceps femoris.",
+   "pages": [
+    137
+   ]
+  },
+  {
+   "id": "bicfem-ans",
+   "topic": "knie",
+   "type": "multi",
+   "src": "Modul 6.8.2",
+   "q": "Welche Ansätze hat der M. biceps femoris? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Wadenbeinkopf (Caput fibulae)",
+    "Schienbeinrauigkeit (Tuberositas tibiae)",
+    "Seitlich der Schienbeinrauigkeit am Gänsefuß (Pes anserinus)",
+    "Kniescheibe (Patella)"
+   ],
+   "correct": [
+    0
+   ],
+   "why": "Ansatz des M. biceps femoris (Modul 6.8.2):<ul><li>Wadenbeinkopf (Caput fibulae)</li></ul>Die anderen Optionen gehören zu: Kniescheibe → M. quadriceps femoris · Schienbeinrauigkeit → M. quadriceps femoris · Seitlich der Schienbeinrauigkeit am Gänsefuß → M. semitendinosus.",
+   "pages": [
+    137
+   ]
+  },
+  {
+   "id": "semiten-gelenk",
+   "topic": "knie",
+   "type": "mc",
+   "src": "Modul 6.8.3",
+   "q": "Auf welches Gelenk wirkt der M. semitendinosus laut Lehrskript primär?",
+   "options": [
+    "Hüftgelenk",
+    "Wirbelsäule",
+    "Kniegelenk",
+    "Sprunggelenk"
+   ],
+   "correct": 2,
+   "why": "Das Lehrskript führt den M. semitendinosus in Modul 6.8.3 unter den „Muskeln mit primärer Wirkung auf das Kniegelenk“. Funktion: Flexion im Kniegelenk, Innenrotation im Kniegelenk, Extension im Hüftgelenk. Zweiter Muskel der ischiocruralen Muskulatur; anders als der zweiköpfige Beinbeuger rotiert er das Knie nach innen.",
+   "pages": [
+    137
+   ]
+  },
+  {
+   "id": "semiten-funk",
+   "topic": "knie",
+   "type": "multi",
+   "src": "Modul 6.8.3",
+   "q": "Welche Funktionen hat der M. semitendinosus? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Extension im Hüftgelenk",
+    "Extension im Kniegelenk",
+    "Außenrotation im Kniegelenk",
+    "Flexion im Hüftgelenk",
+    "Flexion im Kniegelenk",
+    "Innenrotation im Kniegelenk"
+   ],
+   "correct": [
+    0,
+    4,
+    5
+   ],
+   "why": "Funktionen laut Modul 6.8.3:<ul><li>Flexion im Kniegelenk</li><li>Innenrotation im Kniegelenk</li><li>Extension im Hüftgelenk</li></ul>Nicht zutreffend sind: Außenrotation im Kniegelenk · Extension im Kniegelenk · Flexion im Hüftgelenk.",
+   "pages": [
+    137
+   ]
+  },
+  {
+   "id": "semiten-funk-nicht",
+   "topic": "knie",
+   "type": "mc",
+   "src": "Modul 6.8.3",
+   "q": "Welche Funktion hat der M. semitendinosus <em>nicht</em>?",
+   "options": [
+    "Flexion im Kniegelenk",
+    "Außenrotation im Kniegelenk",
+    "Innenrotation im Kniegelenk",
+    "Extension im Hüftgelenk"
+   ],
+   "correct": 1,
+   "why": "Die drei anderen Antworten nennt das Lehrskript in Modul 6.8.3. Funktionen laut Skript: Flexion im Kniegelenk, Innenrotation im Kniegelenk, Extension im Hüftgelenk. Außenrotation im Kniegelenk steht nicht darunter.",
+   "pages": [
+    137
+   ]
+  },
+  {
+   "id": "semiten-urs",
+   "topic": "knie",
+   "type": "multi",
+   "src": "Modul 6.8.3",
+   "q": "Welche Ursprünge hat der M. semitendinosus? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Laterale Fläche des großen Rollhügels (Trochanter major)",
+    "Laterale Lippe der rauen Linie (Linea aspera femoris)",
+    "Zwischenrollhügellinie (Linea intertrochanterica)",
+    "Sitzbeinhöcker (Tuber ischiadicum)"
+   ],
+   "correct": [
+    3
+   ],
+   "why": "Ursprung des M. semitendinosus (Modul 6.8.3):<ul><li>Sitzbeinhöcker (Tuber ischiadicum)</li></ul>Die anderen Optionen gehören zu: Zwischenrollhügellinie → M. quadriceps femoris · Laterale Lippe der rauen Linie → M. biceps femoris · Laterale Fläche des großen Rollhügels → M. quadriceps femoris.",
+   "pages": [
+    137
+   ]
+  },
+  {
+   "id": "semiten-ans",
+   "topic": "knie",
+   "type": "multi",
+   "src": "Modul 6.8.3",
+   "q": "Welche Ansätze hat der M. semitendinosus? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Kleiner Rollhügel des Oberschenkels (Trochanter minor femoris)",
+    "Seitlich der Schienbeinrauigkeit am Gänsefuß (Pes anserinus)",
+    "Kniescheibe (Patella)",
+    "Wadenbeinkopf (Caput fibulae)"
+   ],
+   "correct": [
+    1
+   ],
+   "why": "Ansatz des M. semitendinosus (Modul 6.8.3):<ul><li>Seitlich der Schienbeinrauigkeit am Gänsefuß (Pes anserinus)</li></ul>Die anderen Optionen gehören zu: Wadenbeinkopf → M. biceps femoris · Kniescheibe → M. quadriceps femoris · Kleiner Rollhügel des Oberschenkels → M. iliopsoas.",
+   "pages": [
+    137
+   ]
+  },
+  {
+   "id": "gastro-gelenk",
+   "topic": "sprung",
+   "type": "mc",
+   "src": "Modul 6.9.1",
+   "q": "Auf welches Gelenk wirkt der M. gastrocnemius laut Lehrskript primär?",
+   "options": [
+    "Sprunggelenk",
+    "Kniegelenk",
+    "Wirbelsäule",
+    "Hüftgelenk"
+   ],
+   "correct": 0,
+   "why": "Das Lehrskript führt den M. gastrocnemius in Modul 6.9.1 unter den „Muskeln mit primärer Wirkung auf das Sprunggelenk“. Funktion: Plantarflexion im Sprunggelenk, Supination im Sprunggelenk, Flexion im Kniegelenk. Er entspringt oberhalb des Kniegelenks und ist damit zweigelenkig – deshalb arbeitet er auch bei Übungen mit, die das Knie beugen.",
+   "pages": [
+    140
+   ]
+  },
+  {
+   "id": "gastro-funk",
+   "topic": "sprung",
+   "type": "multi",
+   "src": "Modul 6.9.1",
+   "q": "Welche Funktionen hat der M. gastrocnemius? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Dorsalextension im Sprunggelenk",
+    "Extension im Kniegelenk",
+    "Flexion im Kniegelenk",
+    "Plantarflexion im Sprunggelenk",
+    "Pronation im Sprunggelenk",
+    "Supination im Sprunggelenk"
+   ],
+   "correct": [
+    2,
+    3,
+    5
+   ],
+   "why": "Funktionen laut Modul 6.9.1:<ul><li>Plantarflexion im Sprunggelenk</li><li>Supination im Sprunggelenk</li><li>Flexion im Kniegelenk</li></ul>Nicht zutreffend sind: Dorsalextension im Sprunggelenk · Pronation im Sprunggelenk · Extension im Kniegelenk.",
+   "pages": [
+    140
+   ]
+  },
+  {
+   "id": "gastro-funk-nicht",
+   "topic": "sprung",
+   "type": "mc",
+   "src": "Modul 6.9.1",
+   "q": "Welche Funktion hat der M. gastrocnemius <em>nicht</em>?",
+   "options": [
+    "Dorsalextension im Sprunggelenk",
+    "Supination im Sprunggelenk",
+    "Plantarflexion im Sprunggelenk",
+    "Flexion im Kniegelenk"
+   ],
+   "correct": 0,
+   "why": "Die drei anderen Antworten nennt das Lehrskript in Modul 6.9.1. Funktionen laut Skript: Plantarflexion im Sprunggelenk, Supination im Sprunggelenk, Flexion im Kniegelenk. Dorsalextension im Sprunggelenk steht nicht darunter.",
+   "pages": [
+    140
+   ]
+  },
+  {
+   "id": "gastro-urs",
+   "topic": "sprung",
+   "type": "multi",
+   "src": "Modul 6.9.1",
+   "q": "Welche Ursprünge hat der M. gastrocnemius? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Innerer bzw. äußerer Gelenkknorren des Oberschenkels (Epicondylus medialis/lateralis femoris)",
+    "Linie an der Hinterseite des Schienbeins (Linea musculi solei)",
+    "Hinterfläche des Wadenbeins (Facies fibulae et margo posterior fibulae)",
+    "Sehnenbogen zwischen Schien- und Wadenbein (Arcus tendineus musculi solei)"
+   ],
+   "correct": [
+    0
+   ],
+   "why": "Ursprung des M. gastrocnemius (Modul 6.9.1):<ul><li>Innerer bzw. äußerer Gelenkknorren des Oberschenkels (Epicondylus medialis/lateralis femoris)</li></ul>Die anderen Optionen gehören zu: Sehnenbogen zwischen Schien- und Wadenbein → M. soleus · Hinterfläche des Wadenbeins → M. soleus · Linie an der Hinterseite des Schienbeins → M. soleus.",
+   "pages": [
+    140
+   ]
+  },
+  {
+   "id": "gastro-ans",
+   "topic": "sprung",
+   "type": "multi",
+   "src": "Modul 6.9.1",
+   "q": "Welche Ansätze hat der M. gastrocnemius? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Mediales Keilbein (Os cuneiforme mediale)",
+    "Mittels Achillessehne am Fersenhöcker (Tuber calcanei)",
+    "Basis des ersten Mittelfußknochens (Basis ossis metatarsi I)",
+    "Seitlich der Schienbeinrauigkeit am Gänsefuß (Pes anserinus)"
+   ],
+   "correct": [
+    1
+   ],
+   "why": "Ansatz des M. gastrocnemius (Modul 6.9.1):<ul><li>Mittels Achillessehne am Fersenhöcker (Tuber calcanei)</li></ul>Die anderen Optionen gehören zu: Basis des ersten Mittelfußknochens → M. tibialis anterior · Mediales Keilbein → M. tibialis anterior · Seitlich der Schienbeinrauigkeit am Gänsefuß → M. semitendinosus.",
+   "pages": [
+    140
+   ]
+  },
+  {
+   "id": "soleus-gelenk",
+   "topic": "sprung",
+   "type": "mc",
+   "src": "Modul 6.9.2",
+   "q": "Auf welches Gelenk wirkt der M. soleus laut Lehrskript primär?",
+   "options": [
+    "Wirbelsäule",
+    "Sprunggelenk",
+    "Hüftgelenk",
+    "Kniegelenk"
+   ],
+   "correct": 1,
+   "why": "Das Lehrskript führt den M. soleus in Modul 6.9.2 unter den „Muskeln mit primärer Wirkung auf das Sprunggelenk“. Funktion: Plantarflexion im Sprunggelenk, Supination im Sprunggelenk. Anders als der Zwillingswadenmuskel entspringt er unterhalb des Kniegelenks und wirkt deshalb nur auf das Sprunggelenk.",
+   "pages": [
+    140
+   ]
+  },
+  {
+   "id": "soleus-funk",
+   "topic": "sprung",
+   "type": "multi",
+   "src": "Modul 6.9.2",
+   "q": "Welche Funktionen hat der M. soleus? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Supination im Sprunggelenk",
+    "Pronation im Sprunggelenk",
+    "Dorsalextension im Sprunggelenk",
+    "Plantarflexion im Sprunggelenk",
+    "Flexion im Kniegelenk"
+   ],
+   "correct": [
+    0,
+    3
+   ],
+   "why": "Funktionen laut Modul 6.9.2:<ul><li>Plantarflexion im Sprunggelenk</li><li>Supination im Sprunggelenk</li></ul>Nicht zutreffend sind: Flexion im Kniegelenk · Dorsalextension im Sprunggelenk · Pronation im Sprunggelenk.",
+   "pages": [
+    140
+   ]
+  },
+  {
+   "id": "soleus-urs",
+   "topic": "sprung",
+   "type": "multi",
+   "src": "Modul 6.9.2",
+   "q": "Welche Ursprünge hat der M. soleus? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Hinterfläche des Wadenbeins (Facies fibulae et margo posterior fibulae)",
+    "Zwischenknochenmembran (Membrana interossea cruris)",
+    "Innerer bzw. äußerer Gelenkknorren des Oberschenkels (Epicondylus medialis/lateralis femoris)",
+    "Seitliche Schienbeinfläche (Condylus et facies lateralis tibiae)",
+    "Linie an der Hinterseite des Schienbeins (Linea musculi solei)",
+    "Sehnenbogen zwischen Schien- und Wadenbein (Arcus tendineus musculi solei)",
+    "Wadenbeinkopf (Caput fibulae)"
+   ],
+   "correct": [
+    0,
+    4,
+    5,
+    6
+   ],
+   "why": "Ursprung des M. soleus (Modul 6.9.2):<ul><li>Wadenbeinkopf (Caput fibulae)</li><li>Linie an der Hinterseite des Schienbeins (Linea musculi solei)</li><li>Hinterfläche des Wadenbeins (Facies fibulae et margo posterior fibulae)</li><li>Sehnenbogen zwischen Schien- und Wadenbein (Arcus tendineus musculi solei)</li></ul>Die anderen Optionen gehören zu: Seitliche Schienbeinfläche → M. tibialis anterior · Zwischenknochenmembran → M. tibialis anterior · Innerer bzw. äußerer Gelenkknorren des Oberschenkels → M. gastrocnemius.",
+   "pages": [
+    140
+   ]
+  },
+  {
+   "id": "soleus-ans",
+   "topic": "sprung",
+   "type": "multi",
+   "src": "Modul 6.9.2",
+   "q": "Welche Ansätze hat der M. soleus? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Seitlich der Schienbeinrauigkeit am Gänsefuß (Pes anserinus)",
+    "Mittels Achillessehne am Fersenhöcker (Tuber calcanei)",
+    "Basis des ersten Mittelfußknochens (Basis ossis metatarsi I)",
+    "Mediales Keilbein (Os cuneiforme mediale)"
+   ],
+   "correct": [
+    1
+   ],
+   "why": "Ansatz des M. soleus (Modul 6.9.2):<ul><li>Mittels Achillessehne am Fersenhöcker (Tuber calcanei)</li></ul>Die anderen Optionen gehören zu: Basis des ersten Mittelfußknochens → M. tibialis anterior · Mediales Keilbein → M. tibialis anterior · Seitlich der Schienbeinrauigkeit am Gänsefuß → M. semitendinosus.",
+   "pages": [
+    140
+   ]
+  },
+  {
+   "id": "tibant-gelenk",
+   "topic": "sprung",
+   "type": "mc",
+   "src": "Modul 6.9.6",
+   "q": "Auf welches Gelenk wirkt der M. tibialis anterior laut Lehrskript primär?",
+   "options": [
+    "Sprunggelenk",
+    "Kniegelenk",
+    "Wirbelsäule",
+    "Hüftgelenk"
+   ],
+   "correct": 0,
+   "why": "Das Lehrskript führt den M. tibialis anterior in Modul 6.9.6 unter den „Muskeln mit primärer Wirkung auf das Sprunggelenk“. Funktion: Dorsalextension im Sprunggelenk, Supination im Sprunggelenk. Gegenspieler der Wadenmuskulatur: Er hebt den Fuß an, statt ihn zu senken.",
+   "pages": [
+    142
+   ]
+  },
+  {
+   "id": "tibant-funk",
+   "topic": "sprung",
+   "type": "multi",
+   "src": "Modul 6.9.6",
+   "q": "Welche Funktionen hat der M. tibialis anterior? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Supination im Sprunggelenk",
+    "Flexion im Kniegelenk",
+    "Dorsalextension im Sprunggelenk",
+    "Pronation im Sprunggelenk",
+    "Plantarflexion im Sprunggelenk"
+   ],
+   "correct": [
+    0,
+    2
+   ],
+   "why": "Funktionen laut Modul 6.9.6:<ul><li>Dorsalextension im Sprunggelenk</li><li>Supination im Sprunggelenk</li></ul>Nicht zutreffend sind: Plantarflexion im Sprunggelenk · Flexion im Kniegelenk · Pronation im Sprunggelenk.",
+   "pages": [
+    142
+   ]
+  },
+  {
+   "id": "tibant-urs",
+   "topic": "sprung",
+   "type": "multi",
+   "src": "Modul 6.9.6",
+   "q": "Welche Ursprünge hat der M. tibialis anterior? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Zwischenknochenmembran (Membrana interossea cruris)",
+    "Hinterfläche des Wadenbeins (Facies fibulae et margo posterior fibulae)",
+    "Linie an der Hinterseite des Schienbeins (Linea musculi solei)",
+    "Sehnenbogen zwischen Schien- und Wadenbein (Arcus tendineus musculi solei)",
+    "Seitliche Schienbeinfläche (Condylus et facies lateralis tibiae)"
+   ],
+   "correct": [
+    0,
+    4
+   ],
+   "why": "Ursprung des M. tibialis anterior (Modul 6.9.6):<ul><li>Seitliche Schienbeinfläche (Condylus et facies lateralis tibiae)</li><li>Zwischenknochenmembran (Membrana interossea cruris)</li></ul>Die anderen Optionen gehören zu: Linie an der Hinterseite des Schienbeins → M. soleus · Hinterfläche des Wadenbeins → M. soleus · Sehnenbogen zwischen Schien- und Wadenbein → M. soleus.",
+   "pages": [
+    142
+   ]
+  },
+  {
+   "id": "tibant-ans",
+   "topic": "sprung",
+   "type": "multi",
+   "src": "Modul 6.9.6",
+   "q": "Welche Ansätze hat der M. tibialis anterior? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "Mittels Achillessehne am Fersenhöcker (Tuber calcanei)",
+    "Basis des ersten Mittelfußknochens (Basis ossis metatarsi I)",
+    "Mediales Keilbein (Os cuneiforme mediale)",
+    "Seitlich der Schienbeinrauigkeit am Gänsefuß (Pes anserinus)",
+    "Schienbeinrauigkeit (Tuberositas tibiae)"
+   ],
+   "correct": [
+    1,
+    2
+   ],
+   "why": "Ansatz des M. tibialis anterior (Modul 6.9.6):<ul><li>Mediales Keilbein (Os cuneiforme mediale)</li><li>Basis des ersten Mittelfußknochens (Basis ossis metatarsi I)</li></ul>Die anderen Optionen gehören zu: Mittels Achillessehne am Fersenhöcker → M. gastrocnemius · Schienbeinrauigkeit → M. quadriceps femoris · Seitlich der Schienbeinrauigkeit am Gänsefuß → M. semitendinosus.",
+   "pages": [
+    142
+   ]
+  },
+  {
+   "id": "erector-gelenk",
+   "topic": "ws",
+   "type": "mc",
+   "src": "Modul 6.6.1",
+   "q": "Auf welche Struktur wirkt die autochthone Rückenmuskulatur (M. erector spinae) primär?",
+   "options": [
+    "Schultergelenk",
+    "Hüftgelenk",
+    "Wirbelsäule",
+    "Schulterblatt"
+   ],
+   "correct": 2,
+   "why": "Der Rückenstrecker richtet die Wirbelsäule auf, streckt und rotiert sie. Das Lehrskript führt ihn entsprechend unter den Muskeln mit primärer Wirkung auf die Wirbelsäule (Modul 6.6.1).",
+   "pages": [
+    124
+   ]
+  },
+  {
+   "id": "erector-med-funk",
+   "topic": "ws",
+   "type": "multi",
+   "src": "Modul 6.6.1",
+   "q": "Welche Funktionen hat der <em>mediale</em> Trakt der autochthonen Rückenmuskulatur?",
+   "options": [
+    "Extension der Wirbelsäule",
+    "Rotation der Wirbelsäule",
+    "Segmentale Stabilisation der Wirbelsäule",
+    "Primär statische Funktion der Wirbelsäule",
+    "Kompression des Abdomeninhalts",
+    "Flexion der Wirbelsäule"
+   ],
+   "correct": [
+    0,
+    1,
+    2
+   ],
+   "why": "Der mediale Trakt stabilisiert segmental und arbeitet primär dynamisch: Extension, Lateralflexion und Rotation der Wirbelsäule. Die primär <em>statische</em> Funktion ist dem lateralen Trakt zugeordnet, die Flexion den Bauchmuskeln.",
+   "pages": [
+    124
+   ]
+  },
+  {
+   "id": "erector-lat-funk",
+   "topic": "ws",
+   "type": "mc",
+   "src": "Modul 6.6.1",
+   "q": "Wie beschreibt das Lehrskript die Funktion des <em>lateralen</em> Trakts?",
+   "options": [
+    "Extension und Lateralflexion der Wirbelsäule mit primär statischer Funktion",
+    "Flexion und Rotation der Wirbelsäule bei fixiertem Becken",
+    "Kompression des Abdomeninhalts und Stabilisierung des Beckens",
+    "Primär segmentale dynamische Funktion der Wirbelsäule"
+   ],
+   "correct": 0,
+   "why": "Lateraler Trakt: Extension und Lateralflexion der Wirbelsäule, <em>primär statische</em> Funktion. Die primär segmentale dynamische Funktion gehört zum medialen Trakt.",
+   "pages": [
+    125
+   ]
+  },
+  {
+   "id": "erector-lage",
+   "topic": "ws",
+   "type": "mc",
+   "src": "Modul 6.6.1",
+   "q": "Welche Lagebeschreibung passt zum medialen Trakt der autochthonen Rückenmuskulatur?",
+   "options": [
+    "Tief gelegen, lange Muskelzüge, großes Muskelvolumen",
+    "Oberflächlich gelegen, kurze Muskelzüge, geringes Muskelvolumen",
+    "Tief und eng an der Wirbelsäule, geringes Muskelvolumen, kurze Distanz zwischen Ursprung und Ansatz",
+    "Oberflächlich gelegen, große Muskelzüge, großes Muskelvolumen"
+   ],
+   "correct": 2,
+   "why": "Medialer Trakt: tief, eng an der Wirbelsäule, geringes Volumen, geringe Distanz zwischen Ursprung und Ansatz. Der laterale Trakt liegt oberflächlich, besteht aus langen Muskelzügen und hat ein großes Muskelvolumen.",
+   "pages": [
+    124,
+    125
+   ]
+  },
+  {
+   "id": "erector-med-muskeln",
+   "topic": "ws",
+   "type": "multi",
+   "src": "Modul 6.6.1",
+   "q": "Welche Muskeln zählt das Lehrskript zum <em>medialen</em> Trakt?",
+   "options": [
+    "M. longissimus",
+    "Mm. rotatores breves et longi",
+    "M. iliocostalis",
+    "M. splenius",
+    "Mm. multifidi",
+    "M. semispinalis"
+   ],
+   "correct": [
+    1,
+    4,
+    5
+   ],
+   "why": "Medialer Trakt: Mm. rotatores breves et longi, Mm. multifidi, M. semispinalis, Mm. interspinales. M. longissimus, M. iliocostalis und M. splenius gehören zum lateralen Trakt.",
+   "pages": [
+    124
+   ]
+  },
+  {
+   "id": "erector-bucket",
+   "topic": "ws",
+   "type": "bucket",
+   "src": "Modul 6.6.1",
+   "q": "Ordne die Muskeln dem medialen oder dem lateralen Trakt der autochthonen Rückenmuskulatur zu.",
+   "buckets": [
+    "Medialer Trakt",
+    "Lateraler Trakt"
+   ],
+   "items": [
+    [
+     "Mm. multifidi",
+     0
+    ],
+    [
+     "M. semispinalis",
+     0
+    ],
+    [
+     "Mm. interspinales",
+     0
+    ],
+    [
+     "Mm. rotatores breves et longi",
+     0
+    ],
+    [
+     "M. longissimus",
+     1
+    ],
+    [
+     "M. iliocostalis",
+     1
+    ],
+    [
+     "M. splenius",
+     1
+    ],
+    [
+     "Mm. levatores costarum",
+     1
+    ]
+   ],
+   "why": "Medial: rotatores, multifidi, semispinalis, interspinales – tief, segmental, dynamisch. Lateral: longissimus, iliocostalis, splenius, intertransversarii, levatores costarum – oberflächlich, lange Züge, primär statisch.",
+   "pages": [
+    124,
+    125
+   ]
+  },
+  {
+   "id": "erector-arbeitsweise",
+   "topic": "ws",
+   "type": "mc",
+   "src": "Modul 6.6.1",
+   "q": "Wie wird der Rückenstrecker in der Trainingspraxis primär beansprucht?",
+   "options": [
+    "Dynamisch, um das Becken aufzurichten",
+    "Exzentrisch, um die Wirbelsäule kontrolliert zu beugen",
+    "Isometrisch, um die Wirbelsäule aufzurichten und den Rumpf zu stabilisieren",
+    "Konzentrisch, um die Wirbelsäule zu rotieren"
+   ],
+   "correct": 2,
+   "why": "Das Lehrskript nennt die isometrische Beanspruchung: Der Rückenstrecker sorgt zusammen mit der Bauchmuskulatur für Aufrichtung und Rumpfstabilität.",
+   "pages": [
+    125
+   ]
+  },
+  {
+   "id": "mix-match-gelenk-1",
+   "topic": "mix",
+   "type": "match",
+   "src": "Modul 6.2 bis 6.5",
+   "q": "Ordne jedem Muskel das Gelenk zu, auf das er laut Lehrskript primär wirkt.",
+   "pairs": [
+    [
+     "M. pectoralis major",
+     "Schultergelenk"
+    ],
+    [
+     "M. trapezius",
+     "Schulterblatt"
+    ],
+    [
+     "M. triceps brachii",
+     "Ellenbogengelenk"
+    ],
+    [
+     "M. flexor carpi ulnaris",
+     "Handgelenk"
+    ],
+    [
+     "M. serratus anterior",
+     "Schulterblatt"
+    ]
+   ],
+   "why": "Die Kapitelgliederung des Skripts ist die Antwort: 6.2 Schultergelenk, 6.3 Schulterblatt, 6.4 Ellenbogengelenk, 6.5 Handgelenk."
+  },
+  {
+   "id": "mix-match-gelenk-2",
+   "topic": "mix",
+   "type": "match",
+   "src": "Modul 6.6 bis 6.9",
+   "q": "Ordne jedem Muskel das Gelenk zu, auf das er laut Lehrskript primär wirkt.",
+   "pairs": [
+    [
+     "M. gluteus maximus",
+     "Hüftgelenk"
+    ],
+    [
+     "M. quadriceps femoris",
+     "Kniegelenk"
+    ],
+    [
+     "M. gastrocnemius",
+     "Sprunggelenk"
+    ],
+    [
+     "M. transversus abdominis",
+     "Wirbelsäule"
+    ],
+    [
+     "M. tensor fasciae latae",
+     "Hüftgelenk"
+    ]
+   ],
+   "why": "6.6 Wirbelsäule, 6.7 Hüftgelenk, 6.8 Kniegelenk, 6.9 Sprunggelenk. Der M. tensor fasciae latae steht trotz seines Ansatzes am Tractus iliotibialis unter den Hüftmuskeln."
+  },
+  {
+   "id": "mix-match-gelenk-3",
+   "topic": "mix",
+   "type": "match",
+   "src": "Modul 6.2 bis 6.9",
+   "q": "Ordne jedem Muskel das Gelenk zu, auf das er laut Lehrskript primär wirkt.",
+   "pairs": [
+    [
+     "M. subscapularis",
+     "Schultergelenk"
+    ],
+    [
+     "M. pectoralis minor",
+     "Schulterblatt"
+    ],
+    [
+     "M. brachioradialis",
+     "Ellenbogengelenk"
+    ],
+    [
+     "M. iliopsoas",
+     "Hüftgelenk"
+    ],
+    [
+     "M. semitendinosus",
+     "Kniegelenk"
+    ],
+    [
+     "M. soleus",
+     "Sprunggelenk"
+    ]
+   ],
+   "why": "Merkhilfe: Alles, was an der Scapula ansetzt und sie bewegt, steht in 6.3; alles, was den Oberarm bewegt, in 6.2. Der M. iliopsoas beugt die Hüfte, der M. semitendinosus das Knie."
+  },
+  {
+   "id": "mix-bucket-gelenk",
+   "topic": "mix",
+   "type": "bucket",
+   "src": "Modul 6.2 bis 6.9",
+   "q": "Sortiere die Muskeln nach dem Gelenk, auf das sie primär wirken.",
+   "buckets": [
+    "Schultergelenk",
+    "Schulterblatt",
+    "Hüftgelenk",
+    "Kniegelenk"
+   ],
+   "items": [
+    [
+     "M. latissimus dorsi",
+     0
+    ],
+    [
+     "M. supraspinatus",
+     0
+    ],
+    [
+     "Mm. rhomboidei",
+     1
+    ],
+    [
+     "M. serratus anterior",
+     1
+    ],
+    [
+     "M. gluteus medius",
+     2
+    ],
+    [
+     "M. adductor magnus",
+     2
+    ],
+    [
+     "M. biceps femoris",
+     3
+    ],
+    [
+     "M. quadriceps femoris",
+     3
+    ]
+   ],
+   "why": "Rotatorenmanschette und Latissimus bewegen den Oberarm (Schultergelenk), Rautenmuskeln und Sägemuskel bewegen die Scapula, Gesäß- und Adduktorenmuskeln die Hüfte, Beinstrecker und Beinbeuger das Knie."
+  },
+  {
+   "id": "mix-rotatoren",
+   "topic": "mix",
+   "type": "list",
+   "src": "Modul 6.2",
+   "q": "Nenne die vier Muskeln der Rotatorenmanschette (lateinisch, ohne „M.“ genügt).",
+   "answers": [
+    {
+     "accept": [
+      "M. supraspinatus",
+      "M supraspinatus",
+      "supraspinatus",
+      "Musculus supraspinatus",
+      "Obergrätenmuskel"
+     ],
+     "show": "M. supraspinatus"
+    },
+    {
+     "accept": [
+      "M. infraspinatus",
+      "M infraspinatus",
+      "infraspinatus",
+      "Musculus infraspinatus",
+      "Untergrätenmuskel"
+     ],
+     "show": "M. infraspinatus"
+    },
+    {
+     "accept": [
+      "M. teres minor",
+      "M teres minor",
+      "teres minor",
+      "Musculus teres minor",
+      "Kleiner Rundmuskel"
+     ],
+     "show": "M. teres minor"
+    },
+    {
+     "accept": [
+      "M. subscapularis",
+      "M subscapularis",
+      "subscapularis",
+      "Musculus subscapularis",
+      "Unterschulterblattmuskel"
+     ],
+     "show": "M. subscapularis"
+    }
+   ],
+   "why": "Supraspinatus, infraspinatus und teres minor setzen am großen Oberarmhöcker an und rotieren nach außen, der subscapularis setzt am kleinen Oberarmhöcker an und rotiert nach innen. Zusammen bilden sie den muskulären Mantel des Schultergelenks.",
+   "pages": [
+    108,
+    109
+   ]
+  },
+  {
+   "id": "mix-ischio",
+   "topic": "mix",
+   "type": "list",
+   "src": "Modul 6.8.4",
+   "q": "Nenne die drei Muskeln der ischiocruralen Muskulatur.",
+   "answers": [
+    {
+     "accept": [
+      "M. biceps femoris",
+      "M biceps femoris",
+      "biceps femoris",
+      "Musculus biceps femoris",
+      "Zweiköpfiger Beinbeuger"
+     ],
+     "show": "M. biceps femoris"
+    },
+    {
+     "accept": [
+      "M. semitendinosus",
+      "M semitendinosus",
+      "semitendinosus",
+      "Musculus semitendinosus",
+      "Halbsehnenmuskel"
+     ],
+     "show": "M. semitendinosus"
+    },
+    {
+     "accept": [
+      "M. semimembranosus",
+      "M semimembranosus",
+      "semimembranosus",
+      "Musculus semimembranosus",
+      "Plattsehnenmuskel"
+     ],
+     "show": "M. semimembranosus"
+    }
+   ],
+   "why": "Beinbeuger, Halbsehnenmuskel und Plattsehnenmuskel ergeben zusammen die ischiocrurale Muskulatur (Hamstrings). Alle drei entspringen am Sitzbeinhöcker, beugen das Knie und strecken die Hüfte.",
+   "pages": [
+    137,
+    138
+   ]
+  },
+  {
+   "id": "mix-tub-majus",
+   "topic": "mix",
+   "type": "multi",
+   "src": "Modul 6.2",
+   "q": "Welche Muskeln setzen am großen Oberarmhöcker (Tuberculum majus humeri) an?",
+   "options": [
+    "M. supraspinatus",
+    "M. pectoralis major",
+    "M. infraspinatus",
+    "M. teres major",
+    "M. teres minor",
+    "M. subscapularis"
+   ],
+   "correct": [
+    0,
+    2,
+    4
+   ],
+   "why": "Die drei Außenrotatoren der Rotatorenmanschette ziehen zum großen Oberarmhöcker. Der M. subscapularis setzt am <em>kleinen</em> Oberarmhöcker an, der M. teres major an dessen Leiste (Crista tuberculi minoris), der M. pectoralis major an der Leiste des großen Höckers.",
+   "pages": [
+    108,
+    109
+   ]
+  },
+  {
+   "id": "mix-tuber-ischiadicum",
+   "topic": "mix",
+   "type": "multi",
+   "src": "Modul 6.7 und 6.8",
+   "q": "Welche Muskeln entspringen (auch) am Sitzbeinhöcker (Tuber ischiadicum)?",
+   "options": [
+    "M. gluteus medius",
+    "M. tensor fasciae latae",
+    "M. adductor longus",
+    "M. biceps femoris (Caput longum)",
+    "M. semitendinosus",
+    "M. adductor magnus"
+   ],
+   "correct": [
+    3,
+    4,
+    5
+   ],
+   "why": "Vom Sitzbeinhöcker ziehen die Hamstrings und die hinteren Fasern des großen Schenkelanziehers – deshalb kann der M. adductor magnus als einziger Adduktor die Hüfte strecken. Gesäßmuskeln entspringen an der Darmbeinschaufel, der Schenkelbindenspanner am vorderen oberen Darmbeinstachel, der lange Schenkelanzieher am oberen Schambeinast.",
+   "pages": [
+    131,
+    137
+   ]
+  },
+  {
+   "id": "mix-tractus",
+   "topic": "mix",
+   "type": "multi",
+   "src": "Modul 6.7",
+   "q": "Welche Muskeln setzen am Maissiat-Band (Tractus iliotibialis) an?",
+   "options": [
+    "M. tensor fasciae latae",
+    "M. adductor brevis",
+    "M. gluteus minimus",
+    "M. iliopsoas",
+    "M. gluteus maximus"
+   ],
+   "correct": [
+    0,
+    4
+   ],
+   "why": "Großer Gesäßmuskel und Schenkelbindenspanner ziehen beide zum Tractus iliotibialis, wirken aber gegenläufig (Extension/Außenrotation gegen Flexion/Innenrotation). Der kleine Gesäßmuskel setzt am großen Rollhügel an, der Hüftbeuger am kleinen Rollhügel.",
+   "pages": [
+    129,
+    134
+   ]
+  },
+  {
+   "id": "mix-zweigelenkig",
+   "topic": "mix",
+   "type": "multi",
+   "src": "Modul 6.4, 6.8 und 6.9",
+   "q": "Welche Aussagen über zweigelenkige Muskeln sind laut Lehrskript richtig?",
+   "options": [
+    "Der M. brachialis wirkt zusätzlich auf das Schultergelenk.",
+    "Der M. gastrocnemius entspringt oberhalb des Kniegelenks und beugt deshalb auch das Knie.",
+    "Das Caput longum des M. biceps femoris streckt zusätzlich das Hüftgelenk.",
+    "Der M. rectus femoris beugt als einziger Kopf des M. quadriceps femoris zusätzlich die Hüfte.",
+    "Der M. soleus beugt zusätzlich das Kniegelenk.",
+    "Der M. vastus medialis beugt zusätzlich das Hüftgelenk."
+   ],
+   "correct": [
+    1,
+    2,
+    3
+   ],
+   "why": "Zweigelenkig sind unter anderem M. gastrocnemius (Knie + Sprunggelenk), M. rectus femoris (Hüfte + Knie) und das Caput longum des M. biceps femoris (Hüfte + Knie). Der M. soleus entspringt unterhalb des Knies, der M. brachialis am Oberarmschaft – beide sind eingelenkig.",
+   "pages": [
+    115,
+    136,
+    140
+   ]
+  },
+  {
+   "id": "mix-epicondylus",
+   "topic": "mix",
+   "type": "mc",
+   "src": "Modul 6.5",
+   "q": "Woran erkennt man am Ursprung, ob ein Unterarmmuskel Beuger oder Strecker ist?",
+   "options": [
+    "Beuger entspringen an der Elle, Strecker an der Speiche",
+    "Beuger und Strecker entspringen beide am Olecranon",
+    "Beuger entspringen am inneren (Epicondylus medialis), Strecker am äußeren Gelenkknorren (Epicondylus lateralis) des Oberarms",
+    "Beuger entspringen am äußeren, Strecker am inneren Gelenkknorren des Oberarms"
+   ],
+   "correct": 2,
+   "why": "M. flexor carpi ulnaris und M. flexor carpi radialis entspringen am Epicondylus medialis humeri, der M. extensor carpi ulnaris am Epicondylus lateralis humeri.",
+   "pages": [
+    120,
+    121
+   ]
+  },
+  {
+   "id": "mix-bucket-epicondylus",
+   "topic": "mix",
+   "type": "bucket",
+   "src": "Modul 6.4 und 6.5",
+   "q": "Ordne die Muskeln ihrem Ursprung am Oberarm zu.",
+   "buckets": [
+    "Epicondylus medialis humeri",
+    "Epicondylus lateralis humeri",
+    "Schulterblatt (Scapula)"
+   ],
+   "items": [
+    [
+     "M. flexor carpi ulnaris",
+     0
+    ],
+    [
+     "M. flexor carpi radialis",
+     0
+    ],
+    [
+     "M. pronator teres",
+     0
+    ],
+    [
+     "M. extensor carpi ulnaris",
+     1
+    ],
+    [
+     "M. biceps brachii",
+     2
+    ],
+    [
+     "M. triceps brachii (Caput longum)",
+     2
+    ]
+   ],
+   "why": "Beuger und Pronator entspringen medial, der Handgelenkstrecker lateral. Bizeps (Tuberculum supraglenoidale, Processus coracoideus) und der lange Trizepskopf (Tuberculum infraglenoidale) entspringen dagegen am Schulterblatt und wirken deshalb auch auf das Schultergelenk.",
+   "pages": [
+    115,
+    117,
+    120,
+    121
+   ]
+  },
+  {
+   "id": "mix-latein-1",
+   "topic": "mix",
+   "type": "match",
+   "src": "Modul 6.2 und 6.3",
+   "q": "Ordne jedem deutschen Muskelnamen den lateinischen zu.",
+   "pairs": [
+    [
+     "Obergrätenmuskel",
+     "M. supraspinatus"
+    ],
+    [
+     "Unterschulterblattmuskel",
+     "M. subscapularis"
+    ],
+    [
+     "Breiter Rückenmuskel",
+     "M. latissimus dorsi"
+    ],
+    [
+     "Vorderer Sägemuskel",
+     "M. serratus anterior"
+    ],
+    [
+     "Kapuzenmuskel",
+     "M. trapezius"
+    ]
+   ],
+   "why": "Die Prüfung fragt beide Namen ab: „supra“ = über, „infra“ = unter der Schulterblattgräte; „sub scapula“ = unter dem Schulterblatt."
+  },
+  {
+   "id": "mix-latein-2",
+   "topic": "mix",
+   "type": "match",
+   "src": "Modul 6.7 bis 6.9",
+   "q": "Ordne jedem deutschen Muskelnamen den lateinischen zu.",
+   "pairs": [
+    [
+     "Lendendarmbeinmuskel",
+     "M. iliopsoas"
+    ],
+    [
+     "Schenkelbindenspanner",
+     "M. tensor fasciae latae"
+    ],
+    [
+     "Halbsehnenmuskel",
+     "M. semitendinosus"
+    ],
+    [
+     "Zwillingswadenmuskel",
+     "M. gastrocnemius"
+    ],
+    [
+     "Vorderer Schienbeinmuskel",
+     "M. tibialis anterior"
+    ]
+   ],
+   "why": "Die deutschen Namen beschreiben meist Lage oder Form, die lateinischen Ursprung und Verlauf – beide werden in der Prüfung verlangt."
+  },
+  {
+   "id": "mix-abduktion-start",
+   "topic": "mix",
+   "type": "mc",
+   "src": "Modul 6.2.5",
+   "q": "Welcher Muskel übernimmt die ersten 5 bis 10 Grad der Armabduktion allein?",
+   "options": [
+    "M. infraspinatus",
+    "M. serratus anterior",
+    "M. deltoideus, Pars acromialis",
+    "M. supraspinatus"
+   ],
+   "correct": 3,
+   "why": "Erst ab etwa 10 Grad übernimmt der Pars acromialis des M. deltoideus, ab 60 Grad kommen dessen beide andere Anteile dazu.",
+   "pages": [
+    108
+   ]
+  },
+  {
+   "id": "mix-knie-strecker",
+   "topic": "mix",
+   "type": "mc",
+   "src": "Modul 6.8.1",
+   "q": "Welcher Muskel ist der einzige Strecker des Kniegelenks?",
+   "options": [
+    "M. quadriceps femoris",
+    "M. tensor fasciae latae",
+    "M. biceps femoris",
+    "M. gluteus maximus"
+   ],
+   "correct": 0,
+   "why": "Der vierköpfige Beinstrecker ist der einzige Knieextensor und setzt über die Patella an der Tuberositas tibiae an. Der M. biceps femoris ist sein Antagonist.",
+   "pages": [
+    136
+   ]
+  },
+  {
+   "id": "mix-huefte-antagonist",
+   "topic": "mix",
+   "type": "mc",
+   "src": "Modul 6.7.4",
+   "q": "Wer ist der Gegenspieler des M. gluteus maximus?",
+   "options": [
+    "M. adductor magnus",
+    "M. gluteus medius",
+    "M. biceps femoris",
+    "M. iliopsoas"
+   ],
+   "correct": 3,
+   "why": "Hüftbeuger gegen Hüftstrecker. Ist der M. iliopsoas durch vieles Sitzen verkürzt und der M. gluteus maximus zu schwach, entsteht eine Dysbalance, die häufig Rückenschmerzen verursacht.",
+   "pages": [
+    130
+   ]
+  },
+  {
+   "id": "joint-schulter",
+   "topic": "schulter",
+   "type": "multi",
+   "src": "Modul 6.2",
+   "q": "Welche Muskeln wirken laut Lehrskript primär auf das <strong>Schultergelenk</strong>? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "M. latissimus dorsi",
+    "M. pectoralis minor",
+    "M. transversus abdominis",
+    "M. deltoideus",
+    "M. brachialis",
+    "M. subscapularis",
+    "M. pectoralis major",
+    "M. teres major",
+    "M. teres minor",
+    "M. supraspinatus",
+    "M. infraspinatus"
+   ],
+   "correct": [
+    0,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "why": "Das Lehrskript stellt in Modul 6.2 8 Muskeln mit primärer Wirkung auf das Schultergelenk vor:<ul><li>M. pectoralis major (Großer Brustmuskel)</li><li>M. deltoideus (Deltamuskel)</li><li>M. latissimus dorsi (Breiter Rückenmuskel)</li><li>M. teres major (Großer Rundmuskel)</li><li>M. supraspinatus (Obergrätenmuskel)</li><li>M. infraspinatus (Untergrätenmuskel)</li><li>M. teres minor (Kleiner Rundmuskel)</li><li>M. subscapularis (Unterschulterblattmuskel)</li></ul>Die übrigen Optionen wirken primär auf Ellenbogengelenk, Schulterblatt, Wirbelsäule."
+  },
+  {
+   "id": "joint-scapula",
+   "topic": "scapula",
+   "type": "multi",
+   "src": "Modul 6.3",
+   "q": "Welche Muskeln wirken laut Lehrskript primär auf das <strong>Schulterblatt</strong>? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "M. latissimus dorsi",
+    "M. obliquus externus abdominis",
+    "M. pectoralis minor",
+    "M. serratus anterior",
+    "M. trapezius",
+    "M. biceps brachii",
+    "Mm. rhomboidei"
+   ],
+   "correct": [
+    2,
+    3,
+    4,
+    6
+   ],
+   "why": "Das Lehrskript stellt in Modul 6.3 4 Muskeln mit primärer Wirkung auf das Schulterblatt vor:<ul><li>M. trapezius (Trapez- oder Kapuzenmuskel)</li><li>Mm. rhomboidei (Rautenmuskeln)</li><li>M. pectoralis minor (Kleiner Brustmuskel)</li><li>M. serratus anterior (Vorderer Sägemuskel)</li></ul>Die übrigen Optionen wirken primär auf Ellenbogengelenk, Schultergelenk, Wirbelsäule."
+  },
+  {
+   "id": "joint-ellenbogen",
+   "topic": "ellenbogen",
+   "type": "multi",
+   "src": "Modul 6.4",
+   "q": "Welche Muskeln wirken laut Lehrskript primär auf das <strong>Ellenbogengelenk</strong>? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "M. teres major",
+    "M. brachialis",
+    "M. triceps brachii",
+    "M. pronator teres",
+    "M. flexor carpi radialis",
+    "M. biceps brachii",
+    "M. trapezius",
+    "M. brachioradialis"
+   ],
+   "correct": [
+    1,
+    2,
+    3,
+    5,
+    7
+   ],
+   "why": "Das Lehrskript stellt in Modul 6.4 5 Muskeln mit primärer Wirkung auf das Ellenbogengelenk vor:<ul><li>M. biceps brachii (Zweiköpfiger Armbeuger)</li><li>M. triceps brachii (Dreiköpfiger Armstrecker)</li><li>M. brachialis (Oberarmmuskel)</li><li>M. brachioradialis (Oberarmspeichenmuskel)</li><li>M. pronator teres (Runder Einwärtsdreher)</li></ul>Die übrigen Optionen wirken primär auf Handgelenk, Schulterblatt, Schultergelenk."
+  },
+  {
+   "id": "joint-hand",
+   "topic": "hand",
+   "type": "multi",
+   "src": "Modul 6.5",
+   "q": "Welche Muskeln wirken laut Lehrskript primär auf das <strong>Handgelenk</strong>? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "M. flexor carpi ulnaris",
+    "Mm. rhomboidei",
+    "M. extensor carpi ulnaris",
+    "M. latissimus dorsi",
+    "M. flexor carpi radialis",
+    "M. brachioradialis"
+   ],
+   "correct": [
+    0,
+    2,
+    4
+   ],
+   "why": "Das Lehrskript stellt in Modul 6.5 3 Muskeln mit primärer Wirkung auf das Handgelenk vor:<ul><li>M. flexor carpi ulnaris (Ulnarer Handgelenkbeuger)</li><li>M. flexor carpi radialis (Radialer Handgelenkbeuger)</li><li>M. extensor carpi ulnaris (Ulnarer Handgelenkstrecker)</li></ul>Die übrigen Optionen wirken primär auf Ellenbogengelenk, Schulterblatt, Schultergelenk."
+  },
+  {
+   "id": "joint-ws",
+   "topic": "ws",
+   "type": "multi",
+   "src": "Modul 6.6",
+   "q": "Welche Muskeln wirken laut Lehrskript primär auf die <strong>Wirbelsäule</strong>? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "M. obliquus internus abdominis",
+    "Mm. rhomboidei",
+    "M. transversus abdominis",
+    "Autochthone Rückenmuskulatur (M. erector spinae)",
+    "M. pectoralis major",
+    "M. rectus abdominis",
+    "M. obliquus externus abdominis",
+    "M. adductor brevis"
+   ],
+   "correct": [
+    0,
+    2,
+    3,
+    5,
+    6
+   ],
+   "why": "Das Lehrskript stellt in Modul 6.6 5 Muskeln mit primärer Wirkung auf die Wirbelsäule vor:<ul><li>M. rectus abdominis (Gerader Bauchmuskel)</li><li>M. obliquus externus abdominis (Äußerer schräger Bauchmuskel)</li><li>M. obliquus internus abdominis (Innerer schräger Bauchmuskel)</li><li>M. transversus abdominis (Querverlaufende Bauchmuskulatur)</li><li>Autochthone Rückenmuskulatur (M. erector spinae)</li></ul>Die übrigen Optionen wirken primär auf Hüftgelenk, Schulterblatt, Schultergelenk."
+  },
+  {
+   "id": "joint-huefte",
+   "topic": "huefte",
+   "type": "multi",
+   "src": "Modul 6.7",
+   "q": "Welche Muskeln wirken laut Lehrskript primär auf das <strong>Hüftgelenk</strong>? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "M. adductor magnus",
+    "M. gluteus maximus",
+    "M. adductor longus",
+    "M. semitendinosus",
+    "M. tibialis anterior",
+    "M. transversus abdominis",
+    "M. gluteus minimus",
+    "M. adductor brevis",
+    "M. iliopsoas",
+    "M. gluteus medius",
+    "M. tensor fasciae latae"
+   ],
+   "correct": [
+    0,
+    1,
+    2,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "why": "Das Lehrskript stellt in Modul 6.7 8 Muskeln mit primärer Wirkung auf das Hüftgelenk vor:<ul><li>M. gluteus maximus (Großer Gesäßmuskel)</li><li>M. gluteus medius (Mittlerer Gesäßmuskel)</li><li>M. gluteus minimus (Kleiner Gesäßmuskel)</li><li>M. iliopsoas (Lendendarmbeinmuskel)</li><li>M. adductor magnus (Großer Schenkelanzieher)</li><li>M. adductor brevis (Kurzer Schenkelanzieher)</li><li>M. adductor longus (Langer Schenkelanzieher)</li><li>M. tensor fasciae latae (Schenkelbindenspanner)</li></ul>Die übrigen Optionen wirken primär auf Kniegelenk, Sprunggelenk, Wirbelsäule."
+  },
+  {
+   "id": "joint-knie",
+   "topic": "knie",
+   "type": "multi",
+   "src": "Modul 6.8",
+   "q": "Welche Muskeln wirken laut Lehrskript primär auf das <strong>Kniegelenk</strong>? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "M. biceps femoris",
+    "M. gastrocnemius",
+    "M. transversus abdominis",
+    "M. adductor magnus",
+    "M. quadriceps femoris",
+    "M. semitendinosus"
+   ],
+   "correct": [
+    0,
+    4,
+    5
+   ],
+   "why": "Das Lehrskript stellt in Modul 6.8 3 Muskeln mit primärer Wirkung auf das Kniegelenk vor:<ul><li>M. quadriceps femoris (Vierköpfiger Beinstrecker)</li><li>M. biceps femoris (Zweiköpfiger Beinbeuger)</li><li>M. semitendinosus (Halbsehnenmuskel)</li></ul>Die übrigen Optionen wirken primär auf Hüftgelenk, Sprunggelenk, Wirbelsäule."
+  },
+  {
+   "id": "joint-sprung",
+   "topic": "sprung",
+   "type": "multi",
+   "src": "Modul 6.9",
+   "q": "Welche Muskeln wirken laut Lehrskript primär auf das <strong>Sprunggelenk</strong>? <em>Alle zutreffenden anklicken.</em>",
+   "options": [
+    "M. tibialis anterior",
+    "M. soleus",
+    "M. tensor fasciae latae",
+    "M. gastrocnemius",
+    "M. rectus abdominis",
+    "M. biceps femoris"
+   ],
+   "correct": [
+    0,
+    1,
+    3
+   ],
+   "why": "Das Lehrskript stellt in Modul 6.9 3 Muskeln mit primärer Wirkung auf das Sprunggelenk vor:<ul><li>M. gastrocnemius (Zwillingswadenmuskel)</li><li>M. soleus (Schollenmuskel)</li><li>M. tibialis anterior (Vorderer Schienbeinmuskel)</li></ul>Die übrigen Optionen wirken primär auf Hüftgelenk, Kniegelenk, Wirbelsäule."
+  }
+ ]
+}

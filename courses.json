@@ -25,6 +25,11 @@
       "id": "fitness-b",
       "title": "Fitnesstrainer(in) B-Lizenz",
       "file": "tests/fitness-b.json"
+    },
+    {
+      "id": "muskeln",
+      "title": "Muskulatur · Funktion, Gelenk, Ursprung & Ansatz",
+      "file": "tests/muskeln.json"
     }
   ]
 }

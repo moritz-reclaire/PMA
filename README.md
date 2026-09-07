@@ -75,6 +75,15 @@ the Leitner box as pips; **retire** takes a question out of rotation for good
 status bar above it tracks pool / mastered / seen, session accuracy, streak and
 the last fourteen verdicts.
 
+Three decks ship with the repo: `tests/pma.json` (Projectmanagement Advanced,
+English), `tests/fitness-b.json` (the whole Fitnesstrainer-B-Lizenz script, German)
+and `tests/muskeln.json` — a German deck over every exam-relevant muscle of
+Modul 6. Per muscle it asks for the joint it primarily acts on and then three
+"select all that apply" cards: every function, every origin, every insertion.
+One card per joint asks the other way round — every muscle the script files
+under that joint — and a cross-cutting topic covers muscle groups and shared
+attachment sites.
+
 A deck is a JSON file in `tests/`, registered in `courses.json` (a picker
 appears in the sidebar as soon as there is more than one):
 
