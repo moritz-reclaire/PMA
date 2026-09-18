@@ -3,3 +3,6 @@
 
 # Raw source materials (processed into content/ files, not tracked)
 unprocessed content/
+
+# Large media served by the app but too big for git (videos, source PDFs)
+media/

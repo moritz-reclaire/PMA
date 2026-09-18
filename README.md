@@ -29,8 +29,10 @@ python3 -m http.server 8000
 # then open http://localhost:8000
 ```
 
-Or use the helper, which also sends `Cache-Control: no-store` so edits to the
-ES modules in `js/` show up on a plain reload instead of needing a hard refresh:
+Or use the helper, which sends `Cache-Control: no-store` for the app's own
+files so edits to the ES modules in `js/` show up on a plain reload instead of
+needing a hard refresh, and answers **Range requests** — without those, `<video>`
+cannot seek to a spot it has not buffered yet:
 
 ```bash
 ./serve.sh
@@ -54,6 +56,27 @@ To add a whole new course/tab, add an entry to `courses.json`:
 ```
 
 and create the matching `content/phys150/` folder.
+
+### Media (video and PDF)
+
+Files too large for git — lecture videos, source PDFs — live in `media/` at the
+repo root, which is gitignored and served like any other folder. The
+**Fitnesstrainer – Medien** tab (`content/medien/00-medien.html`) is the page
+built on top of it: a grid of `<video preload="none">` players, so a card costs
+only its poster frame until someone presses play, the exercise catalogue PDF in
+an `<iframe>` using the browser's own viewer, and a `⤓` link per file for a
+one-click download.
+
+Poster frames are checked in (`content/medien/posters/`, ~30 KB each) and come
+straight out of the videos — a frame ~35 % in avoids the black lead-in:
+
+```bash
+ffmpeg -ss 47 -i media/07-butterfly.mp4 -frames:v 1 -vf scale=640:-2 -q:v 4 \
+       content/medien/posters/07-butterfly.jpg
+```
+
+Because `media/` is not tracked, a fresh clone shows the page with working
+posters and dead links until the files are copied back in.
 
 ## Practice mode (adaptive tests)
 

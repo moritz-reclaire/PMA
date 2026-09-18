@@ -1,0 +1,295 @@
+<style>
+  .media-note {
+    margin: -4px 0 20px; font-size: 13px; color: var(--muted);
+  }
+  .vid-grid {
+    display: grid; gap: 18px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 16px 0 28px;
+  }
+  .vid {
+    margin: 0; background: var(--panel2);
+    border: 1px solid var(--rule); border-radius: var(--r);
+    overflow: hidden;
+  }
+  .vid video {
+    display: block; width: 100%; aspect-ratio: 16 / 9;
+    background: #000; object-fit: cover;
+  }
+  .vid figcaption { padding: 9px 11px 11px; }
+  .vid-line { display: flex; align-items: baseline; gap: 8px; }
+  .vid-no {
+    font-family: var(--fm); font-size: 12px; color: var(--muted);
+  }
+  .vid-name { font-weight: 600; flex: 1; }
+  .vid-sub {
+    margin-top: 3px; font-family: var(--fm); font-size: 11.5px;
+    color: var(--muted); letter-spacing: .02em;
+  }
+  /* One-click download — same for videos and the PDF. */
+  .dl {
+    flex: none; text-decoration: none; white-space: nowrap;
+    font-family: var(--fm); font-size: 11.5px;
+    padding: 3px 8px; border: 1px solid var(--rule); border-radius: var(--r);
+    color: var(--accent); background: var(--panel);
+  }
+  .dl:hover { background: var(--accent); color: var(--panel); border-color: var(--accent); }
+
+  .pdf-bar {
+    display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
+    margin: 14px 0 8px;
+  }
+  .pdf-bar .pdf-sub {
+    flex: 1; font-family: var(--fm); font-size: 11.5px; color: var(--muted);
+  }
+  .pdf-frame {
+    width: 100%; height: min(78vh, 900px); min-height: 460px;
+    border: 1px solid var(--rule); border-radius: var(--r);
+    background: var(--panel2);
+  }
+</style>
+
+<h1>Fitnesstrainer – Medien</h1>
+<p class="media-note">Die Praxisvideos aus Modul 12 der B-Lizenz und der passende
+Übungskatalog. Videos laden erst beim Klick auf ▶ — das Vorschaubild kostet nichts.
+Jede Datei lässt sich über <span class="dl">⤓&nbsp;MP4</span> bzw.
+<span class="dl">⤓&nbsp;PDF</span> mit einem Klick herunterladen.</p>
+
+<h2 id="praxisvideos">Praxisvideos – Modul 12, Praktische Ausbildung</h2>
+<p class="media-note">Fitnesstrainer(in) B-Lizenz · 12 Videos · rund 23 Minuten · 368 MB gesamt</p>
+
+<div class="vid-grid" id="medien-videos">
+  <figure class="vid">
+    <video controls preload="none" playsinline
+           poster="content/medien/posters/01-einfuehrung.jpg">
+      <source src="media/01-einfuehrung.mp4" type="video/mp4" />
+      Dieser Browser kann das Video nicht abspielen —
+      <a href="media/01-einfuehrung.mp4" download>herunterladen</a>.
+    </video>
+    <figcaption>
+      <div class="vid-line">
+        <span class="vid-no">01</span>
+        <span class="vid-name">Einführung</span>
+        <a class="dl" href="media/01-einfuehrung.mp4" download="FitB_12 01 Einführung.mp4"
+           title="Video herunterladen (10 MB)">⤓&nbsp;MP4</a>
+      </div>
+      <div class="vid-sub">0:36 · 10 MB · 1080p</div>
+    </figcaption>
+  </figure>
+  <figure class="vid">
+    <video controls preload="none" playsinline
+           poster="content/medien/posters/02-bauchmaschine.jpg">
+      <source src="media/02-bauchmaschine.mp4" type="video/mp4" />
+      Dieser Browser kann das Video nicht abspielen —
+      <a href="media/02-bauchmaschine.mp4" download>herunterladen</a>.
+    </video>
+    <figcaption>
+      <div class="vid-line">
+        <span class="vid-no">02</span>
+        <span class="vid-name">Bauchmaschine</span>
+        <a class="dl" href="media/02-bauchmaschine.mp4" download="FitB_12 02 Bauchmaschine.mp4"
+           title="Video herunterladen (33 MB)">⤓&nbsp;MP4</a>
+      </div>
+      <div class="vid-sub">2:14 · 33 MB · 1080p</div>
+    </figcaption>
+  </figure>
+  <figure class="vid">
+    <video controls preload="none" playsinline
+           poster="content/medien/posters/03-beinbeuger.jpg">
+      <source src="media/03-beinbeuger.mp4" type="video/mp4" />
+      Dieser Browser kann das Video nicht abspielen —
+      <a href="media/03-beinbeuger.mp4" download>herunterladen</a>.
+    </video>
+    <figcaption>
+      <div class="vid-line">
+        <span class="vid-no">03</span>
+        <span class="vid-name">Beinbeuger</span>
+        <a class="dl" href="media/03-beinbeuger.mp4" download="FitB_12 03 Beinbeuger.mp4"
+           title="Video herunterladen (34 MB)">⤓&nbsp;MP4</a>
+      </div>
+      <div class="vid-sub">2:07 · 34 MB · 1080p</div>
+    </figcaption>
+  </figure>
+  <figure class="vid">
+    <video controls preload="none" playsinline
+           poster="content/medien/posters/04-beinpresse.jpg">
+      <source src="media/04-beinpresse.mp4" type="video/mp4" />
+      Dieser Browser kann das Video nicht abspielen —
+      <a href="media/04-beinpresse.mp4" download>herunterladen</a>.
+    </video>
+    <figcaption>
+      <div class="vid-line">
+        <span class="vid-no">04</span>
+        <span class="vid-name">Beinpresse</span>
+        <a class="dl" href="media/04-beinpresse.mp4" download="FitB_12 04 Beinpresse.mp4"
+           title="Video herunterladen (39 MB)">⤓&nbsp;MP4</a>
+      </div>
+      <div class="vid-sub">2:30 · 39 MB · 1080p</div>
+    </figcaption>
+  </figure>
+  <figure class="vid">
+    <video controls preload="none" playsinline
+           poster="content/medien/posters/05-beinstrecker.jpg">
+      <source src="media/05-beinstrecker.mp4" type="video/mp4" />
+      Dieser Browser kann das Video nicht abspielen —
+      <a href="media/05-beinstrecker.mp4" download>herunterladen</a>.
+    </video>
+    <figcaption>
+      <div class="vid-line">
+        <span class="vid-no">05</span>
+        <span class="vid-name">Beinstrecker</span>
+        <a class="dl" href="media/05-beinstrecker.mp4" download="FitB_12 05 Beinstrecker.mp4"
+           title="Video herunterladen (26 MB)">⤓&nbsp;MP4</a>
+      </div>
+      <div class="vid-sub">1:44 · 26 MB · 1080p</div>
+    </figcaption>
+  </figure>
+  <figure class="vid">
+    <video controls preload="none" playsinline
+           poster="content/medien/posters/06-brustpresse.jpg">
+      <source src="media/06-brustpresse.mp4" type="video/mp4" />
+      Dieser Browser kann das Video nicht abspielen —
+      <a href="media/06-brustpresse.mp4" download>herunterladen</a>.
+    </video>
+    <figcaption>
+      <div class="vid-line">
+        <span class="vid-no">06</span>
+        <span class="vid-name">Brustpresse</span>
+        <a class="dl" href="media/06-brustpresse.mp4" download="FitB_12 06 Brustpresse.mp4"
+           title="Video herunterladen (28 MB)">⤓&nbsp;MP4</a>
+      </div>
+      <div class="vid-sub">1:44 · 28 MB · 1080p</div>
+    </figcaption>
+  </figure>
+  <figure class="vid">
+    <video controls preload="none" playsinline
+           poster="content/medien/posters/07-butterfly.jpg">
+      <source src="media/07-butterfly.mp4" type="video/mp4" />
+      Dieser Browser kann das Video nicht abspielen —
+      <a href="media/07-butterfly.mp4" download>herunterladen</a>.
+    </video>
+    <figcaption>
+      <div class="vid-line">
+        <span class="vid-no">07</span>
+        <span class="vid-name">Butterfly</span>
+        <a class="dl" href="media/07-butterfly.mp4" download="FitB_12 07 Butterfly.mp4"
+           title="Video herunterladen (24 MB)">⤓&nbsp;MP4</a>
+      </div>
+      <div class="vid-sub">1:31 · 24 MB · 1080p</div>
+    </figcaption>
+  </figure>
+  <figure class="vid">
+    <video controls preload="none" playsinline
+           poster="content/medien/posters/08-latzug.jpg">
+      <source src="media/08-latzug.mp4" type="video/mp4" />
+      Dieser Browser kann das Video nicht abspielen —
+      <a href="media/08-latzug.mp4" download>herunterladen</a>.
+    </video>
+    <figcaption>
+      <div class="vid-line">
+        <span class="vid-no">08</span>
+        <span class="vid-name">Latzug</span>
+        <a class="dl" href="media/08-latzug.mp4" download="FitB_12 08 Latzug.mp4"
+           title="Video herunterladen (38 MB)">⤓&nbsp;MP4</a>
+      </div>
+      <div class="vid-sub">2:16 · 38 MB · 1080p</div>
+    </figcaption>
+  </figure>
+  <figure class="vid">
+    <video controls preload="none" playsinline
+           poster="content/medien/posters/09-rueckenstrecker.jpg">
+      <source src="media/09-rueckenstrecker.mp4" type="video/mp4" />
+      Dieser Browser kann das Video nicht abspielen —
+      <a href="media/09-rueckenstrecker.mp4" download>herunterladen</a>.
+    </video>
+    <figcaption>
+      <div class="vid-line">
+        <span class="vid-no">09</span>
+        <span class="vid-name">Rückenstrecker</span>
+        <a class="dl" href="media/09-rueckenstrecker.mp4" download="FitB_12 09 Rückenstrecker.mp4"
+           title="Video herunterladen (33 MB)">⤓&nbsp;MP4</a>
+      </div>
+      <div class="vid-sub">2:13 · 33 MB · 1080p</div>
+    </figcaption>
+  </figure>
+  <figure class="vid">
+    <video controls preload="none" playsinline
+           poster="content/medien/posters/10-rudern.jpg">
+      <source src="media/10-rudern.mp4" type="video/mp4" />
+      Dieser Browser kann das Video nicht abspielen —
+      <a href="media/10-rudern.mp4" download>herunterladen</a>.
+    </video>
+    <figcaption>
+      <div class="vid-line">
+        <span class="vid-no">10</span>
+        <span class="vid-name">Rudern</span>
+        <a class="dl" href="media/10-rudern.mp4" download="FitB_12 10 Rudern.mp4"
+           title="Video herunterladen (37 MB)">⤓&nbsp;MP4</a>
+      </div>
+      <div class="vid-sub">2:26 · 37 MB · 1080p</div>
+    </figcaption>
+  </figure>
+  <figure class="vid">
+    <video controls preload="none" playsinline
+           poster="content/medien/posters/11-schulterpresse.jpg">
+      <source src="media/11-schulterpresse.mp4" type="video/mp4" />
+      Dieser Browser kann das Video nicht abspielen —
+      <a href="media/11-schulterpresse.mp4" download>herunterladen</a>.
+    </video>
+    <figcaption>
+      <div class="vid-line">
+        <span class="vid-no">11</span>
+        <span class="vid-name">Schulterpresse</span>
+        <a class="dl" href="media/11-schulterpresse.mp4" download="FitB_12 11 Schulterpresse.mp4"
+           title="Video herunterladen (39 MB)">⤓&nbsp;MP4</a>
+      </div>
+      <div class="vid-sub">2:13 · 39 MB · 1080p</div>
+    </figcaption>
+  </figure>
+  <figure class="vid">
+    <video controls preload="none" playsinline
+           poster="content/medien/posters/12-wadenpresse.jpg">
+      <source src="media/12-wadenpresse.mp4" type="video/mp4" />
+      Dieser Browser kann das Video nicht abspielen —
+      <a href="media/12-wadenpresse.mp4" download>herunterladen</a>.
+    </video>
+    <figcaption>
+      <div class="vid-line">
+        <span class="vid-no">12</span>
+        <span class="vid-name">Wadenpresse</span>
+        <a class="dl" href="media/12-wadenpresse.mp4" download="FitB_12 12 Wadenpresse.mp4"
+           title="Video herunterladen (27 MB)">⤓&nbsp;MP4</a>
+      </div>
+      <div class="vid-sub">1:54 · 27 MB · 1080p</div>
+    </figcaption>
+  </figure>
+</div>
+
+<h2 id="uebungskatalog">Übungskatalog für Gerätetraining</h2>
+<p class="media-note">Das Nachschlagewerk zu genau diesen Übungen — laut Vorwort
+bereiten Praxisvideos und Katalog gemeinsam auf die Präsenzphase vor.</p>
+<div class="pdf-bar">
+  <span class="pdf-sub">27 Seiten · 15 MB · Version 1.0.2 · je Übung Zielmuskulatur, Ausführung, typische Fehler, Atmung und Kadenz</span>
+  <a class="dl" href="media/uebungskatalog-geraetetraining.pdf" target="_blank" rel="noopener">↗&nbsp;Neuer&nbsp;Tab</a>
+  <a class="dl" href="media/uebungskatalog-geraetetraining.pdf"
+     download="Fitnesstrainer B-Lizenz – Übungskatalog Gerätetraining.pdf"
+     title="PDF herunterladen (15 MB)">⤓&nbsp;PDF</a>
+</div>
+<iframe class="pdf-frame" src="media/uebungskatalog-geraetetraining.pdf#view=FitH"
+        title="Übungskatalog für Gerätetraining – Fitnesstrainer(in)-B-Lizenz"></iframe>
+<p class="media-note">Zeigt der Rahmen nichts an, blockiert der Browser eingebettete
+PDFs — dann über <strong>↗ Neuer Tab</strong> öffnen.</p>
+
+<script>
+  // Only one video at a time: starting one pauses whatever else is running.
+  (function () {
+    const grid = document.getElementById('medien-videos');
+    if (!grid || grid.dataset.wired === '1') return;
+    grid.dataset.wired = '1';
+    grid.addEventListener('play', (e) => {
+      for (const v of grid.querySelectorAll('video')) {
+        if (v !== e.target) v.pause();
+      }
+    }, true);   // 'play' does not bubble — listen in the capture phase
+  })();
+</script>

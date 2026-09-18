@@ -20,6 +20,13 @@
       "files": [
         "00-zusammenfassung.html"
       ]
+    },
+    {
+      "id": "medien",
+      "title": "Fitnesstrainer – Medien",
+      "files": [
+        "00-medien.html"
+      ]
     }
   ],
   "tests": [
