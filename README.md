@@ -13,7 +13,8 @@ content files, with a table of contents on the left to jump around.
 - **Themes** — three visual directions (`academic`, `swiss`, `terminal`), each
   with a light and a dark mode, cycled from the header and remembered per
   browser. The tokens live at the top of `css/styles.css`.
-- **Linkable state** — `#/read/<course>/<section>` and `#/practice/<deck>`.
+- **Linkable state** — `#/read/<course>/<section>`, `#/practice/<deck>` and
+  `#/practice/<deck>/list`.
   Navigating updates the hash, and opening such a link lands where it says.
 - **Small screens** — below 900 px the sidebar becomes a drawer behind the
   `≡` button.
@@ -97,6 +98,26 @@ the Leitner box as pips; **retire** takes a question out of rotation for good
 (each retired question can be restored individually from the sidebar). The
 status bar above it tracks pool / mastered / seen, session accuracy, streak and
 the last fourteen verdicts.
+
+### All questions (list view)
+
+The status bar carries a switch between **Practice** — the drill described above
+— and **All questions**, which lays the whole deck out as a list, grouped by
+topic. Each row is one question in one line with its source badge, its type and
+its Leitner pips; a colour-coded dot says where it stands (grey unseen, amber in
+progress, green mastered, red retired). Clicking a row opens it in place and
+shows the full question, the answer laid out per type (the correct options
+ticked, the gaps of a cloze filled in, pairs and buckets resolved), the
+explanation and the same source-page thumbnails the card offers. Browsing never
+grades anything, so looking an answer up costs no Leitner box.
+
+Above the list sit a free-text filter (question, answer, explanation and source
+reference), status chips with a count each (all / unseen / learning / mastered /
+retired), and *expand all* / *collapse all* for whatever the filter currently
+shows. The sidebar's topic filters apply to the list as they do to the drill.
+Every open row offers **Practice this one**, which jumps straight into the drill
+on that question, and a retire/restore button. The view is remembered per
+browser and is linkable: `#/practice/<deck>/list`.
 
 Three decks ship with the repo: `tests/pma.json` (Projectmanagement Advanced,
 English), `tests/fitness-b.json` (the whole Fitnesstrainer-B-Lizenz script, German)

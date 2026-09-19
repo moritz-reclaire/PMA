@@ -23,6 +23,14 @@ let mounted = false;
 let deckToken = 0;             // guards against a slow deck load landing too late
 let onDeckChange = null;
 
+// The list view: the whole deck at a glance. Browsing it never records an
+// answer, so reading up on a question does not disturb the schedule.
+let mode = 'drill';            // 'drill' (one question at a time) or 'list'
+let listFilter = '';           // free-text filter over question, answer, source
+let listStatus = 'all';        // all | unseen | learning | mastered | retired
+let openItems = new Set();     // ids of the rows expanded in the list
+const listText = new Map();    // id -> lowercased haystack, built on demand
+
 // Text inside the question card follows the deck's language ("lang" in the
 // bank, default en); the surrounding app chrome stays English.
 const STR = {
@@ -46,6 +54,17 @@ const STR = {
     srcPages: (n) => n.length > 1 ? `Show source pages ${n.join(', ')}` : `Show source page ${n[0]}`,
     srcPage: (n) => `Page ${n}`,
     srcNote: 'The highlight is placed automatically and is not always exact.',
+    modeDrill: 'Practice', modeList: 'All questions',
+    filterQ: 'Filter questions…',
+    statusAll: 'all', statusUnseen: 'unseen', statusLearning: 'learning',
+    statusMastered: 'mastered', statusRetired: 'retired',
+    expandAll: 'expand all', collapseAll: 'collapse all',
+    answerLabel: 'Answer', whyLabel: 'Why',
+    practiceThis: 'Practice this one', retire: 'retire', restore: 'restore',
+    noMatches: 'No question matches the filter.',
+    showing: (n, total) => `${n} of ${total} questions`,
+    tally: (r, n) => `${r}/${n} right`,
+    notSeen: 'not answered yet',
     types: {
       mc: 'single choice', multi: 'multiple choice', text: 'free text',
       cloze: 'fill in the gaps', order: 'ordering', match: 'matching',
@@ -72,6 +91,17 @@ const STR = {
     srcPages: (n) => n.length > 1 ? `Skript-Seiten ${n.join(', ')} anzeigen` : `Skript-Seite ${n[0]} anzeigen`,
     srcPage: (n) => `Seite ${n}`,
     srcNote: 'Die Markierung wird automatisch gesetzt und trifft nicht immer exakt.',
+    modeDrill: 'Üben', modeList: 'Alle Fragen',
+    filterQ: 'Fragen filtern…',
+    statusAll: 'alle', statusUnseen: 'neu', statusLearning: 'im Lernen',
+    statusMastered: 'sitzt', statusRetired: 'aussortiert',
+    expandAll: 'alle aufklappen', collapseAll: 'alle zuklappen',
+    answerLabel: 'Antwort', whyLabel: 'Erklärung',
+    practiceThis: 'Diese Frage üben', retire: 'aussortieren', restore: 'zurückholen',
+    noMatches: 'Keine Frage passt zum Filter.',
+    showing: (n, total) => `${n} von ${total} Fragen`,
+    tally: (r, n) => `${r}/${n} richtig`,
+    notSeen: 'noch nicht beantwortet',
     types: {
       mc: 'Einfachauswahl', multi: 'Mehrfachauswahl', text: 'Freitext',
       cloze: 'Lückentext', order: 'Reihenfolge', match: 'Zuordnung',
@@ -101,6 +131,10 @@ export async function mountPractice(ctx) {
     return;
   }
 
+  let savedMode = null;
+  try { savedMode = localStorage.getItem('cb:practice:mode'); } catch (_) { }
+  mode = normalizeMode(ctx.startMode || savedMode);
+
   const saved = localStorage.getItem('cb:practice:deck');
   const wanted = [ctx.startDeck, saved].find(id => decks.some(d => d.id === id));
   await openDeck(wanted || decks[0].id);
@@ -121,6 +155,32 @@ export function unmountPractice() {
 
 export function currentDeckId() {
   return deck ? deck.id : null;
+}
+
+export function currentMode() {
+  return mode;
+}
+
+function normalizeMode(m) { return m === 'list' ? 'list' : 'drill'; }
+
+function setMode(next) {
+  const m = normalizeMode(next);
+  if (m === mode) return;
+  mode = m;
+  try { localStorage.setItem('cb:practice:mode', mode); } catch (_) { }
+  if (deck && onDeckChange) onDeckChange(deck.id, mode);
+  paintStatus();
+  renderStage();
+  els.scrollArea.scrollTop = 0;
+}
+
+// Either the drill or the list owns the stage — never both.
+function renderStage() {
+  if (mode !== 'list') return nextQuestion();
+  current = null;
+  view = null;
+  graded = null;
+  renderQuestionList();
 }
 
 async function openDeck(deckId) {
@@ -147,9 +207,15 @@ async function openDeck(deckId) {
   deck.id = deck.id || deckId;
   loadStore();
   session = { shown: 0, right: 0, streak: 0, best: 0, hist: [] };
+  // A filter from the deck before it would otherwise hide a deck it was never
+  // meant for — most visibly as an empty list right after switching.
+  listText.clear();
+  openItems.clear();
+  listFilter = '';
+  listStatus = 'all';
   buildFrame();
-  nextQuestion();
-  if (onDeckChange) onDeckChange(deck.id);
+  renderStage();
+  if (onDeckChange) onDeckChange(deck.id, mode);
 }
 
 // ------------------------------------------------------------
@@ -298,14 +364,26 @@ function paintStatus() {
   const seen = visible.filter(q => statOf(q.id)).length;
   const acc = session.shown ? Math.round(100 * session.right / session.shown) + '%' : '—';
 
+  // Session figures only mean something while drilling — in the list the deck's
+  // own standing is what counts, so accuracy, streak and history drop out.
   bar.innerHTML =
+    `<span class="pr-modes">` +
+      `<button class="pr-mode${mode === 'drill' ? ' on' : ''}" data-mode="drill" type="button">${escapeHtml(t('modeDrill'))}</button>` +
+      `<button class="pr-mode${mode === 'list' ? ' on' : ''}" data-mode="list" type="button">${escapeHtml(t('modeList'))}</button>` +
+    `</span>` +
     `<span>pool <b>${pool.length}</b></span>` +
     `<span>mastered <b class="ok">${mastered}</b></span>` +
     `<span>seen <b>${seen}</b></span>` +
-    `<span>accuracy <b>${acc}</b></span>` +
-    `<span>streak <b>${session.streak}</b></span>` +
-    `<span class="pr-hist">${session.hist.slice(-14)
-      .map(v => `<i class="pr-dot ${v}"></i>`).join('')}</span>`;
+    (mode === 'drill'
+      ? `<span>accuracy <b>${acc}</b></span>` +
+        `<span>streak <b>${session.streak}</b></span>` +
+        `<span class="pr-hist">${session.hist.slice(-14)
+          .map(v => `<i class="pr-dot ${v}"></i>`).join('')}</span>`
+      : '');
+
+  bar.querySelectorAll('[data-mode]').forEach(btn => {
+    btn.addEventListener('click', () => setMode(btn.dataset.mode));
+  });
 }
 
 function paintSidebar() {
@@ -438,7 +516,7 @@ function afterFilterChange() {
   saveStore();
   paintStatus();
   paintSidebar();
-  nextQuestion();
+  renderStage();
 }
 
 function topicTotals() {
@@ -1140,10 +1218,317 @@ function renderUnknown(ctx) {
 }
 
 // ------------------------------------------------------------
+//  List view — the whole deck as a readable list
+//  Rows are collapsed to the question; opening one shows the answer, the
+//  explanation and the source pages. Nothing here grades anything, so
+//  looking an answer up costs no Leitner box.
+// ------------------------------------------------------------
+const STATUSES = ['all', 'unseen', 'learning', 'mastered', 'retired'];
+
+function statusOf(q) {
+  if (store.hidden.includes(q.id)) return 'retired';
+  const s = statOf(q.id);
+  if (!s) return 'unseen';
+  return isMastered(s) ? 'mastered' : 'learning';
+}
+
+function statusLabel(key) {
+  return t('status' + key[0].toUpperCase() + key.slice(1));
+}
+
+// Retired questions stay in the list — they are part of the deck, just out of
+// rotation — but the sidebar's topic filter applies here as it does to the pool.
+function listBase() {
+  const on = new Set(store.topics);
+  return deck.questions.filter(q => on.has(q.topic));
+}
+
+function haystack(q) {
+  if (listText.has(q.id)) return listText.get(q.id);
+  const topic = deck.topics.find(x => x.id === q.topic);
+  const text = stripTags([
+    q.q, answerHtml(q), q.why || '', q.hint || '', q.src || '',
+    topic ? topic.label : q.topic,
+  ].join(' ')).replace(/\s+/g, ' ').toLowerCase();
+  listText.set(q.id, text);
+  return text;
+}
+
+function listMatches() {
+  const needle = listFilter.trim().toLowerCase();
+  return listBase().filter(q => {
+    if (listStatus !== 'all' && statusOf(q) !== listStatus) return false;
+    return !needle || haystack(q).includes(needle);
+  });
+}
+
+function renderQuestionList() {
+  const stage = document.getElementById('pr-stage');
+  if (!stage) return;
+
+  const wrap = el('div', 'pr-lv');
+
+  const head = el('div', 'pr-lv-head');
+  const search = el('input', 'pr-lv-search');
+  search.type = 'search';
+  search.value = listFilter;
+  search.placeholder = t('filterQ');
+  search.setAttribute('autocomplete', 'off');
+  // The head survives a repaint, so typing keeps the caret where it is.
+  search.addEventListener('input', () => { listFilter = search.value; paintListBody(); });
+  head.appendChild(search);
+  head.appendChild(el('div', 'pr-lv-chips'));
+
+  const tools = el('div', 'pr-lv-tools');
+  const count = el('span', 'pr-lv-count');
+  const expand = el('button', 'pr-link', escapeHtml(t('expandAll')));
+  const collapse = el('button', 'pr-link', escapeHtml(t('collapseAll')));
+  expand.type = collapse.type = 'button';
+  expand.addEventListener('click', () => {
+    listMatches().forEach(q => openItems.add(q.id));
+    paintListBody();
+  });
+  collapse.addEventListener('click', () => { openItems.clear(); paintListBody(); });
+  tools.appendChild(count);
+  tools.appendChild(expand);
+  tools.appendChild(collapse);
+  head.appendChild(tools);
+
+  wrap.appendChild(head);
+  wrap.appendChild(el('div', 'pr-lv-body'));
+
+  stage.innerHTML = '';
+  stage.appendChild(wrap);
+  paintListBody();
+}
+
+function paintChips() {
+  const box = document.querySelector('.pr-lv-chips');
+  if (!box) return;
+  const base = listBase();
+  const counts = { all: base.length, unseen: 0, learning: 0, mastered: 0, retired: 0 };
+  base.forEach(q => { counts[statusOf(q)]++; });
+
+  box.innerHTML = STATUSES.map(key =>
+    `<button class="pr-lv-chip${key === listStatus ? ' on' : ''}" data-status="${key}" type="button">` +
+    `${escapeHtml(statusLabel(key))} <b>${counts[key]}</b></button>`).join('');
+
+  box.querySelectorAll('[data-status]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      listStatus = btn.dataset.status;
+      paintListBody();
+    });
+  });
+}
+
+function paintListBody() {
+  const body = document.querySelector('.pr-lv-body');
+  if (!body) return;
+  paintChips();
+
+  const matches = listMatches();
+  const count = document.querySelector('.pr-lv-count');
+  if (count) count.textContent = t('showing')(matches.length, deck.questions.length);
+
+  body.innerHTML = '';
+  if (!matches.length) {
+    body.appendChild(el('p', 'pr-note pr-lv-none', escapeHtml(t('noMatches'))));
+    return;
+  }
+
+  // Grouped by topic in the deck's own order, with anything under an unknown
+  // topic collected at the end rather than dropped.
+  const byTopic = new Map();
+  matches.forEach(q => {
+    if (!byTopic.has(q.topic)) byTopic.set(q.topic, []);
+    byTopic.get(q.topic).push(q);
+  });
+  const order = deck.topics.map(x => x.id).filter(id => byTopic.has(id))
+    .concat([...byTopic.keys()].filter(id => !deck.topics.some(x => x.id === id)));
+
+  let n = 0;
+  for (const topicId of order) {
+    const topic = deck.topics.find(x => x.id === topicId);
+    const group = el('section', 'pr-lv-group');
+    const gh = el('div', 'pr-lv-group-head');
+    gh.appendChild(el('span', 'pr-lv-group-name', escapeHtml(topic ? topic.label : topicId)));
+    gh.appendChild(el('span', 'pr-lv-group-count', String(byTopic.get(topicId).length)));
+    group.appendChild(gh);
+    for (const q of byTopic.get(topicId)) group.appendChild(listItem(q, ++n));
+    body.appendChild(group);
+  }
+}
+
+function listItem(q, n) {
+  const types = (STR[(deck && deck.lang) || 'en'] || STR.en).types;
+  const st = statusOf(q);
+
+  const item = el('article', 'pr-lv-item');
+  item.dataset.id = q.id;
+  item.dataset.status = st;
+  item.dataset.open = openItems.has(q.id) ? '1' : '0';
+
+  // The summary strips the question's markup down to one line; the detail
+  // below renders it in full.
+  const row = el('button', 'pr-lv-row');
+  row.type = 'button';
+  row.innerHTML =
+    `<span class="pr-lv-n">${n}</span>` +
+    `<span class="pr-lv-dot" title="${escapeAttr(statusLabel(st))}"></span>` +
+    `<span class="pr-lv-q">${escapeHtml(stripTags(q.q))}</span>` +
+    `<span class="pr-lv-meta">` +
+      (q.src ? `<span class="pr-src">${escapeHtml(q.src)}</span>` : '') +
+      `<span class="pr-type">${escapeHtml(types[q.type] || q.type)}</span>` +
+      (st === 'retired' ? `<span class="pr-lv-tag">${escapeHtml(statusLabel('retired'))}</span>` : boxPips(q)) +
+    `</span>` +
+    `<span class="pr-lv-caret">›</span>`;
+  row.addEventListener('click', () => toggleItem(item, q));
+  item.appendChild(row);
+
+  if (openItems.has(q.id)) item.appendChild(buildDetail(q));
+  return item;
+}
+
+function boxPips(q) {
+  const s = statOf(q.id);
+  const box = s ? Math.min(s.box, mastery()) : 0;
+  let out = '<span class="pr-boxes">';
+  for (let i = 0; i < mastery(); i++) out += `<span class="pr-pip${i < box ? ' on' : ''}"></span>`;
+  return out + '</span>';
+}
+
+function toggleItem(item, q) {
+  if (openItems.has(q.id)) {
+    openItems.delete(q.id);
+    const open = item.querySelector('.pr-lv-detail');
+    if (open) open.remove();
+    item.dataset.open = '0';
+    return;
+  }
+  openItems.add(q.id);
+  item.appendChild(buildDetail(q));
+  item.dataset.open = '1';
+}
+
+function buildDetail(q) {
+  const box = el('div', 'pr-lv-detail');
+  // The row already carries the question, but with its markup stripped and cut
+  // to one line — so it is repeated in full only when that loses something.
+  // A plain one-liner instead un-clamps in the row itself (see the CSS).
+  if (stripTags(q.q) !== q.q) box.appendChild(el('div', 'pr-lv-full', q.q));
+
+  const answer = el('div', 'pr-lv-answer');
+  answer.appendChild(el('div', 'pr-lv-label', escapeHtml(t('answerLabel'))));
+  const value = el('div', 'pr-lv-value', answerHtml(q));
+  answer.appendChild(value);
+  box.appendChild(answer);
+
+  if (q.why) {
+    const why = el('div', 'pr-lv-answer');
+    why.appendChild(el('div', 'pr-lv-label', escapeHtml(t('whyLabel'))));
+    why.appendChild(el('div', 'pr-why', q.why));
+    box.appendChild(why);
+  }
+
+  const src = renderSourcePages(q);
+  if (src) box.appendChild(src);
+
+  const acts = el('div', 'pr-lv-acts');
+  const go = el('button', 'pr-btn ghost', escapeHtml(t('practiceThis')));
+  go.type = 'button';
+  go.addEventListener('click', () => practiceQuestion(q.id));
+  acts.appendChild(go);
+
+  const retired = store.hidden.includes(q.id);
+  const rt = el('button', 'pr-retire', escapeHtml(retired ? t('restore') : t('retire')));
+  rt.type = 'button';
+  rt.addEventListener('click', () => {
+    if (retired) store.hidden = store.hidden.filter(id => id !== q.id);
+    else store.hidden.push(q.id);
+    saveStore();
+    paintStatus();
+    paintSidebar();
+    paintListBody();
+  });
+  acts.appendChild(rt);
+
+  const s = statOf(q.id);
+  acts.appendChild(el('span', 'pr-lv-tally',
+    escapeHtml(s ? t('tally')(s.r, s.n) : t('notSeen'))));
+  box.appendChild(acts);
+  return box;
+}
+
+// Jump from a list row straight into the drill on that question — the one
+// place where the next question is chosen rather than drawn.
+function practiceQuestion(id) {
+  const q = deck.questions.find(x => x.id === id);
+  if (!q) return;
+  mode = 'drill';
+  try { localStorage.setItem('cb:practice:mode', mode); } catch (_) { }
+  if (onDeckChange) onDeckChange(deck.id, mode);
+  graded = null;
+  current = q;
+  paintStatus();
+  renderCard(q);
+  els.scrollArea.scrollTop = 0;
+}
+
+// The solution of a question, laid out per type. Deck HTML is passed through
+// the way the card does it; plain match strings are escaped.
+function answerHtml(q) {
+  try {
+    switch (q.type) {
+      case 'mc':
+      case 'multi': {
+        const want = q.type === 'multi' ? q.correct : [q.correct];
+        return '<ul class="pr-lv-opts">' + q.options.map((o, i) =>
+          `<li class="${want.includes(i) ? 'is-on' : ''}">` +
+          `<span class="pr-lv-tick">${want.includes(i) ? '✓' : '·'}</span>` +
+          `<span>${o}</span></li>`).join('') + '</ul>';
+      }
+      case 'text':
+        return `<p class="pr-lv-plain">${q.accept.map(a => escapeHtml(a)).join(' · ')}</p>`;
+      case 'list':
+        return '<ul class="pr-lv-bullets">' + q.answers.map(a =>
+          `<li>${a.show || escapeHtml(a.accept[0])}</li>`).join('') + '</ul>';
+      case 'cloze': {
+        const parts = q.text.split('{{}}');
+        let out = '';
+        parts.forEach((part, i) => {
+          out += part;
+          const g = q.gaps[i];
+          if (g) out += `<b class="pr-lv-gap">${g.show || escapeHtml(g.accept[0])}</b>`;
+        });
+        return `<p class="pr-lv-plain">${out}</p>`;
+      }
+      case 'order':
+        return '<ol class="pr-lv-ol">' + q.items.map(i => `<li>${i}</li>`).join('') + '</ol>';
+      case 'match':
+        return '<ul class="pr-lv-pairs">' + q.pairs.map(pair =>
+          `<li><span class="pr-lv-left">${pair[0]}</span>` +
+          `<span class="pr-lv-arrow">→</span><span>${pair[1]}</span></li>`).join('') + '</ul>';
+      case 'bucket':
+        return '<div class="pr-lv-buckets">' + q.buckets.map((label, bi) =>
+          `<div class="pr-lv-bucket"><div class="pr-lv-bucket-name">${escapeHtml(label)}</div><ul>` +
+          q.items.filter(it => it[1] === bi).map(it => `<li>${it[0]}</li>`).join('') +
+          '</ul></div>').join('') + '</div>';
+      case 'flash':
+        return `<div class="pr-lv-plain">${q.answer}</div>`;
+      default:
+        return '';
+    }
+  } catch (_) {
+    // A malformed question must not take the whole list down with it.
+    return '';
+  }
+}
+
+// ------------------------------------------------------------
 //  Keyboard
 // ------------------------------------------------------------
 function onKey(e) {
-  if (!mounted || !current) return;
+  if (!mounted || mode !== 'drill' || !current) return;
   const tag = (e.target.tagName || '').toLowerCase();
   const typing = tag === 'input' || tag === 'select' || tag === 'textarea';
 

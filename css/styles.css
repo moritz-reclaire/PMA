@@ -1323,6 +1323,194 @@ a:hover { text-decoration: underline; }
 }
 .pr-reset:hover { border-color: var(--exam); }
 
+/* ---------- Question list (the whole deck at a glance) ---------- */
+/* The switch lives in the status bar, so both views start from the same line. */
+.pr-modes { display: flex; gap: 4px; margin-right: 4px; }
+.pr-mode {
+  padding: 4px 11px;
+  font-family: var(--fm);
+  font-size: 10.5px;
+  border: 1px solid var(--rule);
+  border-radius: var(--r);
+  background: var(--panel);
+  color: var(--muted);
+}
+.pr-mode:hover { color: var(--fg); border-color: var(--accent); }
+.pr-mode.on {
+  border-color: var(--accent);
+  background: color-mix(in oklab, var(--accent) 14%, var(--bg));
+  color: var(--fg);
+}
+
+.pr-lv-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+  margin-top: 20px;
+}
+.pr-lv-search {
+  flex: 1 1 210px;
+  padding: 8px 11px;
+  font-size: 13px;
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  border-radius: var(--r);
+  outline: none;
+}
+.pr-lv-search:focus { border-color: var(--accent); }
+.pr-lv-chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.pr-lv-chip {
+  padding: 5px 10px;
+  font-family: var(--fm);
+  font-size: 10.5px;
+  border: 1px solid var(--rule);
+  border-radius: var(--r);
+  background: var(--panel);
+  color: var(--muted);
+}
+.pr-lv-chip b { font-weight: 500; color: var(--fg); }
+.pr-lv-chip:hover { border-color: var(--accent); }
+.pr-lv-chip.on {
+  border-color: var(--accent);
+  background: color-mix(in oklab, var(--accent) 12%, var(--bg));
+  color: var(--fg);
+}
+.pr-lv-tools { display: flex; align-items: center; gap: 14px; width: 100%; }
+.pr-lv-count {
+  font-family: var(--fm);
+  font-size: 10.5px;
+  color: var(--muted);
+  margin-right: auto;
+}
+.pr-lv-none { margin-top: 26px; }
+
+.pr-lv-group {
+  margin-top: 22px;
+  border: 1px solid var(--rule);
+  border-radius: var(--r);
+  background: var(--panel);
+  overflow: hidden;
+}
+.pr-lv-group-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--rule);
+  background: var(--panel2);
+}
+.pr-lv-group-name {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.pr-lv-group-count { font-family: var(--fm); font-size: 10.5px; color: var(--muted); }
+
+.pr-lv-item + .pr-lv-item { border-top: 1px solid var(--rule); }
+.pr-lv-item[data-open="1"] { background: color-mix(in oklab, var(--accent) 5%, var(--panel)); }
+
+.pr-lv-row {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  width: 100%;
+  padding: 9px 14px;
+  background: none;
+  border: none;
+  text-align: left;
+}
+.pr-lv-row:hover { background: color-mix(in oklab, var(--accent) 8%, var(--panel)); }
+.pr-lv-n { font-family: var(--fm); font-size: 10.5px; color: var(--muted); width: 30px; flex: none; }
+.pr-lv-dot { width: 8px; height: 8px; border-radius: 99px; background: var(--rule); flex: none; }
+.pr-lv-item[data-status="learning"] .pr-lv-dot { background: var(--warn); }
+.pr-lv-item[data-status="mastered"] .pr-lv-dot { background: var(--ok); }
+.pr-lv-item[data-status="retired"] .pr-lv-dot { background: var(--exam); }
+/* Collapsed rows stay one line each, so a long deck stays scannable; an open
+   row lets its question wrap instead. */
+.pr-lv-q {
+  flex: 1;
+  min-width: 0;
+  font-family: var(--fh);
+  font-size: 14.5px;
+  line-height: 1.45;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.pr-lv-item[data-open="1"] .pr-lv-q { white-space: normal; overflow: visible; font-weight: 600; }
+.pr-lv-item[data-status="retired"] .pr-lv-q { color: var(--muted); text-decoration: line-through; }
+.pr-lv-meta { display: flex; align-items: center; gap: 10px; flex: none; }
+.pr-lv-tag {
+  font-family: var(--fm);
+  font-size: 10px;
+  color: var(--exam);
+  border: 1px solid var(--exam);
+  border-radius: var(--r);
+  padding: 1px 6px;
+}
+.pr-lv-caret {
+  font-family: var(--fm);
+  font-size: 13px;
+  color: var(--muted);
+  flex: none;
+  transition: transform .15s ease;
+}
+.pr-lv-item[data-open="1"] .pr-lv-caret { transform: rotate(90deg); color: var(--accent); }
+
+.pr-lv-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 2px 14px 16px 55px;
+}
+.pr-lv-full {
+  font-family: var(--fh);
+  font-size: 15.5px;
+  font-weight: 600;
+  line-height: 1.5;
+  max-width: 62ch;
+}
+.pr-lv-label {
+  font-family: var(--fm);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+.pr-lv-value { font-size: 14px; line-height: 1.6; max-width: 70ch; }
+.pr-lv-plain { margin: 0; }
+.pr-lv-gap { color: var(--accent); border-bottom: 2px solid var(--accent); font-weight: 600; }
+.pr-lv-opts { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.pr-lv-opts li { display: flex; gap: 9px; color: var(--muted); }
+.pr-lv-opts li.is-on { color: var(--fg); }
+.pr-lv-tick { font-family: var(--fm); width: 12px; flex: none; color: var(--muted); }
+.pr-lv-opts li.is-on .pr-lv-tick { color: var(--ok); }
+.pr-lv-bullets, .pr-lv-ol { margin: 0; padding-left: 19px; display: flex; flex-direction: column; gap: 3px; }
+.pr-lv-pairs { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.pr-lv-pairs li { display: flex; flex-wrap: wrap; gap: 8px; }
+.pr-lv-left { font-weight: 600; }
+.pr-lv-arrow { color: var(--muted); }
+.pr-lv-buckets { display: flex; flex-wrap: wrap; gap: 12px; }
+.pr-lv-bucket {
+  flex: 1 1 180px;
+  padding: 9px 12px;
+  border: 1px solid var(--rule);
+  border-radius: var(--r);
+  background: var(--bg);
+}
+.pr-lv-bucket-name { font-family: var(--fm); font-size: 10.5px; color: var(--accent); margin-bottom: 5px; }
+.pr-lv-bucket ul { margin: 0; padding-left: 17px; }
+/* The source block is shared with the card, where it spans the card's padding. */
+.pr-lv-detail .pr-source { padding: 0; border-top: none; }
+.pr-lv-acts { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.pr-lv-acts .pr-btn { padding: 7px 13px; font-size: 12.5px; }
+.pr-lv-tally { font-family: var(--fm); font-size: 10.5px; color: var(--muted); margin-left: auto; }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .sidebar {
@@ -1343,6 +1531,8 @@ a:hover { text-decoration: underline; }
   .card-error { margin: 20px; }
 }
 @media (max-width: 620px) {
+  .pr-lv-meta .pr-src, .pr-lv-meta .pr-type { display: none; }
+  .pr-lv-detail { padding-left: 14px; }
   .brand-title { display: none; }
   .header-tools { padding: 0 8px; }
   .search-input { width: 104px; }

@@ -3,11 +3,11 @@
 //  - Loads course/tab definitions from courses.json
 //  - Each tab loads a set of modular HTML content files
 //  - Search over course content only — never the practice questions
-//  - #/read/<course>/<section> and #/practice/<deck> are linkable
+//  - #/read/<course>/<section> and #/practice/<deck>[/list] are linkable
 //  - One extra tab ("Practice") switches to the adaptive test mode
 // ============================================================
 
-import { mountPractice, unmountPractice, currentDeckId } from './practice.js';
+import { mountPractice, unmountPractice, currentDeckId, currentMode } from './practice.js';
 
 const els = {
   root: document.documentElement,
@@ -159,12 +159,14 @@ function setDrawer(open) {
 }
 
 // ------------------------------------------------------------
-//  Routing — #/read/<course>/<section>, #/practice/<deck>
+//  Routing — #/read/<course>/<section>, #/practice/<deck>[/list]
 // ------------------------------------------------------------
 function parseHash() {
   const parts = (location.hash || '').replace(/^#\/?/, '').split('/').filter(Boolean).map(decodeURIComponent);
   if (!parts.length) return null;
-  if (parts[0] === 'practice') return { view: 'practice', deck: parts[1] || null };
+  if (parts[0] === 'practice') {
+    return { view: 'practice', deck: parts[1] || null, mode: parts[2] || null };
+  }
   if (parts[0] === 'read' && parts[1]) return { view: 'read', course: parts[1], section: parts[2] || null };
   return null;
 }
@@ -176,7 +178,7 @@ function setHash(path) {
 
 async function applyRoute(route) {
   if (route.view === 'practice') {
-    await selectCourse(PRACTICE_TAB, route.deck);
+    await selectCourse(PRACTICE_TAB, route.deck, route.mode);
     return;
   }
   if (!courses.some(c => c.id === route.course)) return;
@@ -269,9 +271,9 @@ function makeTab(id, label) {
   return btn;
 }
 
-async function selectCourse(courseId, deckId) {
+async function selectCourse(courseId, deckId, deckMode) {
   const leavingPractice = activeCourseId === PRACTICE_TAB;
-  if (courseId === activeCourseId && !(courseId === PRACTICE_TAB && deckId)) return;
+  if (courseId === activeCourseId && !(courseId === PRACTICE_TAB && (deckId || deckMode))) return;
   activeCourseId = courseId;
   const token = ++loadToken;
   remember('cb:activeCourse', courseId);
@@ -297,9 +299,10 @@ async function selectCourse(courseId, deckId) {
       sidebar: els.sidebar,
       decks: tests,
       startDeck: deckId,
-      onDeck: (id) => setHash('practice/' + id),
+      startMode: deckMode,
+      onDeck: (id, m) => setHash(practicePath(id, m)),
     });
-    setHash('practice/' + (currentDeckId() || deckId || ''));
+    setHash(practicePath(currentDeckId() || deckId || '', currentMode()));
     return;
   }
 
@@ -308,6 +311,11 @@ async function selectCourse(courseId, deckId) {
   setHash('read/' + courseId);
   const course = courses.find(c => c.id === courseId);
   await loadCourse(course, token);
+}
+
+// The drill is the default view, so only the list shows up in the hash.
+function practicePath(deckId, mode) {
+  return 'practice/' + deckId + (mode === 'list' ? '/list' : '');
 }
 
 // The practice mode takes the sidebar over for its topic filters — put the
