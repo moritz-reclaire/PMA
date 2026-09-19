@@ -44,6 +44,11 @@
       "id": "muskeln",
       "title": "Muskulatur · Funktion, Gelenk, Ursprung & Ansatz",
       "file": "tests/muskeln.json"
+    },
+    {
+      "id": "coastal",
+      "title": "Coastal Engineering (Küsteningenieurwesen)",
+      "file": "tests/coastal.json"
     }
   ]
 }

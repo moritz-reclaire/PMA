@@ -119,7 +119,7 @@ Every open row offers **Practice this one**, which jumps straight into the drill
 on that question, and a retire/restore button. The view is remembered per
 browser and is linkable: `#/practice/<deck>/list`.
 
-Three decks ship with the repo: `tests/pma.json` (Projectmanagement Advanced,
+Four decks ship with the repo: `tests/pma.json` (Projectmanagement Advanced,
 English), `tests/fitness-b.json` (the whole Fitnesstrainer-B-Lizenz script, German)
 and `tests/muskeln.json` — a German deck over every exam-relevant muscle of
 Modul 6. Per muscle it asks for the joint it primarily acts on and then three
@@ -127,6 +127,15 @@ Modul 6. Per muscle it asks for the joint it primarily acts on and then three
 One card per joint asks the other way round — every muscle the script files
 under that joint — and a cross-cutting topic covers muscle groups and shared
 attachment sites.
+
+`tests/coastal.json` covers the English **Coastal Engineering** master lecture
+(RWTH, Prof. Schüttrumpf) — 217 cards over the ten lectures of
+`CE_all_lectures.pdf`, from wave theory and sea state statistics through tides,
+estuaries and storm surges to breakwater design, morphodynamics and
+nature-based solutions. Roughly a quarter of the cards are worked numerical
+exercises (wave length, breaker index, Rayleigh heights, PM/JONSWAP parameters,
+Hudson and van der Meer, groin spacing). Every card links to the slide it comes
+from via `content/coastal/pages/`.
 
 A deck is a JSON file in `tests/`, registered in `courses.json` (a picker
 appears in the sidebar as soon as there is more than one):
